@@ -1,2 +1,2 @@
 # hotlmangementhinduja
-hotel management 
+hotel management project
