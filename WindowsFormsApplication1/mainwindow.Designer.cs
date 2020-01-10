@@ -42,8 +42,9 @@
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.find1 = new WindowsFormsApplication1.find();
             this.hometab1 = new WindowsFormsApplication1.hometab();
+            this.find1 = new WindowsFormsApplication1.find();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -52,6 +53,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -133,7 +135,7 @@
             this.checkoutbutton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkoutbutton.Textcolor = System.Drawing.Color.White;
             this.checkoutbutton.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkoutbutton.Click += new System.EventHandler(this.checkoutbutton_Click);
+            this.checkoutbutton.Click += new System.EventHandler(this.tabbuttonclick);
             // 
             // canclebutton
             // 
@@ -170,7 +172,7 @@
             this.canclebutton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.canclebutton.Textcolor = System.Drawing.Color.White;
             this.canclebutton.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.canclebutton.Click += new System.EventHandler(this.canclebutton_Click);
+            this.canclebutton.Click += new System.EventHandler(this.tabbuttonclick);
             // 
             // homebutton
             // 
@@ -207,7 +209,7 @@
             this.homebutton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.homebutton.Textcolor = System.Drawing.Color.White;
             this.homebutton.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homebutton.Click += new System.EventHandler(this.homebutton_Click);
+            this.homebutton.Click += new System.EventHandler(this.tabbuttonclick);
             // 
             // prebookingbutton
             // 
@@ -244,7 +246,7 @@
             this.prebookingbutton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.prebookingbutton.Textcolor = System.Drawing.Color.White;
             this.prebookingbutton.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prebookingbutton.Click += new System.EventHandler(this.prebookingbutton_Click);
+            this.prebookingbutton.Click += new System.EventHandler(this.tabbuttonclick);
             // 
             // currentbookingbutton
             // 
@@ -281,7 +283,7 @@
             this.currentbookingbutton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.currentbookingbutton.Textcolor = System.Drawing.Color.White;
             this.currentbookingbutton.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentbookingbutton.Click += new System.EventHandler(this.currentbookingbutton_Click);
+            this.currentbookingbutton.Click += new System.EventHandler(this.tabbuttonclick);
             // 
             // findbutton
             // 
@@ -318,7 +320,7 @@
             this.findbutton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.findbutton.Textcolor = System.Drawing.Color.White;
             this.findbutton.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findbutton.Click += new System.EventHandler(this.findbutton_Click);
+            this.findbutton.Click += new System.EventHandler(this.tabbuttonclick);
             // 
             // bunifuDragControl1
             // 
@@ -342,6 +344,14 @@
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
             // 
+            // hometab1
+            // 
+            this.hometab1.BackColor = System.Drawing.SystemColors.Window;
+            this.hometab1.Location = new System.Drawing.Point(0, 0);
+            this.hometab1.Name = "hometab1";
+            this.hometab1.Size = new System.Drawing.Size(750, 476);
+            this.hometab1.TabIndex = 0;
+            // 
             // find1
             // 
             this.find1.BackColor = System.Drawing.SystemColors.Window;
@@ -350,13 +360,14 @@
             this.find1.Size = new System.Drawing.Size(750, 476);
             this.find1.TabIndex = 1;
             // 
-            // hometab1
+            // label2
             // 
-            this.hometab1.BackColor = System.Drawing.SystemColors.Window;
-            this.hometab1.Location = new System.Drawing.Point(0, 0);
-            this.hometab1.Name = "hometab1";
-            this.hometab1.Size = new System.Drawing.Size(750, 476);
-            this.hometab1.TabIndex = 0;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(387, 36);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "label2";
             // 
             // mainwindow
             // 
@@ -397,5 +408,6 @@
         private System.Windows.Forms.Panel selectedtabpannel;
         private find find1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private System.Windows.Forms.Label label2;
     }
 }

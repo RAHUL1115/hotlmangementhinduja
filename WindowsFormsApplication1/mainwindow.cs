@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Bunifu.Framework.UI;
 
 namespace WindowsFormsApplication1
 {
@@ -37,36 +38,52 @@ namespace WindowsFormsApplication1
             label1.ForeColor = Color.Red;
         }
 
-        private void homebutton_Click(object sender, EventArgs e)
+        private void tabbuttonclick(object sender, EventArgs e)
         {
-            selectedtabpannel.Location = homebutton.Location;
-            hometab1.BringToFront();
+            string s = ((BunifuFlatButton)sender).Name;
+            if (selectedtabpannel.Location.Y > ((BunifuFlatButton)sender).Location.Y)
+            {
+                var watch = new System.Diagnostics.Stopwatch();
+                watch.Start();
+                while (selectedtabpannel.Location.Y != ((BunifuFlatButton)sender).Location.Y)
+                {
+                    selectedtabpannel.Location = new Point(0,selectedtabpannel.Location.Y - 4);
+                }
+                watch.Stop();
+                label2.Text = watch.ElapsedMilliseconds+"ms";
+            }
+            else if (selectedtabpannel.Location.Y < ((BunifuFlatButton)sender).Location.Y)
+            {
+                var watch = new System.Diagnostics.Stopwatch();
+                watch.Start();
+                while (selectedtabpannel.Location.Y != ((BunifuFlatButton)sender).Location.Y)
+                {
+                    selectedtabpannel.Location = new Point(0, selectedtabpannel.Location.Y + 4);
+                }
+                watch.Stop();
+                label2.Text = watch.ElapsedMilliseconds + "ms";
+            }
+            selectedtabpannel.Location = ((BunifuFlatButton)sender).Location;
+            switch (s)
+            {
+                case "homebutton":
+                    hometab1.BringToFront();
+                    break;
+                case "findbutton":
+                    find1.BringToFront();
+                    break;
+                case "currentbookingbutton":
+                    break;
+                case "prebookingbutton":
+                    break;
+                case "canclebutton":
+                    break;
+                case "checkoutbutton":
+                    break;
+                default:
+                    break;
+            }
         }
 
-        private void findbutton_Click(object sender, EventArgs e)
-        {
-            selectedtabpannel.Location = findbutton.Location;
-            find1.BringToFront();
-        }
-
-        private void currentbookingbutton_Click(object sender, EventArgs e)
-        {
-            selectedtabpannel.Location = currentbookingbutton.Location;
-        }
-
-        private void prebookingbutton_Click(object sender, EventArgs e)
-        {
-            selectedtabpannel.Location = prebookingbutton.Location;
-        }
-
-        private void canclebutton_Click(object sender, EventArgs e)
-        {
-            selectedtabpannel.Location = canclebutton.Location;
-        }
-
-        private void checkoutbutton_Click(object sender, EventArgs e)
-        {
-            selectedtabpannel.Location = checkoutbutton.Location;
-        }
     }
 }

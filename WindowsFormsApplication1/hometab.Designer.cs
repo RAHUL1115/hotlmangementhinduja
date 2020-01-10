@@ -55,6 +55,6 @@
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        public Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
     }
 }

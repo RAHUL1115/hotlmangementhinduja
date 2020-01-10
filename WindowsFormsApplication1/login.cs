@@ -27,9 +27,8 @@ namespace WindowsFormsApplication1
         //{
         private void button1_Click(object sender, EventArgs e)
         {
-            //this.Dispose();
-            //Program.onclick();
-            Program.con.Open();
+            if(Program.con.State == ConnectionState.Closed)
+                Program.con.Open();
             String query = "select * from current_booking where Id='" + logintxt.Text + "'";
             SqlCommand cmd = new SqlCommand(query, Program.con);
             SqlDataReader sdr = cmd.ExecuteReader();
@@ -45,11 +44,13 @@ namespace WindowsFormsApplication1
                 else
                 {
                     label1.Text = "worng password";
+                    sdr.Close();
                 }
             }
             else
             {
                 label1.Text = "wrong username";
+                sdr.Close();
             }
         }
         //}
@@ -71,6 +72,12 @@ namespace WindowsFormsApplication1
         {
             label6.ForeColor = Color.Red;
             passtxt.UseSystemPasswordChar = true;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            Program.onclick();
         }
         //}
     }
