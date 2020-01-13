@@ -34,7 +34,7 @@
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(117, 51);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(37, 33);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(103, 13);
             this.bunifuCustomLabel1.TabIndex = 0;
@@ -47,7 +47,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Name = "hometab";
-            this.Size = new System.Drawing.Size(750, 476);
+            this.Size = new System.Drawing.Size(811, 552);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -55,29 +55,16 @@ namespace WindowsFormsApplication1
         }
         //}
 
-        //closebutton
-        //{
-        private void label6_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void label6_MouseHover(object sender, EventArgs e)
-        {
-            label6.ForeColor = Color.Blue;
-            passtxt.UseSystemPasswordChar = false;
-        }
-
-        private void label6_MouseLeave(object sender, EventArgs e)
-        {
-            label6.ForeColor = Color.Red;
-            passtxt.UseSystemPasswordChar = true;
-        }
 
         private void label1_Click(object sender, EventArgs e)
         {
             this.Dispose();
             Program.onclick();
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
         //}
     }

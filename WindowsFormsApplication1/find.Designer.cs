@@ -123,7 +123,7 @@
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Name = "find";
-            this.Size = new System.Drawing.Size(750, 476);
+            this.Size = new System.Drawing.Size(811, 552);
             this.Load += new System.EventHandler(this.find_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

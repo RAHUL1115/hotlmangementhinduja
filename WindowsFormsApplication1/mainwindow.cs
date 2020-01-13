@@ -20,22 +20,7 @@ namespace WindowsFormsApplication1
 
         private void emphome_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void label1_MouseHover(object sender, EventArgs e)
-        {
-            label1.ForeColor = Color.Blue;
-        }
-
-        private void label1_MouseLeave(object sender, EventArgs e)
-        {
-            label1.ForeColor = Color.Red;
+            hometab2.BringToFront();
         }
 
         private void tabbuttonclick(object sender, EventArgs e)
@@ -67,14 +52,18 @@ namespace WindowsFormsApplication1
             switch (s)
             {
                 case "homebutton":
-                    hometab1.BringToFront();
+                    hometab2.BringToFront();
                     break;
                 case "findbutton":
-                    find1.BringToFront();
+                    find2.BringToFront();
                     break;
                 case "currentbookingbutton":
                     break;
                 case "prebookingbutton":
+                    break;
+                case "Servicesbutton":
+                    break;
+                case "cancleservice":
                     break;
                 case "canclebutton":
                     break;
@@ -85,5 +74,21 @@ namespace WindowsFormsApplication1
             }
         }
 
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            Program.switchacc();
+        }
+
+        private void hometab2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

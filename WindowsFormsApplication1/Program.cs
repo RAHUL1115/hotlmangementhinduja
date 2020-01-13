@@ -18,6 +18,11 @@ namespace WindowsFormsApplication1
             mainwindow ep = new mainwindow();
             ep.ShowDialog();
         }
+        public static void switchacc()
+        {
+            Form1 li = new Form1();
+            li.ShowDialog();
+        }
 
         static void Main()
         {
