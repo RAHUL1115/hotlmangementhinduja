@@ -83,6 +83,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cancle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cancle.Designer.cs">
+      <DependentUpon>cancle.cs</DependentUpon>
+    </Compile>
     <Compile Include="functions.cs" />
     <Compile Include="mainwindow.cs">
       <SubType>Form</SubType>

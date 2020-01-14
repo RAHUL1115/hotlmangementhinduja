@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.SuspendLayout();
             // 
             // bunifuCustomLabel1
@@ -40,11 +41,18 @@
             this.bunifuCustomLabel1.TabIndex = 0;
             this.bunifuCustomLabel1.Text = "bunifuCustomLabel1";
             // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(40, 107);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 1;
+            // 
             // hometab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Name = "hometab";
             this.Size = new System.Drawing.Size(811, 552);
@@ -56,5 +64,6 @@
         #endregion
 
         public Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
     }
 }

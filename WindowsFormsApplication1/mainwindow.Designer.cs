@@ -45,9 +45,9 @@
             this.findbutton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.hometab2 = new WindowsFormsApplication1.hometab();
             this.find2 = new WindowsFormsApplication1.find();
+            this.hometab2 = new WindowsFormsApplication1.hometab();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -98,7 +98,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(387, 36);
+            this.label2.Location = new System.Drawing.Point(26, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 1;
@@ -444,10 +444,13 @@
             this.panel3.Size = new System.Drawing.Size(811, 552);
             this.panel3.TabIndex = 2;
             // 
-            // bunifuElipse1
+            // find2
             // 
-            this.bunifuElipse1.ElipseRadius = 5;
-            this.bunifuElipse1.TargetControl = this;
+            this.find2.BackColor = System.Drawing.Color.White;
+            this.find2.Location = new System.Drawing.Point(0, 0);
+            this.find2.Name = "find2";
+            this.find2.Size = new System.Drawing.Size(811, 552);
+            this.find2.TabIndex = 1;
             // 
             // hometab2
             // 
@@ -457,19 +460,17 @@
             this.hometab2.Size = new System.Drawing.Size(811, 552);
             this.hometab2.TabIndex = 0;
             // 
-            // find2
+            // bunifuElipse1
             // 
-            this.find2.BackColor = System.Drawing.Color.White;
-            this.find2.Location = new System.Drawing.Point(0, 0);
-            this.find2.Name = "find2";
-            this.find2.Size = new System.Drawing.Size(811, 552);
-            this.find2.TabIndex = 1;
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
             // 
             // mainwindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(988, 645);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
