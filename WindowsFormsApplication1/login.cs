@@ -29,7 +29,7 @@ namespace WindowsFormsApplication1
         {
             if(Program.con.State == ConnectionState.Closed)
                 Program.con.Open();
-            String query = "select * from current_booking where Id='" + logintxt.Text + "'";
+            String query = "select * from login where Id='" + logintxt.Text + "'";
             SqlCommand cmd = new SqlCommand(query, Program.con);
             SqlDataReader sdr = cmd.ExecuteReader();
             if (sdr.Read())

@@ -49,6 +49,7 @@ namespace WindowsFormsApplication1
                 label2.Text = watch.ElapsedMilliseconds + "ms";
             }
             selectedtabpannel.Location = ((BunifuFlatButton)sender).Location;
+          
             switch (s)
             {
                 case "homebutton":
@@ -58,6 +59,7 @@ namespace WindowsFormsApplication1
                     find2.BringToFront();
                     break;
                 case "currentbookingbutton":
+                    current_book1.BringToFront();
                     break;
                 case "prebookingbutton":
                     break;
@@ -87,6 +89,11 @@ namespace WindowsFormsApplication1
         }
 
         private void hometab2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void find2_Load(object sender, EventArgs e)
         {
 
         }
