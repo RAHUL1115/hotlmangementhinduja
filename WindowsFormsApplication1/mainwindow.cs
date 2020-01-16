@@ -33,6 +33,11 @@ namespace WindowsFormsApplication1
                 while (selectedtabpannel.Location.Y != ((BunifuFlatButton)sender).Location.Y)
                 {
                     selectedtabpannel.Location = new Point(0,selectedtabpannel.Location.Y - 4);
+                    if (selectedtabpannel.Location.Y < ((BunifuFlatButton)sender).Location.Y)
+                    {
+                        selectedtabpannel.Location = ((BunifuFlatButton)sender).Location;
+                        break;
+                    }
                 }
                 watch.Stop();
                 label2.Text = watch.ElapsedMilliseconds+"ms";
@@ -44,6 +49,11 @@ namespace WindowsFormsApplication1
                 while (selectedtabpannel.Location.Y != ((BunifuFlatButton)sender).Location.Y)
                 {
                     selectedtabpannel.Location = new Point(0, selectedtabpannel.Location.Y + 4);
+                    if (selectedtabpannel.Location.Y > ((BunifuFlatButton)sender).Location.Y)
+                    {
+                        selectedtabpannel.Location = ((BunifuFlatButton)sender).Location;
+                        break;
+                    }
                 }
                 watch.Stop();
                 label2.Text = watch.ElapsedMilliseconds + "ms";

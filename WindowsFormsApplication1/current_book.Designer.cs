@@ -46,10 +46,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(272, 44);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(204, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 31);
+            this.label1.Size = new System.Drawing.Size(89, 26);
             this.label1.TabIndex = 6;
             this.label1.Text = "Name : ";
             // 
@@ -63,10 +62,10 @@
             this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuMetroTextbox1.isPassword = false;
-            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(398, 36);
-            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(298, 29);
+            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
-            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(407, 39);
+            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(305, 32);
             this.bunifuMetroTextbox1.TabIndex = 5;
             this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -74,10 +73,9 @@
             // 
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(249, 94);
-            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(187, 76);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(131, 31);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(105, 26);
             this.bunifuCustomLabel1.TabIndex = 8;
             this.bunifuCustomLabel1.Text = "Contact : ";
             // 
@@ -91,10 +89,10 @@
             this.bunifuMetroTextbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.bunifuMetroTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuMetroTextbox2.isPassword = false;
-            this.bunifuMetroTextbox2.Location = new System.Drawing.Point(398, 85);
-            this.bunifuMetroTextbox2.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuMetroTextbox2.Location = new System.Drawing.Point(298, 69);
+            this.bunifuMetroTextbox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuMetroTextbox2.Name = "bunifuMetroTextbox2";
-            this.bunifuMetroTextbox2.Size = new System.Drawing.Size(407, 40);
+            this.bunifuMetroTextbox2.Size = new System.Drawing.Size(305, 32);
             this.bunifuMetroTextbox2.TabIndex = 7;
             this.bunifuMetroTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -102,10 +100,9 @@
             // 
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(244, 145);
-            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(183, 118);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(136, 31);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(110, 26);
             this.bunifuCustomLabel2.TabIndex = 10;
             this.bunifuCustomLabel2.Text = "Address : ";
             // 
@@ -119,10 +116,10 @@
             this.bunifuMetroTextbox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.bunifuMetroTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuMetroTextbox3.isPassword = false;
-            this.bunifuMetroTextbox3.Location = new System.Drawing.Point(398, 134);
-            this.bunifuMetroTextbox3.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuMetroTextbox3.Location = new System.Drawing.Point(298, 109);
+            this.bunifuMetroTextbox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuMetroTextbox3.Name = "bunifuMetroTextbox3";
-            this.bunifuMetroTextbox3.Size = new System.Drawing.Size(407, 143);
+            this.bunifuMetroTextbox3.Size = new System.Drawing.Size(305, 116);
             this.bunifuMetroTextbox3.TabIndex = 9;
             this.bunifuMetroTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -130,10 +127,9 @@
             // 
             this.bunifuCustomLabel3.AutoSize = true;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(213, 286);
-            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(160, 232);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(167, 31);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(136, 26);
             this.bunifuCustomLabel3.TabIndex = 11;
             this.bunifuCustomLabel3.Text = "Room type : ";
             // 
@@ -146,23 +142,22 @@
             this.bunifuDropdown1.Items = new string[] {
         "Delux",
         "Normal"};
-            this.bunifuDropdown1.Location = new System.Drawing.Point(398, 286);
-            this.bunifuDropdown1.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuDropdown1.Location = new System.Drawing.Point(298, 232);
+            this.bunifuDropdown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuDropdown1.Name = "bunifuDropdown1";
             this.bunifuDropdown1.NomalColor = System.Drawing.SystemColors.ControlDark;
             this.bunifuDropdown1.onHoverColor = System.Drawing.SystemColors.Control;
             this.bunifuDropdown1.selectedIndex = 0;
-            this.bunifuDropdown1.Size = new System.Drawing.Size(361, 38);
+            this.bunifuDropdown1.Size = new System.Drawing.Size(271, 31);
             this.bunifuDropdown1.TabIndex = 12;
             // 
             // bunifuCustomLabel4
             // 
             this.bunifuCustomLabel4.AutoSize = true;
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(230, 334);
-            this.bunifuCustomLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(172, 271);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(133, 62);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(107, 52);
             this.bunifuCustomLabel4.TabIndex = 14;
             this.bunifuCustomLabel4.Text = " Number\r\nof people:";
             // 
@@ -176,10 +171,10 @@
             this.bunifuMetroTextbox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.bunifuMetroTextbox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuMetroTextbox4.isPassword = false;
-            this.bunifuMetroTextbox4.Location = new System.Drawing.Point(398, 356);
-            this.bunifuMetroTextbox4.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuMetroTextbox4.Location = new System.Drawing.Point(298, 289);
+            this.bunifuMetroTextbox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuMetroTextbox4.Name = "bunifuMetroTextbox4";
-            this.bunifuMetroTextbox4.Size = new System.Drawing.Size(407, 40);
+            this.bunifuMetroTextbox4.Size = new System.Drawing.Size(305, 32);
             this.bunifuMetroTextbox4.TabIndex = 13;
             this.bunifuMetroTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -201,16 +196,16 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(398, 463);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(298, 376);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(167, 49);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(125, 40);
             this.bunifuThinButton21.TabIndex = 15;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // current_book
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.bunifuCustomLabel4);
@@ -223,8 +218,9 @@
             this.Controls.Add(this.bunifuMetroTextbox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bunifuMetroTextbox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "current_book";
-            this.Size = new System.Drawing.Size(1081, 679);
+            this.Size = new System.Drawing.Size(811, 552);
             this.ResumeLayout(false);
             this.PerformLayout();
 

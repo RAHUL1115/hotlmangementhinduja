@@ -63,6 +63,26 @@ namespace WindowsFormsApplication1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap password1 {
+            get {
+                object obj = ResourceManager.GetObject("password1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap password2 {
+            get {
+                object obj = ResourceManager.GetObject("password2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shutdown {
             get {
                 object obj = ResourceManager.GetObject("shutdown", resourceCulture);
@@ -76,6 +96,26 @@ namespace WindowsFormsApplication1.Properties {
         internal static System.Drawing.Bitmap switchaccount {
             get {
                 object obj = ResourceManager.GetObject("switchaccount", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user1 {
+            get {
+                object obj = ResourceManager.GetObject("user1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user2 {
+            get {
+                object obj = ResourceManager.GetObject("user2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

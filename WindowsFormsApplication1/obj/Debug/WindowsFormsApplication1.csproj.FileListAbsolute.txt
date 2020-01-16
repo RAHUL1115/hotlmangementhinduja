@@ -21,7 +21,6 @@ C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
-C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.manifest
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.application
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe.manifest
@@ -45,3 +44,5 @@ E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsF
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CopyComplete
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.current_book.resources
+C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache

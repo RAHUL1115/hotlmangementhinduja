@@ -10,7 +10,9 @@ namespace WindowsFormsApplication1
     static class Program
     {
         public static String constring = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=E:\\Yash\\project\\hotlmangementhinduja\\WindowsFormsApplication1\\Database1.mdf;Integrated Security=True";
-        public static SqlConnection con = new SqlConnection(constring);
+        public static string constring1 = "Data Source=(LocalDB)\\MSSQLLocalDB;Integrated Security=True";
+        public static SqlConnection con = new SqlConnection(constring1);
+
 
         [STAThread]
         public static void onclick()
