@@ -43,7 +43,7 @@ namespace WindowsFormsApplication1
                 }
                 else
                 {
-                    label1.Text = "worng password";
+                    label1.Text = "wrong password";
                     sdr.Close();
                 }
             }

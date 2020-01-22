@@ -60,6 +60,7 @@ namespace WindowsFormsApplication1
             }
             selectedtabpannel.Location = ((BunifuFlatButton)sender).Location;
           
+            
             switch (s)
             {
                 case "homebutton":
@@ -80,6 +81,7 @@ namespace WindowsFormsApplication1
                 case "canclebutton":
                     break;
                 case "checkoutbutton":
+                    checkout1.BringToFront();
                     break;
                 default:
                     break;
