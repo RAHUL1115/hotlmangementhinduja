@@ -8,9 +8,6 @@ namespace WindowsFormsApplication1
 {
     class functions
     {
-        public void cutButton(object sender, EventArgs e)
-        {
-
-        }
+        public string user = "yash";  
     }
 }

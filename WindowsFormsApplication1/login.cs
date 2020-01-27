@@ -32,14 +32,18 @@ namespace WindowsFormsApplication1
             String query = "select * from login where id='" + logintxt.Text + "'";
             SqlCommand cmd = new SqlCommand(query, Program.con);
             SqlDataReader sdr = cmd.ExecuteReader();
+            mainwindow ep = new mainwindow();
+            ep.label3.Text = logintxt.Text;
             if (sdr.Read())
             {
                 if (sdr[1].ToString() == passtxt.Text)
                 {
+                   
                     sdr.Close();
                     Program.con.Close();
                     this.Dispose();
                     Program.onclick();
+                    
                 }
                 else
                 {
@@ -55,9 +59,12 @@ namespace WindowsFormsApplication1
         }
         //}
 
-
+           
         private void label1_Click(object sender, EventArgs e)
         {
+
+            functions fc = new functions();
+            fc.user = logintxt.Text;
             this.Dispose();
             Program.onclick();
         }

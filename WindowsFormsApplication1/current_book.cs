@@ -29,8 +29,13 @@ namespace WindowsFormsApplication1
             //}
             //else
             //{ Program.con.Close(); }
+            this.Visible = false;
         }
 
-       
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            label5.ResetText();
+        }
     }
 }

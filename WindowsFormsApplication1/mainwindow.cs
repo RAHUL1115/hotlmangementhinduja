@@ -13,14 +13,19 @@ namespace WindowsFormsApplication1
 {
     public partial class mainwindow : Form
     {
+        
         public mainwindow()
         {
             InitializeComponent();
+
         }
 
         private void emphome_Load(object sender, EventArgs e)
         {
             hometab2.BringToFront();
+            functions fc = new functions();
+            label3.Text = fc.user;
+            
         }
 
         private void tabbuttonclick(object sender, EventArgs e)

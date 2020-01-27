@@ -1,0 +1,20 @@
+login
+attribute= username password post
+
+current booking
+attribute= room type fname lname email address cintime cindate coutdate (add no_of_people)
+
+history
+attribute= room fname lname email address cintime cindate couttime coutdate amount
+
+prebooking
+attribute= room type fname lname email address cintime cindate coutdate(add no_of_people)
+
+food
+attribute= room order amount quantity date status
+
+services
+attribute= room service employee status
+
+feedback
+attribute= fname lname employee employeerate hotelrate review

@@ -25,8 +25,6 @@ C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.application
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe.manifest
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.application
-E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\bin\Debug\Database1.mdf
-E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\bin\Debug\Database1_log.ldf
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.manifest
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.application
@@ -49,3 +47,4 @@ E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsF
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Checkout.resources
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Checkout.resources
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\bin\Debug\Microsoft.Data.Tools.Components.dll
