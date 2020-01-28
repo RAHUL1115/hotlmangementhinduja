@@ -47,7 +47,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.checkout1 = new WindowsFormsApplication1.Checkout();
             this.hometab2 = new WindowsFormsApplication1.hometab();
-            this.current_book1 = new WindowsFormsApplication1.current_book();
             this.find2 = new WindowsFormsApplication1.find();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1.SuspendLayout();
@@ -384,10 +383,9 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.checkout1);
             this.panel3.Controls.Add(this.hometab2);
-            this.panel3.Controls.Add(this.current_book1);
             this.panel3.Controls.Add(this.find2);
+            this.panel3.Controls.Add(this.checkout1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(177, 92);
             this.panel3.Name = "panel3";
@@ -410,14 +408,6 @@
             this.hometab2.Name = "hometab2";
             this.hometab2.Size = new System.Drawing.Size(811, 552);
             this.hometab2.TabIndex = 0;
-            // 
-            // current_book1
-            // 
-            this.current_book1.Location = new System.Drawing.Point(0, -1);
-            this.current_book1.Margin = new System.Windows.Forms.Padding(2);
-            this.current_book1.Name = "current_book1";
-            this.current_book1.Size = new System.Drawing.Size(808, 552);
-            this.current_book1.TabIndex = 2;
             // 
             // find2
             // 
@@ -476,7 +466,6 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
         private find find2;
         private hometab hometab2;
-        private current_book current_book1;
         private System.Windows.Forms.Panel selectedtabpannel;
         private System.Windows.Forms.Label label1;
         private Checkout checkout1;

@@ -48,3 +48,5 @@ E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsF
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Checkout.resources
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\bin\Debug\Microsoft.Data.Tools.Components.dll
+C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\bin\Debug\EASendMail.dll
+C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache

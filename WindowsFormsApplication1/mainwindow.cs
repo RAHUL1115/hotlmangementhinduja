@@ -74,11 +74,6 @@ namespace WindowsFormsApplication1
                 case "findbutton":
                     find2.BringToFront();
                     break;
-                case "currentbookingbutton":
-                    current_book1.BringToFront();
-                    break;
-                case "prebookingbutton":
-                    break;
                 case "Servicesbutton":
                     break;
                 case "cancleservice":
