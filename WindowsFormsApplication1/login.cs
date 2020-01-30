@@ -43,7 +43,7 @@ namespace WindowsFormsApplication1
                     sdr.Close();
                     Program.con.Close();
                     this.Dispose();
-                    Program.onclick();
+                    Program.onclick(logintxt.Text);
                     
                 }
                 else
@@ -67,7 +67,7 @@ namespace WindowsFormsApplication1
             functions fc = new functions();
             fc.user = logintxt.Text;
             this.Dispose();
-            Program.onclick();
+            Program.onclick(logintxt.Text);
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)

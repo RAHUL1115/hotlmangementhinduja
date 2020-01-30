@@ -45,9 +45,9 @@
             this.findbutton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
-            this.checkout1 = new WindowsFormsApplication1.Checkout();
             this.hometab2 = new WindowsFormsApplication1.hometab();
             this.find2 = new WindowsFormsApplication1.find();
+            this.checkout1 = new WindowsFormsApplication1.Checkout();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
@@ -75,9 +75,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(865, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 13);
+            this.label3.Size = new System.Drawing.Size(33, 13);
             this.label3.TabIndex = 5;
-            this.label3.Text = "hadgsa";
+            this.label3.Text = "name";
             // 
             // label1
             // 
@@ -392,14 +392,6 @@
             this.panel3.Size = new System.Drawing.Size(811, 548);
             this.panel3.TabIndex = 2;
             // 
-            // checkout1
-            // 
-            this.checkout1.Location = new System.Drawing.Point(0, -1);
-            this.checkout1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.checkout1.Name = "checkout1";
-            this.checkout1.Size = new System.Drawing.Size(811, 552);
-            this.checkout1.TabIndex = 3;
-            // 
             // hometab2
             // 
             this.hometab2.BackColor = System.Drawing.SystemColors.Window;
@@ -417,6 +409,14 @@
             this.find2.Name = "find2";
             this.find2.Size = new System.Drawing.Size(811, 552);
             this.find2.TabIndex = 1;
+            // 
+            // checkout1
+            // 
+            this.checkout1.Location = new System.Drawing.Point(0, -1);
+            this.checkout1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkout1.Name = "checkout1";
+            this.checkout1.Size = new System.Drawing.Size(811, 552);
+            this.checkout1.TabIndex = 3;
             // 
             // bunifuElipse1
             // 

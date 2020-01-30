@@ -17,15 +17,12 @@ namespace WindowsFormsApplication1
         public mainwindow()
         {
             InitializeComponent();
-
         }
 
         private void emphome_Load(object sender, EventArgs e)
         {
             hometab2.BringToFront();
-            functions fc = new functions();
-            label3.Text = fc.user;
-            
+            hometab2.bunifuThinButton21_Click(hometab2.bunifuThinButton21, null);
         }
 
         private void tabbuttonclick(object sender, EventArgs e)

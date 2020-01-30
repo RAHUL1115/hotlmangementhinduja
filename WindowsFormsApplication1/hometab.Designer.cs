@@ -49,7 +49,7 @@
             this.room15 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.room12 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.room11 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.hometabcal2 = new System.Windows.Forms.MonthCalendar();
             this.room25 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.room23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.room22 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -87,18 +87,18 @@
             this.label31 = new System.Windows.Forms.Label();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label32 = new System.Windows.Forms.Label();
-            this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
-            this.current_book1 = new WindowsFormsApplication1.current_book();
+            this.hometabcal1 = new System.Windows.Forms.MonthCalendar();
             this.label1 = new System.Windows.Forms.Label();
+            this.current_book1 = new WindowsFormsApplication1.current_book();
             this.SuspendLayout();
             // 
             // room1
             // 
             this.room1.ActiveBorderThickness = 1;
             this.room1.ActiveCornerRadius = 20;
-            this.room1.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room1.ActiveForecolor = System.Drawing.Color.White;
-            this.room1.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room1.ActiveFillColor = System.Drawing.Color.White;
+            this.room1.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room1.ActiveLineColor = System.Drawing.Color.Black;
             this.room1.BackColor = System.Drawing.SystemColors.Window;
             this.room1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room1.BackgroundImage")));
             this.room1.ButtonText = "1";
@@ -122,9 +122,9 @@
             // 
             this.room2.ActiveBorderThickness = 1;
             this.room2.ActiveCornerRadius = 20;
-            this.room2.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room2.ActiveForecolor = System.Drawing.Color.White;
-            this.room2.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room2.ActiveFillColor = System.Drawing.Color.White;
+            this.room2.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room2.ActiveLineColor = System.Drawing.Color.Black;
             this.room2.BackColor = System.Drawing.SystemColors.Window;
             this.room2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room2.BackgroundImage")));
             this.room2.ButtonText = "2";
@@ -148,9 +148,9 @@
             // 
             this.room5.ActiveBorderThickness = 1;
             this.room5.ActiveCornerRadius = 20;
-            this.room5.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room5.ActiveForecolor = System.Drawing.Color.White;
-            this.room5.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room5.ActiveFillColor = System.Drawing.Color.White;
+            this.room5.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room5.ActiveLineColor = System.Drawing.Color.Black;
             this.room5.BackColor = System.Drawing.SystemColors.Window;
             this.room5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room5.BackgroundImage")));
             this.room5.ButtonText = "5";
@@ -174,9 +174,9 @@
             // 
             this.room9.ActiveBorderThickness = 1;
             this.room9.ActiveCornerRadius = 20;
-            this.room9.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room9.ActiveForecolor = System.Drawing.Color.White;
-            this.room9.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room9.ActiveFillColor = System.Drawing.Color.White;
+            this.room9.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room9.ActiveLineColor = System.Drawing.Color.Black;
             this.room9.BackColor = System.Drawing.SystemColors.Window;
             this.room9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room9.BackgroundImage")));
             this.room9.ButtonText = "9";
@@ -200,9 +200,9 @@
             // 
             this.room3.ActiveBorderThickness = 1;
             this.room3.ActiveCornerRadius = 20;
-            this.room3.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room3.ActiveForecolor = System.Drawing.Color.White;
-            this.room3.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room3.ActiveFillColor = System.Drawing.Color.White;
+            this.room3.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room3.ActiveLineColor = System.Drawing.Color.Black;
             this.room3.BackColor = System.Drawing.SystemColors.Window;
             this.room3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room3.BackgroundImage")));
             this.room3.ButtonText = "3";
@@ -226,9 +226,9 @@
             // 
             this.room4.ActiveBorderThickness = 1;
             this.room4.ActiveCornerRadius = 20;
-            this.room4.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room4.ActiveForecolor = System.Drawing.Color.White;
-            this.room4.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room4.ActiveFillColor = System.Drawing.Color.White;
+            this.room4.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room4.ActiveLineColor = System.Drawing.Color.Black;
             this.room4.BackColor = System.Drawing.SystemColors.Window;
             this.room4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room4.BackgroundImage")));
             this.room4.ButtonText = "4";
@@ -252,9 +252,9 @@
             // 
             this.room6.ActiveBorderThickness = 1;
             this.room6.ActiveCornerRadius = 20;
-            this.room6.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room6.ActiveForecolor = System.Drawing.Color.White;
-            this.room6.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room6.ActiveFillColor = System.Drawing.Color.White;
+            this.room6.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room6.ActiveLineColor = System.Drawing.Color.Black;
             this.room6.BackColor = System.Drawing.SystemColors.Window;
             this.room6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room6.BackgroundImage")));
             this.room6.ButtonText = "6";
@@ -278,9 +278,9 @@
             // 
             this.room7.ActiveBorderThickness = 1;
             this.room7.ActiveCornerRadius = 20;
-            this.room7.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room7.ActiveForecolor = System.Drawing.Color.White;
-            this.room7.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room7.ActiveFillColor = System.Drawing.Color.White;
+            this.room7.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room7.ActiveLineColor = System.Drawing.Color.Black;
             this.room7.BackColor = System.Drawing.SystemColors.Window;
             this.room7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room7.BackgroundImage")));
             this.room7.ButtonText = "7";
@@ -304,9 +304,9 @@
             // 
             this.room8.ActiveBorderThickness = 1;
             this.room8.ActiveCornerRadius = 20;
-            this.room8.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room8.ActiveForecolor = System.Drawing.Color.White;
-            this.room8.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room8.ActiveFillColor = System.Drawing.Color.White;
+            this.room8.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room8.ActiveLineColor = System.Drawing.Color.Black;
             this.room8.BackColor = System.Drawing.SystemColors.Window;
             this.room8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room8.BackgroundImage")));
             this.room8.ButtonText = "8";
@@ -330,9 +330,9 @@
             // 
             this.room10.ActiveBorderThickness = 1;
             this.room10.ActiveCornerRadius = 20;
-            this.room10.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room10.ActiveForecolor = System.Drawing.Color.White;
-            this.room10.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room10.ActiveFillColor = System.Drawing.Color.White;
+            this.room10.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room10.ActiveLineColor = System.Drawing.Color.Black;
             this.room10.BackColor = System.Drawing.SystemColors.Window;
             this.room10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room10.BackgroundImage")));
             this.room10.ButtonText = "10";
@@ -356,9 +356,9 @@
             // 
             this.room20.ActiveBorderThickness = 1;
             this.room20.ActiveCornerRadius = 20;
-            this.room20.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room20.ActiveForecolor = System.Drawing.Color.White;
-            this.room20.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room20.ActiveFillColor = System.Drawing.Color.White;
+            this.room20.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room20.ActiveLineColor = System.Drawing.Color.Black;
             this.room20.BackColor = System.Drawing.SystemColors.Window;
             this.room20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room20.BackgroundImage")));
             this.room20.ButtonText = "20";
@@ -382,9 +382,9 @@
             // 
             this.room18.ActiveBorderThickness = 1;
             this.room18.ActiveCornerRadius = 20;
-            this.room18.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room18.ActiveForecolor = System.Drawing.Color.White;
-            this.room18.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room18.ActiveFillColor = System.Drawing.Color.White;
+            this.room18.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room18.ActiveLineColor = System.Drawing.Color.Black;
             this.room18.BackColor = System.Drawing.SystemColors.Window;
             this.room18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room18.BackgroundImage")));
             this.room18.ButtonText = "18";
@@ -408,9 +408,9 @@
             // 
             this.room17.ActiveBorderThickness = 1;
             this.room17.ActiveCornerRadius = 20;
-            this.room17.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room17.ActiveForecolor = System.Drawing.Color.White;
-            this.room17.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room17.ActiveFillColor = System.Drawing.Color.White;
+            this.room17.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room17.ActiveLineColor = System.Drawing.Color.Black;
             this.room17.BackColor = System.Drawing.SystemColors.Window;
             this.room17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room17.BackgroundImage")));
             this.room17.ButtonText = "17";
@@ -434,9 +434,9 @@
             // 
             this.room16.ActiveBorderThickness = 1;
             this.room16.ActiveCornerRadius = 20;
-            this.room16.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room16.ActiveForecolor = System.Drawing.Color.White;
-            this.room16.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room16.ActiveFillColor = System.Drawing.Color.White;
+            this.room16.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room16.ActiveLineColor = System.Drawing.Color.Black;
             this.room16.BackColor = System.Drawing.SystemColors.Window;
             this.room16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room16.BackgroundImage")));
             this.room16.ButtonText = "16";
@@ -460,9 +460,9 @@
             // 
             this.room14.ActiveBorderThickness = 1;
             this.room14.ActiveCornerRadius = 20;
-            this.room14.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room14.ActiveForecolor = System.Drawing.Color.White;
-            this.room14.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room14.ActiveFillColor = System.Drawing.Color.White;
+            this.room14.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room14.ActiveLineColor = System.Drawing.Color.Black;
             this.room14.BackColor = System.Drawing.SystemColors.Window;
             this.room14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room14.BackgroundImage")));
             this.room14.ButtonText = "14";
@@ -486,9 +486,9 @@
             // 
             this.room13.ActiveBorderThickness = 1;
             this.room13.ActiveCornerRadius = 20;
-            this.room13.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room13.ActiveForecolor = System.Drawing.Color.White;
-            this.room13.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room13.ActiveFillColor = System.Drawing.Color.White;
+            this.room13.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room13.ActiveLineColor = System.Drawing.Color.Black;
             this.room13.BackColor = System.Drawing.SystemColors.Window;
             this.room13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room13.BackgroundImage")));
             this.room13.ButtonText = "13";
@@ -512,9 +512,9 @@
             // 
             this.room19.ActiveBorderThickness = 1;
             this.room19.ActiveCornerRadius = 20;
-            this.room19.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room19.ActiveForecolor = System.Drawing.Color.White;
-            this.room19.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room19.ActiveFillColor = System.Drawing.Color.White;
+            this.room19.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room19.ActiveLineColor = System.Drawing.Color.Black;
             this.room19.BackColor = System.Drawing.SystemColors.Window;
             this.room19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room19.BackgroundImage")));
             this.room19.ButtonText = "19";
@@ -538,9 +538,9 @@
             // 
             this.room15.ActiveBorderThickness = 1;
             this.room15.ActiveCornerRadius = 20;
-            this.room15.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room15.ActiveForecolor = System.Drawing.Color.White;
-            this.room15.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room15.ActiveFillColor = System.Drawing.Color.White;
+            this.room15.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room15.ActiveLineColor = System.Drawing.Color.Black;
             this.room15.BackColor = System.Drawing.SystemColors.Window;
             this.room15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room15.BackgroundImage")));
             this.room15.ButtonText = "15";
@@ -564,9 +564,9 @@
             // 
             this.room12.ActiveBorderThickness = 1;
             this.room12.ActiveCornerRadius = 20;
-            this.room12.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room12.ActiveForecolor = System.Drawing.Color.White;
-            this.room12.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room12.ActiveFillColor = System.Drawing.Color.White;
+            this.room12.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room12.ActiveLineColor = System.Drawing.Color.Black;
             this.room12.BackColor = System.Drawing.SystemColors.Window;
             this.room12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room12.BackgroundImage")));
             this.room12.ButtonText = "12";
@@ -590,9 +590,9 @@
             // 
             this.room11.ActiveBorderThickness = 1;
             this.room11.ActiveCornerRadius = 20;
-            this.room11.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room11.ActiveForecolor = System.Drawing.Color.White;
-            this.room11.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room11.ActiveFillColor = System.Drawing.Color.White;
+            this.room11.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room11.ActiveLineColor = System.Drawing.Color.Black;
             this.room11.BackColor = System.Drawing.SystemColors.Window;
             this.room11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room11.BackgroundImage")));
             this.room11.ButtonText = "11";
@@ -612,19 +612,19 @@
             this.room11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.room11.Click += new System.EventHandler(this.room1_Click);
             // 
-            // monthCalendar1
+            // hometabcal2
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(557, 247);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 20;
+            this.hometabcal2.Location = new System.Drawing.Point(557, 247);
+            this.hometabcal2.Name = "hometabcal2";
+            this.hometabcal2.TabIndex = 20;
             // 
             // room25
             // 
             this.room25.ActiveBorderThickness = 1;
             this.room25.ActiveCornerRadius = 20;
-            this.room25.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room25.ActiveForecolor = System.Drawing.Color.White;
-            this.room25.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room25.ActiveFillColor = System.Drawing.Color.White;
+            this.room25.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room25.ActiveLineColor = System.Drawing.Color.Black;
             this.room25.BackColor = System.Drawing.SystemColors.Window;
             this.room25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room25.BackgroundImage")));
             this.room25.ButtonText = "25";
@@ -648,9 +648,9 @@
             // 
             this.room23.ActiveBorderThickness = 1;
             this.room23.ActiveCornerRadius = 20;
-            this.room23.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room23.ActiveForecolor = System.Drawing.Color.White;
-            this.room23.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room23.ActiveFillColor = System.Drawing.Color.White;
+            this.room23.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room23.ActiveLineColor = System.Drawing.Color.Black;
             this.room23.BackColor = System.Drawing.SystemColors.Window;
             this.room23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room23.BackgroundImage")));
             this.room23.ButtonText = "23";
@@ -674,9 +674,9 @@
             // 
             this.room22.ActiveBorderThickness = 1;
             this.room22.ActiveCornerRadius = 20;
-            this.room22.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room22.ActiveForecolor = System.Drawing.Color.White;
-            this.room22.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room22.ActiveFillColor = System.Drawing.Color.White;
+            this.room22.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room22.ActiveLineColor = System.Drawing.Color.Black;
             this.room22.BackColor = System.Drawing.SystemColors.Window;
             this.room22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room22.BackgroundImage")));
             this.room22.ButtonText = "22";
@@ -700,9 +700,9 @@
             // 
             this.room21.ActiveBorderThickness = 1;
             this.room21.ActiveCornerRadius = 20;
-            this.room21.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room21.ActiveForecolor = System.Drawing.Color.White;
-            this.room21.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room21.ActiveFillColor = System.Drawing.Color.White;
+            this.room21.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room21.ActiveLineColor = System.Drawing.Color.Black;
             this.room21.BackColor = System.Drawing.SystemColors.Window;
             this.room21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room21.BackgroundImage")));
             this.room21.ButtonText = "21";
@@ -726,9 +726,9 @@
             // 
             this.room24.ActiveBorderThickness = 1;
             this.room24.ActiveCornerRadius = 20;
-            this.room24.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.room24.ActiveForecolor = System.Drawing.Color.White;
-            this.room24.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.room24.ActiveFillColor = System.Drawing.Color.White;
+            this.room24.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room24.ActiveLineColor = System.Drawing.Color.Black;
             this.room24.BackColor = System.Drawing.SystemColors.Window;
             this.room24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room24.BackgroundImage")));
             this.room24.ButtonText = "24";
@@ -752,265 +752,289 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(269, 108);
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(264, 108);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 9);
+            this.label3.Size = new System.Drawing.Size(53, 11);
             this.label3.TabIndex = 28;
             this.label3.Text = "12/12/2000";
+            this.label3.Visible = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(199, 108);
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(194, 108);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 9);
+            this.label2.Size = new System.Drawing.Size(53, 11);
             this.label2.TabIndex = 29;
             this.label2.Text = "12/12/2000";
+            this.label2.Visible = false;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(338, 108);
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(333, 108);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 9);
+            this.label4.Size = new System.Drawing.Size(53, 11);
             this.label4.TabIndex = 30;
             this.label4.Text = "12/12/2000";
+            this.label4.Visible = false;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(408, 108);
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(403, 108);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 9);
+            this.label5.Size = new System.Drawing.Size(53, 11);
             this.label5.TabIndex = 31;
             this.label5.Text = "12/12/2000";
+            this.label5.Visible = false;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(408, 180);
+            this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(403, 179);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 9);
+            this.label10.Size = new System.Drawing.Size(53, 11);
             this.label10.TabIndex = 36;
             this.label10.Text = "12/12/2000";
+            this.label10.Visible = false;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(338, 180);
+            this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(333, 179);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(41, 9);
+            this.label9.Size = new System.Drawing.Size(53, 11);
             this.label9.TabIndex = 35;
             this.label9.Text = "12/12/2000";
+            this.label9.Visible = false;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(199, 180);
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(194, 179);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 9);
+            this.label7.Size = new System.Drawing.Size(53, 11);
             this.label7.TabIndex = 34;
             this.label7.Text = "12/12/2000";
+            this.label7.Visible = false;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(269, 180);
+            this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(264, 179);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(41, 9);
+            this.label8.Size = new System.Drawing.Size(53, 11);
             this.label8.TabIndex = 33;
             this.label8.Text = "12/12/2000";
+            this.label8.Visible = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(129, 180);
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(124, 179);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 9);
+            this.label6.Size = new System.Drawing.Size(53, 11);
             this.label6.TabIndex = 32;
             this.label6.Text = "12/12/2000";
+            this.label6.Visible = false;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(408, 320);
+            this.label20.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(403, 319);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(41, 9);
+            this.label20.Size = new System.Drawing.Size(53, 11);
             this.label20.TabIndex = 46;
             this.label20.Text = "12/12/2000";
+            this.label20.Visible = false;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(338, 320);
+            this.label19.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(333, 319);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(41, 9);
+            this.label19.Size = new System.Drawing.Size(53, 11);
             this.label19.TabIndex = 45;
             this.label19.Text = "12/12/2000";
+            this.label19.Visible = false;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(199, 320);
+            this.label17.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(194, 319);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(41, 9);
+            this.label17.Size = new System.Drawing.Size(53, 11);
             this.label17.TabIndex = 44;
             this.label17.Text = "12/12/2000";
+            this.label17.Visible = false;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(269, 320);
+            this.label18.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(264, 319);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(41, 9);
+            this.label18.Size = new System.Drawing.Size(53, 11);
             this.label18.TabIndex = 43;
             this.label18.Text = "12/12/2000";
+            this.label18.Visible = false;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(129, 320);
+            this.label16.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(124, 319);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(41, 9);
+            this.label16.Size = new System.Drawing.Size(53, 11);
             this.label16.TabIndex = 42;
             this.label16.Text = "12/12/2000";
+            this.label16.Visible = false;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(408, 250);
+            this.label15.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(403, 249);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(41, 9);
+            this.label15.Size = new System.Drawing.Size(53, 11);
             this.label15.TabIndex = 41;
             this.label15.Text = "12/12/2000";
+            this.label15.Visible = false;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(338, 250);
+            this.label14.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(333, 249);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(41, 9);
+            this.label14.Size = new System.Drawing.Size(53, 11);
             this.label14.TabIndex = 40;
             this.label14.Text = "12/12/2000";
+            this.label14.Visible = false;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(199, 250);
+            this.label12.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(194, 249);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(41, 9);
+            this.label12.Size = new System.Drawing.Size(53, 11);
             this.label12.TabIndex = 39;
             this.label12.Text = "12/12/2000";
+            this.label12.Visible = false;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(269, 250);
+            this.label13.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(264, 249);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(41, 9);
+            this.label13.Size = new System.Drawing.Size(53, 11);
             this.label13.TabIndex = 38;
             this.label13.Text = "12/12/2000";
+            this.label13.Visible = false;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(129, 250);
+            this.label11.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(124, 249);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(41, 9);
+            this.label11.Size = new System.Drawing.Size(53, 11);
             this.label11.TabIndex = 37;
             this.label11.Text = "12/12/2000";
+            this.label11.Visible = false;
             // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(407, 389);
+            this.label25.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(402, 388);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(41, 9);
+            this.label25.Size = new System.Drawing.Size(53, 11);
             this.label25.TabIndex = 51;
             this.label25.Text = "12/12/2000";
+            this.label25.Visible = false;
             // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(337, 389);
+            this.label24.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(332, 388);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(41, 9);
+            this.label24.Size = new System.Drawing.Size(53, 11);
             this.label24.TabIndex = 50;
             this.label24.Text = "12/12/2000";
+            this.label24.Visible = false;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(198, 389);
+            this.label22.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(193, 388);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(41, 9);
+            this.label22.Size = new System.Drawing.Size(53, 11);
             this.label22.TabIndex = 49;
             this.label22.Text = "12/12/2000";
+            this.label22.Visible = false;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(268, 389);
+            this.label23.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(263, 388);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(41, 9);
+            this.label23.Size = new System.Drawing.Size(53, 11);
             this.label23.TabIndex = 48;
             this.label23.Text = "12/12/2000";
+            this.label23.Visible = false;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(128, 389);
+            this.label21.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(123, 388);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(41, 9);
+            this.label21.Size = new System.Drawing.Size(53, 11);
             this.label21.TabIndex = 47;
             this.label21.Text = "12/12/2000";
+            this.label21.Visible = false;
             // 
             // label26
             // 
@@ -1090,7 +1114,7 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(286, 446);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(286, 447);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(184, 65);
@@ -1108,11 +1132,23 @@
             this.label32.TabIndex = 60;
             this.label32.Text = "From";
             // 
-            // monthCalendar2
+            // hometabcal1
             // 
-            this.monthCalendar2.Location = new System.Drawing.Point(557, 70);
-            this.monthCalendar2.Name = "monthCalendar2";
-            this.monthCalendar2.TabIndex = 59;
+            this.hometabcal1.Location = new System.Drawing.Point(557, 70);
+            this.hometabcal1.Name = "hometabcal1";
+            this.hometabcal1.TabIndex = 59;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(123, 108);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 11);
+            this.label1.TabIndex = 62;
+            this.label1.Text = "12/12/2000";
+            this.label1.Visible = false;
             // 
             // current_book1
             // 
@@ -1122,17 +1158,6 @@
             this.current_book1.Size = new System.Drawing.Size(811, 552);
             this.current_book1.TabIndex = 61;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(128, 108);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 9);
-            this.label1.TabIndex = 62;
-            this.label1.Text = "12/12/2000";
-            // 
             // hometab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1141,7 +1166,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.room1);
             this.Controls.Add(this.label32);
-            this.Controls.Add(this.monthCalendar2);
+            this.Controls.Add(this.hometabcal1);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.label30);
@@ -1178,7 +1203,7 @@
             this.Controls.Add(this.room22);
             this.Controls.Add(this.room21);
             this.Controls.Add(this.room24);
-            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.hometabcal2);
             this.Controls.Add(this.room20);
             this.Controls.Add(this.room18);
             this.Controls.Add(this.room17);
@@ -1252,7 +1277,7 @@
         public Bunifu.Framework.UI.BunifuThinButton2 room15;
         public Bunifu.Framework.UI.BunifuThinButton2 room12;
         public Bunifu.Framework.UI.BunifuThinButton2 room11;
-        public System.Windows.Forms.MonthCalendar monthCalendar1;
+        public System.Windows.Forms.MonthCalendar hometabcal2;
         public Bunifu.Framework.UI.BunifuThinButton2 room25;
         public Bunifu.Framework.UI.BunifuThinButton2 room23;
         public Bunifu.Framework.UI.BunifuThinButton2 room22;
@@ -1264,7 +1289,7 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         public Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
-        public System.Windows.Forms.MonthCalendar monthCalendar2;
+        public System.Windows.Forms.MonthCalendar hometabcal1;
         public System.Windows.Forms.Label label31;
         public System.Windows.Forms.Label label32;
         private current_book current_book1;
