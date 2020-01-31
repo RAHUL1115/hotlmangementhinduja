@@ -109,6 +109,13 @@
       <DependentUpon>current_book.cs</DependentUpon>
     </Compile>
     <Compile Include="functions.cs" />
+    <Compile Include="info.cs" />
+    <Compile Include="loadingcontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="loadingcontrol.Designer.cs">
+      <DependentUpon>loadingcontrol.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainwindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +140,12 @@
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="messageboxcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="messageboxcs.Designer.cs">
+      <DependentUpon>messageboxcs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Checkout.resx">
@@ -140,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="current_book.resx">
       <DependentUpon>current_book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loadingcontrol.resx">
+      <DependentUpon>loadingcontrol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainwindow.resx">
       <DependentUpon>mainwindow.cs</DependentUpon>
@@ -152,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messageboxcs.resx">
+      <DependentUpon>messageboxcs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

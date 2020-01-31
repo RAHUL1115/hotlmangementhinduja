@@ -22,7 +22,8 @@ namespace WindowsFormsApplication1
         private void emphome_Load(object sender, EventArgs e)
         {
             hometab2.BringToFront();
-            hometab2.bunifuThinButton21_Click(hometab2.bunifuThinButton21, null);
+            label3.Text = Program.inf.id;
+            //hometab2.bunifuThinButton21_Click(hometab2.bunifuThinButton21, null);
         }
 
         private void tabbuttonclick(object sender, EventArgs e)

@@ -21,7 +21,10 @@ namespace WindowsFormsApplication1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Timer MyTimer = new Timer();
+            MyTimer.Interval = (500);
+            MyTimer.Tick += new EventHandler(MyTimer_Tick);
+            MyTimer.Start();
         }
 
         //logintbutton
@@ -39,11 +42,11 @@ namespace WindowsFormsApplication1
             {
                 if (sdr[1].ToString() == passtxt.Text)
                 {
-                   
+                    Program.inf.id = logintxt.Text;
                     sdr.Close();
                     Program.con.Close();
                     this.Dispose();
-                    Program.onclick(logintxt.Text);
+                    Program.onclick();
                     
                 }
                 else
@@ -67,12 +70,23 @@ namespace WindowsFormsApplication1
             functions fc = new functions();
             fc.user = logintxt.Text;
             this.Dispose();
-            Program.onclick(logintxt.Text);
+            Program.onclick();
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+            
+        }
+        private void MyTimer_Tick(object sender, EventArgs e)
+        {
+            if (Program.con.State == ConnectionState.Closed)
+                Program.con.Open();
+            loadingcontrol1.Dispose();
         }
     }
 }
