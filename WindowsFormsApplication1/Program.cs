@@ -13,11 +13,12 @@ namespace WindowsFormsApplication1
         public static string constring = "Server=sql.freeasphost.net;Database=feedback_db;uid=feedback;pwd=1234";
         public static SqlConnection con = new SqlConnection(constring);
         public static info inf = new info();
+        public static mainwindow ep = new mainwindow();
+
 
         [STAThread]
         public static void onclick()
         {
-            mainwindow ep = new mainwindow();
             ep.ShowDialog();
         }
         public static void switchacc()
@@ -29,7 +30,7 @@ namespace WindowsFormsApplication1
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            //Application.SetCompatibleTextRenderingDefault(false);
             Form1 f1 = new Form1();
             f1.ShowDialog();
         }

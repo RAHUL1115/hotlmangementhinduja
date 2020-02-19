@@ -13,7 +13,10 @@ namespace WindowsFormsApplication1
 {
     public partial class mainwindow : Form
     {
-        
+        public void refresh()
+        {
+            hometab2.bunifuThinButton21_Click(hometab2.bunifuThinButton21, null);
+        }
         public mainwindow()
         {
             InitializeComponent();
@@ -23,7 +26,7 @@ namespace WindowsFormsApplication1
         {
             hometab2.BringToFront();
             label3.Text = Program.inf.id;
-            //hometab2.bunifuThinButton21_Click(hometab2.bunifuThinButton21, null);
+            refresh();
         }
 
         private void tabbuttonclick(object sender, EventArgs e)

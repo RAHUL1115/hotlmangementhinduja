@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class cancle : UserControl
+    public partial class roomfillmenu : UserControl
     {
-        public cancle()
+        public roomfillmenu()
         {
             InitializeComponent();
         }

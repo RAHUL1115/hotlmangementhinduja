@@ -90,11 +90,11 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cancle.cs">
+    <Compile Include="roomfillmenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="cancle.Designer.cs">
-      <DependentUpon>cancle.cs</DependentUpon>
+    <Compile Include="roomfillmenu.Designer.cs">
+      <DependentUpon>roomfillmenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Checkout.cs">
       <SubType>UserControl</SubType>
@@ -146,8 +146,23 @@
     <Compile Include="messageboxcs.Designer.cs">
       <DependentUpon>messageboxcs.cs</DependentUpon>
     </Compile>
+    <Compile Include="pre_book.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pre_book.Designer.cs">
+      <DependentUpon>pre_book.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="roomfilmenuewindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roomfilmenuewindow.Designer.cs">
+      <DependentUpon>roomfilmenuewindow.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="roomfillmenu.resx">
+      <DependentUpon>roomfillmenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Checkout.resx">
       <DependentUpon>Checkout.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,10 +187,16 @@
     <EmbeddedResource Include="messageboxcs.resx">
       <DependentUpon>messageboxcs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pre_book.resx">
+      <DependentUpon>pre_book.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roomfilmenuewindow.resx">
+      <DependentUpon>roomfilmenuewindow.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

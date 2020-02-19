@@ -63,7 +63,6 @@
             this.label32 = new System.Windows.Forms.Label();
             this.hometabcal1 = new System.Windows.Forms.MonthCalendar();
             this.label1 = new System.Windows.Forms.Label();
-            this.current_book1 = new WindowsFormsApplication1.current_book();
             this.room1 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.room25 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -90,12 +89,16 @@
             this.room9 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.room5 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.room2 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.pre_book1 = new WindowsFormsApplication1.pre_book();
+            this.current_book1 = new WindowsFormsApplication1.current_book();
             this.SuspendLayout();
             // 
             // hometabcal2
             // 
             this.hometabcal2.Location = new System.Drawing.Point(557, 247);
+            this.hometabcal2.MaxSelectionCount = 1;
             this.hometabcal2.Name = "hometabcal2";
+            this.hometabcal2.ShowTodayCircle = false;
             this.hometabcal2.TabIndex = 20;
             // 
             // label3
@@ -459,7 +462,9 @@
             // hometabcal1
             // 
             this.hometabcal1.Location = new System.Drawing.Point(557, 70);
+            this.hometabcal1.MaxSelectionCount = 1;
             this.hometabcal1.Name = "hometabcal1";
+            this.hometabcal1.ShowTodayCircle = false;
             this.hometabcal1.TabIndex = 59;
             // 
             // label1
@@ -473,14 +478,6 @@
             this.label1.TabIndex = 62;
             this.label1.Text = "12/12/2000";
             this.label1.Visible = false;
-            // 
-            // current_book1
-            // 
-            this.current_book1.Location = new System.Drawing.Point(0, 0);
-            this.current_book1.Margin = new System.Windows.Forms.Padding(2);
-            this.current_book1.Name = "current_book1";
-            this.current_book1.Size = new System.Drawing.Size(811, 552);
-            this.current_book1.TabIndex = 61;
             // 
             // room1
             // 
@@ -1158,6 +1155,21 @@
             this.room2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.room2.Click += new System.EventHandler(this.room1_Click);
             // 
+            // pre_book1
+            // 
+            this.pre_book1.Location = new System.Drawing.Point(0, -3);
+            this.pre_book1.Name = "pre_book1";
+            this.pre_book1.Size = new System.Drawing.Size(811, 552);
+            this.pre_book1.TabIndex = 63;
+            // 
+            // current_book1
+            // 
+            this.current_book1.Location = new System.Drawing.Point(-1, 1);
+            this.current_book1.Margin = new System.Windows.Forms.Padding(2);
+            this.current_book1.Name = "current_book1";
+            this.current_book1.Size = new System.Drawing.Size(811, 552);
+            this.current_book1.TabIndex = 64;
+            // 
             // hometab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1223,6 +1235,7 @@
             this.Controls.Add(this.room9);
             this.Controls.Add(this.room5);
             this.Controls.Add(this.room2);
+            this.Controls.Add(this.pre_book1);
             this.Controls.Add(this.current_book1);
             this.Name = "hometab";
             this.Size = new System.Drawing.Size(811, 552);
@@ -1292,7 +1305,8 @@
         public System.Windows.Forms.MonthCalendar hometabcal1;
         public System.Windows.Forms.Label label31;
         public System.Windows.Forms.Label label32;
-        private current_book current_book1;
         public System.Windows.Forms.Label label1;
+        private pre_book pre_book1;
+        private current_book current_book1;
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,27 +11,28 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class messageboxcs : Form
+    public partial class roomfilmenuewindow : Form
     {
-        public messageboxcs()
+        public string room;
+        public roomfilmenuewindow()
         {
             InitializeComponent();
         }
 
-        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
+        private void roomfilmenuewindow_Deactivate(object sender, EventArgs e)
         {
             Dispose();
-            Program.ep.refresh();
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            Dispose();
-            Program.ep.refresh();
-        }
-
-        private void messageboxcs_Deactivate(object sender, EventArgs e)
-        {
+            if (Program.con.State == ConnectionState.Closed)
+            {
+                Program.con.Open();
+            }
+            string query = room;
+            SqlCommand cmd = new SqlCommand(query, Program.con);
+            cmd.ExecuteNonQuery();
             Dispose();
             Program.ep.refresh();
         }

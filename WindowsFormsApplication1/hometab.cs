@@ -19,21 +19,53 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
             current_book1.Visible = false;
+            pre_book1.Visible = false;
         }
 
         private void room1_Click(object sender, EventArgs e)
         {
-            current_book1.label5.Text = "Room No : "+((BunifuThinButton2)sender).ButtonText;
-            current_book1.BringToFront();
-            current_book1.Visible = true;
+            if (hometabcal1.SelectionRange.Start == DateTime.Today)
+            {
+                if (((BunifuThinButton2)sender).IdleLineColor != Color.Red)
+                {
+                    current_book1.label5.Text = "Room No : " + ((BunifuThinButton2)sender).ButtonText;
+                    current_book1.room = ((BunifuThinButton2)sender).ButtonText;
+                    current_book1.BringToFront();
+                    current_book1.Visible = true;
+                    current_book1.monthCalendar1.SelectionRange = hometabcal2.SelectionRange;
+                }
+                else
+                {
+                    roomfilmenuewindow rfw = new roomfilmenuewindow();
+                    rfw.room = "update current_book set fname = null,lname= null ,email= null ,address= null,cintime= null,cindate= null ,coutdate= null,no_pep= null where room ="+ ((BunifuThinButton2)sender).ButtonText;
+                    rfw.Show();
+                }
+            }
+            else
+            {
+                if (((BunifuThinButton2)sender).IdleLineColor != Color.Red)
+                {
+                    pre_book1.label5.Text = "Room No : " + ((BunifuThinButton2)sender).ButtonText;
+                    pre_book1.room = ((BunifuThinButton2)sender).ButtonText;
+                    pre_book1.BringToFront();
+                    pre_book1.Visible = true;
+                    pre_book1.monthCalendar1.SelectionRange = hometabcal1.SelectionRange;
+                    pre_book1.monthCalendar2.SelectionRange = hometabcal2.SelectionRange;
+                }
+                else
+                {
+                    
+                }
+            }
         }
-
+        
         private void hometab_Load(object sender, EventArgs e)
         {
         }
 
         public void bunifuThinButton21_Click(object sender, EventArgs e)
         {
+            bunifuThinButton21.Visible = false;
             if (hometabcal1.TodayDate > hometabcal1.SelectionRange.Start)
             {
                 messageboxcs mb = new messageboxcs();
@@ -50,6 +82,13 @@ namespace WindowsFormsApplication1
             }
             string date1 = hometabcal1.SelectionRange.Start.ToString("yyyy-MM-dd");
             string date2 = hometabcal2.SelectionRange.Start.ToString("yyyy-MM-dd");
+            string statement = "select room,CONVERT(varchar, coutdate, 101) as coutdate from current_book where (cindate BETWEEN '"+date1+"' and '"+date2+"' ) or (coutdate BETWEEN '"+ date1+"' and '"+date2+"' )";
+            string statement2 = "select room,CONVERT(varchar, coutdate, 101) as coutdate from pre_book where (cindate BETWEEN '"+date1+"' and '"+date2+"' ) or (coutdate BETWEEN '"+date1+"' and '"+date2+"' ) ORDER BY cintime";
+            if (hometabcal1.SelectionRange.Start == hometabcal2.SelectionRange.Start)
+            {
+                statement = "select room,CONVERT(varchar, coutdate, 101) as coutdate from current_book where '" + date1 + "' BETWEEN cindate and coutdate ";
+                statement2 = "select room,CONVERT(varchar, coutdate, 101) as coutdate from pre_book where '" + date1 + "' BETWEEN cindate and coutdate ORDER BY cintime";
+            }
             Bunifu.Framework.UI.BunifuThinButton2[] roombutton = { room1, room2, room3, room4, room5, room6, room7, room8, room9, room10, room11, room12, room13, room14, room15, room16, room17, room18, room19, room20, room21, room22, room23, room24, room25 };
             Label[] roomlabel = { label1, label2, label3, label4, label5, label6, label7, label8, label9, label10, label11, label12, label13, label14, label15, label16, label17, label18, label19, label20, label21, label22, label23, label24, label25 };
             for (int i = 0; i < 25; i++)
@@ -57,11 +96,8 @@ namespace WindowsFormsApplication1
                 roombutton[i].IdleLineColor = Color.SeaGreen;
                 roomlabel[i].Visible = false;
             }
-            label3.Text = date1;
-            label3.Visible = true;
             if (Program.con.State == ConnectionState.Closed)
                 Program.con.Open();
-            string statement = "select room,CONVERT(varchar, coutdate, 101) as coutdate from current_book where (cindate BETWEEN '"+date1+"' and '"+date2+"' ) or (coutdate BETWEEN '"+ date1+"' and '"+date2+"' )";
             SqlCommand cmd = new SqlCommand(statement, Program.con);
             SqlDataReader sdr = cmd.ExecuteReader();
             while (sdr.Read())
@@ -70,7 +106,6 @@ namespace WindowsFormsApplication1
                 roomlabel[((Int32)sdr[0] - 1)].Text = sdr[1].ToString();
                 roomlabel[((Int32)sdr[0] - 1)].Visible = true;
             }
-            string statement2 = "select room,CONVERT(varchar, coutdate, 101) as coutdate from pre_book where (cindate BETWEEN '"+date1+"' and '"+date2+"' ) or (coutdate BETWEEN '"+date1+"' and '"+date2+"' ) ORDER BY cintime";
             cmd.Dispose();
             sdr.Close();
             cmd = new SqlCommand(statement2, Program.con);
@@ -84,7 +119,7 @@ namespace WindowsFormsApplication1
             }
             cmd.Dispose();
             sdr.Close();
+            bunifuThinButton21.Visible = true;
         }
-
     }
 }

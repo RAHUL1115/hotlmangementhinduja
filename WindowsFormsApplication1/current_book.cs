@@ -13,6 +13,7 @@ namespace WindowsFormsApplication1
 {
     public partial class current_book : UserControl
     {
+        public string room;
         public current_book()
         {
             InitializeComponent();
@@ -20,22 +21,29 @@ namespace WindowsFormsApplication1
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            //if (Program.con.State == ConnectionState.Closed)
-            //{
-            //    Program.con.Open();
-            //    String query = "insert into curr_book values('" + name.Text + "','" + Convert.ToInt32(contact.Text) + "','" + address.Text + "','" + room_type.selectedValue + "','" + Convert.ToInt32(num_of_pep.Text) + "','" + Convert.ToInt32(room_no.Text) + "')";
-            //    SqlCommand cmd = new SqlCommand(query, Program.con);
-            //    cmd.ExecuteNonQuery();
-            //}
-            //else
-            //{ Program.con.Close(); }
+            if (Program.con.State == ConnectionState.Closed)
+            {
+                Program.con.Open();
+            }
+            string date1 = monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd");
+            string query = "update current_book set fname='" + bunifuMaterialTextbox1.Text + "',lname='" + bunifuMaterialTextbox2.Text + "',email='" + bunifuMaterialTextbox3.Text + "',address='" + bunifuMaterialTextbox4.Text + "',cintime=CONVERT(TIME, GETDATE()),cindate=CONVERT(date, GETDATE()),coutdate='" + date1 + "',no_pep=" + bunifuMaterialTextbox6.Text + " where room ="+room ;
+            SqlCommand cmd = new SqlCommand(query, Program.con);
+            cmd.ExecuteNonQuery();
+            messageboxcs mb = new messageboxcs();
+            mb.Show();
             this.Visible = false;
+            mb.bunifuCustomLabel1.Text = "room no "+room+" is booked";
         }
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
             this.Visible = false;
             label5.ResetText();
+        }
+
+        private void current_book_Leave(object sender, EventArgs e)
+        {
+
         }
     }
 }
