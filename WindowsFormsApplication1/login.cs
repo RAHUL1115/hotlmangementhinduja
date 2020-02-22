@@ -1,4 +1,4 @@
-﻿using EASendMail;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -43,7 +43,6 @@ namespace WindowsFormsApplication1
                 if (sdr[1].ToString() == passtxt.Text)
                 {
                     Program.inf.id = logintxt.Text;
-                    Program.con.Close();
                     this.Dispose();
                     if (sdr[2].ToString() == "m")
                     {
@@ -51,9 +50,7 @@ namespace WindowsFormsApplication1
                     }
                     else {
                     Program.onclick();
-                    }
-                    sdr.Close();
-                    
+                    }       
                 }
                 else
                 {
@@ -91,14 +88,25 @@ namespace WindowsFormsApplication1
 
         private void workerthreadfn()
         {
-            System.Threading.Thread wt = new System.Threading.Thread(MyTimer_Tick);
+            if (Program.con.State == ConnectionState.Closed)
+                Program.con.Open();
         }
 
         private void MyTimer_Tick(object sender, EventArgs e)
         {
+            System.Threading.Thread wt = new System.Threading.Thread(workerthreadfn);
+            wt.Start();
             if (Program.con.State == ConnectionState.Closed)
-                Program.con.Open();
+               Program.con.Open();
             loadingcontrol1.Dispose();
+        }
+
+        private void passtxt_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                button1_Click(null,null);
+            }
         }
     }
 }

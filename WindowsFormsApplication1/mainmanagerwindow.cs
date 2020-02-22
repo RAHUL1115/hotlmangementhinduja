@@ -32,5 +32,10 @@ namespace WindowsFormsApplication1
         {
             this.Close();
         }
+
+        private void bunifuImageButton5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
