@@ -20,6 +20,7 @@ namespace WindowsFormsApplication1
             InitializeComponent();
             current_book1.Visible = false;
             pre_book1.Visible = false;
+            find1.Visible = false;
         }
 
         private void room1_Click(object sender, EventArgs e)
@@ -120,6 +121,11 @@ namespace WindowsFormsApplication1
             cmd.Dispose();
             sdr.Close();
             bunifuThinButton21.Visible = true;
+        }
+
+        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        {
+         
         }
     }
 }

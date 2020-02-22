@@ -15,6 +15,7 @@ namespace WindowsFormsApplication1
         public static info inf = new info();
         public static mainwindow ep = new mainwindow();
         public static mainmanagerwindow mmw = new mainmanagerwindow();
+        //public static findwindow fw = new findwindow();
 
 
         [STAThread]
