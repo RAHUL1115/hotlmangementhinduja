@@ -43,10 +43,16 @@ namespace WindowsFormsApplication1
                 if (sdr[1].ToString() == passtxt.Text)
                 {
                     Program.inf.id = logintxt.Text;
-                    sdr.Close();
                     Program.con.Close();
                     this.Dispose();
+                    if (sdr[2].ToString() == "m")
+                    {
+                        Program.onclick1();
+                    }
+                    else {
                     Program.onclick();
+                    }
+                    sdr.Close();
                     
                 }
                 else
@@ -82,6 +88,12 @@ namespace WindowsFormsApplication1
         {
             
         }
+
+        private void workerthreadfn()
+        {
+            System.Threading.Thread wt = new System.Threading.Thread(MyTimer_Tick);
+        }
+
         private void MyTimer_Tick(object sender, EventArgs e)
         {
             if (Program.con.State == ConnectionState.Closed)

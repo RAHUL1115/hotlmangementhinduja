@@ -14,12 +14,17 @@ namespace WindowsFormsApplication1
         public static SqlConnection con = new SqlConnection(constring);
         public static info inf = new info();
         public static mainwindow ep = new mainwindow();
+        public static mainmanagerwindow mmw = new mainmanagerwindow();
 
 
         [STAThread]
         public static void onclick()
         {
             ep.ShowDialog();
+        }
+        public static void onclick1()
+        {
+            mmw.ShowDialog();
         }
         public static void switchacc()
         {

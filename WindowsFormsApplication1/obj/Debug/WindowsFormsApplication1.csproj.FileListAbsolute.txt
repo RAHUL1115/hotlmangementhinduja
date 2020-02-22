@@ -55,3 +55,4 @@ C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.roomfillmenu.resources
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.roomfilmenuewindow.resources
+C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.mainmanagerwindow.resources

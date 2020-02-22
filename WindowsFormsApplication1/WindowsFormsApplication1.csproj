@@ -90,6 +90,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="mainmanagerwindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainmanagerwindow.Designer.cs">
+      <DependentUpon>mainmanagerwindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="roomfillmenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -160,6 +166,9 @@
     <Compile Include="roomfilmenuewindow.Designer.cs">
       <DependentUpon>roomfilmenuewindow.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="mainmanagerwindow.resx">
+      <DependentUpon>mainmanagerwindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="roomfillmenu.resx">
       <DependentUpon>roomfillmenu.cs</DependentUpon>
     </EmbeddedResource>
