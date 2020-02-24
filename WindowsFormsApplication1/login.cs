@@ -12,11 +12,13 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
+    public void sqlcommand
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
+            //loadingcontrol1.Enabled = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -36,8 +38,7 @@ namespace WindowsFormsApplication1
             String query = "select * from login where id='" + logintxt.Text + "'";
             SqlCommand cmd = new SqlCommand(query, Program.con);
             SqlDataReader sdr = cmd.ExecuteReader();
-            mainwindow ep = new mainwindow();
-            ep.label3.Text = logintxt.Text;
+            Program.ep.label3.Text = logintxt.Text;
             if (sdr.Read())
             {
                 if (sdr[1].ToString() == passtxt.Text)
@@ -47,9 +48,12 @@ namespace WindowsFormsApplication1
                     if (sdr[2].ToString() == "m")
                     {
                         Program.onclick1();
+                        sdr.Close();
+                        cmd.Dispose();
                     }
                     else {
                     Program.onclick();
+                    sdr.Close();
                     }       
                 }
                 else
@@ -96,9 +100,9 @@ namespace WindowsFormsApplication1
         {
             System.Threading.Thread wt = new System.Threading.Thread(workerthreadfn);
             wt.Start();
-            if (Program.con.State == ConnectionState.Closed)
-               Program.con.Open();
-            loadingcontrol1.Dispose();
+            while (Program.con.State == ConnectionState.Closed)
+            { }
+            databaseloading.Dispose();
         }
 
         private void passtxt_KeyDown(object sender, KeyEventArgs e)

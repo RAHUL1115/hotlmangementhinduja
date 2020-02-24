@@ -13,32 +13,32 @@ namespace WindowsFormsApplication1
         public static string constring = "Server=sql.freeasphost.net;Database=feedback_db;uid=feedback;pwd=1234";
         public static SqlConnection con = new SqlConnection(constring);
         public static info inf = new info();
+        public static Form1 li = new Form1();
         public static mainwindow ep = new mainwindow();
         public static mainmanagerwindow mmw = new mainmanagerwindow();
-        //public static findwindow fw = new findwindow();
 
 
         [STAThread]
         public static void onclick()
         {
-            ep.ShowDialog();
+            mainwindow ep1 = new mainwindow();
+            ep1.ShowDialog();
         }
         public static void onclick1()
         {
-            mmw.ShowDialog();
+            mainmanagerwindow mmw1 = new mainmanagerwindow();
+            mmw1.ShowDialog();
         }
         public static void switchacc()
         {
-            Form1 li = new Form1();
-            li.ShowDialog();
+            Form1 li1 = new Form1();
+            li1.ShowDialog();
         }
 
         static void Main()
         {
             Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
-            Form1 f1 = new Form1();
-            f1.ShowDialog();
+            li.ShowDialog();
         }
     }
 }

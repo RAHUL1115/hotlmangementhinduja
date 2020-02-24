@@ -8,6 +8,7 @@ namespace WindowsFormsApplication1
 {
     class functions
     {
-        public string user = "yash";  
+        public string user = "yash";
+        public bool isfirst = true;
     }
 }
