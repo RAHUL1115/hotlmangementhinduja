@@ -21,7 +21,7 @@ namespace WindowsFormsApplication1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Program.con.StateChange += new StateChangeEventHandler(OnStateChange);
+            //Program.con.StateChange += new StateChangeEventHandler(OnStateChange);
             Timer MyTimer = new Timer();
             MyTimer.Interval = (500);
             MyTimer.Tick += new EventHandler(MyTimer_Tick);
@@ -37,7 +37,7 @@ namespace WindowsFormsApplication1
             String query = "select * from login where id='" + logintxt.Text + "'";
             SqlCommand cmd = new SqlCommand(query, Program.con);
             SqlDataReader sdr = cmd.ExecuteReader();
-            Program.ep.label3.Text = logintxt.Text;
+            //Program.ep.label3.Text = logintxt.Text;
             if (sdr.Read())
             {
                 if (sdr[1].ToString() == passtxt.Text)
@@ -68,7 +68,7 @@ namespace WindowsFormsApplication1
             }
         }
         //}
-
+        
            
         private void label1_Click(object sender, EventArgs e)
         { 
@@ -86,8 +86,8 @@ namespace WindowsFormsApplication1
         {
             System.Threading.Thread wt = new System.Threading.Thread(workerthreadfn);
             wt.Start();
-            //while (!(Program.con.State == ConnectionState.Open)){}
-            //databaseloading.Dispose();
+            while (!(Program.con.State == ConnectionState.Open)) { }
+            databaseloading.Dispose();
         }
         private void workerthreadfn()
         {
@@ -104,7 +104,8 @@ namespace WindowsFormsApplication1
         }
         public static void OnStateChange(object sender,StateChangeEventArgs args)
         {
-            Program.li.databaseloading.Dispose();
+            // Program.li.databaseloading.Dispose();
+            
         }
     }
 }

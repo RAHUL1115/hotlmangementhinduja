@@ -90,11 +90,28 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="attendance_win.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="attendance_win.Designer.cs">
+      <DependentUpon>attendance_win.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feedback_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>feedback_dbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="mainmanagerwindow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="mainmanagerwindow.Designer.cs">
       <DependentUpon>mainmanagerwindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reports_win.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="reports_win.Designer.cs">
+      <DependentUpon>reports_win.cs</DependentUpon>
     </Compile>
     <Compile Include="roomfillmenu.cs">
       <SubType>UserControl</SubType>
@@ -165,8 +182,14 @@
     <Compile Include="roomfilmenuewindow.Designer.cs">
       <DependentUpon>roomfilmenuewindow.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="attendance_win.resx">
+      <DependentUpon>attendance_win.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mainmanagerwindow.resx">
       <DependentUpon>mainmanagerwindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports_win.resx">
+      <DependentUpon>reports_win.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="roomfillmenu.resx">
       <DependentUpon>roomfillmenu.cs</DependentUpon>
@@ -206,6 +229,17 @@
     <EmbeddedResource Include="roomfilmenuewindow.resx">
       <DependentUpon>roomfilmenuewindow.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="feedback_dbDataSet.xsc">
+      <DependentUpon>feedback_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="feedback_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>feedback_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="feedback_dbDataSet.xss">
+      <DependentUpon>feedback_dbDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -272,6 +306,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\envelope.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />

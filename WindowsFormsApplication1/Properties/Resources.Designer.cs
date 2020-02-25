@@ -73,6 +73,26 @@ namespace WindowsFormsApplication1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap back {
+            get {
+                object obj = ResourceManager.GetObject("back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap envelope {
+            get {
+                object obj = ResourceManager.GetObject("envelope", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap password1 {
             get {
                 object obj = ResourceManager.GetObject("password1", resourceCulture);
@@ -86,6 +106,26 @@ namespace WindowsFormsApplication1.Properties {
         internal static System.Drawing.Bitmap password2 {
             get {
                 object obj = ResourceManager.GetObject("password2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pay {
+            get {
+                object obj = ResourceManager.GetObject("pay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap payroll {
+            get {
+                object obj = ResourceManager.GetObject("payroll", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

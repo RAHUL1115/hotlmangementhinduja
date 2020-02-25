@@ -62,3 +62,4 @@ E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsF
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pre_book.resources
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.roomfilmenuewindow.resources
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\bin\Debug\EASendMail.dll
+E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.reports_win.resources

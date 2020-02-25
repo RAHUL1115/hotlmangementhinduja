@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainmanagerwindow));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.bunifuImageButton7 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton6 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton5 = new Bunifu.Framework.UI.BunifuImageButton();
@@ -40,6 +42,7 @@
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.reports_win1 = new WindowsFormsApplication1.reports_win();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton6)).BeginInit();
@@ -60,7 +63,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1296, 114);
             this.panel1.TabIndex = 1;
@@ -97,6 +100,13 @@
             this.label2.Size = new System.Drawing.Size(0, 42);
             this.label2.TabIndex = 1;
             // 
+            // toolTip1
+            // 
+            this.toolTip1.AutoPopDelay = 6000;
+            this.toolTip1.InitialDelay = 500;
+            this.toolTip1.ReshowDelay = 200;
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            // 
             // bunifuImageButton7
             // 
             this.bunifuImageButton7.BackColor = System.Drawing.Color.SeaGreen;
@@ -126,7 +136,7 @@
             // bunifuImageButton5
             // 
             this.bunifuImageButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.bunifuImageButton5.Image = global::WindowsFormsApplication1.Properties.Resources.salary;
+            this.bunifuImageButton5.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton5.Image")));
             this.bunifuImageButton5.ImageActive = null;
             this.bunifuImageButton5.Location = new System.Drawing.Point(991, 163);
             this.bunifuImageButton5.Name = "bunifuImageButton5";
@@ -136,6 +146,7 @@
             this.bunifuImageButton5.TabStop = false;
             this.bunifuImageButton5.Zoom = 10;
             this.bunifuImageButton5.Click += new System.EventHandler(this.bunifuImageButton5_Click);
+            this.bunifuImageButton5.MouseHover += new System.EventHandler(this.bunifuImageButton5_MouseHover);
             // 
             // bunifuImageButton4
             // 
@@ -149,6 +160,7 @@
             this.bunifuImageButton4.TabIndex = 3;
             this.bunifuImageButton4.TabStop = false;
             this.bunifuImageButton4.Zoom = 10;
+            this.bunifuImageButton4.MouseHover += new System.EventHandler(this.bunifuImageButton4_MouseHover);
             // 
             // bunifuImageButton3
             // 
@@ -162,6 +174,8 @@
             this.bunifuImageButton3.TabIndex = 2;
             this.bunifuImageButton3.TabStop = false;
             this.bunifuImageButton3.Zoom = 10;
+            this.bunifuImageButton3.Click += new System.EventHandler(this.bunifuImageButton3_Click);
+            this.bunifuImageButton3.MouseHover += new System.EventHandler(this.bunifuImageButton3_MouseHover);
             // 
             // bunifuImageButton2
             // 
@@ -193,6 +207,14 @@
             this.bunifuImageButton1.Zoom = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
+            // reports_win1
+            // 
+            this.reports_win1.Location = new System.Drawing.Point(0, 108);
+            this.reports_win1.Name = "reports_win1";
+            this.reports_win1.Size = new System.Drawing.Size(1296, 626);
+            this.reports_win1.TabIndex = 7;
+            this.reports_win1.Visible = false;
+            // 
             // mainmanagerwindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -204,8 +226,9 @@
             this.Controls.Add(this.bunifuImageButton4);
             this.Controls.Add(this.bunifuImageButton3);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.reports_win1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "mainmanagerwindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "mainmanagerwindow";
@@ -236,5 +259,7 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton5;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton6;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton7;
+        private System.Windows.Forms.ToolTip toolTip1;
+        public reports_win reports_win1;
     }
 }
