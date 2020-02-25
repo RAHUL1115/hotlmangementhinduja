@@ -33,8 +33,7 @@ namespace WindowsFormsApplication1
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-            this.Close();
+            Application.Exit();
         }
 
         private void bunifuImageButton5_Click(object sender, EventArgs e)

@@ -113,18 +113,6 @@
     <Compile Include="reports_win.Designer.cs">
       <DependentUpon>reports_win.cs</DependentUpon>
     </Compile>
-    <Compile Include="roomfillmenu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="roomfillmenu.Designer.cs">
-      <DependentUpon>roomfillmenu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Checkout.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Checkout.Designer.cs">
-      <DependentUpon>Checkout.cs</DependentUpon>
-    </Compile>
     <Compile Include="current_book.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -190,12 +178,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="reports_win.resx">
       <DependentUpon>reports_win.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="roomfillmenu.resx">
-      <DependentUpon>roomfillmenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Checkout.resx">
-      <DependentUpon>Checkout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="current_book.resx">
       <DependentUpon>current_book.cs</DependentUpon>

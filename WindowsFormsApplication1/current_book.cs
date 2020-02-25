@@ -26,7 +26,7 @@ namespace WindowsFormsApplication1
                 Program.con.Open();
             }
             string date1 = monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd");
-            string query = "update current_book set fname='" + bunifuMaterialTextbox1.Text + "',lname='" + bunifuMaterialTextbox2.Text + "',email='" + bunifuMaterialTextbox3.Text + "',address='" + bunifuMaterialTextbox4.Text + "',cintime=CONVERT(TIME, GETDATE()),cindate=CONVERT(date, GETDATE()),coutdate='" + date1 + "',no_pep=" + bunifuMaterialTextbox6.selectedValue + " where room ="+room ;
+            string query = "update current_book set fname='" + fnametextbox.Text + "',lname='" + lnametextbox.Text + "',email='" + emailtextbox.Text + "',address='" + addresstextbox.Text + "',cintime=CONVERT(TIME, GETDATE()),cindate=CONVERT(date, GETDATE()),coutdate='" + date1 + "',no_pep=" + peopleselect.selectedValue + " where room ="+room ;
             SqlCommand cmd = new SqlCommand(query, Program.con);
             cmd.ExecuteNonQuery();
             messageboxcs mb = new messageboxcs();

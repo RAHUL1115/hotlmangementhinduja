@@ -15,7 +15,7 @@ namespace WindowsFormsApplication1
     {
         public void refresh()
         {
-            hometab2.bunifuThinButton21_Click(hometab2.bunifuThinButton21, null);
+            hometab2.refreshbutton_Click(hometab2.refreshbutton, null);
         }
         public mainwindow()
         {
@@ -28,72 +28,9 @@ namespace WindowsFormsApplication1
             label3.Text = Program.inf.id;
             refresh();
         }
-
-        private void tabbuttonclick(object sender, EventArgs e)
-        {
-            string s = ((BunifuFlatButton)sender).Name;
-            if (selectedtabpannel.Location.Y > ((BunifuFlatButton)sender).Location.Y)
-            {
-                var watch = new System.Diagnostics.Stopwatch();
-                watch.Start();
-                while (selectedtabpannel.Location.Y != ((BunifuFlatButton)sender).Location.Y)
-                {
-                    selectedtabpannel.Location = new Point(0,selectedtabpannel.Location.Y - 4);
-                    if (selectedtabpannel.Location.Y < ((BunifuFlatButton)sender).Location.Y)
-                    {
-                        selectedtabpannel.Location = ((BunifuFlatButton)sender).Location;
-                        break;
-                    }
-                }
-                watch.Stop();
-                label2.Text = watch.ElapsedMilliseconds+"ms";
-            }
-            else if (selectedtabpannel.Location.Y < ((BunifuFlatButton)sender).Location.Y)
-            {
-                var watch = new System.Diagnostics.Stopwatch();
-                watch.Start();
-                while (selectedtabpannel.Location.Y != ((BunifuFlatButton)sender).Location.Y)
-                {
-                    selectedtabpannel.Location = new Point(0, selectedtabpannel.Location.Y + 4);
-                    if (selectedtabpannel.Location.Y > ((BunifuFlatButton)sender).Location.Y)
-                    {
-                        selectedtabpannel.Location = ((BunifuFlatButton)sender).Location;
-                        break;
-                    }
-                }
-                watch.Stop();
-                label2.Text = watch.ElapsedMilliseconds + "ms";
-            }
-            selectedtabpannel.Location = ((BunifuFlatButton)sender).Location;
-          
-            
-            switch (s)
-            {
-                case "homebutton":
-                    hometab2.BringToFront();
-                    break;
-                case "findbutton":
-                    find2.BringToFront();
-                    break;
-                case "Servicesbutton":
-                    break;
-                case "cancleservice":
-                    break;
-                case "canclebutton":
-                    break;
-                case "checkoutbutton":
-                    checkout1.BringToFront();
-                    break;
-                default:
-                    break;
-            }
-        }
-
-
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-           this.Dispose();
-           this.Close();
+            Application.Exit();
         }
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)

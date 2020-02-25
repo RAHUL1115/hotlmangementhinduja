@@ -18,12 +18,9 @@ namespace WindowsFormsApplication1
         public hometab()
         {
             InitializeComponent();
-            current_book1.Visible = false;
-            pre_book1.Visible = false;
-            find1.Visible = false;
         }
 
-        private void room1_Click(object sender, EventArgs e)
+        private void Roomnobutton_Click(object sender, EventArgs e)
         {
             if (hometabcal1.SelectionRange.Start == DateTime.Today)
             {
@@ -38,7 +35,7 @@ namespace WindowsFormsApplication1
                 else
                 {
                     roomfilmenuewindow rfw = new roomfilmenuewindow();
-                    rfw.room = "update current_book set fname = null,lname= null ,email= null ,address= null,cintime= null,cindate= null ,coutdate= null,no_pep= null where room ="+ ((BunifuThinButton2)sender).ButtonText;
+                    rfw.room = "update current_book set fname = null,lname= null ,email= null ,address= null,cintime= null,cindate= null ,coutdate= null,no_pep= null where room =" + ((BunifuThinButton2)sender).ButtonText;
                     rfw.Show();
                 }
             }
@@ -55,18 +52,14 @@ namespace WindowsFormsApplication1
                 }
                 else
                 {
-                    
+
                 }
             }
         }
-        
-        private void hometab_Load(object sender, EventArgs e)
-        {
-        }
 
-        public void bunifuThinButton21_Click(object sender, EventArgs e)
+        public void refreshbutton_Click(object sender, EventArgs e)
         {
-            bunifuThinButton21.Visible = false;
+            refreshbutton.Visible = false;
             if (hometabcal1.TodayDate > hometabcal1.SelectionRange.Start)
             {
                 messageboxcs mb = new messageboxcs();
@@ -83,8 +76,8 @@ namespace WindowsFormsApplication1
             }
             string date1 = hometabcal1.SelectionRange.Start.ToString("yyyy-MM-dd");
             string date2 = hometabcal2.SelectionRange.Start.ToString("yyyy-MM-dd");
-            string statement = "select room,CONVERT(varchar, coutdate, 101) as coutdate from current_book where (cindate BETWEEN '"+date1+"' and '"+date2+"' ) or (coutdate BETWEEN '"+ date1+"' and '"+date2+"' )";
-            string statement2 = "select room,CONVERT(varchar, coutdate, 101) as coutdate from pre_book where (cindate BETWEEN '"+date1+"' and '"+date2+"' ) or (coutdate BETWEEN '"+date1+"' and '"+date2+"' ) ORDER BY cintime";
+            string statement = "select room,CONVERT(varchar, coutdate, 101) as coutdate from current_book where (cindate BETWEEN '" + date1 + "' and '" + date2 + "' ) or (coutdate BETWEEN '" + date1 + "' and '" + date2 + "' )";
+            string statement2 = "select room,CONVERT(varchar, coutdate, 101) as coutdate from pre_book where (cindate BETWEEN '" + date1 + "' and '" + date2 + "' ) or (coutdate BETWEEN '" + date1 + "' and '" + date2 + "' ) ORDER BY cintime";
             if (hometabcal1.SelectionRange.Start == hometabcal2.SelectionRange.Start)
             {
                 statement = "select room,CONVERT(varchar, coutdate, 101) as coutdate from current_book where '" + date1 + "' BETWEEN cindate and coutdate ";
@@ -120,12 +113,7 @@ namespace WindowsFormsApplication1
             }
             cmd.Dispose();
             sdr.Close();
-            bunifuThinButton21.Visible = true;
-        }
-
-        private void bunifuImageButton3_Click(object sender, EventArgs e)
-        {
-         
+            refreshbutton.Visible = true;
         }
     }
 }
