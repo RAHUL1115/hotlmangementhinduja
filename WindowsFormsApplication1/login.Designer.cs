@@ -166,7 +166,7 @@
             this.databaseloading.BackColor = System.Drawing.Color.Black;
             this.databaseloading.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.databaseloading.Location = new System.Drawing.Point(8, 56);
-            this.databaseloading.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.databaseloading.Margin = new System.Windows.Forms.Padding(4);
             this.databaseloading.Name = "databaseloading";
             this.databaseloading.Size = new System.Drawing.Size(233, 92);
             this.databaseloading.TabIndex = 10;
@@ -241,7 +241,6 @@
             this.Padding = new System.Windows.Forms.Padding(0, 1, 1, 0);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "hotel Managment";
-            this.Activated += new System.EventHandler(this.Form1_Activated);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

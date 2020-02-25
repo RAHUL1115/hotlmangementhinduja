@@ -90,12 +90,6 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="findwindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="findwindow.Designer.cs">
-      <DependentUpon>findwindow.cs</DependentUpon>
-    </Compile>
     <Compile Include="mainmanagerwindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,7 +114,6 @@
     <Compile Include="current_book.Designer.cs">
       <DependentUpon>current_book.cs</DependentUpon>
     </Compile>
-    <Compile Include="functions.cs" />
     <Compile Include="info.cs" />
     <Compile Include="loadingcontrol.cs">
       <SubType>UserControl</SubType>

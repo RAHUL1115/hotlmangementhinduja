@@ -12,17 +12,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public void sqlcommand
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
-            //loadingcontrol1.Enabled = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Program.con.StateChange += new StateChangeEventHandler(OnStateChange);
             Timer MyTimer = new Timer();
             MyTimer.Interval = (500);
             MyTimer.Tick += new EventHandler(MyTimer_Tick);
@@ -72,10 +71,7 @@ namespace WindowsFormsApplication1
 
            
         private void label1_Click(object sender, EventArgs e)
-        {
-
-            functions fc = new functions();
-            fc.user = logintxt.Text;
+        { 
             this.Dispose();
             Program.onclick();
         }
@@ -85,24 +81,18 @@ namespace WindowsFormsApplication1
             this.Close();
         }
 
-        private void Form1_Activated(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void workerthreadfn()
-        {
-            if (Program.con.State == ConnectionState.Closed)
-                Program.con.Open();
-        }
 
         private void MyTimer_Tick(object sender, EventArgs e)
         {
             System.Threading.Thread wt = new System.Threading.Thread(workerthreadfn);
             wt.Start();
-            while (Program.con.State == ConnectionState.Closed)
-            { }
-            databaseloading.Dispose();
+            //while (!(Program.con.State == ConnectionState.Open)){}
+            //databaseloading.Dispose();
+        }
+        private void workerthreadfn()
+        {
+            if (Program.con.State == ConnectionState.Closed)
+                Program.con.Open();
         }
 
         private void passtxt_KeyDown(object sender, KeyEventArgs e)
@@ -111,6 +101,10 @@ namespace WindowsFormsApplication1
             {
                 button1_Click(null,null);
             }
+        }
+        public static void OnStateChange(object sender,StateChangeEventArgs args)
+        {
+            Program.li.databaseloading.Dispose();
         }
     }
 }
