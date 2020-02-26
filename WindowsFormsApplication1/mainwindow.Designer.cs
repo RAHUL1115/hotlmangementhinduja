@@ -30,28 +30,28 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.user_name = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.switchbutton = new Bunifu.Framework.UI.BunifuImageButton();
+            this.exitbutton = new Bunifu.Framework.UI.BunifuImageButton();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
-            this.hometab2 = new WindowsFormsApplication1.hometab();
+            this.hometab1 = new WindowsFormsApplication1.hometab();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.switchbutton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exitbutton)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.user_name);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.bunifuImageButton2);
-            this.panel1.Controls.Add(this.bunifuImageButton1);
+            this.panel1.Controls.Add(this.switchbutton);
+            this.panel1.Controls.Add(this.exitbutton);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -59,15 +59,15 @@
             this.panel1.Size = new System.Drawing.Size(988, 93);
             this.panel1.TabIndex = 0;
             // 
-            // label3
+            // user_name
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(861, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 21);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "rahul";
+            this.user_name.AutoSize = true;
+            this.user_name.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user_name.Location = new System.Drawing.Point(861, 15);
+            this.user_name.Name = "user_name";
+            this.user_name.Size = new System.Drawing.Size(47, 21);
+            this.user_name.TabIndex = 5;
+            this.user_name.Text = "rahul";
             // 
             // label1
             // 
@@ -79,33 +79,33 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Hotel Management System";
             // 
-            // bunifuImageButton2
+            // switchbutton
             // 
-            this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton2.Image = global::WindowsFormsApplication1.Properties.Resources.switchaccount;
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(916, 12);
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(27, 26);
-            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton2.TabIndex = 3;
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Zoom = 10;
-            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
+            this.switchbutton.BackColor = System.Drawing.Color.Transparent;
+            this.switchbutton.Image = global::WindowsFormsApplication1.Properties.Resources.switchaccount;
+            this.switchbutton.ImageActive = null;
+            this.switchbutton.Location = new System.Drawing.Point(916, 12);
+            this.switchbutton.Name = "switchbutton";
+            this.switchbutton.Size = new System.Drawing.Size(27, 26);
+            this.switchbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.switchbutton.TabIndex = 3;
+            this.switchbutton.TabStop = false;
+            this.switchbutton.Zoom = 10;
+            this.switchbutton.Click += new System.EventHandler(this.switchbutton_click);
             // 
-            // bunifuImageButton1
+            // exitbutton
             // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.Image = global::WindowsFormsApplication1.Properties.Resources.shutdown;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(949, 12);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(27, 26);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 2;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            this.exitbutton.BackColor = System.Drawing.Color.Transparent;
+            this.exitbutton.Image = global::WindowsFormsApplication1.Properties.Resources.shutdown;
+            this.exitbutton.ImageActive = null;
+            this.exitbutton.Location = new System.Drawing.Point(949, 12);
+            this.exitbutton.Name = "exitbutton";
+            this.exitbutton.Size = new System.Drawing.Size(27, 26);
+            this.exitbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.exitbutton.TabIndex = 2;
+            this.exitbutton.TabStop = false;
+            this.exitbutton.Zoom = 10;
+            this.exitbutton.Click += new System.EventHandler(this.exitbutton_click);
             // 
             // label2
             // 
@@ -130,21 +130,21 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.hometab2);
+            this.panel3.Controls.Add(this.hometab1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 88);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(988, 552);
             this.panel3.TabIndex = 2;
             // 
-            // hometab2
+            // hometab1
             // 
-            this.hometab2.BackColor = System.Drawing.SystemColors.Window;
-            this.hometab2.Location = new System.Drawing.Point(0, 0);
-            this.hometab2.Margin = new System.Windows.Forms.Padding(4);
-            this.hometab2.Name = "hometab2";
-            this.hometab2.Size = new System.Drawing.Size(998, 552);
-            this.hometab2.TabIndex = 0;
+            this.hometab1.BackColor = System.Drawing.SystemColors.Window;
+            this.hometab1.Location = new System.Drawing.Point(0, 0);
+            this.hometab1.Margin = new System.Windows.Forms.Padding(4);
+            this.hometab1.Name = "hometab1";
+            this.hometab1.Size = new System.Drawing.Size(998, 552);
+            this.hometab1.TabIndex = 0;
             // 
             // mainwindow
             // 
@@ -159,11 +159,11 @@
             this.Name = "mainwindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "emphome";
-            this.Load += new System.EventHandler(this.emphome_Load);
+            this.Load += new System.EventHandler(this.mainwindow_load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.switchbutton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exitbutton)).EndInit();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -175,11 +175,11 @@
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Label label2;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
+        private Bunifu.Framework.UI.BunifuImageButton exitbutton;
+        private Bunifu.Framework.UI.BunifuImageButton switchbutton;
         private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label user_name;
         private System.Windows.Forms.Panel panel3;
-        private hometab hometab2;
+        private hometab hometab1;
     }
 }

@@ -96,11 +96,6 @@
     <Compile Include="attendance_win.Designer.cs">
       <DependentUpon>attendance_win.cs</DependentUpon>
     </Compile>
-    <Compile Include="feedback_dbDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>feedback_dbDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="mainmanagerwindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,17 +206,6 @@
     <EmbeddedResource Include="roomfilmenuewindow.resx">
       <DependentUpon>roomfilmenuewindow.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="feedback_dbDataSet.xsc">
-      <DependentUpon>feedback_dbDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="feedback_dbDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>feedback_dbDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="feedback_dbDataSet.xss">
-      <DependentUpon>feedback_dbDataSet.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -13,7 +13,7 @@ namespace WindowsFormsApplication1
         public static string constring = "Server=sql.freeasphost.net;Database=feedback_db;uid=feedback;pwd=1234;MultipleActiveResultSets=True";
         public static SqlConnection con = new SqlConnection(constring);
         public static info inf = new info();
-        public static Form1 li;
+        public static loginwindow li;
         public static mainwindow ep;
         public static mainmanagerwindow mmw;
 
@@ -31,14 +31,14 @@ namespace WindowsFormsApplication1
         }
         public static void switchacc()
         {
-            li = new Form1();
+            li = new loginwindow();
             li.ShowDialog();
         }
 
         static void Main()
         {
             Application.EnableVisualStyles();
-            li = new Form1();
+            li = new loginwindow();
             li.ShowDialog();
         }
     }

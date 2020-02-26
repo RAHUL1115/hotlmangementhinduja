@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -15,13 +16,39 @@ namespace WindowsFormsApplication1
 {
     public partial class hometab : UserControl
     {
+        private Hashtable controlHashtable;
+
         public hometab()
         {
             InitializeComponent();
+            this.controlHashtable = new Hashtable();
+            foreach(Control c in this.Controls)
+            {
+                this.controlHashtable.Add(c.Name, c);
+            }
+        }
+        private void resetlabbut(BunifuThinButton2[] roombutton, Label[] roomlabel)
+        {
+            for (int i = 0; i < 25; i++)
+            {
+                roombutton[i].IdleLineColor = Color.SeaGreen;
+                roomlabel[i].Text = "";
+            }
+        }
+
+        private Control GetlabelByName(string name)
+        {
+            return this.controlHashtable[name] as Label;
+        }
+
+        private Control GetbuttonByName(string name)
+        {
+            return this.controlHashtable[name] as BunifuThinButton2;
         }
 
         private void Roomnobutton_Click(object sender, EventArgs e)
         {
+            Refresh();
             if (hometabcal1.SelectionRange.Start == DateTime.Today)
             {
                 if (((BunifuThinButton2)sender).IdleLineColor != Color.Red)
@@ -56,7 +83,6 @@ namespace WindowsFormsApplication1
                 }
             }
         }
-
         public void refreshbutton_Click(object sender, EventArgs e)
         {
             refreshbutton.Visible = false;
@@ -85,11 +111,7 @@ namespace WindowsFormsApplication1
             }
             Bunifu.Framework.UI.BunifuThinButton2[] roombutton = { room1, room2, room3, room4, room5, room6, room7, room8, room9, room10, room11, room12, room13, room14, room15, room16, room17, room18, room19, room20, room21, room22, room23, room24, room25 };
             Label[] roomlabel = { label1, label2, label3, label4, label5, label6, label7, label8, label9, label10, label11, label12, label13, label14, label15, label16, label17, label18, label19, label20, label21, label22, label23, label24, label25 };
-            for (int i = 0; i < 25; i++)
-            {
-                roombutton[i].IdleLineColor = Color.SeaGreen;
-                roomlabel[i].Visible = false;
-            }
+            resetlabbut(roombutton, roomlabel);
             if (Program.con.State == ConnectionState.Closed)
                 Program.con.Open();
             SqlCommand cmd = new SqlCommand(statement, Program.con);
@@ -114,6 +136,57 @@ namespace WindowsFormsApplication1
             cmd.Dispose();
             sdr.Close();
             refreshbutton.Visible = true;
+        }
+
+        private void findsearchbutton_Click(object sender, EventArgs e)
+        {
+            Bunifu.Framework.UI.BunifuThinButton2[] roombutton = { room1, room2, room3, room4, room5, room6, room7, room8, room9, room10, room11, room12, room13, room14, room15, room16, room17, room18, room19, room20, room21, room22, room23, room24, room25 };
+            Label[] roomlabel = { label1, label2, label3, label4, label5, label6, label7, label8, label9, label10, label11, label12, label13, label14, label15, label16, label17, label18, label19, label20, label21, label22, label23, label24, label25 };
+            resetlabbut(roombutton, roomlabel);
+            String query = "";
+            if (findtextbox.Text.All(char.IsDigit))
+            {
+                if (Convert.ToInt32(findtextbox.Text) < 26)
+                    query = "select room, fname, lname from current_book where room = " + findtextbox.Text + " and fname is not null";
+                else
+                {
+                    messageboxcs mb = new messageboxcs();
+                    mb.Show();
+                }
+                    
+            }
+            else
+            {
+                query = "select room, fname, lname from current_book where fname like '%" + findtextbox.Text + "%' or lname like '%" + findtextbox.Text + "%'";
+            }
+            if (!(query == ""))
+            {
+                SqlCommand cmd = new SqlCommand(query, Program.con);
+                SqlDataReader sdr = cmd.ExecuteReader();
+                if (sdr.Read())
+                {
+                    while (sdr.Read())
+                    {
+                        GetlabelByName("label" + sdr[0]).Visible = true;
+                        GetlabelByName("label" + sdr[0]).Text = "" + sdr[1] + " " + sdr[2];
+                    }
+                }
+                else
+                {
+                    messageboxcs mb = new messageboxcs();
+                    mb.Show();
+                }
+                sdr.Close();
+
+            }
+        }
+
+        private void findtextbox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                findsearchbutton_Click(null, null);
+            }
         }
     }
 }

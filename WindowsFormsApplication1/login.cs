@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +11,12 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Form1 : Form
+    public partial class loginwindow : Form
     {
-        public Form1()
+        public loginwindow()
         {
             InitializeComponent();
+            if (Program.con.State == ConnectionState.Open) { databaseloading.Dispose(); }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -28,7 +28,12 @@ namespace WindowsFormsApplication1
         private void connThreadFn()
         {
             if (Program.con.State == ConnectionState.Closed) { Program.con.Open(); }
-            Program.li.databaseloading.Invoke((Action)delegate { Program.li.databaseloading.Dispose(); });
+            try
+            {
+                Program.li.databaseloading.Invoke((Action)delegate { Program.li.databaseloading.Dispose(); });
+            }
+            catch (Exception e)
+            { }
         }
 
         private void closeButton_Click(object sender, EventArgs e)

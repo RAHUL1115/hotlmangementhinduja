@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class Form1
+    partial class loginwindow
     {
         /// <summary>
         /// Required designer variable.
@@ -166,7 +166,7 @@
             this.databaseloading.BackColor = System.Drawing.Color.Black;
             this.databaseloading.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.databaseloading.Location = new System.Drawing.Point(8, 56);
-            this.databaseloading.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.databaseloading.Margin = new System.Windows.Forms.Padding(4);
             this.databaseloading.Name = "databaseloading";
             this.databaseloading.Size = new System.Drawing.Size(233, 92);
             this.databaseloading.TabIndex = 10;
@@ -224,7 +224,7 @@
             this.bunifuElipsebutton.ElipseRadius = 10;
             this.bunifuElipsebutton.TargetControl = this.loginbutton;
             // 
-            // Form1
+            // loginwindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -237,7 +237,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
             this.IsMdiContainer = true;
-            this.Name = "Form1";
+            this.Name = "loginwindow";
             this.Padding = new System.Windows.Forms.Padding(0, 1, 1, 0);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "hotel Managment";

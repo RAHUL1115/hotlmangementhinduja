@@ -89,12 +89,12 @@
             this.room9 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.room5 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.room2 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.find1 = new WindowsFormsApplication1.find();
+            this.findtextbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.findsearchbutton = new Bunifu.Framework.UI.BunifuImageButton();
             this.current_book1 = new WindowsFormsApplication1.current_book();
             this.pre_book1 = new WindowsFormsApplication1.pre_book();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
+            this.find1 = new WindowsFormsApplication1.find();
+            ((System.ComponentModel.ISupportInitialize)(this.findsearchbutton)).BeginInit();
             this.SuspendLayout();
             // 
             // hometabcal2
@@ -1159,46 +1159,41 @@
             this.room2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.room2.Click += new System.EventHandler(this.Roomnobutton_Click);
             // 
-            // bunifuMaterialTextbox1
+            // findtextbox
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(131, 26);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(459, 44);
-            this.bunifuMaterialTextbox1.TabIndex = 65;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.findtextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.findtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.findtextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.findtextbox.HintForeColor = System.Drawing.Color.Empty;
+            this.findtextbox.HintText = "";
+            this.findtextbox.isPassword = false;
+            this.findtextbox.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.findtextbox.LineIdleColor = System.Drawing.Color.Gray;
+            this.findtextbox.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.findtextbox.LineThickness = 3;
+            this.findtextbox.Location = new System.Drawing.Point(151, 26);
+            this.findtextbox.Margin = new System.Windows.Forms.Padding(4);
+            this.findtextbox.Name = "findtextbox";
+            this.findtextbox.Size = new System.Drawing.Size(420, 44);
+            this.findtextbox.TabIndex = 65;
+            this.findtextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.findtextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.findtextbox_KeyDown);
             // 
-            // bunifuImageButton3
+            // findsearchbutton
             // 
-            this.bunifuImageButton3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bunifuImageButton3.Image = global::WindowsFormsApplication1.Properties.Resources.search;
-            this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(556, 33);
-            this.bunifuImageButton3.Margin = new System.Windows.Forms.Padding(2);
-            this.bunifuImageButton3.Name = "bunifuImageButton3";
-            this.bunifuImageButton3.Size = new System.Drawing.Size(34, 32);
-            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton3.TabIndex = 66;
-            this.bunifuImageButton3.TabStop = false;
-            this.bunifuImageButton3.Zoom = 10;
-            // 
-            // find1
-            // 
-            this.find1.Location = new System.Drawing.Point(-1, 0);
-            this.find1.Name = "find1";
-            this.find1.Size = new System.Drawing.Size(811, 552);
-            this.find1.TabIndex = 67;
+            this.findsearchbutton.BackColor = System.Drawing.Color.Transparent;
+            this.findsearchbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.findsearchbutton.Image = global::WindowsFormsApplication1.Properties.Resources.search;
+            this.findsearchbutton.ImageActive = null;
+            this.findsearchbutton.Location = new System.Drawing.Point(537, 35);
+            this.findsearchbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.findsearchbutton.Name = "findsearchbutton";
+            this.findsearchbutton.Size = new System.Drawing.Size(32, 30);
+            this.findsearchbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.findsearchbutton.TabIndex = 66;
+            this.findsearchbutton.TabStop = false;
+            this.findsearchbutton.Zoom = 10;
+            this.findsearchbutton.Click += new System.EventHandler(this.findsearchbutton_Click);
             // 
             // current_book1
             // 
@@ -1217,13 +1212,20 @@
             this.pre_book1.TabIndex = 68;
             this.pre_book1.Visible = false;
             // 
+            // find1
+            // 
+            this.find1.Location = new System.Drawing.Point(-1, 0);
+            this.find1.Name = "find1";
+            this.find1.Size = new System.Drawing.Size(811, 552);
+            this.find1.TabIndex = 67;
+            // 
             // hometab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.Controls.Add(this.bunifuImageButton3);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
+            this.Controls.Add(this.findsearchbutton);
+            this.Controls.Add(this.findtextbox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.room1);
             this.Controls.Add(this.label32);
@@ -1288,7 +1290,7 @@
             this.Controls.Add(this.pre_book1);
             this.Name = "hometab";
             this.Size = new System.Drawing.Size(998, 552);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.findsearchbutton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1355,8 +1357,8 @@
         public System.Windows.Forms.Label label31;
         public System.Windows.Forms.Label label32;
         public System.Windows.Forms.Label label1;
-        public Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox findtextbox;
+        private Bunifu.Framework.UI.BunifuImageButton findsearchbutton;
         private find find1;
         public current_book current_book1;
         public pre_book pre_book1;

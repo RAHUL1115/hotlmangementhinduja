@@ -53,7 +53,6 @@ C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.mainwindow.resources
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.find.resources
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.hometab.resources
-C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.messageboxcs.resources
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pre_book.resources
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
@@ -63,3 +62,5 @@ C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.application
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.loginwindow.resources

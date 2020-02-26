@@ -35,7 +35,10 @@ namespace WindowsFormsApplication1
             string query = "update current_book set fname='" + fnametextbox.Text + "',lname='" + lnametextbox.Text + "',email='" + emailtextbox.Text + "',address='" + addresstextbox.Text + "',cintime=CONVERT(TIME, GETDATE()),cindate=CONVERT(date, GETDATE()),coutdate='" + date1 + "',no_pep=" + peopleselect.selectedValue + " where room =" + room;
             SqlCommand cmd = new SqlCommand(query, Program.con);
             cmd.ExecuteNonQuery();
-            //this.Visible = false;
+            messageboxcs mb = new messageboxcs();
+            mb.Show();
+            this.Visible = false;
+            mb.bunifuCustomLabel1.Text = "room no " + room + " is booked";
         }
     }
 }
