@@ -170,16 +170,15 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private System.Windows.Forms.Label label2;
-        private Bunifu.Framework.UI.BunifuImageButton exitbutton;
-        private Bunifu.Framework.UI.BunifuImageButton switchbutton;
-        private System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label user_name;
-        private System.Windows.Forms.Panel panel3;
-        private hometab hometab1;
+        public System.Windows.Forms.Panel panel1;
+        public Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        public Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        public System.Windows.Forms.Label label2;
+        public Bunifu.Framework.UI.BunifuImageButton exitbutton;
+        public Bunifu.Framework.UI.BunifuImageButton switchbutton;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Panel panel3;
+        public hometab hometab1;
     }
 }

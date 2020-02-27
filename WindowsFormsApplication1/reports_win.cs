@@ -34,7 +34,8 @@ namespace WindowsFormsApplication1
 
         private void bunifuImageButton3_Click(object sender, EventArgs e)
         {
-            Program.mmw.back();
+            SendToBack();
+            Visible = false;
         }
     }
 }

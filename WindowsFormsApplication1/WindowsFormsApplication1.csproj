@@ -96,6 +96,30 @@
     <Compile Include="attendance_win.Designer.cs">
       <DependentUpon>attendance_win.cs</DependentUpon>
     </Compile>
+    <Compile Include="canclewin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="canclewin.Designer.cs">
+      <DependentUpon>canclewin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="checkout.Designer.cs">
+      <DependentUpon>checkout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_win.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="employee_win.Designer.cs">
+      <DependentUpon>employee_win.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forget.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forget.Designer.cs">
+      <DependentUpon>forget.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainmanagerwindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,12 +150,6 @@
     </Compile>
     <Compile Include="mainwindow.Designer.cs">
       <DependentUpon>mainwindow.cs</DependentUpon>
-    </Compile>
-    <Compile Include="find.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="find.Designer.cs">
-      <DependentUpon>find.cs</DependentUpon>
     </Compile>
     <Compile Include="hometab.cs">
       <SubType>UserControl</SubType>
@@ -165,8 +183,32 @@
     <Compile Include="roomfilmenuewindow.Designer.cs">
       <DependentUpon>roomfilmenuewindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="salary_win.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="salary_win.Designer.cs">
+      <DependentUpon>salary_win.cs</DependentUpon>
+    </Compile>
+    <Compile Include="services.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="services.Designer.cs">
+      <DependentUpon>services.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="attendance_win.resx">
       <DependentUpon>attendance_win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="canclewin.resx">
+      <DependentUpon>canclewin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkout.resx">
+      <DependentUpon>checkout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_win.resx">
+      <DependentUpon>employee_win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forget.resx">
+      <DependentUpon>forget.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainmanagerwindow.resx">
       <DependentUpon>mainmanagerwindow.cs</DependentUpon>
@@ -182,9 +224,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mainwindow.resx">
       <DependentUpon>mainwindow.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="find.resx">
-      <DependentUpon>find.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hometab.resx">
       <DependentUpon>hometab.cs</DependentUpon>
@@ -205,6 +244,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="roomfilmenuewindow.resx">
       <DependentUpon>roomfilmenuewindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salary_win.resx">
+      <DependentUpon>salary_win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="services.resx">
+      <DependentUpon>services.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -284,6 +329,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payroll1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />

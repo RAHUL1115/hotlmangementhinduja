@@ -89,5 +89,11 @@ namespace WindowsFormsApplication1
                 sdr.Close();
             }
         }
+
+        private void forget_Click(object sender, EventArgs e)
+        {
+            forget1.Visible = true;
+            forget1.BringToFront();
+        }
     }
 }

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class attendance_win : UserControl
+    public partial class salary_win : UserControl
     {
-        public attendance_win()
+        public salary_win()
         {
             InitializeComponent();
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void back_Click(object sender, EventArgs e)

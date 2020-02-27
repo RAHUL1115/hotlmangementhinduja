@@ -34,23 +34,26 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.bunifuImageButton7 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton6 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton5 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.toolTipbutton = new System.Windows.Forms.ToolTip(this.components);
+            this.something = new Bunifu.Framework.UI.BunifuImageButton();
+            this.employees = new Bunifu.Framework.UI.BunifuImageButton();
+            this.salary = new Bunifu.Framework.UI.BunifuImageButton();
+            this.attendence = new Bunifu.Framework.UI.BunifuImageButton();
+            this.reports = new Bunifu.Framework.UI.BunifuImageButton();
+            this.switchacc = new Bunifu.Framework.UI.BunifuImageButton();
+            this.close = new Bunifu.Framework.UI.BunifuImageButton();
             this.reports_win1 = new WindowsFormsApplication1.reports_win();
+            this.attendance_win1 = new WindowsFormsApplication1.attendance_win();
+            this.salary_win1 = new WindowsFormsApplication1.salary_win();
+            this.employee_win1 = new WindowsFormsApplication1.employee_win();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.something)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employees)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salary)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.attendence)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reports)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.switchacc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -58,24 +61,22 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.bunifuImageButton2);
-            this.panel1.Controls.Add(this.bunifuImageButton1);
+            this.panel1.Controls.Add(this.switchacc);
+            this.panel1.Controls.Add(this.close);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1296, 114);
+            this.panel1.Size = new System.Drawing.Size(972, 93);
             this.panel1.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1120, 12);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(840, 10);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 26);
+            this.label3.Size = new System.Drawing.Size(47, 21);
             this.label3.TabIndex = 5;
             this.label3.Text = "rahul";
             // 
@@ -83,10 +84,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(425, 36);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(319, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(467, 42);
+            this.label1.Size = new System.Drawing.Size(368, 36);
             this.label1.TabIndex = 4;
             this.label1.Text = "Hotel Management System";
             // 
@@ -94,154 +94,184 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 63);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(3, 51);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 42);
+            this.label2.Size = new System.Drawing.Size(0, 36);
             this.label2.TabIndex = 1;
             // 
-            // toolTip1
+            // something
             // 
-            this.toolTip1.AutoPopDelay = 6000;
-            this.toolTip1.InitialDelay = 500;
-            this.toolTip1.ReshowDelay = 200;
-            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.something.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.something.Image = ((System.Drawing.Image)(resources.GetObject("something.Image")));
+            this.something.ImageActive = null;
+            this.something.Location = new System.Drawing.Point(571, 363);
+            this.something.Margin = new System.Windows.Forms.Padding(2);
+            this.something.Name = "something";
+            this.something.Size = new System.Drawing.Size(172, 157);
+            this.something.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.something.TabIndex = 6;
+            this.something.TabStop = false;
+            this.toolTipbutton.SetToolTip(this.something, "somthing");
+            this.something.Zoom = 10;
+            this.something.Click += new System.EventHandler(this.buttons_Click);
             // 
-            // bunifuImageButton7
+            // employees
             // 
-            this.bunifuImageButton7.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuImageButton7.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton7.Image")));
-            this.bunifuImageButton7.ImageActive = null;
-            this.bunifuImageButton7.Location = new System.Drawing.Point(786, 444);
-            this.bunifuImageButton7.Name = "bunifuImageButton7";
-            this.bunifuImageButton7.Size = new System.Drawing.Size(199, 163);
-            this.bunifuImageButton7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton7.TabIndex = 6;
-            this.bunifuImageButton7.TabStop = false;
-            this.bunifuImageButton7.Zoom = 10;
+            this.employees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.employees.Image = global::WindowsFormsApplication1.Properties.Resources.emp;
+            this.employees.ImageActive = null;
+            this.employees.Location = new System.Drawing.Point(235, 364);
+            this.employees.Margin = new System.Windows.Forms.Padding(2);
+            this.employees.Name = "employees";
+            this.employees.Size = new System.Drawing.Size(172, 157);
+            this.employees.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.employees.TabIndex = 5;
+            this.employees.TabStop = false;
+            this.toolTipbutton.SetToolTip(this.employees, "Employee");
+            this.employees.Zoom = 10;
+            this.employees.Click += new System.EventHandler(this.buttons_Click);
             // 
-            // bunifuImageButton6
+            // salary
             // 
-            this.bunifuImageButton6.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuImageButton6.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton6.Image")));
-            this.bunifuImageButton6.ImageActive = null;
-            this.bunifuImageButton6.Location = new System.Drawing.Point(311, 444);
-            this.bunifuImageButton6.Name = "bunifuImageButton6";
-            this.bunifuImageButton6.Size = new System.Drawing.Size(199, 163);
-            this.bunifuImageButton6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton6.TabIndex = 5;
-            this.bunifuImageButton6.TabStop = false;
-            this.bunifuImageButton6.Zoom = 10;
+            this.salary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.salary.Image = global::WindowsFormsApplication1.Properties.Resources.payroll1;
+            this.salary.ImageActive = null;
+            this.salary.Location = new System.Drawing.Point(745, 132);
+            this.salary.Margin = new System.Windows.Forms.Padding(2);
+            this.salary.Name = "salary";
+            this.salary.Size = new System.Drawing.Size(172, 157);
+            this.salary.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.salary.TabIndex = 4;
+            this.salary.TabStop = false;
+            this.toolTipbutton.SetToolTip(this.salary, "Payroll");
+            this.salary.Zoom = 10;
+            this.salary.Click += new System.EventHandler(this.buttons_Click);
             // 
-            // bunifuImageButton5
+            // attendence
             // 
-            this.bunifuImageButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.bunifuImageButton5.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton5.Image")));
-            this.bunifuImageButton5.ImageActive = null;
-            this.bunifuImageButton5.Location = new System.Drawing.Point(991, 163);
-            this.bunifuImageButton5.Name = "bunifuImageButton5";
-            this.bunifuImageButton5.Size = new System.Drawing.Size(199, 163);
-            this.bunifuImageButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton5.TabIndex = 4;
-            this.bunifuImageButton5.TabStop = false;
-            this.bunifuImageButton5.Zoom = 10;
-            this.bunifuImageButton5.Click += new System.EventHandler(this.bunifuImageButton5_Click);
-            this.bunifuImageButton5.MouseHover += new System.EventHandler(this.bunifuImageButton5_MouseHover);
+            this.attendence.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.attendence.Image = global::WindowsFormsApplication1.Properties.Resources.attend;
+            this.attendence.ImageActive = null;
+            this.attendence.Location = new System.Drawing.Point(410, 132);
+            this.attendence.Margin = new System.Windows.Forms.Padding(2);
+            this.attendence.Name = "attendence";
+            this.attendence.Size = new System.Drawing.Size(172, 157);
+            this.attendence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.attendence.TabIndex = 3;
+            this.attendence.TabStop = false;
+            this.toolTipbutton.SetToolTip(this.attendence, "Attendence");
+            this.attendence.Zoom = 10;
+            this.attendence.Click += new System.EventHandler(this.buttons_Click);
             // 
-            // bunifuImageButton4
+            // reports
             // 
-            this.bunifuImageButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.bunifuImageButton4.Image = global::WindowsFormsApplication1.Properties.Resources.attend;
-            this.bunifuImageButton4.ImageActive = null;
-            this.bunifuImageButton4.Location = new System.Drawing.Point(526, 163);
-            this.bunifuImageButton4.Name = "bunifuImageButton4";
-            this.bunifuImageButton4.Size = new System.Drawing.Size(199, 163);
-            this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton4.TabIndex = 3;
-            this.bunifuImageButton4.TabStop = false;
-            this.bunifuImageButton4.Zoom = 10;
-            this.bunifuImageButton4.MouseHover += new System.EventHandler(this.bunifuImageButton4_MouseHover);
+            this.reports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.reports.Image = global::WindowsFormsApplication1.Properties.Resources.report;
+            this.reports.ImageActive = null;
+            this.reports.Location = new System.Drawing.Point(78, 132);
+            this.reports.Margin = new System.Windows.Forms.Padding(2);
+            this.reports.Name = "reports";
+            this.reports.Size = new System.Drawing.Size(172, 157);
+            this.reports.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.reports.TabIndex = 2;
+            this.reports.TabStop = false;
+            this.toolTipbutton.SetToolTip(this.reports, "Reports");
+            this.reports.Zoom = 10;
+            this.reports.Click += new System.EventHandler(this.buttons_Click);
             // 
-            // bunifuImageButton3
+            // switchacc
             // 
-            this.bunifuImageButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.bunifuImageButton3.Image = global::WindowsFormsApplication1.Properties.Resources.report;
-            this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(101, 163);
-            this.bunifuImageButton3.Name = "bunifuImageButton3";
-            this.bunifuImageButton3.Size = new System.Drawing.Size(199, 163);
-            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton3.TabIndex = 2;
-            this.bunifuImageButton3.TabStop = false;
-            this.bunifuImageButton3.Zoom = 10;
-            this.bunifuImageButton3.Click += new System.EventHandler(this.bunifuImageButton3_Click);
-            this.bunifuImageButton3.MouseHover += new System.EventHandler(this.bunifuImageButton3_MouseHover);
+            this.switchacc.BackColor = System.Drawing.Color.Transparent;
+            this.switchacc.Image = global::WindowsFormsApplication1.Properties.Resources.switchaccount;
+            this.switchacc.ImageActive = null;
+            this.switchacc.Location = new System.Drawing.Point(906, 7);
+            this.switchacc.Name = "switchacc";
+            this.switchacc.Size = new System.Drawing.Size(27, 26);
+            this.switchacc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.switchacc.TabIndex = 3;
+            this.switchacc.TabStop = false;
+            this.switchacc.Zoom = 10;
+            this.switchacc.Click += new System.EventHandler(this.switchacc_click);
             // 
-            // bunifuImageButton2
+            // close
             // 
-            this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton2.Image = global::WindowsFormsApplication1.Properties.Resources.switchaccount;
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(1208, 9);
-            this.bunifuImageButton2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(36, 32);
-            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton2.TabIndex = 3;
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Zoom = 10;
-            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.Image = global::WindowsFormsApplication1.Properties.Resources.shutdown;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1252, 9);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(36, 32);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 2;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            this.close.BackColor = System.Drawing.Color.Transparent;
+            this.close.Image = global::WindowsFormsApplication1.Properties.Resources.shutdown;
+            this.close.ImageActive = null;
+            this.close.Location = new System.Drawing.Point(939, 7);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(27, 26);
+            this.close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.close.TabIndex = 2;
+            this.close.TabStop = false;
+            this.close.Zoom = 10;
+            this.close.Click += new System.EventHandler(this.close_click);
             // 
             // reports_win1
             // 
-            this.reports_win1.Location = new System.Drawing.Point(0, 108);
+            this.reports_win1.Location = new System.Drawing.Point(0, 88);
+            this.reports_win1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.reports_win1.Name = "reports_win1";
-            this.reports_win1.Size = new System.Drawing.Size(1296, 626);
+            this.reports_win1.Size = new System.Drawing.Size(972, 509);
             this.reports_win1.TabIndex = 7;
+            this.toolTipbutton.SetToolTip(this.reports_win1, "Attendence");
             this.reports_win1.Visible = false;
+            // 
+            // attendance_win1
+            // 
+            this.attendance_win1.Location = new System.Drawing.Point(0, 94);
+            this.attendance_win1.Margin = new System.Windows.Forms.Padding(2);
+            this.attendance_win1.Name = "attendance_win1";
+            this.attendance_win1.Size = new System.Drawing.Size(972, 509);
+            this.attendance_win1.TabIndex = 8;
+            this.attendance_win1.Visible = false;
+            // 
+            // salary_win1
+            // 
+            this.salary_win1.Location = new System.Drawing.Point(0, 93);
+            this.salary_win1.Name = "salary_win1";
+            this.salary_win1.Size = new System.Drawing.Size(972, 509);
+            this.salary_win1.TabIndex = 9;
+            this.salary_win1.Visible = false;
+            // 
+            // employee_win1
+            // 
+            this.employee_win1.Location = new System.Drawing.Point(0, 93);
+            this.employee_win1.Name = "employee_win1";
+            this.employee_win1.Size = new System.Drawing.Size(972, 509);
+            this.employee_win1.TabIndex = 10;
+            this.employee_win1.Visible = false;
             // 
             // mainmanagerwindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1296, 740);
-            this.Controls.Add(this.bunifuImageButton7);
-            this.Controls.Add(this.bunifuImageButton6);
-            this.Controls.Add(this.bunifuImageButton5);
-            this.Controls.Add(this.bunifuImageButton4);
-            this.Controls.Add(this.bunifuImageButton3);
+            this.ClientSize = new System.Drawing.Size(972, 601);
+            this.Controls.Add(this.something);
+            this.Controls.Add(this.employees);
+            this.Controls.Add(this.salary);
+            this.Controls.Add(this.attendence);
+            this.Controls.Add(this.reports);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.reports_win1);
+            this.Controls.Add(this.attendance_win1);
+            this.Controls.Add(this.salary_win1);
+            this.Controls.Add(this.employee_win1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "mainmanagerwindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "mainmanagerwindow";
+            this.toolTipbutton.SetToolTip(this, "button1");
             this.Load += new System.EventHandler(this.mainmanagerwindow_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.something)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employees)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salary)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.attendence)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reports)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.switchacc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -251,15 +281,18 @@
         private System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private Bunifu.Framework.UI.BunifuImageButton switchacc;
+        private Bunifu.Framework.UI.BunifuImageButton close;
         private System.Windows.Forms.Label label2;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton4;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton5;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton6;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton7;
-        private System.Windows.Forms.ToolTip toolTip1;
+        private Bunifu.Framework.UI.BunifuImageButton reports;
+        private Bunifu.Framework.UI.BunifuImageButton attendence;
+        private Bunifu.Framework.UI.BunifuImageButton salary;
+        private Bunifu.Framework.UI.BunifuImageButton employees;
+        private Bunifu.Framework.UI.BunifuImageButton something;
         public reports_win reports_win1;
+        private System.Windows.Forms.ToolTip toolTipbutton;
+        private attendance_win attendance_win1;
+        private salary_win salary_win1;
+        private employee_win employee_win1;
     }
 }

@@ -37,7 +37,7 @@
             this.passtxt = new System.Windows.Forms.TextBox();
             this.loginbutton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.databaseloading = new WindowsFormsApplication1.loadingcontrol();
+            this.forget = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -45,6 +45,8 @@
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuElipseform = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipsebutton = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.databaseloading = new WindowsFormsApplication1.loadingcontrol();
+            this.forget1 = new WindowsFormsApplication1.forget();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -147,6 +149,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.forget);
             this.panel2.Controls.Add(this.databaseloading);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.panel4);
@@ -155,21 +158,22 @@
             this.panel2.Controls.Add(this.loginbutton);
             this.panel2.Controls.Add(this.passtxt);
             this.panel2.Controls.Add(this.logintxt);
+            this.panel2.Controls.Add(this.forget1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 93);
+            this.panel2.Location = new System.Drawing.Point(0, 98);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(251, 245);
+            this.panel2.Size = new System.Drawing.Size(251, 240);
             this.panel2.TabIndex = 6;
             // 
-            // databaseloading
+            // forget
             // 
-            this.databaseloading.BackColor = System.Drawing.Color.Black;
-            this.databaseloading.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.databaseloading.Location = new System.Drawing.Point(8, 56);
-            this.databaseloading.Margin = new System.Windows.Forms.Padding(4);
-            this.databaseloading.Name = "databaseloading";
-            this.databaseloading.Size = new System.Drawing.Size(233, 92);
-            this.databaseloading.TabIndex = 10;
+            this.forget.AutoSize = true;
+            this.forget.Location = new System.Drawing.Point(145, 188);
+            this.forget.Name = "forget";
+            this.forget.Size = new System.Drawing.Size(85, 13);
+            this.forget.TabIndex = 11;
+            this.forget.Text = "Forget password";
+            this.forget.Click += new System.EventHandler(this.forget_Click);
             // 
             // pictureBox2
             // 
@@ -224,6 +228,25 @@
             this.bunifuElipsebutton.ElipseRadius = 10;
             this.bunifuElipsebutton.TargetControl = this.loginbutton;
             // 
+            // databaseloading
+            // 
+            this.databaseloading.BackColor = System.Drawing.Color.Black;
+            this.databaseloading.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.databaseloading.Location = new System.Drawing.Point(8, 56);
+            this.databaseloading.Margin = new System.Windows.Forms.Padding(4);
+            this.databaseloading.Name = "databaseloading";
+            this.databaseloading.Size = new System.Drawing.Size(233, 92);
+            this.databaseloading.TabIndex = 10;
+            // 
+            // forget1
+            // 
+            this.forget1.BackColor = System.Drawing.Color.White;
+            this.forget1.Location = new System.Drawing.Point(0, 12);
+            this.forget1.Name = "forget1";
+            this.forget1.Size = new System.Drawing.Size(251, 228);
+            this.forget1.TabIndex = 12;
+            this.forget1.Visible = false;
+            // 
             // loginwindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -271,6 +294,8 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private loadingcontrol databaseloading;
         public System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label forget;
+        private forget forget1;
     }
 }
 

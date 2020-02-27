@@ -91,9 +91,9 @@
             this.room2 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.findtextbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.findsearchbutton = new Bunifu.Framework.UI.BunifuImageButton();
+            this.restetbutton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.current_book1 = new WindowsFormsApplication1.current_book();
             this.pre_book1 = new WindowsFormsApplication1.pre_book();
-            this.find1 = new WindowsFormsApplication1.find();
             ((System.ComponentModel.ISupportInitialize)(this.findsearchbutton)).BeginInit();
             this.SuspendLayout();
             // 
@@ -488,7 +488,7 @@
             this.room1.ActiveBorderThickness = 1;
             this.room1.ActiveCornerRadius = 20;
             this.room1.ActiveFillColor = System.Drawing.Color.White;
-            this.room1.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.room1.ActiveForecolor = System.Drawing.Color.Empty;
             this.room1.ActiveLineColor = System.Drawing.Color.Black;
             this.room1.BackColor = System.Drawing.SystemColors.Window;
             this.room1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room1.BackgroundImage")));
@@ -527,7 +527,7 @@
             this.refreshbutton.IdleFillColor = System.Drawing.Color.White;
             this.refreshbutton.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.refreshbutton.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.refreshbutton.Location = new System.Drawing.Point(406, 472);
+            this.refreshbutton.Location = new System.Drawing.Point(491, 473);
             this.refreshbutton.Margin = new System.Windows.Forms.Padding(5);
             this.refreshbutton.Name = "refreshbutton";
             this.refreshbutton.Size = new System.Drawing.Size(184, 65);
@@ -1195,6 +1195,32 @@
             this.findsearchbutton.Zoom = 10;
             this.findsearchbutton.Click += new System.EventHandler(this.findsearchbutton_Click);
             // 
+            // restetbutton
+            // 
+            this.restetbutton.ActiveBorderThickness = 1;
+            this.restetbutton.ActiveCornerRadius = 20;
+            this.restetbutton.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.restetbutton.ActiveForecolor = System.Drawing.Color.White;
+            this.restetbutton.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.restetbutton.BackColor = System.Drawing.SystemColors.Window;
+            this.restetbutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("restetbutton.BackgroundImage")));
+            this.restetbutton.ButtonText = "Reset";
+            this.restetbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.restetbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.restetbutton.ForeColor = System.Drawing.Color.SeaGreen;
+            this.restetbutton.IdleBorderThickness = 1;
+            this.restetbutton.IdleCornerRadius = 20;
+            this.restetbutton.IdleFillColor = System.Drawing.Color.White;
+            this.restetbutton.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.restetbutton.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.restetbutton.Location = new System.Drawing.Point(278, 473);
+            this.restetbutton.Margin = new System.Windows.Forms.Padding(5);
+            this.restetbutton.Name = "restetbutton";
+            this.restetbutton.Size = new System.Drawing.Size(184, 65);
+            this.restetbutton.TabIndex = 69;
+            this.restetbutton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.restetbutton.Click += new System.EventHandler(this.restetbutton_Click);
+            // 
             // current_book1
             // 
             this.current_book1.Location = new System.Drawing.Point(-2, -2);
@@ -1212,18 +1238,12 @@
             this.pre_book1.TabIndex = 68;
             this.pre_book1.Visible = false;
             // 
-            // find1
-            // 
-            this.find1.Location = new System.Drawing.Point(-1, 0);
-            this.find1.Name = "find1";
-            this.find1.Size = new System.Drawing.Size(811, 552);
-            this.find1.TabIndex = 67;
-            // 
             // hometab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.Controls.Add(this.restetbutton);
             this.Controls.Add(this.findsearchbutton);
             this.Controls.Add(this.findtextbox);
             this.Controls.Add(this.label1);
@@ -1359,8 +1379,8 @@
         public System.Windows.Forms.Label label1;
         public Bunifu.Framework.UI.BunifuMaterialTextbox findtextbox;
         private Bunifu.Framework.UI.BunifuImageButton findsearchbutton;
-        private find find1;
         public current_book current_book1;
         public pre_book pre_book1;
+        public Bunifu.Framework.UI.BunifuThinButton2 restetbutton;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class attendance_win
+    partial class salary_win
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.back = new Bunifu.Framework.UI.BunifuImageButton();
-            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.back)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,31 +39,21 @@
             this.back.Image = global::WindowsFormsApplication1.Properties.Resources.back;
             this.back.ImageActive = null;
             this.back.Location = new System.Drawing.Point(6, 11);
-            this.back.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.back.Margin = new System.Windows.Forms.Padding(2);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(34, 32);
             this.back.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.back.TabIndex = 68;
+            this.back.TabIndex = 69;
             this.back.TabStop = false;
             this.back.Zoom = 10;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(146, 67);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(150, 81);
-            this.panel1.TabIndex = 69;
-            // 
-            // attendance_win
+            // salary_win
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.back);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "attendance_win";
+            this.Name = "salary_win";
             this.Size = new System.Drawing.Size(972, 509);
             ((System.ComponentModel.ISupportInitialize)(this.back)).EndInit();
             this.ResumeLayout(false);
@@ -72,7 +61,7 @@
         }
 
         #endregion
+
         public Bunifu.Framework.UI.BunifuImageButton back;
-        private System.Windows.Forms.Panel panel1;
     }
 }

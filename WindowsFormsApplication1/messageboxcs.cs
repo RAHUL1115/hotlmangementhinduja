@@ -12,6 +12,7 @@ namespace WindowsFormsApplication1
 {
     public partial class messageboxcs : Form
     {
+        public bool error = true;
         public messageboxcs()
         {
             InitializeComponent();
@@ -20,19 +21,22 @@ namespace WindowsFormsApplication1
         private void bunifuCustomLabel1_Click(object sender, EventArgs e)
         {
             Dispose();
-            Program.ep.refresh();
+            if(error)
+                Program.ep.refresh();
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             Dispose();
-            Program.ep.refresh();
+            if (error)
+                Program.ep.refresh();
         }
 
         private void messageboxcs_Deactivate(object sender, EventArgs e)
         {
             Dispose();
-            Program.ep.refresh();
+            if (error)
+                Program.ep.refresh();
         }
     }
 }

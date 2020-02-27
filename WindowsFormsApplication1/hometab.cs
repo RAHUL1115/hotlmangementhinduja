@@ -32,6 +32,7 @@ namespace WindowsFormsApplication1
             for (int i = 0; i < 25; i++)
             {
                 roombutton[i].IdleLineColor = Color.SeaGreen;
+                roomlabel[i].ForeColor = Color.Black;
                 roomlabel[i].Text = "";
             }
         }
@@ -48,8 +49,8 @@ namespace WindowsFormsApplication1
 
         private void Roomnobutton_Click(object sender, EventArgs e)
         {
-            Refresh();
-            if (hometabcal1.SelectionRange.Start == DateTime.Today)
+            refreshbutton_Click(null, null);
+            if (!((GetlabelByName("label" + ((BunifuThinButton2)sender).ButtonText)).ForeColor == Color.Red))
             {
                 if (((BunifuThinButton2)sender).IdleLineColor != Color.Red)
                 {
@@ -62,6 +63,8 @@ namespace WindowsFormsApplication1
                 else
                 {
                     roomfilmenuewindow rfw = new roomfilmenuewindow();
+                    rfw.roomno = ((BunifuThinButton2)sender).ButtonText;
+                    rfw.canclebutton.Dispose();
                     rfw.room = "update current_book set fname = null,lname= null ,email= null ,address= null,cintime= null,cindate= null ,coutdate= null,no_pep= null where room =" + ((BunifuThinButton2)sender).ButtonText;
                     rfw.Show();
                 }
@@ -79,7 +82,15 @@ namespace WindowsFormsApplication1
                 }
                 else
                 {
-
+                    roomfilmenuewindow rfw = new roomfilmenuewindow();
+                    rfw.roomno = ((BunifuThinButton2)sender).ButtonText;
+                    rfw.servicesbutton.Dispose();
+                    rfw.checkoutbutton.Dispose();
+                    rfw.namel.Dispose();
+                    rfw.namelab.Dispose();
+                    rfw.rooml.Text = ((BunifuThinButton2)sender).ButtonText;
+                    rfw.room = "update current_book set fname = null,lname= null ,email= null ,address= null,cintime= null,cindate= null ,coutdate= null,no_pep= null where room =" + ((BunifuThinButton2)sender).ButtonText;
+                    rfw.Show();
                 }
             }
         }
@@ -89,15 +100,19 @@ namespace WindowsFormsApplication1
             if (hometabcal1.TodayDate > hometabcal1.SelectionRange.Start)
             {
                 messageboxcs mb = new messageboxcs();
+                mb.error = false;
                 mb.Show();
                 mb.bunifuCustomLabel1.Text = "select todays date or above";
+                refreshbutton.Visible = true;
                 return;
             }
             if (hometabcal1.SelectionRange.Start > hometabcal2.SelectionRange.Start)
             {
                 messageboxcs mb = new messageboxcs();
+                mb.error = false;
                 mb.Show();
                 mb.bunifuCustomLabel1.Text = "end date";
+                refreshbutton.Visible = true;
                 return;
             }
             string date1 = hometabcal1.SelectionRange.Start.ToString("yyyy-MM-dd");
@@ -187,6 +202,15 @@ namespace WindowsFormsApplication1
             {
                 findsearchbutton_Click(null, null);
             }
+        }
+
+        private void restetbutton_Click(object sender, EventArgs e)
+        {
+            Bunifu.Framework.UI.BunifuThinButton2[] roombutton = { room1, room2, room3, room4, room5, room6, room7, room8, room9, room10, room11, room12, room13, room14, room15, room16, room17, room18, room19, room20, room21, room22, room23, room24, room25 };
+            Label[] roomlabel = { label1, label2, label3, label4, label5, label6, label7, label8, label9, label10, label11, label12, label13, label14, label15, label16, label17, label18, label19, label20, label21, label22, label23, label24, label25 };
+            resetlabbut(roombutton, roomlabel);
+            hometabcal1.SelectionRange = new SelectionRange(hometabcal1.TodayDate, hometabcal1.TodayDate);
+            hometabcal2.SelectionRange = new SelectionRange(hometabcal2.TodayDate, hometabcal2.TodayDate);
         }
     }
 }

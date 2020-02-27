@@ -17,61 +17,50 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
-
-        
         private void mainmanagerwindow_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        private void switchacc_click(object sender, EventArgs e)
         {
             this.Dispose();
             this.Close();
             Program.switchacc();
         }
 
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        private void close_click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void bunifuImageButton5_Click(object sender, EventArgs e)
+        private void buttons_Click(object sender, EventArgs e)
         {
-
+            string name = ((Bunifu.Framework.UI.BunifuImageButton)sender).Name;
+            switch (name)
+            {
+                case "reports":
+                    reports_win1.BringToFront();
+                    reports_win1.Visible = true;
+                    break;
+                case "attendence":
+                    attendance_win1.BringToFront();
+                    attendance_win1.Visible = true;
+                    break;
+                case "salary":
+                    salary_win1.BringToFront();
+                    salary_win1.Visible = true;
+                    break;
+                case "employees":
+                    employee_win1.BringToFront();
+                    employee_win1.Visible = true;
+                    break;
+                case "something":
+                    break;
+                default:
+                    break;
+            }
         }
 
-        private void bunifuImageButton3_MouseHover(object sender, EventArgs e)
-        {
-            toolTip1.ToolTipTitle = "Reports";
-            toolTip1.Show(" ", bunifuImageButton3);
-        }
-
-
-
-        private void bunifuImageButton4_MouseHover(object sender, EventArgs e)
-        {
-            toolTip1.ToolTipTitle = "Attendance";
-            toolTip1.Show(" ", bunifuImageButton4);
-        }
-
-        private void bunifuImageButton5_MouseHover(object sender, EventArgs e)
-        {
-            toolTip1.ToolTipTitle = "Salary";
-            toolTip1.Show(" ", bunifuImageButton5);
-     
-        }
-
-        private void bunifuImageButton3_Click(object sender, EventArgs e)
-        {
-            reports_win1.BringToFront();
-            reports_win1.Visible = true;
-        }
-
-        public void back()
-        {
-            reports_win1.SendToBack();
-            reports_win1.Visible = false;
-        }
     }
 }
