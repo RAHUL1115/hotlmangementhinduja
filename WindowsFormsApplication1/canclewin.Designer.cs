@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(canclewin));
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.cancleroombut = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,48 +52,47 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
-            "hello",
-            "hello"});
             this.listBox1.Location = new System.Drawing.Point(8, 46);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(257, 251);
             this.listBox1.TabIndex = 7;
             // 
-            // bunifuThinButton21
+            // cancleroombut
             // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton21.ButtonText = "ThinButton";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(43, 302);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(181, 41);
-            this.bunifuThinButton21.TabIndex = 8;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
+            this.cancleroombut.ActiveBorderThickness = 1;
+            this.cancleroombut.ActiveCornerRadius = 20;
+            this.cancleroombut.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.cancleroombut.ActiveForecolor = System.Drawing.Color.White;
+            this.cancleroombut.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.cancleroombut.BackColor = System.Drawing.SystemColors.Control;
+            this.cancleroombut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cancleroombut.BackgroundImage")));
+            this.cancleroombut.ButtonText = "cancle";
+            this.cancleroombut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cancleroombut.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancleroombut.ForeColor = System.Drawing.Color.SeaGreen;
+            this.cancleroombut.IdleBorderThickness = 1;
+            this.cancleroombut.IdleCornerRadius = 20;
+            this.cancleroombut.IdleFillColor = System.Drawing.Color.White;
+            this.cancleroombut.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.cancleroombut.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.cancleroombut.Location = new System.Drawing.Point(43, 302);
+            this.cancleroombut.Margin = new System.Windows.Forms.Padding(5);
+            this.cancleroombut.Name = "cancleroombut";
+            this.cancleroombut.Size = new System.Drawing.Size(181, 41);
+            this.cancleroombut.TabIndex = 8;
+            this.cancleroombut.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cancleroombut.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // canclewin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bunifuThinButton21);
+            this.Controls.Add(this.cancleroombut);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.bunifuImageButton1);
             this.Name = "canclewin";
             this.Size = new System.Drawing.Size(272, 348);
+            this.Load += new System.EventHandler(this.canclewin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
@@ -100,8 +100,8 @@
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
-        private System.Windows.Forms.ListBox listBox1;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        public Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        public System.Windows.Forms.ListBox listBox1;
+        public Bunifu.Framework.UI.BunifuThinButton2 cancleroombut;
     }
 }

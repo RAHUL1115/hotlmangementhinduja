@@ -14,7 +14,6 @@ namespace WindowsFormsApplication1
     public partial class roomfilmenuewindow : Form
     {
         public string room;
-        public string roomno;
         public roomfilmenuewindow()
         {
             InitializeComponent();
@@ -27,18 +26,9 @@ namespace WindowsFormsApplication1
 
         private void cancle_click(object sender, EventArgs e)
         {
+            canclewin1.room = room;
             canclewin1.BringToFront();
             canclewin1.Visible = true;
-            //if (Program.con.State == ConnectionState.Closed)
-            //{
-            //    Program.con.Open();
-            //}
-            //string query = room;
-            //SqlCommand cmd = new SqlCommand(query, Program.con);
-            //cmd.ExecuteNonQuery();
-            //Dispose();
-            //cmd.Dispose();
-            //Program.ep.refresh();
         }
 
         private void servicesbutton_Click(object sender, EventArgs e)
@@ -57,7 +47,7 @@ namespace WindowsFormsApplication1
         {
             if (Program.con.State == ConnectionState.Closed)
                 Program.con.Open();
-            String query1 = "select fname,lname from current_book where room=" + roomno;
+            String query1 = "select fname,lname from current_book where room=" + room;
             SqlCommand cmd1 = new SqlCommand(query1, Program.con);
             SqlDataReader sdr1 = cmd1.ExecuteReader();
             if (sdr1.Read())

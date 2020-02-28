@@ -66,7 +66,10 @@
             this.bunifuDropdown2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuDropdown2.BorderRadius = 3;
             this.bunifuDropdown2.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown2.Items = new string[0];
+            this.bunifuDropdown2.Items = new string[] {
+        "Room cleaning",
+        "pav bhaji",
+        "vada pav"};
             this.bunifuDropdown2.Location = new System.Drawing.Point(6, 59);
             this.bunifuDropdown2.Name = "bunifuDropdown2";
             this.bunifuDropdown2.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));

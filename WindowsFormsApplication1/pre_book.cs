@@ -33,7 +33,7 @@ namespace WindowsFormsApplication1
             }
             string date1 = monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd");
             string date2 = monthCalendar2.SelectionRange.Start.ToString("yyyy-MM-dd");
-            string query = "update pre_book set room = "+ room + ",fname='" + fnametextbox.Text + "',lname='" + lnametextbox.Text + "',email='" + emailtextbox.Text + "',address='" + addresstextbox.Text + "',cintime=CONVERT(TIME, GETDATE()),cindate= '"+date1+"' ,coutdate='" + date2 + "',no_pep=" + peopleselect.selectedValue + " where room =" + room;
+            string query = "insert into pre_book values("+room +",'" + fnametextbox.Text + "','" + lnametextbox.Text + "','" + emailtextbox.Text + "','" + addresstextbox.Text +"', CONVERT(TIME, GETDATE()),'"+date1+"', '" + date2 + "'," + peopleselect.selectedValue + ")";
             SqlCommand cmd = new SqlCommand(query, Program.con);
             cmd.ExecuteNonQuery();
             messageboxcs mb = new messageboxcs();
