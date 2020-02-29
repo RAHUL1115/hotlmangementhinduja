@@ -21,22 +21,22 @@ namespace WindowsFormsApplication1
         private void bunifuCustomLabel1_Click(object sender, EventArgs e)
         {
             Dispose();
-            if(error)
-                Program.ep.refresh();
+            if (error)
+                Program.ep.hometab1.refreshbutton_Click(null,null);
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             Dispose();
             if (error)
-                Program.ep.refresh();
+                Program.ep.hometab1.refreshbutton_Click(null, null);
         }
 
         private void messageboxcs_Deactivate(object sender, EventArgs e)
         {
             Dispose();
             if (error)
-                Program.ep.refresh();
+                Program.ep.hometab1.refreshbutton_Click(null, null);
         }
     }
 }

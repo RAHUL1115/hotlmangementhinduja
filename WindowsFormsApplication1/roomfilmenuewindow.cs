@@ -47,6 +47,7 @@ namespace WindowsFormsApplication1
 
         private void roomfilmenuewindow_Load(object sender, EventArgs e)
         {
+            rooml.Text = room;
             if (Program.con.State == ConnectionState.Closed)
                 Program.con.Open();
             String query1 = "select fname,lname from current_book where room=" + room;
