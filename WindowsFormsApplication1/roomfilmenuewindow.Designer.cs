@@ -180,7 +180,7 @@
             // 
             // services1
             // 
-            this.services1.Location = new System.Drawing.Point(0, -1);
+            this.services1.Location = new System.Drawing.Point(0, -2);
             this.services1.Name = "services1";
             this.services1.Size = new System.Drawing.Size(272, 348);
             this.services1.TabIndex = 8;
@@ -188,7 +188,7 @@
             // 
             // checkout1
             // 
-            this.checkout1.Location = new System.Drawing.Point(-1, 0);
+            this.checkout1.Location = new System.Drawing.Point(0, 0);
             this.checkout1.Name = "checkout1";
             this.checkout1.Size = new System.Drawing.Size(272, 348);
             this.checkout1.TabIndex = 9;
@@ -196,7 +196,7 @@
             // 
             // canclewin1
             // 
-            this.canclewin1.Location = new System.Drawing.Point(-1, -1);
+            this.canclewin1.Location = new System.Drawing.Point(0, -2);
             this.canclewin1.Name = "canclewin1";
             this.canclewin1.Size = new System.Drawing.Size(272, 348);
             this.canclewin1.TabIndex = 10;
@@ -242,8 +242,8 @@
         public System.Windows.Forms.Label namelab;
         public System.Windows.Forms.Label rooml;
         public System.Windows.Forms.Label namel;
-        public services services1;
-        public checkout checkout1;
+        private services services1;
+        private checkout checkout1;
         private canclewin canclewin1;
     }
 }
