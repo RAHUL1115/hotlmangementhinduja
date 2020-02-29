@@ -27,5 +27,10 @@ namespace WindowsFormsApplication1
             SendToBack();
             Visible = false;
         }
+
+        private void attendance_win_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

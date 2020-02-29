@@ -22,5 +22,10 @@ namespace WindowsFormsApplication1
             SendToBack();
             Visible = false;
         }
+
+        private void employee_win_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

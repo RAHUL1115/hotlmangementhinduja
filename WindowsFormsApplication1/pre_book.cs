@@ -41,5 +41,10 @@ namespace WindowsFormsApplication1
             this.Visible = false;
             mb.bunifuCustomLabel1.Text = "room no " + room + " is booked";
         }
+
+        private void pre_book_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

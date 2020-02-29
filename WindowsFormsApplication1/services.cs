@@ -12,6 +12,7 @@ namespace WindowsFormsApplication1
 {
     public partial class services : UserControl
     {
+        public string room;
         public services()
         {
             InitializeComponent();

@@ -22,5 +22,15 @@ namespace WindowsFormsApplication1
             SendToBack();
             Visible = false;
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void post_onItemSelected(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -47,7 +47,7 @@ namespace WindowsFormsApplication1
             string name = "" + listBox1.SelectedItem;
             if (name != "")
             {
-                string query1 = "select * from pre_book";
+                string query1 = "select *,CONVERT(varchar,cindate,23) from pre_book";
                 if (Program.con.State == ConnectionState.Closed)
                     Program.con.Open();
                 SqlCommand cmd1 = new SqlCommand(query1, Program.con);
@@ -55,7 +55,8 @@ namespace WindowsFormsApplication1
                 if(sdr1.Read())
                 {
                     string date1 = DateTime.Now.ToString("yyyy-MM-dd");
-                    query3 = "insert into history values("+sdr1[0]+",'"+ sdr1[1] + "', '"+ sdr1[2] + "', '"+ sdr1[3] + "', '" + sdr1[4] + "', '" + sdr1[5] + "', '" + date1 + "', CONVERT(Time, GETDATE()), GETDATE(), " + sdr1[8] + "," + 0 + ",'cancle')";
+                    string time1 = DateTime.Now.ToString("HH:mm");
+                    query3 = "insert into history values("+sdr1[0]+",'"+ sdr1[1] + "', '"+ sdr1[2] + "', '"+ sdr1[3] + "', '" + sdr1[4] + "', '" + sdr1[5] + "', '" + sdr1[9] + "','" + time1 + "' , '" + date1 + "', "+sdr1[8] + "," + 0 + ",'cancle')";
                 }
                 cmd1.Dispose();
                 sdr1.Close();

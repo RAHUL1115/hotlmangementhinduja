@@ -52,7 +52,7 @@ namespace WindowsFormsApplication1
             bool istoday = (hometabcal1.SelectionRange.Start == hometabcal1.TodayDate);
             bool isbuttonred = (((BunifuThinButton2)sender).IdleLineColor == Color.Red); 
             bool islabelred = (GetlabelByName("label" + (((BunifuThinButton2)sender).ButtonText)).ForeColor == Color.Red);
-            onebuttonrefresh(sender);
+            refreshbutton_Click(null, null);
             if (istoday)
             {
                 if (isbuttonred)
@@ -87,18 +87,28 @@ namespace WindowsFormsApplication1
             }
             else
             {
-                if (islabelred)
+                if (isbuttonred)
                 {
-                    roomfilmenuewindow rfw = new roomfilmenuewindow();
-                    rfw.room = ((BunifuThinButton2)sender).ButtonText;
-                    rfw.servicesbutton.Dispose();
-                    rfw.checkoutbutton.Dispose();
-                    rfw.namel.Dispose();
-                    rfw.namelab.Dispose();
-                    rfw.rooml.Text = ((BunifuThinButton2)sender).ButtonText;
-                    rfw.Show();
+                    if (islabelred)
+                    {
+                        roomfilmenuewindow rfw = new roomfilmenuewindow();
+                        rfw.room = ((BunifuThinButton2)sender).ButtonText;
+                        rfw.servicesbutton.Dispose();
+                        rfw.checkoutbutton.Dispose();
+                        rfw.namel.Dispose();
+                        rfw.namelab.Dispose();
+                        rfw.rooml.Text = ((BunifuThinButton2)sender).ButtonText;
+                        rfw.Show();
+                    }
+                    else
+                    {
+                        roomfilmenuewindow rfw = new roomfilmenuewindow();
+                        rfw.room = ((BunifuThinButton2)sender).ButtonText;
+                        rfw.canclebutton.Dispose();
+                        rfw.Show();
+                    }
                 }
-                else
+                else 
                 {
                     pre_book1.label5.Text = "Room No : " + ((BunifuThinButton2)sender).ButtonText;
                     pre_book1.room = ((BunifuThinButton2)sender).ButtonText;

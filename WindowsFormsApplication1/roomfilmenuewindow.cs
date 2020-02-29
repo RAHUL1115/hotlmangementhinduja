@@ -35,12 +35,14 @@ namespace WindowsFormsApplication1
         {
             services1.BringToFront();
             services1.Visible = true;
+            services1.room = room;
         }
 
         private void checkoutbutton_Click(object sender, EventArgs e)
         {
             checkout1.BringToFront();
             checkout1.Visible = true;
+            checkout1.room = room;
         }
 
         private void roomfilmenuewindow_Load(object sender, EventArgs e)

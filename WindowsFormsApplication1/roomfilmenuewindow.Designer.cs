@@ -53,36 +53,40 @@
             // namelab
             // 
             this.namelab.AutoSize = true;
-            this.namelab.Location = new System.Drawing.Point(71, 108);
+            this.namelab.Location = new System.Drawing.Point(95, 133);
+            this.namelab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelab.Name = "namelab";
-            this.namelab.Size = new System.Drawing.Size(44, 13);
+            this.namelab.Size = new System.Drawing.Size(57, 17);
             this.namelab.TabIndex = 4;
             this.namelab.Text = "Name : ";
             // 
             // roomlab
             // 
             this.roomlab.AutoSize = true;
-            this.roomlab.Location = new System.Drawing.Point(71, 79);
+            this.roomlab.Location = new System.Drawing.Point(95, 97);
+            this.roomlab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.roomlab.Name = "roomlab";
-            this.roomlab.Size = new System.Drawing.Size(61, 13);
+            this.roomlab.Size = new System.Drawing.Size(79, 17);
             this.roomlab.TabIndex = 5;
             this.roomlab.Text = "Room No : ";
             // 
             // rooml
             // 
             this.rooml.AutoSize = true;
-            this.rooml.Location = new System.Drawing.Point(152, 79);
+            this.rooml.Location = new System.Drawing.Point(203, 97);
+            this.rooml.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.rooml.Name = "rooml";
-            this.rooml.Size = new System.Drawing.Size(61, 13);
+            this.rooml.Size = new System.Drawing.Size(79, 17);
             this.rooml.TabIndex = 7;
             this.rooml.Text = "Room No : ";
             // 
             // namel
             // 
             this.namel.AutoSize = true;
-            this.namel.Location = new System.Drawing.Point(153, 108);
+            this.namel.Location = new System.Drawing.Point(204, 133);
+            this.namel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namel.Name = "namel";
-            this.namel.Size = new System.Drawing.Size(44, 13);
+            this.namel.Size = new System.Drawing.Size(57, 17);
             this.namel.TabIndex = 6;
             this.namel.Text = "Name : ";
             // 
@@ -91,9 +95,10 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton1.Image = global::WindowsFormsApplication1.Properties.Resources.back;
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(12, 12);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(16, 15);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(28, 28);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(37, 34);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton1.TabIndex = 3;
             this.bunifuImageButton1.TabStop = false;
@@ -109,19 +114,19 @@
             this.checkoutbutton.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.checkoutbutton.BackColor = System.Drawing.SystemColors.Control;
             this.checkoutbutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("checkoutbutton.BackgroundImage")));
-            this.checkoutbutton.ButtonText = "chek out";
+            this.checkoutbutton.ButtonText = "Check Out";
             this.checkoutbutton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkoutbutton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkoutbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkoutbutton.ForeColor = System.Drawing.Color.SeaGreen;
             this.checkoutbutton.IdleBorderThickness = 1;
             this.checkoutbutton.IdleCornerRadius = 20;
             this.checkoutbutton.IdleFillColor = System.Drawing.Color.White;
             this.checkoutbutton.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.checkoutbutton.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.checkoutbutton.Location = new System.Drawing.Point(50, 266);
-            this.checkoutbutton.Margin = new System.Windows.Forms.Padding(5);
+            this.checkoutbutton.Location = new System.Drawing.Point(67, 327);
+            this.checkoutbutton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.checkoutbutton.Name = "checkoutbutton";
-            this.checkoutbutton.Size = new System.Drawing.Size(181, 41);
+            this.checkoutbutton.Size = new System.Drawing.Size(241, 50);
             this.checkoutbutton.TabIndex = 2;
             this.checkoutbutton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkoutbutton.Click += new System.EventHandler(this.checkoutbutton_Click);
@@ -135,19 +140,19 @@
             this.servicesbutton.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.servicesbutton.BackColor = System.Drawing.SystemColors.Control;
             this.servicesbutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("servicesbutton.BackgroundImage")));
-            this.servicesbutton.ButtonText = "services";
+            this.servicesbutton.ButtonText = "Services";
             this.servicesbutton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.servicesbutton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.servicesbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.servicesbutton.ForeColor = System.Drawing.Color.SeaGreen;
             this.servicesbutton.IdleBorderThickness = 1;
             this.servicesbutton.IdleCornerRadius = 20;
             this.servicesbutton.IdleFillColor = System.Drawing.Color.White;
             this.servicesbutton.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.servicesbutton.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.servicesbutton.Location = new System.Drawing.Point(50, 215);
-            this.servicesbutton.Margin = new System.Windows.Forms.Padding(5);
+            this.servicesbutton.Location = new System.Drawing.Point(67, 265);
+            this.servicesbutton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.servicesbutton.Name = "servicesbutton";
-            this.servicesbutton.Size = new System.Drawing.Size(181, 41);
+            this.servicesbutton.Size = new System.Drawing.Size(241, 50);
             this.servicesbutton.TabIndex = 1;
             this.servicesbutton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.servicesbutton.Click += new System.EventHandler(this.servicesbutton_Click);
@@ -161,19 +166,19 @@
             this.canclebutton.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.canclebutton.BackColor = System.Drawing.SystemColors.Control;
             this.canclebutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("canclebutton.BackgroundImage")));
-            this.canclebutton.ButtonText = "cancle";
+            this.canclebutton.ButtonText = "Cancle";
             this.canclebutton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.canclebutton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.canclebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.canclebutton.ForeColor = System.Drawing.Color.SeaGreen;
             this.canclebutton.IdleBorderThickness = 1;
             this.canclebutton.IdleCornerRadius = 20;
             this.canclebutton.IdleFillColor = System.Drawing.Color.White;
             this.canclebutton.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.canclebutton.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.canclebutton.Location = new System.Drawing.Point(50, 164);
-            this.canclebutton.Margin = new System.Windows.Forms.Padding(5);
+            this.canclebutton.Location = new System.Drawing.Point(67, 202);
+            this.canclebutton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.canclebutton.Name = "canclebutton";
-            this.canclebutton.Size = new System.Drawing.Size(181, 41);
+            this.canclebutton.Size = new System.Drawing.Size(241, 50);
             this.canclebutton.TabIndex = 0;
             this.canclebutton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.canclebutton.Click += new System.EventHandler(this.cancle_click);
@@ -181,33 +186,36 @@
             // services1
             // 
             this.services1.Location = new System.Drawing.Point(0, -2);
+            this.services1.Margin = new System.Windows.Forms.Padding(5);
             this.services1.Name = "services1";
-            this.services1.Size = new System.Drawing.Size(272, 348);
+            this.services1.Size = new System.Drawing.Size(363, 428);
             this.services1.TabIndex = 8;
             this.services1.Visible = false;
             // 
             // checkout1
             // 
             this.checkout1.Location = new System.Drawing.Point(0, 0);
+            this.checkout1.Margin = new System.Windows.Forms.Padding(5);
             this.checkout1.Name = "checkout1";
-            this.checkout1.Size = new System.Drawing.Size(272, 348);
+            this.checkout1.Size = new System.Drawing.Size(363, 428);
             this.checkout1.TabIndex = 9;
             this.checkout1.Visible = false;
             // 
             // canclewin1
             // 
             this.canclewin1.Location = new System.Drawing.Point(0, -2);
+            this.canclewin1.Margin = new System.Windows.Forms.Padding(5);
             this.canclewin1.Name = "canclewin1";
-            this.canclewin1.Size = new System.Drawing.Size(272, 348);
+            this.canclewin1.Size = new System.Drawing.Size(363, 428);
             this.canclewin1.TabIndex = 10;
             this.canclewin1.Visible = false;
             // 
             // roomfilmenuewindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(272, 348);
+            this.ClientSize = new System.Drawing.Size(363, 428);
             this.Controls.Add(this.rooml);
             this.Controls.Add(this.namel);
             this.Controls.Add(this.roomlab);
@@ -220,6 +228,7 @@
             this.Controls.Add(this.checkout1);
             this.Controls.Add(this.canclewin1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "roomfilmenuewindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "roomfilmenuewindow";

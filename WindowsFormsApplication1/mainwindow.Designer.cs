@@ -55,17 +55,19 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(988, 93);
+            this.panel1.Size = new System.Drawing.Size(1317, 114);
             this.panel1.TabIndex = 0;
             // 
             // user_name
             // 
             this.user_name.AutoSize = true;
             this.user_name.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.user_name.Location = new System.Drawing.Point(861, 15);
+            this.user_name.Location = new System.Drawing.Point(1148, 18);
+            this.user_name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.user_name.Name = "user_name";
-            this.user_name.Size = new System.Drawing.Size(47, 21);
+            this.user_name.Size = new System.Drawing.Size(58, 26);
             this.user_name.TabIndex = 5;
             this.user_name.Text = "rahul";
             // 
@@ -73,9 +75,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(319, 29);
+            this.label1.Location = new System.Drawing.Point(425, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(368, 36);
+            this.label1.Size = new System.Drawing.Size(467, 42);
             this.label1.TabIndex = 4;
             this.label1.Text = "Hotel Management System";
             // 
@@ -84,9 +87,10 @@
             this.switchbutton.BackColor = System.Drawing.Color.Transparent;
             this.switchbutton.Image = global::WindowsFormsApplication1.Properties.Resources.switchaccount;
             this.switchbutton.ImageActive = null;
-            this.switchbutton.Location = new System.Drawing.Point(916, 12);
+            this.switchbutton.Location = new System.Drawing.Point(1221, 15);
+            this.switchbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.switchbutton.Name = "switchbutton";
-            this.switchbutton.Size = new System.Drawing.Size(27, 26);
+            this.switchbutton.Size = new System.Drawing.Size(36, 32);
             this.switchbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.switchbutton.TabIndex = 3;
             this.switchbutton.TabStop = false;
@@ -98,9 +102,10 @@
             this.exitbutton.BackColor = System.Drawing.Color.Transparent;
             this.exitbutton.Image = global::WindowsFormsApplication1.Properties.Resources.shutdown;
             this.exitbutton.ImageActive = null;
-            this.exitbutton.Location = new System.Drawing.Point(949, 12);
+            this.exitbutton.Location = new System.Drawing.Point(1265, 15);
+            this.exitbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.exitbutton.Name = "exitbutton";
-            this.exitbutton.Size = new System.Drawing.Size(27, 26);
+            this.exitbutton.Size = new System.Drawing.Size(36, 32);
             this.exitbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.exitbutton.TabIndex = 2;
             this.exitbutton.TabStop = false;
@@ -111,9 +116,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 51);
+            this.label2.Location = new System.Drawing.Point(4, 63);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 36);
+            this.label2.Size = new System.Drawing.Size(0, 42);
             this.label2.TabIndex = 1;
             // 
             // bunifuDragControl1
@@ -132,30 +138,32 @@
             // 
             this.panel3.Controls.Add(this.hometab1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 88);
+            this.panel3.Location = new System.Drawing.Point(0, 109);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(988, 552);
+            this.panel3.Size = new System.Drawing.Size(1317, 679);
             this.panel3.TabIndex = 2;
             // 
             // hometab1
             // 
             this.hometab1.BackColor = System.Drawing.SystemColors.Window;
             this.hometab1.Location = new System.Drawing.Point(0, 0);
-            this.hometab1.Margin = new System.Windows.Forms.Padding(4);
+            this.hometab1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.hometab1.Name = "hometab1";
-            this.hometab1.Size = new System.Drawing.Size(998, 552);
+            this.hometab1.Size = new System.Drawing.Size(1331, 679);
             this.hometab1.TabIndex = 0;
             // 
             // mainwindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(988, 640);
+            this.ClientSize = new System.Drawing.Size(1317, 788);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "mainwindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "emphome";
