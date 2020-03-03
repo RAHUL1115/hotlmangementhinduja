@@ -34,33 +34,31 @@ namespace WindowsFormsApplication1
             Application.Exit();
         }
 
-        private void buttons_Click(object sender, EventArgs e)
+        
+
+        private void reports_Click(object sender, EventArgs e)
         {
-            string name = ((Bunifu.Framework.UI.BunifuImageButton)sender).Name;
-            switch (name)
-            {
-                case "reports":
-                    reports_win1.BringToFront();
-                    reports_win1.Visible = true;
-                    break;
-                case "attendence":
-                    attendance_win1.BringToFront();
-                    attendance_win1.Visible = true;
-                    break;
-                case "salary":
-                    salary_win1.BringToFront();
-                    salary_win1.Visible = true;
-                    break;
-                case "employees":
-                    employee_win1.BringToFront();
-                    employee_win1.Visible = true;
-                    break;
-                case "something":
-                    break;
-                default:
-                    break;
-            }
+            reports_win1.BringToFront();
+            reports_win1.Visible = true;
+
         }
 
+        private void attendence_Click(object sender, EventArgs e)
+        {
+            attendance_win1.BringToFront();
+            attendance_win1.Visible = true;
+        }
+
+        private void salary_Click(object sender, EventArgs e)
+        {
+            salary_win1.BringToFront();
+            salary_win1.Visible = true;
+        }
+
+        private void employees_Click(object sender, EventArgs e)
+        {
+            employee_win1.BringToFront();
+            employee_win1.Visible = true;
+        }
     }
 }

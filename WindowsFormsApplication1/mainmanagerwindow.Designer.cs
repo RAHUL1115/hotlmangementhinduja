@@ -40,8 +40,8 @@
             this.salary = new Bunifu.Framework.UI.BunifuImageButton();
             this.attendence = new Bunifu.Framework.UI.BunifuImageButton();
             this.reports = new Bunifu.Framework.UI.BunifuImageButton();
-            this.employee_win1 = new WindowsFormsApplication1.employee_win();
             this.reports_win1 = new WindowsFormsApplication1.reports_win();
+            this.employee_win1 = new WindowsFormsApplication1.employee_win();
             this.attendance_win1 = new WindowsFormsApplication1.attendance_win();
             this.salary_win1 = new WindowsFormsApplication1.salary_win();
             this.panel1.SuspendLayout();
@@ -63,7 +63,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1296, 114);
             this.panel1.TabIndex = 1;
@@ -96,7 +96,7 @@
             this.switchacc.Image = global::WindowsFormsApplication1.Properties.Resources.switchaccount;
             this.switchacc.ImageActive = null;
             this.switchacc.Location = new System.Drawing.Point(1208, 9);
-            this.switchacc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.switchacc.Margin = new System.Windows.Forms.Padding(4);
             this.switchacc.Name = "switchacc";
             this.switchacc.Size = new System.Drawing.Size(36, 32);
             this.switchacc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -111,7 +111,7 @@
             this.close.Image = global::WindowsFormsApplication1.Properties.Resources.shutdown;
             this.close.ImageActive = null;
             this.close.Location = new System.Drawing.Point(1252, 9);
-            this.close.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.close.Margin = new System.Windows.Forms.Padding(4);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(36, 32);
             this.close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -144,7 +144,7 @@
             this.employees.TabStop = false;
             this.toolTipbutton.SetToolTip(this.employees, "Employee");
             this.employees.Zoom = 10;
-            this.employees.Click += new System.EventHandler(this.buttons_Click);
+            this.employees.Click += new System.EventHandler(this.employees_Click);
             // 
             // salary
             // 
@@ -160,7 +160,7 @@
             this.salary.TabStop = false;
             this.toolTipbutton.SetToolTip(this.salary, "Payroll");
             this.salary.Zoom = 10;
-            this.salary.Click += new System.EventHandler(this.buttons_Click);
+            this.salary.Click += new System.EventHandler(this.salary_Click);
             // 
             // attendence
             // 
@@ -176,7 +176,7 @@
             this.attendence.TabStop = false;
             this.toolTipbutton.SetToolTip(this.attendence, "Attendence");
             this.attendence.Zoom = 10;
-            this.attendence.Click += new System.EventHandler(this.buttons_Click);
+            this.attendence.Click += new System.EventHandler(this.attendence_Click);
             // 
             // reports
             // 
@@ -192,16 +192,7 @@
             this.reports.TabStop = false;
             this.toolTipbutton.SetToolTip(this.reports, "Reports");
             this.reports.Zoom = 10;
-            this.reports.Click += new System.EventHandler(this.buttons_Click);
-            // 
-            // employee_win1
-            // 
-            this.employee_win1.Location = new System.Drawing.Point(0, 114);
-            this.employee_win1.Margin = new System.Windows.Forms.Padding(5);
-            this.employee_win1.Name = "employee_win1";
-            this.employee_win1.Size = new System.Drawing.Size(1296, 626);
-            this.employee_win1.TabIndex = 10;
-            this.employee_win1.Visible = false;
+            this.reports.Click += new System.EventHandler(this.reports_Click);
             // 
             // reports_win1
             // 
@@ -212,6 +203,15 @@
             this.reports_win1.TabIndex = 7;
             this.toolTipbutton.SetToolTip(this.reports_win1, "Attendence");
             this.reports_win1.Visible = false;
+            // 
+            // employee_win1
+            // 
+            this.employee_win1.Location = new System.Drawing.Point(0, 114);
+            this.employee_win1.Margin = new System.Windows.Forms.Padding(5);
+            this.employee_win1.Name = "employee_win1";
+            this.employee_win1.Size = new System.Drawing.Size(1296, 626);
+            this.employee_win1.TabIndex = 10;
+            this.employee_win1.Visible = false;
             // 
             // attendance_win1
             // 
@@ -246,11 +246,10 @@
             this.Controls.Add(this.salary_win1);
             this.Controls.Add(this.employee_win1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "mainmanagerwindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "mainmanagerwindow";
-            this.toolTipbutton.SetToolTip(this, "button1");
             this.Load += new System.EventHandler(this.mainmanagerwindow_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

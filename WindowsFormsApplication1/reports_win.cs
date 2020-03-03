@@ -30,6 +30,7 @@ namespace WindowsFormsApplication1
             String query = "select * from login where id='" + 2 + "'";
             SqlCommand cmd = new SqlCommand(query, Program.con);
             SqlDataReader sdr = cmd.ExecuteReader();
+           // if(sdr.Read())
         }
 
         private void bunifuImageButton3_Click(object sender, EventArgs e)

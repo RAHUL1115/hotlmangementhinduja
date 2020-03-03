@@ -244,10 +244,14 @@ namespace WindowsFormsApplication1
                     SqlDataReader sdr = cmd.ExecuteReader();
                     if (sdr.Read())
                     {
+                        GetlabelByName("label" + sdr[0]).Text = "" + sdr[1] + " " + sdr[2];
+                        GetlabelByName("label" + sdr[0]).Visible = true;
+
                         while (sdr.Read())
                         {
-                            GetlabelByName("label" + sdr[0]).Visible = true;
+                           
                             GetlabelByName("label" + sdr[0]).Text = "" + sdr[1] + " " + sdr[2];
+                            GetlabelByName("label" + sdr[0]).Visible = true;
                         }
                     }
                     else
@@ -259,6 +263,7 @@ namespace WindowsFormsApplication1
                     sdr.Close();
 
                 }
+
             }
         }
 

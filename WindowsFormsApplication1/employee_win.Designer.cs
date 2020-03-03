@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(employee_win));
             this.back = new Bunifu.Framework.UI.BunifuImageButton();
-            this.post = new Bunifu.Framework.UI.BunifuDropdown();
-            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,6 +46,8 @@
             this.RemoveEmpButton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.addrestextbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             ((System.ComponentModel.ISupportInitialize)(this.back)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,39 +67,11 @@
             this.back.Zoom = 10;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
-            // post
-            // 
-            this.post.BackColor = System.Drawing.Color.Transparent;
-            this.post.BorderRadius = 3;
-            this.post.ForeColor = System.Drawing.Color.White;
-            this.post.Items = new string[] {
-        "Employee",
-        "Manager"};
-            this.post.Location = new System.Drawing.Point(254, 332);
-            this.post.Margin = new System.Windows.Forms.Padding(5);
-            this.post.Name = "post";
-            this.post.NomalColor = System.Drawing.SystemColors.AppWorkspace;
-            this.post.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.post.selectedIndex = -1;
-            this.post.Size = new System.Drawing.Size(493, 43);
-            this.post.TabIndex = 79;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(90, 342);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 25);
-            this.label6.TabIndex = 78;
-            this.label6.Text = "Post : ";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(90, 212);
+            this.label4.Location = new System.Drawing.Point(90, 201);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 25);
@@ -110,7 +82,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(90, 146);
+            this.label3.Location = new System.Drawing.Point(90, 135);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(125, 25);
@@ -121,7 +93,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(90, 277);
+            this.label2.Location = new System.Drawing.Point(90, 266);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(128, 25);
@@ -132,7 +104,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(90, 81);
+            this.label1.Location = new System.Drawing.Point(90, 70);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 25);
@@ -151,7 +123,7 @@
             this.fullnametextbox.LineIdleColor = System.Drawing.Color.Gray;
             this.fullnametextbox.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.fullnametextbox.LineThickness = 3;
-            this.fullnametextbox.Location = new System.Drawing.Point(258, 256);
+            this.fullnametextbox.Location = new System.Drawing.Point(258, 245);
             this.fullnametextbox.Margin = new System.Windows.Forms.Padding(5);
             this.fullnametextbox.Name = "fullnametextbox";
             this.fullnametextbox.Size = new System.Drawing.Size(493, 54);
@@ -171,7 +143,7 @@
             this.emailtextbox.LineIdleColor = System.Drawing.Color.Gray;
             this.emailtextbox.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.emailtextbox.LineThickness = 3;
-            this.emailtextbox.Location = new System.Drawing.Point(258, 186);
+            this.emailtextbox.Location = new System.Drawing.Point(258, 175);
             this.emailtextbox.Margin = new System.Windows.Forms.Padding(5);
             this.emailtextbox.Name = "emailtextbox";
             this.emailtextbox.Size = new System.Drawing.Size(493, 54);
@@ -190,7 +162,7 @@
             this.passtextbox.LineIdleColor = System.Drawing.Color.Gray;
             this.passtextbox.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.passtextbox.LineThickness = 3;
-            this.passtextbox.Location = new System.Drawing.Point(258, 122);
+            this.passtextbox.Location = new System.Drawing.Point(258, 111);
             this.passtextbox.Margin = new System.Windows.Forms.Padding(5);
             this.passtextbox.Name = "passtextbox";
             this.passtextbox.Size = new System.Drawing.Size(493, 54);
@@ -209,7 +181,7 @@
             this.idtextbox.LineIdleColor = System.Drawing.Color.Gray;
             this.idtextbox.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.idtextbox.LineThickness = 3;
-            this.idtextbox.Location = new System.Drawing.Point(259, 60);
+            this.idtextbox.Location = new System.Drawing.Point(259, 49);
             this.idtextbox.Margin = new System.Windows.Forms.Padding(5);
             this.idtextbox.Name = "idtextbox";
             this.idtextbox.Size = new System.Drawing.Size(493, 54);
@@ -220,7 +192,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(90, 403);
+            this.label5.Location = new System.Drawing.Point(89, 412);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(150, 25);
@@ -229,7 +201,7 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(259, 389);
+            this.monthCalendar1.Location = new System.Drawing.Point(258, 398);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 81;
             // 
@@ -251,21 +223,20 @@
             this.AddEmpButton.IdleFillColor = System.Drawing.Color.White;
             this.AddEmpButton.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.AddEmpButton.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.AddEmpButton.Location = new System.Drawing.Point(580, 534);
+            this.AddEmpButton.Location = new System.Drawing.Point(579, 543);
             this.AddEmpButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.AddEmpButton.Name = "AddEmpButton";
             this.AddEmpButton.Size = new System.Drawing.Size(167, 49);
             this.AddEmpButton.TabIndex = 82;
             this.AddEmpButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.AddEmpButton.Click += new System.EventHandler(this.AddEmpButton_Click);
             // 
             // EmpName
             // 
             this.EmpName.BackColor = System.Drawing.Color.Transparent;
             this.EmpName.BorderRadius = 3;
             this.EmpName.ForeColor = System.Drawing.Color.White;
-            this.EmpName.Items = new string[] {
-        "Employee",
-        "Manager"};
+            this.EmpName.Items = new string[0];
             this.EmpName.Location = new System.Drawing.Point(976, 81);
             this.EmpName.Margin = new System.Windows.Forms.Padding(5);
             this.EmpName.Name = "EmpName";
@@ -310,12 +281,13 @@
             this.RemoveEmpButton.Size = new System.Drawing.Size(167, 49);
             this.RemoveEmpButton.TabIndex = 85;
             this.RemoveEmpButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RemoveEmpButton.Click += new System.EventHandler(this.RemoveEmpButton_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(306, 14);
+            this.label8.Location = new System.Drawing.Point(304, 14);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(152, 25);
@@ -333,10 +305,42 @@
             this.label9.TabIndex = 87;
             this.label9.Text = "Remove Employee";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(90, 330);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(111, 25);
+            this.label10.TabIndex = 89;
+            this.label10.Text = "Address : ";
+            // 
+            // addrestextbox
+            // 
+            this.addrestextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.addrestextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.addrestextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.addrestextbox.HintForeColor = System.Drawing.Color.Empty;
+            this.addrestextbox.HintText = "";
+            this.addrestextbox.isPassword = false;
+            this.addrestextbox.LineFocusedColor = System.Drawing.Color.Blue;
+            this.addrestextbox.LineIdleColor = System.Drawing.Color.Gray;
+            this.addrestextbox.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.addrestextbox.LineThickness = 3;
+            this.addrestextbox.Location = new System.Drawing.Point(258, 309);
+            this.addrestextbox.Margin = new System.Windows.Forms.Padding(5);
+            this.addrestextbox.Name = "addrestextbox";
+            this.addrestextbox.Size = new System.Drawing.Size(493, 54);
+            this.addrestextbox.TabIndex = 88;
+            this.addrestextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // employee_win
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.addrestextbox);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.RemoveEmpButton);
@@ -345,8 +349,6 @@
             this.Controls.Add(this.AddEmpButton);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.post);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -356,7 +358,7 @@
             this.Controls.Add(this.passtextbox);
             this.Controls.Add(this.idtextbox);
             this.Controls.Add(this.back);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "employee_win";
             this.Size = new System.Drawing.Size(1296, 626);
             this.Load += new System.EventHandler(this.employee_win_Load);
@@ -369,8 +371,6 @@
         #endregion
 
         public Bunifu.Framework.UI.BunifuImageButton back;
-        private Bunifu.Framework.UI.BunifuDropdown post;
-        public System.Windows.Forms.Label label6;
         public System.Windows.Forms.Label label4;
         public System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label label2;
@@ -387,5 +387,7 @@
         public Bunifu.Framework.UI.BunifuThinButton2 RemoveEmpButton;
         public System.Windows.Forms.Label label8;
         public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.Label label10;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox addrestextbox;
     }
 }
