@@ -17,7 +17,6 @@ namespace WindowsFormsApplication1
     public partial class hometab : UserControl
     {
         private Hashtable controlHashtable;
-
         public hometab()
         {
             InitializeComponent();
@@ -25,16 +24,6 @@ namespace WindowsFormsApplication1
             foreach(Control c in this.Controls)
             {
                 this.controlHashtable.Add(c.Name, c);
-            }
-        }
-        private void resetlabbut(BunifuThinButton2[] roombutton, Label[] roomlabel)
-        {
-            for (int i = 0; i < 25; i++)
-            {
-                roombutton[i].IdleLineColor = Color.SeaGreen;
-                roombutton[i].IdleForecolor = Color.SeaGreen;
-                roomlabel[i].ForeColor = Color.Black;
-                roomlabel[i].Text = "";
             }
         }
 
@@ -46,6 +35,17 @@ namespace WindowsFormsApplication1
         private Control GetbuttonByName(string name)
         {
             return this.controlHashtable[name] as BunifuThinButton2;
+        }
+
+        private void resetlabbut(BunifuThinButton2[] roombutton, Label[] roomlabel)
+        {
+            for (int i = 0; i < 25; i++)
+            {
+                roombutton[i].IdleLineColor = Color.SeaGreen;
+                roombutton[i].IdleForecolor = Color.SeaGreen;
+                roomlabel[i].ForeColor = Color.Black;
+                roomlabel[i].Text = "";
+            }
         }
 
         private void Roomnobutton_Click(object sender, EventArgs e)
@@ -216,7 +216,7 @@ namespace WindowsFormsApplication1
 
         private void findsearchbutton_Click(object sender, EventArgs e)
         {
-            if (!(findtextbox.Text == ""))
+            if (findtextbox.Text != "")
             {
                 Bunifu.Framework.UI.BunifuThinButton2[] roombutton = { room1, room2, room3, room4, room5, room6, room7, room8, room9, room10, room11, room12, room13, room14, room15, room16, room17, room18, room19, room20, room21, room22, room23, room24, room25 };
                 Label[] roomlabel = { label1, label2, label3, label4, label5, label6, label7, label8, label9, label10, label11, label12, label13, label14, label15, label16, label17, label18, label19, label20, label21, label22, label23, label24, label25 };
@@ -230,6 +230,7 @@ namespace WindowsFormsApplication1
                     {
                         messageboxcs mb = new messageboxcs();
                         mb.Show();
+                        mb.bunifuCustomLabel1.Text = "Select form 1- 25";
                     }
 
                 }
@@ -237,7 +238,7 @@ namespace WindowsFormsApplication1
                 {
                     query = "select room, fname, lname from current_book where fname like '%" + findtextbox.Text + "%' or lname like '%" + findtextbox.Text + "%'";
                 }
-                if (!(query == ""))
+                if (query != "")
                 {
                     SqlCommand cmd = new SqlCommand(query, Program.con);
                     SqlDataReader sdr = cmd.ExecuteReader();
@@ -253,6 +254,7 @@ namespace WindowsFormsApplication1
                     {
                         messageboxcs mb = new messageboxcs();
                         mb.Show();
+                        mb.bunifuCustomLabel1.Text = "no user found";
                     }
                     sdr.Close();
 

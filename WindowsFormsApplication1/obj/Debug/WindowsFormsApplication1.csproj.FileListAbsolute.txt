@@ -72,3 +72,4 @@ E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsF
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.loginwindow.resources
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.salary_win.resources
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.services.resources
+C:\Users\4N0NYM0U5\Documents\GitHub\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
