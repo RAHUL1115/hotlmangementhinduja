@@ -149,16 +149,14 @@ namespace WindowsFormsApplication1
             if (hometabcal1.TodayDate > hometabcal1.SelectionRange.Start)
             {
                 messageboxcs mb = new messageboxcs();
-                mb.error = false;
-                mb.Show();
                 mb.bunifuCustomLabel1.Text = "select todays date or above";
+                mb.Show();
                 refreshbutton.Visible = true;
                 return;
             }
             if (hometabcal1.SelectionRange.Start > hometabcal2.SelectionRange.Start)
             {
                 messageboxcs mb = new messageboxcs();
-                mb.error = false;
                 mb.Show();
                 mb.bunifuCustomLabel1.Text = "end date";
                 refreshbutton.Visible = true;
@@ -229,8 +227,9 @@ namespace WindowsFormsApplication1
                     else
                     {
                         messageboxcs mb = new messageboxcs();
-                        mb.Show();
+                        mb.cases = 'e';
                         mb.bunifuCustomLabel1.Text = "Select form 1- 25";
+                        mb.Show();
                     }
 
                 }
@@ -257,8 +256,9 @@ namespace WindowsFormsApplication1
                     else
                     {
                         messageboxcs mb = new messageboxcs();
-                        mb.Show();
+                        mb.cases = 'e';
                         mb.bunifuCustomLabel1.Text = "no user found";
+                        mb.Show();
                     }
                     sdr.Close();
 

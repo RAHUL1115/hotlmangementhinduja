@@ -28,7 +28,7 @@ namespace WindowsFormsApplication1
             listBox1.Items.Clear();
             string query1 = "select  fname, lname from pre_book where room = "+room +" ";
             string query = "select fname, lname from pre_book";
-            query = query1;
+            //query = query1;
             if (Program.con.State == ConnectionState.Closed)
                 Program.con.Open();
             SqlCommand cmd = new SqlCommand(query, Program.con);

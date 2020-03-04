@@ -29,7 +29,8 @@ namespace WindowsFormsApplication1
         {
             roomlabel.Text = room;
             roomlabel.Visible = true;
-
+            string query = "select * from SELECT DATEDIFF(day, cindate, coutdate)*500 , name,";
+            
         }
 
         private void MainCheckoutButton_Click(object sender, EventArgs e)

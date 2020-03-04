@@ -53,7 +53,6 @@ namespace WindowsFormsApplication1
 
             messageboxcs mb = new messageboxcs();
             mb.bunifuCustomLabel1.Text = "Employee Added";
-            mb.error = false;
             mb.Show();
             employee_win_Load(null, null);
         }
@@ -66,7 +65,6 @@ namespace WindowsFormsApplication1
 
             messageboxcs mb = new messageboxcs();
             mb.bunifuCustomLabel1.Text = "Employee Removed";
-            mb.error = false;
             mb.Show();
             employee_win_Load(null, null);
         }

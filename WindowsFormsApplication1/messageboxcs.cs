@@ -12,7 +12,7 @@ namespace WindowsFormsApplication1
 {
     public partial class messageboxcs : Form
     {
-        public bool error = true;
+        public char cases = ' ';
         public messageboxcs()
         {
             InitializeComponent();
@@ -21,22 +21,45 @@ namespace WindowsFormsApplication1
         private void bunifuCustomLabel1_Click(object sender, EventArgs e)
         {
             Dispose();
-            if (error)
-                Program.ep.hometab1.refreshbutton_Click(null,null);
+            switch (cases)
+            {
+                case 'h':
+                    Program.inf.refreshhome();
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             Dispose();
-            if (error)
-                Program.ep.hometab1.refreshbutton_Click(null, null);
+            switch (cases)
+            {
+                case 'h':
+                    Program.inf.refreshhome();
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void messageboxcs_Deactivate(object sender, EventArgs e)
         {
             Dispose();
-            if (error)
-                Program.ep.hometab1.refreshbutton_Click(null, null);
+            switch (cases)
+            {
+                case 'h':
+                    Program.inf.refreshhome();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void messageboxcs_Load(object sender, EventArgs e)
+        {
+           
         }
     }
 }

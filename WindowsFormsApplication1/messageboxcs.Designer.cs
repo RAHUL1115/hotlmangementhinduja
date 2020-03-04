@@ -51,9 +51,9 @@
             this.bunifuThinButton21.ActiveBorderThickness = 1;
             this.bunifuThinButton21.ActiveCornerRadius = 20;
             this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.DimGray;
             this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.DimGray;
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "Close";
             this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -61,10 +61,10 @@
             this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleBorderThickness = 1;
             this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(142, 68);
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Orange;
+            this.bunifuThinButton21.Location = new System.Drawing.Point(142, 64);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(52, 33);
@@ -88,17 +88,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DimGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(201, 102);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.bunifuCustomLabel1);
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "messageboxcs";
+            this.Opacity = 0.9D;
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "messageboxcs";
             this.Deactivate += new System.EventHandler(this.messageboxcs_Deactivate);
+            this.Load += new System.EventHandler(this.messageboxcs_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

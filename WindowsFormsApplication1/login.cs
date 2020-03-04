@@ -73,8 +73,16 @@ namespace WindowsFormsApplication1
                         cmd.Dispose();
                     }
                     else {
-                    Program.onclick();
-                    sdr.Close();
+                        if (sdr[2].ToString() == "o")
+                        {
+                            Program.onclick();
+                            sdr.Close();
+                        }
+                        else
+                        {
+                            label1.Text = "invalid user";
+                            sdr.Close();
+                        }
                     }       
                 }
                 else
