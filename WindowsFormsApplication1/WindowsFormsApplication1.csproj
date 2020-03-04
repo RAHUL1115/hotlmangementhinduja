@@ -124,6 +124,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>feedback_dbDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="feedback_dbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>feedback_dbDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="feedback_dbDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>feedback_dbDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="forget.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -282,6 +292,28 @@
     </None>
     <None Include="feedback_dbDataSet1.xss">
       <DependentUpon>feedback_dbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="feedback_dbDataSet2.xsc">
+      <DependentUpon>feedback_dbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="feedback_dbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>feedback_dbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="feedback_dbDataSet2.xss">
+      <DependentUpon>feedback_dbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="feedback_dbDataSet3.xsc">
+      <DependentUpon>feedback_dbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="feedback_dbDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>feedback_dbDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="feedback_dbDataSet3.xss">
+      <DependentUpon>feedback_dbDataSet3.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

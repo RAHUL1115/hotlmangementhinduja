@@ -64,7 +64,7 @@ namespace WindowsFormsApplication1
                 if(sdr.Read())
                 {
                     query = "delete from pre_book where room = " + ((BunifuThinButton2)sender).ButtonText +"; ";
-                    query += "update current_book set fname='" + sdr[1] + "',lname='" + sdr[2] + "',email='" + sdr[3] + "',address='" + sdr[4] + "',cintime=CONVERT(TIME, GETDATE()),cindate=CONVERT(date, GETDATE()),coutdate='" +sdr[7] + "',no_pep=" + sdr[8] + " where room = " + ((BunifuThinButton2)sender).ButtonText;
+                    query += "update current_book set fname='" + sdr[1] + "',lname='" + sdr[2] + "',email='" + sdr[3] + "',address='" + sdr[4] + "',cintime=CONVERT(TIME, GETDATE()),cindate=CONVERT(date, GETDATE()),coutdate='" +sdr[7] + "',no_pep=" + sdr[8] + ",cinstate='prebook',regid=replace(replace(replace(convert(varchar,getdate(),20),' ',''),':',''),'-','') where room = " + ((BunifuThinButton2)sender).ButtonText;
                     SqlCommand cmd1 = new SqlCommand(query, Program.con);
                     cmd1.ExecuteNonQuery();
                     cmd1.Dispose();

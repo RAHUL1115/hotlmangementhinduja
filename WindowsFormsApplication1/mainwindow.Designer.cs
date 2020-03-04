@@ -47,7 +47,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(202)))), ((int)(((byte)(32)))));
             this.panel1.Controls.Add(this.user_name);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.switchbutton);
@@ -55,7 +55,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1317, 114);
             this.panel1.TabIndex = 0;
@@ -75,12 +75,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(425, 36);
+            this.label1.Location = new System.Drawing.Point(508, 36);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(467, 42);
+            this.label1.Size = new System.Drawing.Size(304, 42);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Hotel Management System";
+            this.label1.Text = "Hotel Continental";
             // 
             // switchbutton
             // 
@@ -88,7 +88,7 @@
             this.switchbutton.Image = global::WindowsFormsApplication1.Properties.Resources.switchaccount;
             this.switchbutton.ImageActive = null;
             this.switchbutton.Location = new System.Drawing.Point(1221, 15);
-            this.switchbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.switchbutton.Margin = new System.Windows.Forms.Padding(4);
             this.switchbutton.Name = "switchbutton";
             this.switchbutton.Size = new System.Drawing.Size(36, 32);
             this.switchbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -103,7 +103,7 @@
             this.exitbutton.Image = global::WindowsFormsApplication1.Properties.Resources.shutdown;
             this.exitbutton.ImageActive = null;
             this.exitbutton.Location = new System.Drawing.Point(1265, 15);
-            this.exitbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.exitbutton.Margin = new System.Windows.Forms.Padding(4);
             this.exitbutton.Name = "exitbutton";
             this.exitbutton.Size = new System.Drawing.Size(36, 32);
             this.exitbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -139,16 +139,16 @@
             this.panel3.Controls.Add(this.hometab1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 109);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1317, 679);
             this.panel3.TabIndex = 2;
             // 
             // hometab1
             // 
-            this.hometab1.BackColor = System.Drawing.SystemColors.Window;
+            this.hometab1.BackColor = System.Drawing.Color.White;
             this.hometab1.Location = new System.Drawing.Point(0, 0);
-            this.hometab1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.hometab1.Margin = new System.Windows.Forms.Padding(5);
             this.hometab1.Name = "hometab1";
             this.hometab1.Size = new System.Drawing.Size(1331, 679);
             this.hometab1.TabIndex = 0;
@@ -163,7 +163,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "mainwindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "emphome";

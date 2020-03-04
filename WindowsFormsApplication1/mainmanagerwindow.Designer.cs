@@ -44,6 +44,11 @@
             this.employee_win1 = new WindowsFormsApplication1.employee_win();
             this.attendance_win1 = new WindowsFormsApplication1.attendance_win();
             this.salary_win1 = new WindowsFormsApplication1.salary_win();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.switchacc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
@@ -55,7 +60,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(202)))), ((int)(((byte)(32)))));
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.switchacc);
@@ -72,9 +77,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1120, 12);
+            this.label3.Location = new System.Drawing.Point(1128, 12);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
+            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label3.Size = new System.Drawing.Size(58, 26);
             this.label3.TabIndex = 5;
             this.label3.Text = "rahul";
@@ -83,12 +89,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(425, 36);
+            this.label1.Location = new System.Drawing.Point(508, 36);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(467, 42);
+            this.label1.Size = new System.Drawing.Size(304, 42);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Hotel Management System";
+            this.label1.Text = "Hotel Continental";
             // 
             // switchacc
             // 
@@ -132,7 +138,7 @@
             // 
             // employees
             // 
-            this.employees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.employees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(179)))), ((int)(((byte)(209)))));
             this.employees.Image = global::WindowsFormsApplication1.Properties.Resources.emp;
             this.employees.ImageActive = null;
             this.employees.Location = new System.Drawing.Point(547, 436);
@@ -148,7 +154,7 @@
             // 
             // salary
             // 
-            this.salary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.salary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(179)))), ((int)(((byte)(209)))));
             this.salary.Image = global::WindowsFormsApplication1.Properties.Resources.payroll1;
             this.salary.ImageActive = null;
             this.salary.Location = new System.Drawing.Point(993, 162);
@@ -164,7 +170,7 @@
             // 
             // attendence
             // 
-            this.attendence.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.attendence.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(179)))), ((int)(((byte)(209)))));
             this.attendence.Image = global::WindowsFormsApplication1.Properties.Resources.attend;
             this.attendence.ImageActive = null;
             this.attendence.Location = new System.Drawing.Point(547, 162);
@@ -180,7 +186,7 @@
             // 
             // reports
             // 
-            this.reports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.reports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(179)))), ((int)(((byte)(209)))));
             this.reports.Image = global::WindowsFormsApplication1.Properties.Resources.report;
             this.reports.ImageActive = null;
             this.reports.Location = new System.Drawing.Point(104, 162);
@@ -196,10 +202,11 @@
             // 
             // reports_win1
             // 
+            this.reports_win1.BackColor = System.Drawing.Color.Transparent;
             this.reports_win1.Location = new System.Drawing.Point(0, 108);
             this.reports_win1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.reports_win1.Name = "reports_win1";
-            this.reports_win1.Size = new System.Drawing.Size(1296, 626);
+            this.reports_win1.Size = new System.Drawing.Size(1296, 632);
             this.reports_win1.TabIndex = 7;
             this.toolTipbutton.SetToolTip(this.reports_win1, "Attendence");
             this.reports_win1.Visible = false;
@@ -231,10 +238,36 @@
             this.salary_win1.TabIndex = 9;
             this.salary_win1.Visible = false;
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 25;
+            this.bunifuElipse1.TargetControl = this.reports;
+            // 
+            // bunifuElipse2
+            // 
+            this.bunifuElipse2.ElipseRadius = 25;
+            this.bunifuElipse2.TargetControl = this.attendence;
+            // 
+            // bunifuElipse3
+            // 
+            this.bunifuElipse3.ElipseRadius = 25;
+            this.bunifuElipse3.TargetControl = this.salary;
+            // 
+            // bunifuElipse4
+            // 
+            this.bunifuElipse4.ElipseRadius = 25;
+            this.bunifuElipse4.TargetControl = this.employees;
+            // 
+            // bunifuElipse5
+            // 
+            this.bunifuElipse5.ElipseRadius = 10;
+            this.bunifuElipse5.TargetControl = this;
+            // 
             // mainmanagerwindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1296, 740);
             this.Controls.Add(this.employees);
             this.Controls.Add(this.salary);
@@ -275,10 +308,15 @@
         private Bunifu.Framework.UI.BunifuImageButton attendence;
         private Bunifu.Framework.UI.BunifuImageButton salary;
         private Bunifu.Framework.UI.BunifuImageButton employees;
-        public reports_win reports_win1;
         private System.Windows.Forms.ToolTip toolTipbutton;
         private attendance_win attendance_win1;
         private salary_win salary_win1;
         private employee_win employee_win1;
+        public reports_win reports_win1;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse5;
     }
 }

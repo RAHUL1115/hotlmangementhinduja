@@ -29,7 +29,8 @@ namespace WindowsFormsApplication1
         {
             roomlabel.Text = room;
             roomlabel.Visible = true;
-            string query = "select * from SELECT DATEDIFF(day, cindate, coutdate)*500 , name,";
+            string query = "select * from SELECT (DATEDIFF(day, cindate, coutdate)+1)*500 , name, where room="+room;
+
             
         }
 
@@ -45,11 +46,11 @@ namespace WindowsFormsApplication1
             {
                 string date1 = DateTime.Now.ToString("yyyy-MM-dd");
                 string time1 = DateTime.Now.ToString("HH:mm");
-                query2 = "insert into history values(" + room + ",'" + sdr1[2] + "', '" + sdr1[3] + "', '" + sdr1[4] + "', '" + sdr1[5] + "', '" + sdr1[6] + "', '" + sdr1[11] + "','" + time1 + "' , '" + date1 + "', " + sdr1[9] + "," + totallabel.Text + ",'Checkout')";
+                query2 = "insert into history values(" + room + ",'" + sdr1[2] + "', '" + sdr1[3] + "', '" + sdr1[4] + "', '" + sdr1[5] + "', '" + sdr1[6] + "', '" + sdr1[12] + "','" + time1 + "' , '" + date1 + "', " + sdr1[9] + "," + totallabel.Text + ",'Checkout','"+sdr1[10]+ "','" + sdr1[11] + "')";
             }
             cmd1.Dispose();
             sdr1.Close();
-            string query = "update current_book set fname = null,lname = null ,email = null ,address = null,cintime = null,cindate = null ,coutdate = null,no_pep = null where room = " + room + "; " + query2;
+            string query = "update current_book set fname = null,lname = null ,email = null ,address = null,cintime = null,cindate = null ,coutdate = null,no_pep = null,cinstate=null where room = " + room + "; " + query2;
             if (Program.con.State == ConnectionState.Closed)
                 Program.con.Open();
             SqlCommand cmd = new SqlCommand(query, Program.con);

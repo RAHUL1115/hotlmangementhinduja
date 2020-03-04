@@ -69,13 +69,13 @@
             // 
             this.AddAttendanceName.BackColor = System.Drawing.Color.Transparent;
             this.AddAttendanceName.BorderRadius = 3;
-            this.AddAttendanceName.ForeColor = System.Drawing.Color.White;
+            this.AddAttendanceName.ForeColor = System.Drawing.Color.Black;
             this.AddAttendanceName.Items = new string[0];
             this.AddAttendanceName.Location = new System.Drawing.Point(75, 85);
             this.AddAttendanceName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AddAttendanceName.Name = "AddAttendanceName";
-            this.AddAttendanceName.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.AddAttendanceName.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.AddAttendanceName.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(231)))), ((int)(((byte)(220)))));
+            this.AddAttendanceName.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
             this.AddAttendanceName.selectedIndex = -1;
             this.AddAttendanceName.Size = new System.Drawing.Size(280, 43);
             this.AddAttendanceName.TabIndex = 69;
@@ -84,10 +84,10 @@
             // 
             this.AddButton.ActiveBorderThickness = 1;
             this.AddButton.ActiveCornerRadius = 20;
-            this.AddButton.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.AddButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
             this.AddButton.ActiveForecolor = System.Drawing.Color.White;
             this.AddButton.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.AddButton.BackColor = System.Drawing.SystemColors.Control;
+            this.AddButton.BackColor = System.Drawing.Color.White;
             this.AddButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddButton.BackgroundImage")));
             this.AddButton.ButtonText = "Add";
             this.AddButton.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -110,13 +110,13 @@
             // 
             this.SearchName.BackColor = System.Drawing.Color.Transparent;
             this.SearchName.BorderRadius = 3;
-            this.SearchName.ForeColor = System.Drawing.Color.White;
+            this.SearchName.ForeColor = System.Drawing.Color.Black;
             this.SearchName.Items = new string[0];
             this.SearchName.Location = new System.Drawing.Point(15, 81);
             this.SearchName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SearchName.Name = "SearchName";
-            this.SearchName.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.SearchName.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.SearchName.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(231)))), ((int)(((byte)(220)))));
+            this.SearchName.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
             this.SearchName.selectedIndex = -1;
             this.SearchName.Size = new System.Drawing.Size(270, 43);
             this.SearchName.TabIndex = 72;
@@ -125,7 +125,7 @@
             // 
             this.SearchMonth.BackColor = System.Drawing.Color.Transparent;
             this.SearchMonth.BorderRadius = 3;
-            this.SearchMonth.ForeColor = System.Drawing.Color.White;
+            this.SearchMonth.ForeColor = System.Drawing.Color.Black;
             this.SearchMonth.Items = new string[] {
         "1",
         "2",
@@ -142,8 +142,8 @@
             this.SearchMonth.Location = new System.Drawing.Point(319, 81);
             this.SearchMonth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SearchMonth.Name = "SearchMonth";
-            this.SearchMonth.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.SearchMonth.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.SearchMonth.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(231)))), ((int)(((byte)(220)))));
+            this.SearchMonth.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
             this.SearchMonth.selectedIndex = -1;
             this.SearchMonth.Size = new System.Drawing.Size(149, 43);
             this.SearchMonth.TabIndex = 73;
@@ -152,10 +152,10 @@
             // 
             this.SearchAttendButton.ActiveBorderThickness = 1;
             this.SearchAttendButton.ActiveCornerRadius = 20;
-            this.SearchAttendButton.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.SearchAttendButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
             this.SearchAttendButton.ActiveForecolor = System.Drawing.Color.White;
             this.SearchAttendButton.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.SearchAttendButton.BackColor = System.Drawing.SystemColors.Control;
+            this.SearchAttendButton.BackColor = System.Drawing.Color.White;
             this.SearchAttendButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SearchAttendButton.BackgroundImage")));
             this.SearchAttendButton.ButtonText = "Search";
             this.SearchAttendButton.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -176,7 +176,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.historyattendView);
             this.panel1.Controls.Add(this.label5);
@@ -275,6 +275,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.todayattendView);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);

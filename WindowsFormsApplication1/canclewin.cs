@@ -56,7 +56,7 @@ namespace WindowsFormsApplication1
                 {
                     string date1 = DateTime.Now.ToString("yyyy-MM-dd");
                     string time1 = DateTime.Now.ToString("HH:mm");
-                    query3 = "insert into history values("+sdr1[0]+",'"+ sdr1[1] + "', '"+ sdr1[2] + "', '"+ sdr1[3] + "', '" + sdr1[4] + "', '" + sdr1[5] + "', '" + sdr1[9] + "','" + time1 + "' , '" + date1 + "', "+sdr1[8] + "," + 0 + ",'cancle')";
+                    query3 = "insert into history values("+sdr1[0]+",'"+ sdr1[1] + "', '"+ sdr1[2] + "', '"+ sdr1[3] + "', '" + sdr1[4] + "', '" + sdr1[5] + "', '" + sdr1[10] + "','" + time1 + "' , '" + date1 + "', "+sdr1[8] + "," + 0 + ",'cancle','prebook','" + sdr1[9] + "')";
                 }
                 cmd1.Dispose();
                 sdr1.Close();

@@ -70,8 +70,8 @@
             // 
             this.report.ActiveBorderThickness = 1;
             this.report.ActiveCornerRadius = 20;
-            this.report.ActiveFillColor = System.Drawing.Color.White;
-            this.report.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.report.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
+            this.report.ActiveForecolor = System.Drawing.Color.White;
             this.report.ActiveLineColor = System.Drawing.Color.Black;
             this.report.BackColor = System.Drawing.SystemColors.Control;
             this.report.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("report.BackgroundImage")));
@@ -217,7 +217,6 @@
             this.label6.Size = new System.Drawing.Size(69, 29);
             this.label6.TabIndex = 11;
             this.label6.Text = "Profit";
-            this.label6.Visible = false;
             // 
             // label6_1
             // 
@@ -274,20 +273,19 @@
             this.label7.Size = new System.Drawing.Size(79, 29);
             this.label7.TabIndex = 13;
             this.label7.Text = "Month";
-            this.label7.Visible = false;
             // 
             // selectmonth
             // 
             this.selectmonth.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.selectmonth.BackColor = System.Drawing.Color.Transparent;
             this.selectmonth.BorderRadius = 3;
-            this.selectmonth.ForeColor = System.Drawing.Color.White;
+            this.selectmonth.ForeColor = System.Drawing.Color.Black;
             this.selectmonth.Items = new string[0];
             this.selectmonth.Location = new System.Drawing.Point(742, 448);
             this.selectmonth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.selectmonth.Name = "selectmonth";
-            this.selectmonth.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.selectmonth.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.selectmonth.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(231)))), ((int)(((byte)(220)))));
+            this.selectmonth.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
             this.selectmonth.selectedIndex = -1;
             this.selectmonth.Size = new System.Drawing.Size(289, 43);
             this.selectmonth.TabIndex = 14;
