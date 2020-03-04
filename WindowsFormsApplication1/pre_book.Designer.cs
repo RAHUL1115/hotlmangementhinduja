@@ -127,7 +127,7 @@
             this.addresstextbox.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.addresstextbox.LineThickness = 3;
             this.addresstextbox.Location = new System.Drawing.Point(515, 240);
-            this.addresstextbox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.addresstextbox.Margin = new System.Windows.Forms.Padding(5);
             this.addresstextbox.Name = "addresstextbox";
             this.addresstextbox.Size = new System.Drawing.Size(493, 54);
             this.addresstextbox.TabIndex = 35;
@@ -147,7 +147,7 @@
             this.emailtextbox.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.emailtextbox.LineThickness = 3;
             this.emailtextbox.Location = new System.Drawing.Point(515, 170);
-            this.emailtextbox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.emailtextbox.Margin = new System.Windows.Forms.Padding(5);
             this.emailtextbox.Name = "emailtextbox";
             this.emailtextbox.Size = new System.Drawing.Size(493, 54);
             this.emailtextbox.TabIndex = 34;
@@ -166,7 +166,7 @@
             this.lnametextbox.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.lnametextbox.LineThickness = 3;
             this.lnametextbox.Location = new System.Drawing.Point(515, 106);
-            this.lnametextbox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.lnametextbox.Margin = new System.Windows.Forms.Padding(5);
             this.lnametextbox.Name = "lnametextbox";
             this.lnametextbox.Size = new System.Drawing.Size(493, 54);
             this.lnametextbox.TabIndex = 33;
@@ -185,7 +185,7 @@
             this.fnametextbox.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.fnametextbox.LineThickness = 3;
             this.fnametextbox.Location = new System.Drawing.Point(516, 44);
-            this.fnametextbox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.fnametextbox.Margin = new System.Windows.Forms.Padding(5);
             this.fnametextbox.Name = "fnametextbox";
             this.fnametextbox.Size = new System.Drawing.Size(493, 54);
             this.fnametextbox.TabIndex = 31;
@@ -195,9 +195,9 @@
             // 
             this.bunifuThinButton22.ActiveBorderThickness = 1;
             this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
+            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.Black;
+            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.Black;
             this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.Control;
             this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
             this.bunifuThinButton22.ButtonText = "Cancel";
@@ -221,9 +221,9 @@
             // 
             this.bunifuThinButton21.ActiveBorderThickness = 1;
             this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.Black;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Black;
             this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "Save";
@@ -287,17 +287,17 @@
             // 
             this.peopleselect.BackColor = System.Drawing.Color.Transparent;
             this.peopleselect.BorderRadius = 3;
-            this.peopleselect.ForeColor = System.Drawing.Color.White;
+            this.peopleselect.ForeColor = System.Drawing.Color.Black;
             this.peopleselect.Items = new string[] {
         "1",
         "2",
         "3",
         "4"};
             this.peopleselect.Location = new System.Drawing.Point(511, 316);
-            this.peopleselect.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.peopleselect.Margin = new System.Windows.Forms.Padding(5);
             this.peopleselect.Name = "peopleselect";
-            this.peopleselect.NomalColor = System.Drawing.SystemColors.AppWorkspace;
-            this.peopleselect.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.peopleselect.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(231)))), ((int)(((byte)(220)))));
+            this.peopleselect.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
             this.peopleselect.selectedIndex = 0;
             this.peopleselect.Size = new System.Drawing.Size(493, 43);
             this.peopleselect.TabIndex = 50;
@@ -323,7 +323,7 @@
             this.Controls.Add(this.fnametextbox);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.monthCalendar1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "pre_book";
             this.Size = new System.Drawing.Size(1331, 679);
             this.Load += new System.EventHandler(this.pre_book_Load);

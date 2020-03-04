@@ -18,10 +18,7 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
 
         private void back_Click(object sender, EventArgs e)
         {

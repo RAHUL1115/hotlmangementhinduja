@@ -53,40 +53,44 @@
             // namelab
             // 
             this.namelab.AutoSize = true;
-            this.namelab.Location = new System.Drawing.Point(95, 133);
+            this.namelab.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelab.Location = new System.Drawing.Point(51, 110);
             this.namelab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelab.Name = "namelab";
-            this.namelab.Size = new System.Drawing.Size(57, 17);
+            this.namelab.Size = new System.Drawing.Size(76, 24);
             this.namelab.TabIndex = 4;
             this.namelab.Text = "Name : ";
             // 
             // roomlab
             // 
             this.roomlab.AutoSize = true;
-            this.roomlab.Location = new System.Drawing.Point(95, 97);
+            this.roomlab.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roomlab.Location = new System.Drawing.Point(51, 74);
             this.roomlab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.roomlab.Name = "roomlab";
-            this.roomlab.Size = new System.Drawing.Size(79, 17);
+            this.roomlab.Size = new System.Drawing.Size(106, 24);
             this.roomlab.TabIndex = 5;
             this.roomlab.Text = "Room No : ";
             // 
             // rooml
             // 
             this.rooml.AutoSize = true;
-            this.rooml.Location = new System.Drawing.Point(203, 97);
+            this.rooml.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rooml.Location = new System.Drawing.Point(187, 74);
             this.rooml.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.rooml.Name = "rooml";
-            this.rooml.Size = new System.Drawing.Size(79, 17);
+            this.rooml.Size = new System.Drawing.Size(106, 24);
             this.rooml.TabIndex = 7;
             this.rooml.Text = "Room No : ";
             // 
             // namel
             // 
             this.namel.AutoSize = true;
-            this.namel.Location = new System.Drawing.Point(204, 133);
+            this.namel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namel.Location = new System.Drawing.Point(188, 110);
             this.namel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namel.Name = "namel";
-            this.namel.Size = new System.Drawing.Size(57, 17);
+            this.namel.Size = new System.Drawing.Size(76, 24);
             this.namel.TabIndex = 6;
             this.namel.Text = "Name : ";
             // 
@@ -95,7 +99,7 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton1.Image = global::WindowsFormsApplication1.Properties.Resources.back;
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(16, 15);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(10, 21);
             this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(37, 34);
@@ -109,9 +113,9 @@
             // 
             this.checkoutbutton.ActiveBorderThickness = 1;
             this.checkoutbutton.ActiveCornerRadius = 20;
-            this.checkoutbutton.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.checkoutbutton.ActiveForecolor = System.Drawing.Color.White;
-            this.checkoutbutton.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.checkoutbutton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
+            this.checkoutbutton.ActiveForecolor = System.Drawing.Color.Black;
+            this.checkoutbutton.ActiveLineColor = System.Drawing.Color.Black;
             this.checkoutbutton.BackColor = System.Drawing.SystemColors.Control;
             this.checkoutbutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("checkoutbutton.BackgroundImage")));
             this.checkoutbutton.ButtonText = "Check Out";
@@ -135,9 +139,9 @@
             // 
             this.servicesbutton.ActiveBorderThickness = 1;
             this.servicesbutton.ActiveCornerRadius = 20;
-            this.servicesbutton.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.servicesbutton.ActiveForecolor = System.Drawing.Color.White;
-            this.servicesbutton.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.servicesbutton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
+            this.servicesbutton.ActiveForecolor = System.Drawing.Color.Black;
+            this.servicesbutton.ActiveLineColor = System.Drawing.Color.Black;
             this.servicesbutton.BackColor = System.Drawing.SystemColors.Control;
             this.servicesbutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("servicesbutton.BackgroundImage")));
             this.servicesbutton.ButtonText = "Services";
@@ -161,9 +165,9 @@
             // 
             this.canclebutton.ActiveBorderThickness = 1;
             this.canclebutton.ActiveCornerRadius = 20;
-            this.canclebutton.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.canclebutton.ActiveForecolor = System.Drawing.Color.White;
-            this.canclebutton.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.canclebutton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
+            this.canclebutton.ActiveForecolor = System.Drawing.Color.Black;
+            this.canclebutton.ActiveLineColor = System.Drawing.Color.Black;
             this.canclebutton.BackColor = System.Drawing.SystemColors.Control;
             this.canclebutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("canclebutton.BackgroundImage")));
             this.canclebutton.ButtonText = "Cancle";

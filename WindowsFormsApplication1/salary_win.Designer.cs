@@ -60,15 +60,15 @@
             // 
             this.post.BackColor = System.Drawing.Color.Transparent;
             this.post.BorderRadius = 3;
-            this.post.ForeColor = System.Drawing.Color.White;
+            this.post.ForeColor = System.Drawing.Color.Black;
             this.post.Items = new string[] {
         "Employee",
         "Manager"};
             this.post.Location = new System.Drawing.Point(663, 130);
             this.post.Margin = new System.Windows.Forms.Padding(5);
             this.post.Name = "post";
-            this.post.NomalColor = System.Drawing.SystemColors.AppWorkspace;
-            this.post.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.post.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(231)))), ((int)(((byte)(220)))));
+            this.post.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
             this.post.selectedIndex = -1;
             this.post.Size = new System.Drawing.Size(264, 42);
             this.post.TabIndex = 81;
@@ -149,9 +149,9 @@
             // 
             this.PayButton.ActiveBorderThickness = 1;
             this.PayButton.ActiveCornerRadius = 20;
-            this.PayButton.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.PayButton.ActiveForecolor = System.Drawing.Color.White;
-            this.PayButton.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.PayButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
+            this.PayButton.ActiveForecolor = System.Drawing.Color.Black;
+            this.PayButton.ActiveLineColor = System.Drawing.Color.Black;
             this.PayButton.BackColor = System.Drawing.SystemColors.Control;
             this.PayButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PayButton.BackgroundImage")));
             this.PayButton.ButtonText = "Pay";

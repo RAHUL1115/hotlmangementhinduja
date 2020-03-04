@@ -85,8 +85,8 @@
             this.AddButton.ActiveBorderThickness = 1;
             this.AddButton.ActiveCornerRadius = 20;
             this.AddButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
-            this.AddButton.ActiveForecolor = System.Drawing.Color.White;
-            this.AddButton.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.AddButton.ActiveForecolor = System.Drawing.Color.Black;
+            this.AddButton.ActiveLineColor = System.Drawing.Color.Black;
             this.AddButton.BackColor = System.Drawing.Color.White;
             this.AddButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddButton.BackgroundImage")));
             this.AddButton.ButtonText = "Add";
@@ -153,8 +153,8 @@
             this.SearchAttendButton.ActiveBorderThickness = 1;
             this.SearchAttendButton.ActiveCornerRadius = 20;
             this.SearchAttendButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
-            this.SearchAttendButton.ActiveForecolor = System.Drawing.Color.White;
-            this.SearchAttendButton.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.SearchAttendButton.ActiveForecolor = System.Drawing.Color.Black;
+            this.SearchAttendButton.ActiveLineColor = System.Drawing.Color.Black;
             this.SearchAttendButton.BackColor = System.Drawing.Color.White;
             this.SearchAttendButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SearchAttendButton.BackgroundImage")));
             this.SearchAttendButton.ButtonText = "Search";

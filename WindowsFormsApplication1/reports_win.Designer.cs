@@ -71,7 +71,7 @@
             this.report.ActiveBorderThickness = 1;
             this.report.ActiveCornerRadius = 20;
             this.report.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
-            this.report.ActiveForecolor = System.Drawing.Color.White;
+            this.report.ActiveForecolor = System.Drawing.Color.Black;
             this.report.ActiveLineColor = System.Drawing.Color.Black;
             this.report.BackColor = System.Drawing.SystemColors.Control;
             this.report.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("report.BackgroundImage")));

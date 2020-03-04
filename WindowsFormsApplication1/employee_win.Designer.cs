@@ -209,9 +209,9 @@
             // 
             this.AddEmpButton.ActiveBorderThickness = 1;
             this.AddEmpButton.ActiveCornerRadius = 20;
-            this.AddEmpButton.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.AddEmpButton.ActiveForecolor = System.Drawing.Color.White;
-            this.AddEmpButton.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.AddEmpButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
+            this.AddEmpButton.ActiveForecolor = System.Drawing.Color.Black;
+            this.AddEmpButton.ActiveLineColor = System.Drawing.Color.Black;
             this.AddEmpButton.BackColor = System.Drawing.SystemColors.Control;
             this.AddEmpButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddEmpButton.BackgroundImage")));
             this.AddEmpButton.ButtonText = "Save";
@@ -235,13 +235,13 @@
             // 
             this.EmpName.BackColor = System.Drawing.Color.Transparent;
             this.EmpName.BorderRadius = 3;
-            this.EmpName.ForeColor = System.Drawing.Color.White;
+            this.EmpName.ForeColor = System.Drawing.Color.Black;
             this.EmpName.Items = new string[0];
             this.EmpName.Location = new System.Drawing.Point(976, 81);
             this.EmpName.Margin = new System.Windows.Forms.Padding(5);
             this.EmpName.Name = "EmpName";
-            this.EmpName.NomalColor = System.Drawing.SystemColors.AppWorkspace;
-            this.EmpName.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.EmpName.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(231)))), ((int)(((byte)(220)))));
+            this.EmpName.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
             this.EmpName.selectedIndex = -1;
             this.EmpName.Size = new System.Drawing.Size(262, 43);
             this.EmpName.TabIndex = 84;
@@ -261,9 +261,9 @@
             // 
             this.RemoveEmpButton.ActiveBorderThickness = 1;
             this.RemoveEmpButton.ActiveCornerRadius = 20;
-            this.RemoveEmpButton.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.RemoveEmpButton.ActiveForecolor = System.Drawing.Color.White;
-            this.RemoveEmpButton.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.RemoveEmpButton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
+            this.RemoveEmpButton.ActiveForecolor = System.Drawing.Color.Black;
+            this.RemoveEmpButton.ActiveLineColor = System.Drawing.Color.Black;
             this.RemoveEmpButton.BackColor = System.Drawing.SystemColors.Control;
             this.RemoveEmpButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("RemoveEmpButton.BackgroundImage")));
             this.RemoveEmpButton.ButtonText = "Remove";
