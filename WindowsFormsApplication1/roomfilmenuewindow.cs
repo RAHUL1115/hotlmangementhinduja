@@ -42,11 +42,12 @@ namespace WindowsFormsApplication1
         {
             checkout1.BringToFront();
             checkout1.Visible = true;
-            checkout1.room = room;
+            checkout1.room1 = ""+room;
         }
 
         private void roomfilmenuewindow_Load(object sender, EventArgs e)
         {
+            Program.inf.currentroom = room;
             rooml.Text = room;
             if (Program.con.State == ConnectionState.Closed)
                 Program.con.Open();

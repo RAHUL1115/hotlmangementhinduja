@@ -13,7 +13,7 @@ namespace WindowsFormsApplication1
 {
     public partial class checkout : UserControl
     {
-        public string room;
+        public string room1;
         public checkout()
         {
             InitializeComponent();
@@ -27,16 +27,29 @@ namespace WindowsFormsApplication1
 
         private void checkout_Load(object sender, EventArgs e)
         {
-            roomlabel.Text = room;
+            if (Program.con.State == ConnectionState.Closed)
+                Program.con.Open();
+            room1 = new roomfilmenuewindow().room;
+            roomlabel.Text = Program.inf.currentroom;
             roomlabel.Visible = true;
-            string query = "select * from SELECT (DATEDIFF(day, cindate, coutdate)+1)*500 , name, where room="+room;
+            string query = "select fname, lname, ((DATEDIFF(day, cindate, coutdate)+1)*500) from current_book where room = "+ roomlabel.Text;
+            SqlCommand cmd1 = new SqlCommand(query, Program.con);
+            SqlDataReader sdr1 = cmd1.ExecuteReader();
+            if (sdr1.Read())
+            {
+                namelabel.Text = sdr1[0]+" "+sdr1[1];
+                namelabel.Visible = true;
+                amountlabel.Text = ""+sdr1[2];
+                amountlabel.Visible = true;
+                totallabel.Text = ""+sdr1[2];
+                totallabel.Visible = true;
+            }
 
-            
         }
 
         private void MainCheckoutButton_Click(object sender, EventArgs e)
         {
-            string query1 = "select *,CONVERT(varchar,cindate,23) from current_book where room=" + room;
+            string query1 = "select *,CONVERT(varchar,cindate,23) from current_book where room=" + room1;
             string query2 = " ";
             if (Program.con.State == ConnectionState.Closed)
                 Program.con.Open();
@@ -46,18 +59,18 @@ namespace WindowsFormsApplication1
             {
                 string date1 = DateTime.Now.ToString("yyyy-MM-dd");
                 string time1 = DateTime.Now.ToString("HH:mm");
-                query2 = "insert into history values(" + room + ",'" + sdr1[2] + "', '" + sdr1[3] + "', '" + sdr1[4] + "', '" + sdr1[5] + "', '" + sdr1[6] + "', '" + sdr1[12] + "','" + time1 + "' , '" + date1 + "', " + sdr1[9] + "," + totallabel.Text + ",'Checkout','"+sdr1[10]+ "','" + sdr1[11] + "')";
+                query2 = "insert into history values(" + room1 + ",'" + sdr1[2] + "', '" + sdr1[3] + "', '" + sdr1[4] + "', '" + sdr1[5] + "', '" + sdr1[6] + "', '" + sdr1[12] + "','" + time1 + "' , '" + date1 + "', " + sdr1[9] + "," + totallabel.Text + ",'Checkout','"+sdr1[10]+ "','" + sdr1[11] + "')";
             }
             cmd1.Dispose();
             sdr1.Close();
-            string query = "update current_book set fname = null,lname = null ,email = null ,address = null,cintime = null,cindate = null ,coutdate = null,no_pep = null,cinstate=null where room = " + room + "; " + query2;
+            string query = "update current_book set fname = null,lname = null ,email = null ,address = null,cintime = null,cindate = null ,coutdate = null,no_pep = null,cinstate=null where room = " + room1 + "; " + query2;
             if (Program.con.State == ConnectionState.Closed)
                 Program.con.Open();
             SqlCommand cmd = new SqlCommand(query, Program.con);
             cmd.ExecuteNonQuery();
             cmd.Dispose();
             messageboxcs mb = new messageboxcs();
-            mb.bunifuCustomLabel1.Text = "room no " + room + " is checked out";
+            mb.bunifuCustomLabel1.Text = "room no " + room1 + " is checked out";
             mb.Show();
         }
     }

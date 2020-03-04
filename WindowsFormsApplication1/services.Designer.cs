@@ -46,7 +46,6 @@
             this.feedback_dbDataSet2 = new WindowsFormsApplication1.feedback_dbDataSet2();
             this.servicesTableAdapter = new WindowsFormsApplication1.feedback_dbDataSet2TableAdapters.servicesTableAdapter();
             this.servicesTableAdapter1 = new WindowsFormsApplication1.feedback_dbDataSet3TableAdapters.servicesTableAdapter();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.serviceview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.servicesBindingSource)).BeginInit();
@@ -59,10 +58,9 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton1.Image = global::WindowsFormsApplication1.Properties.Resources.back;
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(16, 15);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(12, 12);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(37, 34);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(28, 28);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton1.TabIndex = 4;
             this.bunifuImageButton1.TabStop = false;
@@ -78,13 +76,13 @@
         "Breakfast",
         "Lunch",
         "Dinner"};
-            this.fooddropdown.Location = new System.Drawing.Point(8, 72);
-            this.fooddropdown.Margin = new System.Windows.Forms.Padding(5);
+            this.fooddropdown.Location = new System.Drawing.Point(6, 58);
+            this.fooddropdown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fooddropdown.Name = "fooddropdown";
             this.fooddropdown.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(231)))), ((int)(((byte)(220)))));
             this.fooddropdown.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
             this.fooddropdown.selectedIndex = -1;
-            this.fooddropdown.Size = new System.Drawing.Size(146, 32);
+            this.fooddropdown.Size = new System.Drawing.Size(110, 26);
             this.fooddropdown.TabIndex = 7;
             // 
             // addbutton
@@ -105,10 +103,10 @@
             this.addbutton.IdleFillColor = System.Drawing.Color.White;
             this.addbutton.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.addbutton.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.addbutton.Location = new System.Drawing.Point(249, 66);
-            this.addbutton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.addbutton.Location = new System.Drawing.Point(187, 54);
+            this.addbutton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.addbutton.Name = "addbutton";
-            this.addbutton.Size = new System.Drawing.Size(105, 43);
+            this.addbutton.Size = new System.Drawing.Size(79, 35);
             this.addbutton.TabIndex = 8;
             this.addbutton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.addbutton.Click += new System.EventHandler(this.bunifuThinButton21_Click);
@@ -131,10 +129,10 @@
             this.servicecancle.IdleFillColor = System.Drawing.Color.White;
             this.servicecancle.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.servicecancle.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.servicecancle.Location = new System.Drawing.Point(109, 379);
-            this.servicecancle.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.servicecancle.Location = new System.Drawing.Point(82, 308);
+            this.servicecancle.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.servicecancle.Name = "servicecancle";
-            this.servicecancle.Size = new System.Drawing.Size(147, 43);
+            this.servicecancle.Size = new System.Drawing.Size(110, 35);
             this.servicecancle.TabIndex = 9;
             this.servicecancle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.servicecancle.Click += new System.EventHandler(this.servicecancle_Click);
@@ -142,9 +140,10 @@
             // roomcleancheckBox
             // 
             this.roomcleancheckBox.AutoSize = true;
-            this.roomcleancheckBox.Location = new System.Drawing.Point(8, 343);
+            this.roomcleancheckBox.Location = new System.Drawing.Point(6, 279);
+            this.roomcleancheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roomcleancheckBox.Name = "roomcleancheckBox";
-            this.roomcleancheckBox.Size = new System.Drawing.Size(126, 21);
+            this.roomcleancheckBox.Size = new System.Drawing.Size(98, 17);
             this.roomcleancheckBox.TabIndex = 10;
             this.roomcleancheckBox.Text = "Room Cleaning";
             this.roomcleancheckBox.UseVisualStyleBackColor = true;
@@ -160,13 +159,13 @@
         "3",
         "4",
         "5"};
-            this.quantitydropdown.Location = new System.Drawing.Point(164, 72);
-            this.quantitydropdown.Margin = new System.Windows.Forms.Padding(5);
+            this.quantitydropdown.Location = new System.Drawing.Point(123, 58);
+            this.quantitydropdown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.quantitydropdown.Name = "quantitydropdown";
             this.quantitydropdown.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(231)))), ((int)(((byte)(220)))));
             this.quantitydropdown.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
             this.quantitydropdown.selectedIndex = -1;
-            this.quantitydropdown.Size = new System.Drawing.Size(79, 32);
+            this.quantitydropdown.Size = new System.Drawing.Size(59, 26);
             this.quantitydropdown.TabIndex = 11;
             // 
             // serviceview
@@ -181,12 +180,13 @@
             this.timeDataGridViewTextBoxColumn,
             this.stateDataGridViewTextBoxColumn});
             this.serviceview.DataSource = this.servicesBindingSource;
-            this.serviceview.Location = new System.Drawing.Point(8, 118);
+            this.serviceview.Location = new System.Drawing.Point(6, 96);
+            this.serviceview.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.serviceview.Name = "serviceview";
             this.serviceview.ReadOnly = true;
             this.serviceview.RowHeadersWidth = 51;
             this.serviceview.RowTemplate.Height = 24;
-            this.serviceview.Size = new System.Drawing.Size(346, 219);
+            this.serviceview.Size = new System.Drawing.Size(260, 178);
             this.serviceview.TabIndex = 12;
             this.serviceview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.serviceview_CellContentClick);
             // 
@@ -198,7 +198,7 @@
             this.snameDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.snameDataGridViewTextBoxColumn.Name = "snameDataGridViewTextBoxColumn";
             this.snameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.snameDataGridViewTextBoxColumn.Width = 84;
+            this.snameDataGridViewTextBoxColumn.Width = 68;
             // 
             // quantityDataGridViewTextBoxColumn
             // 
@@ -208,7 +208,7 @@
             this.quantityDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
             this.quantityDataGridViewTextBoxColumn.ReadOnly = true;
-            this.quantityDataGridViewTextBoxColumn.Width = 90;
+            this.quantityDataGridViewTextBoxColumn.Width = 71;
             // 
             // timeDataGridViewTextBoxColumn
             // 
@@ -218,7 +218,7 @@
             this.timeDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
             this.timeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.timeDataGridViewTextBoxColumn.Width = 68;
+            this.timeDataGridViewTextBoxColumn.Width = 55;
             // 
             // stateDataGridViewTextBoxColumn
             // 
@@ -228,7 +228,7 @@
             this.stateDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.stateDataGridViewTextBoxColumn.Name = "stateDataGridViewTextBoxColumn";
             this.stateDataGridViewTextBoxColumn.ReadOnly = true;
-            this.stateDataGridViewTextBoxColumn.Width = 70;
+            this.stateDataGridViewTextBoxColumn.Width = 57;
             // 
             // servicesBindingSource
             // 
@@ -253,20 +253,10 @@
             // 
             this.servicesTableAdapter1.ClearBeforeFill = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 57);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "label1";
-            // 
             // services
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.serviceview);
             this.Controls.Add(this.quantitydropdown);
             this.Controls.Add(this.roomcleancheckBox);
@@ -274,9 +264,8 @@
             this.Controls.Add(this.addbutton);
             this.Controls.Add(this.fooddropdown);
             this.Controls.Add(this.bunifuImageButton1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "services";
-            this.Size = new System.Drawing.Size(363, 428);
+            this.Size = new System.Drawing.Size(272, 348);
             this.Load += new System.EventHandler(this.services_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.serviceview)).EndInit();
@@ -306,6 +295,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn timeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn stateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Label label1;
     }
 }

@@ -9,6 +9,7 @@ namespace WindowsFormsApplication1
     public class info
     {
         public string id;
+        public string currentroom;
         public void refreshhome()
         {
             Program.ep.hometab1.refreshbutton_Click(null, null);

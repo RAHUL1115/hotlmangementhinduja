@@ -14,6 +14,10 @@ namespace WindowsFormsApplication1
     public partial class services : UserControl
     {
         public string room;
+        public string sname = "";
+        public string quantity = "";
+        public string time = "";
+
         public services()
         {
             InitializeComponent();
@@ -27,6 +31,7 @@ namespace WindowsFormsApplication1
         
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
+            addbutton.Visible = false;
             string date1 = DateTime.Now.ToString("yyyy-MM-dd");
             string time1 = DateTime.Now.ToString("HH:mm");
             if (fooddropdown.selectedIndex != -1 && quantitydropdown.selectedIndex != -1)
@@ -51,6 +56,7 @@ namespace WindowsFormsApplication1
             sd.Fill(ds);
 
             serviceview.DataSource = ds;
+            addbutton.Visible = true;
 
 
         }
@@ -59,11 +65,9 @@ namespace WindowsFormsApplication1
         {
             
             string query = "select sname,quantity,time,state from services";
-            
             SqlDataAdapter sd = new SqlDataAdapter(query, Program.con);
             DataTable ds = new DataTable();
             sd.Fill(ds);
-            
             serviceview.DataSource = ds;
             serviceview.RowHeadersVisible = false;
            
@@ -71,16 +75,23 @@ namespace WindowsFormsApplication1
 
         private void serviceview_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            sname = ""+serviceview.Rows[e.RowIndex].Cells[0].Value;
+            quantity = "" + serviceview.Rows[e.RowIndex].Cells[1].Value;
+            time = "" + serviceview.Rows[e.RowIndex].Cells[2].Value;
         }
 
         private void servicecancle_Click(object sender, EventArgs e)
         {
-            string[] delelement = new string[3];
-            serviceview.SelectedRows.CopyTo(delelement,0);
-            foreach (string row in delelement)
+            if (sname != "" && time != "")
             {
-                label1.Text += row;
+                string query = "delete from services where sname = '" + sname + "' and time = '" + time + "'";
+                SqlCommand cmd = new SqlCommand(query, Program.con);
+                cmd.ExecuteNonQuery();
+                cmd.Dispose();
+                sname = "";
+                quantity = "";
+                time = "";
+                services_Load(null, null);
             }
         }
     }
