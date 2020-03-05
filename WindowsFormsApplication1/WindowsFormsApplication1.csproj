@@ -134,6 +134,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>feedback_dbDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="findwindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="findwindow.Designer.cs">
+      <DependentUpon>findwindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="forget.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -226,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="employee_win.resx">
       <DependentUpon>employee_win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="findwindow.resx">
+      <DependentUpon>findwindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forget.resx">
       <DependentUpon>forget.cs</DependentUpon>
@@ -405,6 +414,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\empper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rback.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />

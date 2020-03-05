@@ -38,10 +38,14 @@ namespace WindowsFormsApplication1
 
         private void reports_Click(object sender, EventArgs e)
         {
+           
+
             reports_win1.BringToFront();
+            bunifuTransition1.ShowSync(reports_win1,false);
             reports_win1.Visible = true;
 
         }
+
 
         private void attendence_Click(object sender, EventArgs e)
         {

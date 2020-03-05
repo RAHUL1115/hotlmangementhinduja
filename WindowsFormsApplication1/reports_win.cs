@@ -46,6 +46,7 @@ namespace WindowsFormsApplication1
 
         private void bunifuImageButton3_Click(object sender, EventArgs e)
         {
+            bunifuTransition1.HideSync(this);
             SendToBack();
             Visible = false;
         }

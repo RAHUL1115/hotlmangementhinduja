@@ -51,6 +51,7 @@ E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsF
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.canclewin.resources
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.checkout.resources
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.employee_win.resources
+E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.findwindow.resources
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.forget.resources
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.mainmanagerwindow.resources
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.reports_win.resources
@@ -71,4 +72,3 @@ E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsF
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CopyComplete
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
-E:\Yash\project\hotlmangementhinduja\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojAssemblyReference.cache

@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainmanagerwindow));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,13 +42,14 @@
             this.salary = new Bunifu.Framework.UI.BunifuImageButton();
             this.attendence = new Bunifu.Framework.UI.BunifuImageButton();
             this.reports = new Bunifu.Framework.UI.BunifuImageButton();
+            this.empperformance = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.empperformance = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.reports_win1 = new WindowsFormsApplication1.reports_win();
             this.attendance_win1 = new WindowsFormsApplication1.attendance_win();
             this.salary_win1 = new WindowsFormsApplication1.salary_win();
@@ -69,6 +72,7 @@
             this.panel1.Controls.Add(this.switchacc);
             this.panel1.Controls.Add(this.close);
             this.panel1.Controls.Add(this.label2);
+            this.bunifuTransition1.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
@@ -79,6 +83,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
             this.label3.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(1128, 12);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -91,6 +96,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(508, 36);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -102,6 +108,7 @@
             // switchacc
             // 
             this.switchacc.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.switchacc, BunifuAnimatorNS.DecorationType.None);
             this.switchacc.Image = global::WindowsFormsApplication1.Properties.Resources.switchaccount;
             this.switchacc.ImageActive = null;
             this.switchacc.Location = new System.Drawing.Point(1208, 9);
@@ -117,6 +124,7 @@
             // close
             // 
             this.close.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.close, BunifuAnimatorNS.DecorationType.None);
             this.close.Image = global::WindowsFormsApplication1.Properties.Resources.shutdown;
             this.close.ImageActive = null;
             this.close.Location = new System.Drawing.Point(1252, 9);
@@ -132,6 +140,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(4, 63);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -142,6 +151,7 @@
             // employees
             // 
             this.employees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(179)))), ((int)(((byte)(209)))));
+            this.bunifuTransition1.SetDecoration(this.employees, BunifuAnimatorNS.DecorationType.None);
             this.employees.Image = global::WindowsFormsApplication1.Properties.Resources.emp;
             this.employees.ImageActive = null;
             this.employees.Location = new System.Drawing.Point(328, 436);
@@ -158,6 +168,7 @@
             // salary
             // 
             this.salary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(179)))), ((int)(((byte)(209)))));
+            this.bunifuTransition1.SetDecoration(this.salary, BunifuAnimatorNS.DecorationType.None);
             this.salary.Image = global::WindowsFormsApplication1.Properties.Resources.payroll1;
             this.salary.ImageActive = null;
             this.salary.Location = new System.Drawing.Point(993, 162);
@@ -174,6 +185,7 @@
             // attendence
             // 
             this.attendence.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(179)))), ((int)(((byte)(209)))));
+            this.bunifuTransition1.SetDecoration(this.attendence, BunifuAnimatorNS.DecorationType.None);
             this.attendence.Image = global::WindowsFormsApplication1.Properties.Resources.attend;
             this.attendence.ImageActive = null;
             this.attendence.Location = new System.Drawing.Point(547, 162);
@@ -190,6 +202,7 @@
             // reports
             // 
             this.reports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(179)))), ((int)(((byte)(209)))));
+            this.bunifuTransition1.SetDecoration(this.reports, BunifuAnimatorNS.DecorationType.None);
             this.reports.Image = global::WindowsFormsApplication1.Properties.Resources.report;
             this.reports.ImageActive = null;
             this.reports.Location = new System.Drawing.Point(104, 162);
@@ -202,6 +215,23 @@
             this.toolTipbutton.SetToolTip(this.reports, "Reports");
             this.reports.Zoom = 10;
             this.reports.Click += new System.EventHandler(this.reports_Click);
+            // 
+            // empperformance
+            // 
+            this.empperformance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(179)))), ((int)(((byte)(209)))));
+            this.bunifuTransition1.SetDecoration(this.empperformance, BunifuAnimatorNS.DecorationType.None);
+            this.empperformance.Image = global::WindowsFormsApplication1.Properties.Resources.empper;
+            this.empperformance.ImageActive = null;
+            this.empperformance.Location = new System.Drawing.Point(783, 436);
+            this.empperformance.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.empperformance.Name = "empperformance";
+            this.empperformance.Size = new System.Drawing.Size(229, 193);
+            this.empperformance.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.empperformance.TabIndex = 11;
+            this.empperformance.TabStop = false;
+            this.toolTipbutton.SetToolTip(this.empperformance, "Employee Performance");
+            this.empperformance.Zoom = 10;
+            this.empperformance.Click += new System.EventHandler(this.empperformance_Click);
             // 
             // bunifuElipse1
             // 
@@ -228,30 +258,39 @@
             this.bunifuElipse5.ElipseRadius = 10;
             this.bunifuElipse5.TargetControl = this;
             // 
-            // empperformance
-            // 
-            this.empperformance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(179)))), ((int)(((byte)(209)))));
-            this.empperformance.Image = global::WindowsFormsApplication1.Properties.Resources.empper;
-            this.empperformance.ImageActive = null;
-            this.empperformance.Location = new System.Drawing.Point(783, 436);
-            this.empperformance.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.empperformance.Name = "empperformance";
-            this.empperformance.Size = new System.Drawing.Size(229, 193);
-            this.empperformance.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.empperformance.TabIndex = 11;
-            this.empperformance.TabStop = false;
-            this.toolTipbutton.SetToolTip(this.empperformance, "Employee Performance");
-            this.empperformance.Zoom = 10;
-            this.empperformance.Click += new System.EventHandler(this.empperformance_Click);
-            // 
             // bunifuElipse6
             // 
             this.bunifuElipse6.ElipseRadius = 25;
             this.bunifuElipse6.TargetControl = this.empperformance;
             // 
+            // bunifuTransition1
+            // 
+            this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.bunifuTransition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
+            this.bunifuTransition1.Interval = 5;
+            this.bunifuTransition1.MaxAnimationTime = 1000;
+            this.bunifuTransition1.TimeStep = 0.05F;
+            // 
             // reports_win1
             // 
             this.reports_win1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.reports_win1, BunifuAnimatorNS.DecorationType.None);
             this.reports_win1.Location = new System.Drawing.Point(0, 108);
             this.reports_win1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.reports_win1.Name = "reports_win1";
@@ -263,6 +302,7 @@
             // attendance_win1
             // 
             this.attendance_win1.BackColor = System.Drawing.Color.White;
+            this.bunifuTransition1.SetDecoration(this.attendance_win1, BunifuAnimatorNS.DecorationType.None);
             this.attendance_win1.Location = new System.Drawing.Point(0, 116);
             this.attendance_win1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.attendance_win1.Name = "attendance_win1";
@@ -272,6 +312,7 @@
             // 
             // salary_win1
             // 
+            this.bunifuTransition1.SetDecoration(this.salary_win1, BunifuAnimatorNS.DecorationType.None);
             this.salary_win1.Location = new System.Drawing.Point(0, 114);
             this.salary_win1.Margin = new System.Windows.Forms.Padding(5);
             this.salary_win1.Name = "salary_win1";
@@ -281,6 +322,7 @@
             // 
             // employee_win1
             // 
+            this.bunifuTransition1.SetDecoration(this.employee_win1, BunifuAnimatorNS.DecorationType.None);
             this.employee_win1.Location = new System.Drawing.Point(0, 114);
             this.employee_win1.Margin = new System.Windows.Forms.Padding(5);
             this.employee_win1.Name = "employee_win1";
@@ -304,6 +346,7 @@
             this.Controls.Add(this.attendance_win1);
             this.Controls.Add(this.salary_win1);
             this.Controls.Add(this.employee_win1);
+            this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "mainmanagerwindow";
@@ -347,5 +390,6 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse5;
         private Bunifu.Framework.UI.BunifuImageButton empperformance;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse6;
+        private BunifuAnimatorNS.BunifuTransition bunifuTransition1;
     }
 }

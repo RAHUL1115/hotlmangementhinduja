@@ -89,18 +89,15 @@
             this.room9 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.room5 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.room2 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.findtextbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.findsearchbutton = new Bunifu.Framework.UI.BunifuImageButton();
             this.showtodayprebook = new Bunifu.Framework.UI.BunifuiOSSwitch();
             this.label26 = new System.Windows.Forms.Label();
             this.current_book1 = new WindowsFormsApplication1.current_book();
             this.pre_book1 = new WindowsFormsApplication1.pre_book();
-            ((System.ComponentModel.ISupportInitialize)(this.findsearchbutton)).BeginInit();
             this.SuspendLayout();
             // 
             // hometabcal2
             // 
-            this.hometabcal2.Location = new System.Drawing.Point(919, 336);
+            this.hometabcal2.Location = new System.Drawing.Point(965, 308);
             this.hometabcal2.Margin = new System.Windows.Forms.Padding(12, 11, 12, 11);
             this.hometabcal2.MaxSelectionCount = 1;
             this.hometabcal2.Name = "hometabcal2";
@@ -112,7 +109,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(447, 158);
+            this.label3.Location = new System.Drawing.Point(493, 130);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 15);
@@ -125,7 +122,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(333, 156);
+            this.label2.Location = new System.Drawing.Point(379, 128);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 15);
@@ -138,7 +135,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(561, 156);
+            this.label4.Location = new System.Drawing.Point(607, 128);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 15);
@@ -151,7 +148,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(672, 155);
+            this.label5.Location = new System.Drawing.Point(718, 127);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 15);
@@ -164,7 +161,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(672, 244);
+            this.label10.Location = new System.Drawing.Point(718, 216);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(65, 15);
@@ -177,7 +174,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(561, 244);
+            this.label9.Location = new System.Drawing.Point(607, 216);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(65, 15);
@@ -190,7 +187,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(333, 244);
+            this.label7.Location = new System.Drawing.Point(379, 216);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 15);
@@ -203,7 +200,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(447, 244);
+            this.label8.Location = new System.Drawing.Point(493, 216);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(65, 15);
@@ -216,7 +213,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(221, 244);
+            this.label6.Location = new System.Drawing.Point(267, 216);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 15);
@@ -229,7 +226,7 @@
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(672, 421);
+            this.label20.Location = new System.Drawing.Point(718, 393);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(65, 15);
@@ -242,7 +239,7 @@
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(561, 421);
+            this.label19.Location = new System.Drawing.Point(607, 393);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(65, 15);
@@ -255,7 +252,7 @@
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(333, 421);
+            this.label17.Location = new System.Drawing.Point(379, 393);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(65, 15);
@@ -268,7 +265,7 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(447, 421);
+            this.label18.Location = new System.Drawing.Point(493, 393);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(65, 15);
@@ -281,7 +278,7 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(221, 421);
+            this.label16.Location = new System.Drawing.Point(267, 393);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(65, 15);
@@ -294,7 +291,7 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(672, 332);
+            this.label15.Location = new System.Drawing.Point(718, 304);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(65, 15);
@@ -307,7 +304,7 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(561, 332);
+            this.label14.Location = new System.Drawing.Point(607, 304);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(65, 15);
@@ -320,7 +317,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(333, 332);
+            this.label12.Location = new System.Drawing.Point(379, 304);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(65, 15);
@@ -333,7 +330,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(447, 332);
+            this.label13.Location = new System.Drawing.Point(493, 304);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(65, 15);
@@ -346,7 +343,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(221, 332);
+            this.label11.Location = new System.Drawing.Point(267, 304);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(65, 15);
@@ -359,7 +356,7 @@
             this.label25.AutoSize = true;
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(672, 508);
+            this.label25.Location = new System.Drawing.Point(718, 480);
             this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(65, 15);
@@ -372,7 +369,7 @@
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(561, 508);
+            this.label24.Location = new System.Drawing.Point(607, 480);
             this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(65, 15);
@@ -385,7 +382,7 @@
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(335, 508);
+            this.label22.Location = new System.Drawing.Point(381, 480);
             this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(65, 15);
@@ -398,7 +395,7 @@
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(448, 508);
+            this.label23.Location = new System.Drawing.Point(494, 480);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(65, 15);
@@ -411,7 +408,7 @@
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(223, 508);
+            this.label21.Location = new System.Drawing.Point(269, 480);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(65, 15);
@@ -423,7 +420,7 @@
             // 
             this.flore1.AutoSize = true;
             this.flore1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flore1.Location = new System.Drawing.Point(33, 132);
+            this.flore1.Location = new System.Drawing.Point(79, 104);
             this.flore1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.flore1.Name = "flore1";
             this.flore1.Size = new System.Drawing.Size(103, 25);
@@ -434,7 +431,7 @@
             // 
             this.flore2.AutoSize = true;
             this.flore2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flore2.Location = new System.Drawing.Point(33, 218);
+            this.flore2.Location = new System.Drawing.Point(79, 190);
             this.flore2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.flore2.Name = "flore2";
             this.flore2.Size = new System.Drawing.Size(110, 25);
@@ -445,7 +442,7 @@
             // 
             this.flore4.AutoSize = true;
             this.flore4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flore4.Location = new System.Drawing.Point(33, 395);
+            this.flore4.Location = new System.Drawing.Point(79, 367);
             this.flore4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.flore4.Name = "flore4";
             this.flore4.Size = new System.Drawing.Size(144, 25);
@@ -456,7 +453,7 @@
             // 
             this.flore3.AutoSize = true;
             this.flore3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flore3.Location = new System.Drawing.Point(31, 306);
+            this.flore3.Location = new System.Drawing.Point(77, 278);
             this.flore3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.flore3.Name = "flore3";
             this.flore3.Size = new System.Drawing.Size(152, 25);
@@ -467,7 +464,7 @@
             // 
             this.flore5.AutoSize = true;
             this.flore5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flore5.Location = new System.Drawing.Point(33, 482);
+            this.flore5.Location = new System.Drawing.Point(79, 454);
             this.flore5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.flore5.Name = "flore5";
             this.flore5.Size = new System.Drawing.Size(144, 25);
@@ -478,7 +475,7 @@
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(861, 343);
+            this.label31.Location = new System.Drawing.Point(907, 315);
             this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(30, 20);
@@ -489,7 +486,7 @@
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(861, 118);
+            this.label32.Location = new System.Drawing.Point(907, 90);
             this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(52, 20);
@@ -498,7 +495,7 @@
             // 
             // hometabcal1
             // 
-            this.hometabcal1.Location = new System.Drawing.Point(919, 118);
+            this.hometabcal1.Location = new System.Drawing.Point(965, 90);
             this.hometabcal1.Margin = new System.Windows.Forms.Padding(12, 11, 12, 11);
             this.hometabcal1.MaxSelectionCount = 1;
             this.hometabcal1.Name = "hometabcal1";
@@ -510,7 +507,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(221, 156);
+            this.label1.Location = new System.Drawing.Point(267, 128);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 15);
@@ -536,7 +533,7 @@
             this.room1.IdleFillColor = System.Drawing.Color.White;
             this.room1.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room1.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room1.Location = new System.Drawing.Point(201, 97);
+            this.room1.Location = new System.Drawing.Point(247, 69);
             this.room1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room1.Name = "room1";
             this.room1.Size = new System.Drawing.Size(107, 92);
@@ -562,7 +559,7 @@
             this.refreshbutton.IdleFillColor = System.Drawing.Color.White;
             this.refreshbutton.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.refreshbutton.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.refreshbutton.Location = new System.Drawing.Point(516, 582);
+            this.refreshbutton.Location = new System.Drawing.Point(562, 554);
             this.refreshbutton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.refreshbutton.Name = "refreshbutton";
             this.refreshbutton.Size = new System.Drawing.Size(245, 80);
@@ -588,7 +585,7 @@
             this.room25.IdleFillColor = System.Drawing.Color.White;
             this.room25.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room25.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room25.Location = new System.Drawing.Point(655, 452);
+            this.room25.Location = new System.Drawing.Point(701, 424);
             this.room25.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room25.Name = "room25";
             this.room25.Size = new System.Drawing.Size(107, 92);
@@ -614,7 +611,7 @@
             this.room23.IdleFillColor = System.Drawing.Color.White;
             this.room23.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room23.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room23.Location = new System.Drawing.Point(428, 452);
+            this.room23.Location = new System.Drawing.Point(474, 424);
             this.room23.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room23.Name = "room23";
             this.room23.Size = new System.Drawing.Size(107, 92);
@@ -640,7 +637,7 @@
             this.room22.IdleFillColor = System.Drawing.Color.White;
             this.room22.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room22.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room22.Location = new System.Drawing.Point(315, 452);
+            this.room22.Location = new System.Drawing.Point(361, 424);
             this.room22.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room22.Name = "room22";
             this.room22.Size = new System.Drawing.Size(107, 92);
@@ -666,7 +663,7 @@
             this.room21.IdleFillColor = System.Drawing.Color.White;
             this.room21.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room21.Location = new System.Drawing.Point(201, 452);
+            this.room21.Location = new System.Drawing.Point(247, 424);
             this.room21.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room21.Name = "room21";
             this.room21.Size = new System.Drawing.Size(107, 92);
@@ -692,7 +689,7 @@
             this.room24.IdleFillColor = System.Drawing.Color.White;
             this.room24.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room24.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room24.Location = new System.Drawing.Point(541, 452);
+            this.room24.Location = new System.Drawing.Point(587, 424);
             this.room24.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room24.Name = "room24";
             this.room24.Size = new System.Drawing.Size(107, 92);
@@ -718,7 +715,7 @@
             this.room20.IdleFillColor = System.Drawing.Color.White;
             this.room20.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room20.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room20.Location = new System.Drawing.Point(655, 363);
+            this.room20.Location = new System.Drawing.Point(701, 335);
             this.room20.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room20.Name = "room20";
             this.room20.Size = new System.Drawing.Size(107, 92);
@@ -744,7 +741,7 @@
             this.room18.IdleFillColor = System.Drawing.Color.White;
             this.room18.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room18.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room18.Location = new System.Drawing.Point(428, 363);
+            this.room18.Location = new System.Drawing.Point(474, 335);
             this.room18.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room18.Name = "room18";
             this.room18.Size = new System.Drawing.Size(107, 92);
@@ -770,7 +767,7 @@
             this.room17.IdleFillColor = System.Drawing.Color.White;
             this.room17.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room17.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room17.Location = new System.Drawing.Point(315, 363);
+            this.room17.Location = new System.Drawing.Point(361, 335);
             this.room17.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room17.Name = "room17";
             this.room17.Size = new System.Drawing.Size(107, 92);
@@ -796,7 +793,7 @@
             this.room16.IdleFillColor = System.Drawing.Color.White;
             this.room16.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room16.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room16.Location = new System.Drawing.Point(201, 363);
+            this.room16.Location = new System.Drawing.Point(247, 335);
             this.room16.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room16.Name = "room16";
             this.room16.Size = new System.Drawing.Size(107, 92);
@@ -822,7 +819,7 @@
             this.room14.IdleFillColor = System.Drawing.Color.White;
             this.room14.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room14.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room14.Location = new System.Drawing.Point(541, 274);
+            this.room14.Location = new System.Drawing.Point(587, 246);
             this.room14.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room14.Name = "room14";
             this.room14.Size = new System.Drawing.Size(107, 92);
@@ -848,7 +845,7 @@
             this.room13.IdleFillColor = System.Drawing.Color.White;
             this.room13.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room13.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room13.Location = new System.Drawing.Point(428, 274);
+            this.room13.Location = new System.Drawing.Point(474, 246);
             this.room13.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room13.Name = "room13";
             this.room13.Size = new System.Drawing.Size(107, 92);
@@ -874,7 +871,7 @@
             this.room19.IdleFillColor = System.Drawing.Color.White;
             this.room19.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room19.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room19.Location = new System.Drawing.Point(541, 363);
+            this.room19.Location = new System.Drawing.Point(587, 335);
             this.room19.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room19.Name = "room19";
             this.room19.Size = new System.Drawing.Size(107, 92);
@@ -900,7 +897,7 @@
             this.room15.IdleFillColor = System.Drawing.Color.White;
             this.room15.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room15.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room15.Location = new System.Drawing.Point(655, 274);
+            this.room15.Location = new System.Drawing.Point(701, 246);
             this.room15.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room15.Name = "room15";
             this.room15.Size = new System.Drawing.Size(107, 92);
@@ -926,7 +923,7 @@
             this.room12.IdleFillColor = System.Drawing.Color.White;
             this.room12.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room12.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room12.Location = new System.Drawing.Point(315, 274);
+            this.room12.Location = new System.Drawing.Point(361, 246);
             this.room12.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room12.Name = "room12";
             this.room12.Size = new System.Drawing.Size(107, 92);
@@ -952,7 +949,7 @@
             this.room11.IdleFillColor = System.Drawing.Color.White;
             this.room11.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room11.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room11.Location = new System.Drawing.Point(201, 274);
+            this.room11.Location = new System.Drawing.Point(247, 246);
             this.room11.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room11.Name = "room11";
             this.room11.Size = new System.Drawing.Size(107, 92);
@@ -978,7 +975,7 @@
             this.room10.IdleFillColor = System.Drawing.Color.White;
             this.room10.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room10.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room10.Location = new System.Drawing.Point(655, 186);
+            this.room10.Location = new System.Drawing.Point(701, 158);
             this.room10.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room10.Name = "room10";
             this.room10.Size = new System.Drawing.Size(107, 92);
@@ -1004,7 +1001,7 @@
             this.room8.IdleFillColor = System.Drawing.Color.White;
             this.room8.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room8.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room8.Location = new System.Drawing.Point(428, 186);
+            this.room8.Location = new System.Drawing.Point(474, 158);
             this.room8.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room8.Name = "room8";
             this.room8.Size = new System.Drawing.Size(107, 92);
@@ -1030,7 +1027,7 @@
             this.room7.IdleFillColor = System.Drawing.Color.White;
             this.room7.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room7.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room7.Location = new System.Drawing.Point(315, 186);
+            this.room7.Location = new System.Drawing.Point(361, 158);
             this.room7.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room7.Name = "room7";
             this.room7.Size = new System.Drawing.Size(107, 92);
@@ -1056,7 +1053,7 @@
             this.room6.IdleFillColor = System.Drawing.Color.White;
             this.room6.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room6.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room6.Location = new System.Drawing.Point(201, 186);
+            this.room6.Location = new System.Drawing.Point(247, 158);
             this.room6.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room6.Name = "room6";
             this.room6.Size = new System.Drawing.Size(107, 92);
@@ -1082,7 +1079,7 @@
             this.room4.IdleFillColor = System.Drawing.Color.White;
             this.room4.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room4.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room4.Location = new System.Drawing.Point(541, 97);
+            this.room4.Location = new System.Drawing.Point(587, 69);
             this.room4.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room4.Name = "room4";
             this.room4.Size = new System.Drawing.Size(107, 92);
@@ -1108,7 +1105,7 @@
             this.room3.IdleFillColor = System.Drawing.Color.White;
             this.room3.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room3.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room3.Location = new System.Drawing.Point(428, 97);
+            this.room3.Location = new System.Drawing.Point(474, 69);
             this.room3.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room3.Name = "room3";
             this.room3.Size = new System.Drawing.Size(107, 92);
@@ -1134,7 +1131,7 @@
             this.room9.IdleFillColor = System.Drawing.Color.White;
             this.room9.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room9.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room9.Location = new System.Drawing.Point(541, 186);
+            this.room9.Location = new System.Drawing.Point(587, 158);
             this.room9.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room9.Name = "room9";
             this.room9.Size = new System.Drawing.Size(107, 92);
@@ -1160,7 +1157,7 @@
             this.room5.IdleFillColor = System.Drawing.Color.White;
             this.room5.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room5.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room5.Location = new System.Drawing.Point(655, 97);
+            this.room5.Location = new System.Drawing.Point(701, 69);
             this.room5.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room5.Name = "room5";
             this.room5.Size = new System.Drawing.Size(107, 92);
@@ -1186,7 +1183,7 @@
             this.room2.IdleFillColor = System.Drawing.Color.White;
             this.room2.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.room2.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.room2.Location = new System.Drawing.Point(315, 97);
+            this.room2.Location = new System.Drawing.Point(361, 69);
             this.room2.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.room2.Name = "room2";
             this.room2.Size = new System.Drawing.Size(107, 92);
@@ -1194,49 +1191,13 @@
             this.room2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.room2.Click += new System.EventHandler(this.Roomnobutton_Click);
             // 
-            // findtextbox
-            // 
-            this.findtextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.findtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.findtextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.findtextbox.HintForeColor = System.Drawing.Color.Empty;
-            this.findtextbox.HintText = "";
-            this.findtextbox.isPassword = false;
-            this.findtextbox.LineFocusedColor = System.Drawing.Color.Blue;
-            this.findtextbox.LineIdleColor = System.Drawing.Color.Gray;
-            this.findtextbox.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.findtextbox.LineThickness = 3;
-            this.findtextbox.Location = new System.Drawing.Point(201, 32);
-            this.findtextbox.Margin = new System.Windows.Forms.Padding(5);
-            this.findtextbox.Name = "findtextbox";
-            this.findtextbox.Size = new System.Drawing.Size(560, 54);
-            this.findtextbox.TabIndex = 65;
-            this.findtextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.findtextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.findtextbox_KeyDown);
-            // 
-            // findsearchbutton
-            // 
-            this.findsearchbutton.BackColor = System.Drawing.Color.Transparent;
-            this.findsearchbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.findsearchbutton.Image = global::WindowsFormsApplication1.Properties.Resources.search;
-            this.findsearchbutton.ImageActive = null;
-            this.findsearchbutton.Location = new System.Drawing.Point(716, 43);
-            this.findsearchbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.findsearchbutton.Name = "findsearchbutton";
-            this.findsearchbutton.Size = new System.Drawing.Size(43, 37);
-            this.findsearchbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.findsearchbutton.TabIndex = 66;
-            this.findsearchbutton.TabStop = false;
-            this.findsearchbutton.Zoom = 10;
-            this.findsearchbutton.Click += new System.EventHandler(this.findsearchbutton_Click);
-            // 
             // showtodayprebook
             // 
             this.showtodayprebook.BackColor = System.Drawing.Color.Transparent;
             this.showtodayprebook.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("showtodayprebook.BackgroundImage")));
             this.showtodayprebook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.showtodayprebook.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.showtodayprebook.Location = new System.Drawing.Point(307, 576);
+            this.showtodayprebook.Location = new System.Drawing.Point(353, 548);
             this.showtodayprebook.Margin = new System.Windows.Forms.Padding(5);
             this.showtodayprebook.Name = "showtodayprebook";
             this.showtodayprebook.OffColor = System.Drawing.Color.Gray;
@@ -1250,7 +1211,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(24, 578);
+            this.label26.Location = new System.Drawing.Point(70, 550);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(252, 25);
@@ -1259,7 +1220,7 @@
             // 
             // current_book1
             // 
-            this.current_book1.Location = new System.Drawing.Point(-3, -2);
+            this.current_book1.Location = new System.Drawing.Point(0, 0);
             this.current_book1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.current_book1.Name = "current_book1";
             this.current_book1.Size = new System.Drawing.Size(1331, 679);
@@ -1268,7 +1229,7 @@
             // 
             // pre_book1
             // 
-            this.pre_book1.Location = new System.Drawing.Point(0, -2);
+            this.pre_book1.Location = new System.Drawing.Point(0, 0);
             this.pre_book1.Margin = new System.Windows.Forms.Padding(5);
             this.pre_book1.Name = "pre_book1";
             this.pre_book1.Size = new System.Drawing.Size(1331, 679);
@@ -1282,8 +1243,6 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.Controls.Add(this.label26);
             this.Controls.Add(this.showtodayprebook);
-            this.Controls.Add(this.findsearchbutton);
-            this.Controls.Add(this.findtextbox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.room1);
             this.Controls.Add(this.label32);
@@ -1349,7 +1308,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "hometab";
             this.Size = new System.Drawing.Size(1331, 679);
-            ((System.ComponentModel.ISupportInitialize)(this.findsearchbutton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1416,8 +1374,6 @@
         public System.Windows.Forms.Label label31;
         public System.Windows.Forms.Label label32;
         public System.Windows.Forms.Label label1;
-        public Bunifu.Framework.UI.BunifuMaterialTextbox findtextbox;
-        private Bunifu.Framework.UI.BunifuImageButton findsearchbutton;
         public current_book current_book1;
         public pre_book pre_book1;
         private Bunifu.Framework.UI.BunifuiOSSwitch showtodayprebook;

@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(reports_win));
             this.back = new Bunifu.Framework.UI.BunifuImageButton();
             this.report = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -46,6 +48,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
             this.selectmonth = new Bunifu.Framework.UI.BunifuDropdown();
+            this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.back)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -54,6 +57,7 @@
             // 
             this.back.BackColor = System.Drawing.Color.Transparent;
             this.back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bunifuTransition1.SetDecoration(this.back, BunifuAnimatorNS.DecorationType.None);
             this.back.Image = global::WindowsFormsApplication1.Properties.Resources.back;
             this.back.ImageActive = null;
             this.back.Location = new System.Drawing.Point(20, 25);
@@ -77,6 +81,7 @@
             this.report.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("report.BackgroundImage")));
             this.report.ButtonText = "Generate Report";
             this.report.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.report, BunifuAnimatorNS.DecorationType.None);
             this.report.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.report.ForeColor = System.Drawing.Color.SeaGreen;
             this.report.IdleBorderThickness = 1;
@@ -96,6 +101,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(175, 21);
             this.label1.Name = "label1";
@@ -107,6 +113,7 @@
             // 
             this.label1_1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1_1.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label1_1, BunifuAnimatorNS.DecorationType.None);
             this.label1_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1_1.Location = new System.Drawing.Point(873, 21);
             this.label1_1.Name = "label1_1";
@@ -119,6 +126,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(189, 93);
             this.label2.Name = "label2";
@@ -130,6 +138,7 @@
             // 
             this.label2_1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2_1.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label2_1, BunifuAnimatorNS.DecorationType.None);
             this.label2_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2_1.Location = new System.Drawing.Point(873, 93);
             this.label2_1.Name = "label2_1";
@@ -142,6 +151,7 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(176, 165);
             this.label3.Name = "label3";
@@ -153,6 +163,7 @@
             // 
             this.label3_1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3_1.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label3_1, BunifuAnimatorNS.DecorationType.None);
             this.label3_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3_1.Location = new System.Drawing.Point(873, 165);
             this.label3_1.Name = "label3_1";
@@ -165,6 +176,7 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(167, 237);
             this.label4.Name = "label4";
@@ -176,6 +188,7 @@
             // 
             this.label4_1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4_1.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label4_1, BunifuAnimatorNS.DecorationType.None);
             this.label4_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4_1.Location = new System.Drawing.Point(873, 237);
             this.label4_1.Name = "label4_1";
@@ -188,6 +201,7 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(210, 309);
             this.label5.Name = "label5";
@@ -199,6 +213,7 @@
             // 
             this.label5_1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5_1.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label5_1, BunifuAnimatorNS.DecorationType.None);
             this.label5_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5_1.Location = new System.Drawing.Point(873, 309);
             this.label5_1.Name = "label5_1";
@@ -211,6 +226,7 @@
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(261, 381);
             this.label6.Name = "label6";
@@ -222,6 +238,7 @@
             // 
             this.label6_1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6_1.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label6_1, BunifuAnimatorNS.DecorationType.None);
             this.label6_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6_1.Location = new System.Drawing.Point(873, 381);
             this.label6_1.Name = "label6_1";
@@ -249,6 +266,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label1_1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.selectmonth, 1, 6);
+            this.bunifuTransition1.SetDecoration(this.tableLayoutPanel1, BunifuAnimatorNS.DecorationType.None);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(71, 25);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
@@ -267,6 +285,7 @@
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(256, 455);
             this.label7.Name = "label7";
@@ -279,6 +298,7 @@
             this.selectmonth.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.selectmonth.BackColor = System.Drawing.Color.Transparent;
             this.selectmonth.BorderRadius = 3;
+            this.bunifuTransition1.SetDecoration(this.selectmonth, BunifuAnimatorNS.DecorationType.None);
             this.selectmonth.ForeColor = System.Drawing.Color.Black;
             this.selectmonth.Items = new string[] {
         "1",
@@ -294,6 +314,30 @@
             this.selectmonth.TabIndex = 14;
             this.selectmonth.TabStop = false;
             // 
+            // bunifuTransition1
+            // 
+            this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.bunifuTransition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
+            this.bunifuTransition1.Interval = 5;
+            this.bunifuTransition1.MaxAnimationTime = 1000;
+            this.bunifuTransition1.TimeStep = 0.05F;
+            // 
             // reports_win
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -301,6 +345,7 @@
             this.Controls.Add(this.back);
             this.Controls.Add(this.report);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.Name = "reports_win";
             this.Size = new System.Drawing.Size(1296, 626);
             ((System.ComponentModel.ISupportInitialize)(this.back)).EndInit();
@@ -328,5 +373,6 @@
         public System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         public System.Windows.Forms.Label label7;
         private Bunifu.Framework.UI.BunifuDropdown selectmonth;
+        private BunifuAnimatorNS.BunifuTransition bunifuTransition1;
     }
 }

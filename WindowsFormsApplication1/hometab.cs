@@ -212,69 +212,6 @@ namespace WindowsFormsApplication1
             refreshbutton.Visible = true;
         }
 
-        private void findsearchbutton_Click(object sender, EventArgs e)
-        {
-            if (findtextbox.Text != "")
-            {
-                Bunifu.Framework.UI.BunifuThinButton2[] roombutton = { room1, room2, room3, room4, room5, room6, room7, room8, room9, room10, room11, room12, room13, room14, room15, room16, room17, room18, room19, room20, room21, room22, room23, room24, room25 };
-                Label[] roomlabel = { label1, label2, label3, label4, label5, label6, label7, label8, label9, label10, label11, label12, label13, label14, label15, label16, label17, label18, label19, label20, label21, label22, label23, label24, label25 };
-                resetlabbut(roombutton, roomlabel);
-                String query = "";
-                if (findtextbox.Text.All(char.IsDigit))
-                {
-                    if (Convert.ToInt32(findtextbox.Text) < 26)
-                        query = "select room, fname, lname from current_book where room = " + findtextbox.Text + " and fname is not null";
-                    else
-                    {
-                        messageboxcs mb = new messageboxcs();
-                        mb.cases = 'e';
-                        mb.bunifuCustomLabel1.Text = "Select form 1- 25";
-                        mb.Show();
-                    }
-
-                }
-                else
-                {
-                    query = "select room, fname, lname from current_book where fname like '%" + findtextbox.Text + "%' or lname like '%" + findtextbox.Text + "%'";
-                }
-                if (query != "")
-                {
-                    SqlCommand cmd = new SqlCommand(query, Program.con);
-                    SqlDataReader sdr = cmd.ExecuteReader();
-                    if (sdr.Read())
-                    {
-                        GetlabelByName("label" + sdr[0]).Text = "" + sdr[1] + " " + sdr[2];
-                        GetlabelByName("label" + sdr[0]).Visible = true;
-
-                        while (sdr.Read())
-                        {
-                           
-                            GetlabelByName("label" + sdr[0]).Text = "" + sdr[1] + " " + sdr[2];
-                            GetlabelByName("label" + sdr[0]).Visible = true;
-                        }
-                    }
-                    else
-                    {
-                        messageboxcs mb = new messageboxcs();
-                        mb.cases = 'e';
-                        mb.bunifuCustomLabel1.Text = "no user found";
-                        mb.Show();
-                    }
-                    sdr.Close();
-
-                }
-
-            }
-        }
-
-        private void findtextbox_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                findsearchbutton_Click(null, null);
-            }
-        }
-
         private void showtodayprebook_OnValueChange(object sender, EventArgs e)
         {
             if (showtodayprebook.Value)
