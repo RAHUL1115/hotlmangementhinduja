@@ -40,15 +40,17 @@
             this.salary = new Bunifu.Framework.UI.BunifuImageButton();
             this.attendence = new Bunifu.Framework.UI.BunifuImageButton();
             this.reports = new Bunifu.Framework.UI.BunifuImageButton();
-            this.reports_win1 = new WindowsFormsApplication1.reports_win();
-            this.employee_win1 = new WindowsFormsApplication1.employee_win();
-            this.attendance_win1 = new WindowsFormsApplication1.attendance_win();
-            this.salary_win1 = new WindowsFormsApplication1.salary_win();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.empperformance = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.reports_win1 = new WindowsFormsApplication1.reports_win();
+            this.attendance_win1 = new WindowsFormsApplication1.attendance_win();
+            this.salary_win1 = new WindowsFormsApplication1.salary_win();
+            this.employee_win1 = new WindowsFormsApplication1.employee_win();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.switchacc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
@@ -56,6 +58,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.salary)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.attendence)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reports)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empperformance)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -141,7 +144,7 @@
             this.employees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(179)))), ((int)(((byte)(209)))));
             this.employees.Image = global::WindowsFormsApplication1.Properties.Resources.emp;
             this.employees.ImageActive = null;
-            this.employees.Location = new System.Drawing.Point(547, 436);
+            this.employees.Location = new System.Drawing.Point(328, 436);
             this.employees.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.employees.Name = "employees";
             this.employees.Size = new System.Drawing.Size(229, 193);
@@ -200,44 +203,6 @@
             this.reports.Zoom = 10;
             this.reports.Click += new System.EventHandler(this.reports_Click);
             // 
-            // reports_win1
-            // 
-            this.reports_win1.BackColor = System.Drawing.Color.Transparent;
-            this.reports_win1.Location = new System.Drawing.Point(0, 108);
-            this.reports_win1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.reports_win1.Name = "reports_win1";
-            this.reports_win1.Size = new System.Drawing.Size(1296, 632);
-            this.reports_win1.TabIndex = 7;
-            this.toolTipbutton.SetToolTip(this.reports_win1, "Attendence");
-            this.reports_win1.Visible = false;
-            // 
-            // employee_win1
-            // 
-            this.employee_win1.Location = new System.Drawing.Point(0, 114);
-            this.employee_win1.Margin = new System.Windows.Forms.Padding(5);
-            this.employee_win1.Name = "employee_win1";
-            this.employee_win1.Size = new System.Drawing.Size(1296, 626);
-            this.employee_win1.TabIndex = 10;
-            this.employee_win1.Visible = false;
-            // 
-            // attendance_win1
-            // 
-            this.attendance_win1.Location = new System.Drawing.Point(0, 116);
-            this.attendance_win1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.attendance_win1.Name = "attendance_win1";
-            this.attendance_win1.Size = new System.Drawing.Size(1296, 626);
-            this.attendance_win1.TabIndex = 8;
-            this.attendance_win1.Visible = false;
-            // 
-            // salary_win1
-            // 
-            this.salary_win1.Location = new System.Drawing.Point(0, 114);
-            this.salary_win1.Margin = new System.Windows.Forms.Padding(5);
-            this.salary_win1.Name = "salary_win1";
-            this.salary_win1.Size = new System.Drawing.Size(1296, 626);
-            this.salary_win1.TabIndex = 9;
-            this.salary_win1.Visible = false;
-            // 
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 25;
@@ -263,12 +228,73 @@
             this.bunifuElipse5.ElipseRadius = 10;
             this.bunifuElipse5.TargetControl = this;
             // 
+            // empperformance
+            // 
+            this.empperformance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(179)))), ((int)(((byte)(209)))));
+            this.empperformance.Image = global::WindowsFormsApplication1.Properties.Resources.empper;
+            this.empperformance.ImageActive = null;
+            this.empperformance.Location = new System.Drawing.Point(783, 436);
+            this.empperformance.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.empperformance.Name = "empperformance";
+            this.empperformance.Size = new System.Drawing.Size(229, 193);
+            this.empperformance.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.empperformance.TabIndex = 11;
+            this.empperformance.TabStop = false;
+            this.toolTipbutton.SetToolTip(this.empperformance, "Employee Performance");
+            this.empperformance.Zoom = 10;
+            this.empperformance.Click += new System.EventHandler(this.empperformance_Click);
+            // 
+            // bunifuElipse6
+            // 
+            this.bunifuElipse6.ElipseRadius = 25;
+            this.bunifuElipse6.TargetControl = this.empperformance;
+            // 
+            // reports_win1
+            // 
+            this.reports_win1.BackColor = System.Drawing.Color.Transparent;
+            this.reports_win1.Location = new System.Drawing.Point(0, 108);
+            this.reports_win1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.reports_win1.Name = "reports_win1";
+            this.reports_win1.Size = new System.Drawing.Size(1296, 632);
+            this.reports_win1.TabIndex = 7;
+            this.toolTipbutton.SetToolTip(this.reports_win1, "Attendence");
+            this.reports_win1.Visible = false;
+            // 
+            // attendance_win1
+            // 
+            this.attendance_win1.BackColor = System.Drawing.Color.White;
+            this.attendance_win1.Location = new System.Drawing.Point(0, 116);
+            this.attendance_win1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.attendance_win1.Name = "attendance_win1";
+            this.attendance_win1.Size = new System.Drawing.Size(1296, 626);
+            this.attendance_win1.TabIndex = 8;
+            this.attendance_win1.Visible = false;
+            // 
+            // salary_win1
+            // 
+            this.salary_win1.Location = new System.Drawing.Point(0, 114);
+            this.salary_win1.Margin = new System.Windows.Forms.Padding(5);
+            this.salary_win1.Name = "salary_win1";
+            this.salary_win1.Size = new System.Drawing.Size(1296, 626);
+            this.salary_win1.TabIndex = 9;
+            this.salary_win1.Visible = false;
+            // 
+            // employee_win1
+            // 
+            this.employee_win1.Location = new System.Drawing.Point(0, 114);
+            this.employee_win1.Margin = new System.Windows.Forms.Padding(5);
+            this.employee_win1.Name = "employee_win1";
+            this.employee_win1.Size = new System.Drawing.Size(1296, 626);
+            this.employee_win1.TabIndex = 10;
+            this.employee_win1.Visible = false;
+            // 
             // mainmanagerwindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1296, 740);
+            this.Controls.Add(this.empperformance);
             this.Controls.Add(this.employees);
             this.Controls.Add(this.salary);
             this.Controls.Add(this.attendence);
@@ -292,6 +318,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.salary)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.attendence)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reports)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empperformance)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -318,5 +345,7 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse5;
+        private Bunifu.Framework.UI.BunifuImageButton empperformance;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse6;
     }
 }

@@ -97,11 +97,11 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(169, 21);
+            this.label1.Location = new System.Drawing.Point(175, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 29);
+            this.label1.Size = new System.Drawing.Size(241, 29);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Numbers of Check in\'s";
+            this.label1.Text = "Number of Check in\'s";
             // 
             // label1_1
             // 
@@ -120,11 +120,11 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(149, 93);
+            this.label2.Location = new System.Drawing.Point(189, 93);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(293, 29);
+            this.label2.Size = new System.Drawing.Size(213, 29);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Numbers of  Pre bookings";
+            this.label2.Text = "Number of  Cancle";
             // 
             // label2_1
             // 
@@ -143,11 +143,11 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(170, 165);
+            this.label3.Location = new System.Drawing.Point(176, 165);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(251, 29);
+            this.label3.Size = new System.Drawing.Size(239, 29);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Numbers of Check out";
+            this.label3.Text = "Number of Check out";
             // 
             // label3_1
             // 
@@ -280,7 +280,10 @@
             this.selectmonth.BackColor = System.Drawing.Color.Transparent;
             this.selectmonth.BorderRadius = 3;
             this.selectmonth.ForeColor = System.Drawing.Color.Black;
-            this.selectmonth.Items = new string[0];
+            this.selectmonth.Items = new string[] {
+        "1",
+        "2",
+        "3"};
             this.selectmonth.Location = new System.Drawing.Point(742, 448);
             this.selectmonth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.selectmonth.Name = "selectmonth";
@@ -289,6 +292,7 @@
             this.selectmonth.selectedIndex = -1;
             this.selectmonth.Size = new System.Drawing.Size(289, 43);
             this.selectmonth.TabIndex = 14;
+            this.selectmonth.TabStop = false;
             // 
             // reports_win
             // 

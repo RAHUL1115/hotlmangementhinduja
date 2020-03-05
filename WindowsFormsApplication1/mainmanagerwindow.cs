@@ -60,5 +60,10 @@ namespace WindowsFormsApplication1
             employee_win1.BringToFront();
             employee_win1.Visible = true;
         }
+
+        private void empperformance_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

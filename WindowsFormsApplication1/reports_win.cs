@@ -27,10 +27,21 @@ namespace WindowsFormsApplication1
         {
             if (Program.con.State == ConnectionState.Closed)
                 Program.con.Open();
-            String query = "select * from login where id='" + 2 + "'";
+            String query = "select top 1 (select count(regid) from history where state='Checkout' and MONTH(cindate) = "+ selectmonth.selectedValue + " )+(select count(regid) from current_book where regid is not null and MONTH(cindate) = "+ selectmonth.selectedValue + " ),(select count(regid) from history where state = 'cancle' and MONTH(cindate) = "+ selectmonth.selectedValue + "),(select count(regid) from history where state='Checkout' and MONTH(cindate) = " + selectmonth.selectedValue + " ),(select sum(paid) from history where MONTH(cindate) = " + selectmonth.selectedValue + " ) from history";
+
             SqlCommand cmd = new SqlCommand(query, Program.con);
             SqlDataReader sdr = cmd.ExecuteReader();
-           // if(sdr.Read())
+            if (sdr.Read())
+            {
+                label1_1.Text = sdr[0].ToString();
+                label1_1.Visible = true;
+                label2_1.Text = sdr[1].ToString();
+                label2_1.Visible = true;
+                label3_1.Text = sdr[2].ToString();
+                label3_1.Visible = true;
+                label5_1.Text = sdr[3].ToString();
+                label5_1.Visible = true;
+            }
         }
 
         private void bunifuImageButton3_Click(object sender, EventArgs e)
