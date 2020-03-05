@@ -20,6 +20,7 @@ namespace WindowsFormsApplication1
 
         private void mainwindow_load(object sender, EventArgs e)
         {
+            leftimgbutton.Visible = false;
             user_name.Text = Program.inf.id;
             refresh();
         }
@@ -39,6 +40,32 @@ namespace WindowsFormsApplication1
             this.Dispose();
             this.Close();
             Program.switchacc();
+        }
+
+        private void leftimgbutton_Click(object sender, EventArgs e)
+        {
+            rightimgbutton.Visible = true;
+            leftimgbutton.Visible = false;
+
+            hometab1.BringToFront();
+            anitab.ShowSync(hometab1);
+
+            rightimgbutton.BringToFront();
+            leftimgbutton.BringToFront();
+            findwindow1.Visible = false;
+        }
+
+        private void rightimgbutton_Click(object sender, EventArgs e)
+        {
+            leftimgbutton.Visible = true;
+            rightimgbutton.Visible = false;
+
+            findwindow1.BringToFront();
+            anitab1.ShowSync(findwindow1);
+
+            rightimgbutton.BringToFront();
+            leftimgbutton.BringToFront();
+            hometab1.Visible = false;
         }
     }
 }

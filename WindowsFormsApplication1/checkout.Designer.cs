@@ -50,10 +50,9 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton1.Image = global::WindowsFormsApplication1.Properties.Resources.back;
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(16, 15);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(12, 12);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(37, 34);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(28, 28);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton1.TabIndex = 5;
             this.bunifuImageButton1.TabStop = false;
@@ -63,55 +62,50 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(11, 81);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(32, 92);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(167, 25);
+            this.label6.Size = new System.Drawing.Size(105, 16);
             this.label6.TabIndex = 81;
             this.label6.Text = "Room Number : ";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 132);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(32, 124);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 25);
+            this.label1.Size = new System.Drawing.Size(54, 16);
             this.label1.TabIndex = 82;
             this.label1.Text = "Name : ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 183);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(32, 156);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 25);
+            this.label2.Size = new System.Drawing.Size(62, 16);
             this.label2.TabIndex = 83;
             this.label2.Text = "Amount : ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(11, 234);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(32, 188);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 25);
+            this.label3.Size = new System.Drawing.Size(69, 16);
             this.label3.TabIndex = 84;
             this.label3.Text = "Discount : ";
             // 
             // roomlabel
             // 
             this.roomlabel.AutoSize = true;
-            this.roomlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roomlabel.Location = new System.Drawing.Point(181, 81);
-            this.roomlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.roomlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roomlabel.Location = new System.Drawing.Point(145, 92);
             this.roomlabel.Name = "roomlabel";
-            this.roomlabel.Size = new System.Drawing.Size(167, 25);
+            this.roomlabel.Size = new System.Drawing.Size(105, 16);
             this.roomlabel.TabIndex = 85;
             this.roomlabel.Text = "Room Number : ";
             this.roomlabel.Visible = false;
@@ -119,11 +113,10 @@
             // namelabel
             // 
             this.namelabel.AutoSize = true;
-            this.namelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.namelabel.Location = new System.Drawing.Point(181, 129);
-            this.namelabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.namelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelabel.Location = new System.Drawing.Point(145, 124);
             this.namelabel.Name = "namelabel";
-            this.namelabel.Size = new System.Drawing.Size(167, 25);
+            this.namelabel.Size = new System.Drawing.Size(105, 16);
             this.namelabel.TabIndex = 86;
             this.namelabel.Text = "Room Number : ";
             this.namelabel.Visible = false;
@@ -131,11 +124,10 @@
             // amountlabel
             // 
             this.amountlabel.AutoSize = true;
-            this.amountlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amountlabel.Location = new System.Drawing.Point(179, 183);
-            this.amountlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.amountlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amountlabel.Location = new System.Drawing.Point(145, 156);
             this.amountlabel.Name = "amountlabel";
-            this.amountlabel.Size = new System.Drawing.Size(167, 25);
+            this.amountlabel.Size = new System.Drawing.Size(105, 16);
             this.amountlabel.TabIndex = 87;
             this.amountlabel.Text = "Room Number : ";
             this.amountlabel.Visible = false;
@@ -152,21 +144,23 @@
             this.discounttextbox.LineIdleColor = System.Drawing.Color.Gray;
             this.discounttextbox.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.discounttextbox.LineThickness = 3;
-            this.discounttextbox.Location = new System.Drawing.Point(187, 219);
-            this.discounttextbox.Margin = new System.Windows.Forms.Padding(5);
+            this.discounttextbox.Location = new System.Drawing.Point(148, 177);
+            this.discounttextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.discounttextbox.Name = "discounttextbox";
-            this.discounttextbox.Size = new System.Drawing.Size(79, 41);
+            this.discounttextbox.Size = new System.Drawing.Size(59, 33);
             this.discounttextbox.TabIndex = 88;
+            this.discounttextbox.Text = "0";
             this.discounttextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.discounttextbox.OnValueChanged += new System.EventHandler(this.discounttextbox_OnValueChanged);
+            this.discounttextbox.Leave += new System.EventHandler(this.discounttextbox_Leave);
             // 
             // totallabel
             // 
             this.totallabel.AutoSize = true;
-            this.totallabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totallabel.Location = new System.Drawing.Point(179, 290);
-            this.totallabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.totallabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totallabel.Location = new System.Drawing.Point(151, 218);
             this.totallabel.Name = "totallabel";
-            this.totallabel.Size = new System.Drawing.Size(60, 25);
+            this.totallabel.Size = new System.Drawing.Size(36, 16);
             this.totallabel.TabIndex = 90;
             this.totallabel.Text = "2000";
             this.totallabel.Visible = false;
@@ -174,11 +168,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(11, 290);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(32, 220);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 25);
+            this.label9.Size = new System.Drawing.Size(48, 16);
             this.label9.TabIndex = 89;
             this.label9.Text = "Total : ";
             // 
@@ -200,10 +193,10 @@
             this.MainCheckoutButton.IdleFillColor = System.Drawing.Color.White;
             this.MainCheckoutButton.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.MainCheckoutButton.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.MainCheckoutButton.Location = new System.Drawing.Point(101, 346);
-            this.MainCheckoutButton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.MainCheckoutButton.Location = new System.Drawing.Point(76, 281);
+            this.MainCheckoutButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MainCheckoutButton.Name = "MainCheckoutButton";
-            this.MainCheckoutButton.Size = new System.Drawing.Size(167, 48);
+            this.MainCheckoutButton.Size = new System.Drawing.Size(125, 39);
             this.MainCheckoutButton.TabIndex = 91;
             this.MainCheckoutButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.MainCheckoutButton.Click += new System.EventHandler(this.MainCheckoutButton_Click);
@@ -212,16 +205,15 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(275, 234);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(214, 190);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 25);
+            this.label4.Size = new System.Drawing.Size(24, 20);
             this.label4.TabIndex = 92;
             this.label4.Text = "%";
             // 
             // checkout
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label4);
             this.Controls.Add(this.MainCheckoutButton);
@@ -236,9 +228,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.bunifuImageButton1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "checkout";
-            this.Size = new System.Drawing.Size(363, 428);
+            this.Size = new System.Drawing.Size(272, 348);
             this.Load += new System.EventHandler(this.checkout_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
