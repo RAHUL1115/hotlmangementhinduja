@@ -30,10 +30,10 @@
         {
             this.findsearchbutton = new Bunifu.Framework.UI.BunifuImageButton();
             this.findtextbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.fooddropdown = new Bunifu.Framework.UI.BunifuDropdown();
+            this.findView = new System.Windows.Forms.DataGridView();
+            this.tableselect = new Bunifu.Framework.UI.BunifuDropdown();
             ((System.ComponentModel.ISupportInitialize)(this.findsearchbutton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.findView)).BeginInit();
             this.SuspendLayout();
             // 
             // findsearchbutton
@@ -50,6 +50,7 @@
             this.findsearchbutton.TabIndex = 68;
             this.findsearchbutton.TabStop = false;
             this.findsearchbutton.Zoom = 10;
+            this.findsearchbutton.Click += new System.EventHandler(this.findsearchbutton_Click);
             // 
             // findtextbox
             // 
@@ -69,47 +70,54 @@
             this.findtextbox.Size = new System.Drawing.Size(560, 54);
             this.findtextbox.TabIndex = 67;
             this.findtextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.findtextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.findtextbox_KeyDown);
             // 
-            // dataGridView1
+            // findView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(56, 98);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1211, 551);
-            this.dataGridView1.TabIndex = 69;
+            this.findView.AllowUserToAddRows = false;
+            this.findView.AllowUserToDeleteRows = false;
+            this.findView.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
+            this.findView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.findView.Location = new System.Drawing.Point(56, 98);
+            this.findView.Name = "findView";
+            this.findView.ReadOnly = true;
+            this.findView.RowHeadersWidth = 51;
+            this.findView.RowTemplate.Height = 24;
+            this.findView.Size = new System.Drawing.Size(1211, 551);
+            this.findView.TabIndex = 69;
+            this.findView.KeyDown += new System.Windows.Forms.KeyEventHandler(this.findView_KeyDown);
             // 
-            // fooddropdown
+            // tableselect
             // 
-            this.fooddropdown.BackColor = System.Drawing.Color.Transparent;
-            this.fooddropdown.BorderRadius = 3;
-            this.fooddropdown.ForeColor = System.Drawing.Color.Black;
-            this.fooddropdown.Items = new string[] {
+            this.tableselect.BackColor = System.Drawing.Color.Transparent;
+            this.tableselect.BorderRadius = 3;
+            this.tableselect.ForeColor = System.Drawing.Color.Black;
+            this.tableselect.Items = new string[] {
         "Current Bookings",
         "Pre Bookings",
         "History"};
-            this.fooddropdown.Location = new System.Drawing.Point(649, 42);
-            this.fooddropdown.Margin = new System.Windows.Forms.Padding(5);
-            this.fooddropdown.Name = "fooddropdown";
-            this.fooddropdown.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(231)))), ((int)(((byte)(220)))));
-            this.fooddropdown.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
-            this.fooddropdown.selectedIndex = -1;
-            this.fooddropdown.Size = new System.Drawing.Size(201, 32);
-            this.fooddropdown.TabIndex = 70;
+            this.tableselect.Location = new System.Drawing.Point(649, 42);
+            this.tableselect.Margin = new System.Windows.Forms.Padding(5);
+            this.tableselect.Name = "tableselect";
+            this.tableselect.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(231)))), ((int)(((byte)(220)))));
+            this.tableselect.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
+            this.tableselect.selectedIndex = 0;
+            this.tableselect.Size = new System.Drawing.Size(201, 32);
+            this.tableselect.TabIndex = 70;
             // 
             // findwindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.fooddropdown);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.tableselect);
+            this.Controls.Add(this.findView);
             this.Controls.Add(this.findsearchbutton);
             this.Controls.Add(this.findtextbox);
             this.Name = "findwindow";
             this.Size = new System.Drawing.Size(1331, 679);
+            this.Load += new System.EventHandler(this.findwindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.findsearchbutton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.findView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -118,7 +126,7 @@
 
         private Bunifu.Framework.UI.BunifuImageButton findsearchbutton;
         public Bunifu.Framework.UI.BunifuMaterialTextbox findtextbox;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private Bunifu.Framework.UI.BunifuDropdown fooddropdown;
+        private System.Windows.Forms.DataGridView findView;
+        private Bunifu.Framework.UI.BunifuDropdown tableselect;
     }
 }

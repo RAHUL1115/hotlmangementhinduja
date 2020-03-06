@@ -19,10 +19,16 @@ namespace WindowsFormsApplication1
 
 
         [STAThread]
+
         public static void onclick()
         {
-            ep = new mainwindow();
-            ep.ShowDialog();
+            try
+            {
+                ep = new mainwindow();
+                ep.ShowDialog();
+            }
+            catch (Exception)
+            { }
         }
         public static void onclick1()
         {

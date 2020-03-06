@@ -44,10 +44,10 @@ namespace WindowsFormsApplication1
             cmd.Dispose();
 
         }
-
+        string date1 = DateTime.Now.ToString("yyyy-MM-dd");
         private void AddEmpButton_Click(object sender, EventArgs e)
         {
-            string query = "insert  into login values('"+idtextbox.Text+"','"+passtextbox.Text+"','o','"+emailtextbox.Text+"','"+fullnametextbox.Text+"','"+addrestextbox.Text+"','"+monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd")+"')";
+            string query = "insert  into login values('"+idtextbox.Text+"','"+passtextbox.Text+"','o','"+emailtextbox.Text+"','"+fullnametextbox.Text+"','"+addrestextbox.Text+"','"+monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd")+"','"+date1+"')";
             SqlCommand cmd = new SqlCommand(query, Program.con);
             cmd.ExecuteNonQuery();
 
