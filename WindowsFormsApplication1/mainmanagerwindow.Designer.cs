@@ -54,6 +54,7 @@
             this.attendance_win1 = new WindowsFormsApplication1.attendance_win();
             this.salary_win1 = new WindowsFormsApplication1.salary_win();
             this.employee_win1 = new WindowsFormsApplication1.employee_win();
+            this.emp_performance_win1 = new WindowsFormsApplication1.emp_performance_win();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.switchacc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
@@ -312,6 +313,7 @@
             // 
             // salary_win1
             // 
+            this.salary_win1.BackColor = System.Drawing.Color.White;
             this.bunifuTransition1.SetDecoration(this.salary_win1, BunifuAnimatorNS.DecorationType.None);
             this.salary_win1.Location = new System.Drawing.Point(0, 114);
             this.salary_win1.Margin = new System.Windows.Forms.Padding(5);
@@ -330,6 +332,16 @@
             this.employee_win1.TabIndex = 10;
             this.employee_win1.Visible = false;
             // 
+            // emp_performance_win1
+            // 
+            this.emp_performance_win1.BackColor = System.Drawing.Color.White;
+            this.bunifuTransition1.SetDecoration(this.emp_performance_win1, BunifuAnimatorNS.DecorationType.None);
+            this.emp_performance_win1.Location = new System.Drawing.Point(0, 114);
+            this.emp_performance_win1.Name = "emp_performance_win1";
+            this.emp_performance_win1.Size = new System.Drawing.Size(1296, 626);
+            this.emp_performance_win1.TabIndex = 12;
+            this.emp_performance_win1.Visible = false;
+            // 
             // mainmanagerwindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -346,6 +358,7 @@
             this.Controls.Add(this.attendance_win1);
             this.Controls.Add(this.salary_win1);
             this.Controls.Add(this.employee_win1);
+            this.Controls.Add(this.emp_performance_win1);
             this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -391,5 +404,6 @@
         private Bunifu.Framework.UI.BunifuImageButton empperformance;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse6;
         private BunifuAnimatorNS.BunifuTransition bunifuTransition1;
+        private emp_performance_win emp_performance_win1;
     }
 }

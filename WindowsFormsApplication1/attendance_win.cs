@@ -31,7 +31,7 @@ namespace WindowsFormsApplication1
         {
             AddAttendanceName.Clear();
             if (Program.con.State == ConnectionState.Closed) { Program.con.Open(); }
-            string query = "select id from login where id not in (select emp_name from attendance where date = convert(varchar, getdate(), 23) )";
+            string query = "select id from login where id not in (select emp_name from attendance where date = convert(varchar, getdate(), 23) and at_state = 'p')  ";
             SqlCommand cmd = new SqlCommand(query, Program.con);
             SqlDataReader sdr = cmd.ExecuteReader();
             if (sdr.Read())
@@ -90,6 +90,7 @@ namespace WindowsFormsApplication1
             }
         }
 
+        //int cal=(sdr[1]*5)/sdr[0]
         private void SearchAttendButton_Click(object sender, EventArgs e)
         {
             if (Program.con.State == ConnectionState.Closed) { Program.con.Open(); }

@@ -65,6 +65,7 @@ namespace WindowsFormsApplication1
                 sd.Fill(ds);
 
                 findView.DataSource = ds;
+                findView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             }
         }
     

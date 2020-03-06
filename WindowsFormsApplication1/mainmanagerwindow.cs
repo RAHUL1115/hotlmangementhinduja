@@ -67,7 +67,9 @@ namespace WindowsFormsApplication1
 
         private void empperformance_Click(object sender, EventArgs e)
         {
-
+            emp_performance_win1.BringToFront();
+            emp_performance_win1.Visible = true;
         }
     }
+    
 }

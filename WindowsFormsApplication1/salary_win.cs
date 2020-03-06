@@ -31,6 +31,9 @@ namespace WindowsFormsApplication1
 
         }
 
+       String month = DateTime.Now.Month.ToString();
+       
+
         private void salary_win_Load(object sender, EventArgs e)
         {
             empname.Clear();
@@ -45,13 +48,10 @@ namespace WindowsFormsApplication1
                     empname.AddItem("" + sdr[0]);
                 }
             }
-            DateTime dt = DateTime.Now;
-            String date = dt.Month.ToString();
+            monthDropdown1.selectedIndex = Convert.ToInt32(month) - 1;
+            selecthistorymonthDropdown1.selectedIndex = Convert.ToInt32(month) - 1;
 
-            monthDropdown1.selectedIndex = Convert.ToInt32(date) - 1;
-            selecthistorymonthDropdown1.selectedIndex = Convert.ToInt32(date) - 1;
-
-            string query2 = "Select * from salary where Month(date)='" + selecthistorymonthDropdown1.selectedValue + "'";
+            string query2 = "Select emp_id as 'Employee Id',date as Date,sget as Salary,formonth as Month from salary where Month(date)='" + selecthistorymonthDropdown1.selectedValue + "'";
             SqlDataAdapter sd = new SqlDataAdapter(query2, Program.con);
             DataTable ds = new DataTable();
             sd.Fill(ds);
@@ -62,9 +62,10 @@ namespace WindowsFormsApplication1
 
         private void PayButton_Click(object sender, EventArgs e)
         {
+
             string date1 = DateTime.Now.ToString("yyyy-MM-dd");
             string time1 = DateTime.Now.ToString("HH:mm");
-            string query = "insert  into salary values('" + empname.selectedValue + "','"+date1+ "','"+bonustextbox+"','"+salarytextbox+"','','P')";
+            string query = "insert  into salary values('" + empname.selectedValue + "','"+date1+ "','"+bonustextbox.Text+"','"+(Convert.ToInt32(salarytextbox.Text)+ Convert.ToInt32(bonustextbox.Text) )+ "',"+monthDropdown1.selectedValue+")";
             SqlCommand cmd = new SqlCommand(query, Program.con);
             cmd.ExecuteNonQuery();
            salary_win_Load(null, null);
@@ -77,7 +78,7 @@ namespace WindowsFormsApplication1
 
         private void SearchAttendButton_Click(object sender, EventArgs e)
         {
-            string query2 = "Select * from salary where Month(date)='" + selecthistorymonthDropdown1.selectedValue + "'";
+            string query2 = "Select emp_id as 'Employee Id',date as Date,sget as Salary,formonth as Month from salary where formonth='" + selecthistorymonthDropdown1.selectedValue + "'";
             SqlDataAdapter sd = new SqlDataAdapter(query2, Program.con);
             DataTable ds = new DataTable();
             sd.Fill(ds);
