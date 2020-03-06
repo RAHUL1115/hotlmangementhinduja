@@ -31,7 +31,7 @@ namespace WindowsFormsApplication1
         {
             AddAttendanceName.Clear();
             if (Program.con.State == ConnectionState.Closed) { Program.con.Open(); }
-            string query = "select id from login where id not in (select emp_name from attendance where date = convert(varchar, getdate(), 23) and at_state = 'p')  ";
+            string query = "select id from login where id not in (select emp_name from attendance where date = convert(varchar, getdate(), 23) and at_state = '"+ attendencesate.selectedValue + "')  ";
             SqlCommand cmd = new SqlCommand(query, Program.con);
             SqlDataReader sdr = cmd.ExecuteReader();
             if (sdr.Read())
