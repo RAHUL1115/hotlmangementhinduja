@@ -51,7 +51,12 @@ namespace WindowsFormsApplication1
             monthDropdown1.selectedIndex = Convert.ToInt32(date) - 1;
             selecthistorymonthDropdown1.selectedIndex = Convert.ToInt32(date) - 1;
 
+            string query2 = "Select * from salary where Month(date)='" + selecthistorymonthDropdown1.selectedValue + "'";
+            SqlDataAdapter sd = new SqlDataAdapter(query2, Program.con);
+            DataTable ds = new DataTable();
+            sd.Fill(ds);
 
+            salaryhistoryView.DataSource = ds;
 
         }
 
@@ -68,6 +73,16 @@ namespace WindowsFormsApplication1
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void SearchAttendButton_Click(object sender, EventArgs e)
+        {
+            string query2 = "Select * from salary where Month(date)='" + selecthistorymonthDropdown1.selectedValue + "'";
+            SqlDataAdapter sd = new SqlDataAdapter(query2, Program.con);
+            DataTable ds = new DataTable();
+            sd.Fill(ds);
+
+            salaryhistoryView.DataSource = ds;
         }
     }
 }

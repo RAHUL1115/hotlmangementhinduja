@@ -114,6 +114,12 @@
     <Compile Include="employee_win.Designer.cs">
       <DependentUpon>employee_win.cs</DependentUpon>
     </Compile>
+    <Compile Include="emp_performance_win.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="emp_performance_win.Designer.cs">
+      <DependentUpon>emp_performance_win.cs</DependentUpon>
+    </Compile>
     <Compile Include="feedback_dbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -232,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="employee_win.resx">
       <DependentUpon>employee_win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emp_performance_win.resx">
+      <DependentUpon>emp_performance_win.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="findwindow.resx">
       <DependentUpon>findwindow.cs</DependentUpon>
