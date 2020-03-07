@@ -36,8 +36,11 @@ namespace WindowsFormsApplication1
 
         private void salary_win_Load(object sender, EventArgs e)
         {
+            monthDropdown1.selectedIndex = Convert.ToInt32(month) - 1;
+            selecthistorymonthDropdown1.selectedIndex = Convert.ToInt32(month) - 1;
+
             empname.Clear();
-            string query = "select id from login where id not in (select emp_id from salary where date = convert(varchar, getdate(), 23) )";
+            string query = "select id from login where post != 'm' and month(doj) <= " + monthDropdown1.selectedValue + " and id not in (select emp_id from salary where formonth= " + monthDropdown1.selectedValue + " )";
             SqlCommand cmd = new SqlCommand(query, Program.con);
             SqlDataReader sdr = cmd.ExecuteReader();
             if (sdr.Read())
@@ -48,8 +51,6 @@ namespace WindowsFormsApplication1
                     empname.AddItem("" + sdr[0]);
                 }
             }
-            monthDropdown1.selectedIndex = Convert.ToInt32(month) - 1;
-            selecthistorymonthDropdown1.selectedIndex = Convert.ToInt32(month) - 1;
 
             string query2 = "Select emp_id as 'Employee Id',date as Date,sget as Salary,formonth as Month from salary where Month(date)='" + selecthistorymonthDropdown1.selectedValue + "'";
             SqlDataAdapter sd = new SqlDataAdapter(query2, Program.con);
@@ -84,6 +85,22 @@ namespace WindowsFormsApplication1
             sd.Fill(ds);
 
             salaryhistoryView.DataSource = ds;
+        }
+
+        private void monthDropdown1_onItemSelected(object sender, EventArgs e)
+        {
+            empname.Clear();
+            string query = "select id from login where post != 'm' and month(doj) <= " + monthDropdown1.selectedValue + " and id not in (select emp_id from salary where formonth= " + monthDropdown1.selectedValue + " )";
+            SqlCommand cmd = new SqlCommand(query, Program.con);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            if (sdr.Read())
+            {
+                empname.AddItem("" + sdr[0]);
+                while (sdr.Read())
+                {
+                    empname.AddItem("" + sdr[0]);
+                }
+            }
         }
     }
 }
