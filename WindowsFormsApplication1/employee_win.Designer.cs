@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(employee_win));
             this.back = new Bunifu.Framework.UI.BunifuImageButton();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,6 +50,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.addrestextbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.back)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,6 +58,7 @@
             // 
             this.back.BackColor = System.Drawing.Color.Transparent;
             this.back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bunifuTransition1.SetDecoration(this.back, BunifuAnimatorNS.DecorationType.None);
             this.back.Image = global::WindowsFormsApplication1.Properties.Resources.back;
             this.back.ImageActive = null;
             this.back.Location = new System.Drawing.Point(8, 14);
@@ -70,6 +74,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(90, 201);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -81,6 +86,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(90, 135);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -92,6 +98,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(90, 266);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -103,6 +110,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(90, 70);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -114,6 +122,7 @@
             // fullnametextbox
             // 
             this.fullnametextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTransition1.SetDecoration(this.fullnametextbox, BunifuAnimatorNS.DecorationType.None);
             this.fullnametextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.fullnametextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.fullnametextbox.HintForeColor = System.Drawing.Color.Empty;
@@ -134,6 +143,7 @@
             // 
             this.emailtextbox.AutoScroll = true;
             this.emailtextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTransition1.SetDecoration(this.emailtextbox, BunifuAnimatorNS.DecorationType.None);
             this.emailtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.emailtextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.emailtextbox.HintForeColor = System.Drawing.Color.Empty;
@@ -153,6 +163,7 @@
             // passtextbox
             // 
             this.passtextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTransition1.SetDecoration(this.passtextbox, BunifuAnimatorNS.DecorationType.None);
             this.passtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.passtextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.passtextbox.HintForeColor = System.Drawing.Color.Empty;
@@ -172,6 +183,7 @@
             // idtextbox
             // 
             this.idtextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTransition1.SetDecoration(this.idtextbox, BunifuAnimatorNS.DecorationType.None);
             this.idtextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.idtextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.idtextbox.HintForeColor = System.Drawing.Color.Empty;
@@ -191,6 +203,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(89, 412);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -201,6 +214,7 @@
             // 
             // monthCalendar1
             // 
+            this.bunifuTransition1.SetDecoration(this.monthCalendar1, BunifuAnimatorNS.DecorationType.None);
             this.monthCalendar1.Location = new System.Drawing.Point(258, 398);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 81;
@@ -216,6 +230,7 @@
             this.AddEmpButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddEmpButton.BackgroundImage")));
             this.AddEmpButton.ButtonText = "Save";
             this.AddEmpButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.AddEmpButton, BunifuAnimatorNS.DecorationType.None);
             this.AddEmpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddEmpButton.ForeColor = System.Drawing.Color.SeaGreen;
             this.AddEmpButton.IdleBorderThickness = 1;
@@ -235,6 +250,7 @@
             // 
             this.EmpName.BackColor = System.Drawing.Color.Transparent;
             this.EmpName.BorderRadius = 3;
+            this.bunifuTransition1.SetDecoration(this.EmpName, BunifuAnimatorNS.DecorationType.None);
             this.EmpName.ForeColor = System.Drawing.Color.Black;
             this.EmpName.Items = new string[0];
             this.EmpName.Location = new System.Drawing.Point(976, 81);
@@ -249,6 +265,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(841, 90);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -268,6 +285,7 @@
             this.RemoveEmpButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("RemoveEmpButton.BackgroundImage")));
             this.RemoveEmpButton.ButtonText = "Remove";
             this.RemoveEmpButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.RemoveEmpButton, BunifuAnimatorNS.DecorationType.None);
             this.RemoveEmpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RemoveEmpButton.ForeColor = System.Drawing.Color.SeaGreen;
             this.RemoveEmpButton.IdleBorderThickness = 1;
@@ -286,6 +304,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(304, 14);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -297,6 +316,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(921, 14);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -308,6 +328,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label10, BunifuAnimatorNS.DecorationType.None);
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(90, 330);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -319,6 +340,7 @@
             // addrestextbox
             // 
             this.addrestextbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTransition1.SetDecoration(this.addrestextbox, BunifuAnimatorNS.DecorationType.None);
             this.addrestextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.addrestextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.addrestextbox.HintForeColor = System.Drawing.Color.Empty;
@@ -334,6 +356,30 @@
             this.addrestextbox.Size = new System.Drawing.Size(493, 54);
             this.addrestextbox.TabIndex = 88;
             this.addrestextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuTransition1
+            // 
+            this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.bunifuTransition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
+            this.bunifuTransition1.Interval = 5;
+            this.bunifuTransition1.MaxAnimationTime = 1000;
+            this.bunifuTransition1.TimeStep = 0.05F;
             // 
             // employee_win
             // 
@@ -358,6 +404,7 @@
             this.Controls.Add(this.passtextbox);
             this.Controls.Add(this.idtextbox);
             this.Controls.Add(this.back);
+            this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "employee_win";
             this.Size = new System.Drawing.Size(1296, 626);
@@ -389,5 +436,6 @@
         public System.Windows.Forms.Label label9;
         public System.Windows.Forms.Label label10;
         public Bunifu.Framework.UI.BunifuMaterialTextbox addrestextbox;
+        private BunifuAnimatorNS.BunifuTransition bunifuTransition1;
     }
 }

@@ -50,24 +50,28 @@ namespace WindowsFormsApplication1
         private void attendence_Click(object sender, EventArgs e)
         {
             attendance_win1.BringToFront();
+            bunifuTransition1.ShowSync(attendance_win1, false);
             attendance_win1.Visible = true;
         }
 
         private void salary_Click(object sender, EventArgs e)
         {
             salary_win1.BringToFront();
+            bunifuTransition1.ShowSync(salary_win1, false);
             salary_win1.Visible = true;
         }
 
         private void employees_Click(object sender, EventArgs e)
         {
             employee_win1.BringToFront();
+            bunifuTransition1.ShowSync(employee_win1, false);
             employee_win1.Visible = true;
         }
 
         private void empperformance_Click(object sender, EventArgs e)
         {
             emp_performance_win1.BringToFront();
+            bunifuTransition1.ShowSync(emp_performance_win1, false);
             emp_performance_win1.Visible = true;
         }
     }
