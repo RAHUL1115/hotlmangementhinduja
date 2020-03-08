@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainwindow));
-            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             this.panel1 = new System.Windows.Forms.Panel();
             this.user_name = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,6 +47,7 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.anitab = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.anitab1 = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.toolTipbutton = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.switchbutton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitbutton)).BeginInit();
@@ -63,11 +64,11 @@
             this.panel1.Controls.Add(this.switchbutton);
             this.panel1.Controls.Add(this.exitbutton);
             this.panel1.Controls.Add(this.label2);
-            this.anitab1.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.anitab.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.anitab1.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1331, 108);
             this.panel1.TabIndex = 0;
@@ -75,8 +76,8 @@
             // user_name
             // 
             this.user_name.AutoSize = true;
-            this.anitab.SetDecoration(this.user_name, BunifuAnimatorNS.DecorationType.None);
             this.anitab1.SetDecoration(this.user_name, BunifuAnimatorNS.DecorationType.None);
+            this.anitab.SetDecoration(this.user_name, BunifuAnimatorNS.DecorationType.None);
             this.user_name.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.user_name.Location = new System.Drawing.Point(1171, 18);
             this.user_name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -88,8 +89,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.anitab.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
             this.anitab1.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.anitab.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(508, 36);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -106,12 +107,13 @@
             this.switchbutton.Image = global::WindowsFormsApplication1.Properties.Resources.switchaccount;
             this.switchbutton.ImageActive = null;
             this.switchbutton.Location = new System.Drawing.Point(1243, 15);
-            this.switchbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.switchbutton.Margin = new System.Windows.Forms.Padding(4);
             this.switchbutton.Name = "switchbutton";
             this.switchbutton.Size = new System.Drawing.Size(36, 32);
             this.switchbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.switchbutton.TabIndex = 3;
             this.switchbutton.TabStop = false;
+            this.toolTipbutton.SetToolTip(this.switchbutton, "Switch User");
             this.switchbutton.Zoom = 10;
             this.switchbutton.Click += new System.EventHandler(this.switchbutton_click);
             // 
@@ -123,20 +125,21 @@
             this.exitbutton.Image = global::WindowsFormsApplication1.Properties.Resources.shutdown;
             this.exitbutton.ImageActive = null;
             this.exitbutton.Location = new System.Drawing.Point(1287, 15);
-            this.exitbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.exitbutton.Margin = new System.Windows.Forms.Padding(4);
             this.exitbutton.Name = "exitbutton";
             this.exitbutton.Size = new System.Drawing.Size(36, 32);
             this.exitbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.exitbutton.TabIndex = 2;
             this.exitbutton.TabStop = false;
+            this.toolTipbutton.SetToolTip(this.exitbutton, "Close");
             this.exitbutton.Zoom = 10;
             this.exitbutton.Click += new System.EventHandler(this.exitbutton_click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.anitab.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
             this.anitab1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.anitab.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(4, 63);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -150,11 +153,11 @@
             this.panel3.Controls.Add(this.leftimgbutton);
             this.panel3.Controls.Add(this.hometab1);
             this.panel3.Controls.Add(this.findwindow1);
-            this.anitab1.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
             this.anitab.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
+            this.anitab1.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 109);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1331, 679);
             this.panel3.TabIndex = 2;
@@ -167,12 +170,13 @@
             this.rightimgbutton.Image = global::WindowsFormsApplication1.Properties.Resources.rback;
             this.rightimgbutton.ImageActive = null;
             this.rightimgbutton.Location = new System.Drawing.Point(1281, 298);
-            this.rightimgbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rightimgbutton.Margin = new System.Windows.Forms.Padding(4);
             this.rightimgbutton.Name = "rightimgbutton";
             this.rightimgbutton.Size = new System.Drawing.Size(49, 58);
             this.rightimgbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.rightimgbutton.TabIndex = 6;
             this.rightimgbutton.TabStop = false;
+            this.toolTipbutton.SetToolTip(this.rightimgbutton, "Search");
             this.rightimgbutton.Zoom = 10;
             this.rightimgbutton.Click += new System.EventHandler(this.rightimgbutton_Click);
             // 
@@ -184,30 +188,31 @@
             this.leftimgbutton.Image = global::WindowsFormsApplication1.Properties.Resources.back;
             this.leftimgbutton.ImageActive = null;
             this.leftimgbutton.Location = new System.Drawing.Point(0, 298);
-            this.leftimgbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.leftimgbutton.Margin = new System.Windows.Forms.Padding(4);
             this.leftimgbutton.Name = "leftimgbutton";
             this.leftimgbutton.Size = new System.Drawing.Size(49, 58);
             this.leftimgbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.leftimgbutton.TabIndex = 5;
             this.leftimgbutton.TabStop = false;
+            this.toolTipbutton.SetToolTip(this.leftimgbutton, "Home");
             this.leftimgbutton.Zoom = 10;
             this.leftimgbutton.Click += new System.EventHandler(this.leftimgbutton_Click);
             // 
             // hometab1
             // 
             this.hometab1.BackColor = System.Drawing.Color.White;
-            this.anitab.SetDecoration(this.hometab1, BunifuAnimatorNS.DecorationType.None);
             this.anitab1.SetDecoration(this.hometab1, BunifuAnimatorNS.DecorationType.None);
+            this.anitab.SetDecoration(this.hometab1, BunifuAnimatorNS.DecorationType.None);
             this.hometab1.Location = new System.Drawing.Point(0, 0);
-            this.hometab1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.hometab1.Margin = new System.Windows.Forms.Padding(5);
             this.hometab1.Name = "hometab1";
             this.hometab1.Size = new System.Drawing.Size(1331, 679);
             this.hometab1.TabIndex = 0;
             // 
             // findwindow1
             // 
-            this.anitab.SetDecoration(this.findwindow1, BunifuAnimatorNS.DecorationType.None);
             this.anitab1.SetDecoration(this.findwindow1, BunifuAnimatorNS.DecorationType.None);
+            this.anitab.SetDecoration(this.findwindow1, BunifuAnimatorNS.DecorationType.None);
             this.findwindow1.Location = new System.Drawing.Point(0, 0);
             this.findwindow1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.findwindow1.Name = "findwindow1";
@@ -231,22 +236,22 @@
             // 
             this.anitab.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.anitab.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.anitab.DefaultAnimation = animation3;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.anitab.DefaultAnimation = animation2;
             this.anitab.MaxAnimationTime = 1000;
             this.anitab.TimeStep = 0.05F;
             // 
@@ -254,24 +259,30 @@
             // 
             this.anitab1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.anitab1.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 0;
-            animation4.Padding = new System.Windows.Forms.Padding(0);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 0F;
-            this.anitab1.DefaultAnimation = animation4;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.anitab1.DefaultAnimation = animation1;
             this.anitab1.MaxAnimationTime = 1000;
             this.anitab1.TimeStep = 0.05F;
+            // 
+            // toolTipbutton
+            // 
+            this.toolTipbutton.AutoPopDelay = 5000;
+            this.toolTipbutton.InitialDelay = 50;
+            this.toolTipbutton.ReshowDelay = 100;
             // 
             // mainwindow
             // 
@@ -282,10 +293,10 @@
             this.ClientSize = new System.Drawing.Size(1331, 788);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.anitab.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.anitab1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
+            this.anitab.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "mainwindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "emphome";
@@ -317,5 +328,6 @@
         private Bunifu.Framework.UI.BunifuImageButton leftimgbutton;
         private BunifuAnimatorNS.BunifuTransition anitab;
         private BunifuAnimatorNS.BunifuTransition anitab1;
+        private System.Windows.Forms.ToolTip toolTipbutton;
     }
 }

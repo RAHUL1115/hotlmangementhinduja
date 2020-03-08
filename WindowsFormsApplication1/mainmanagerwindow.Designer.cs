@@ -43,6 +43,7 @@
             this.attendence = new Bunifu.Framework.UI.BunifuImageButton();
             this.reports = new Bunifu.Framework.UI.BunifuImageButton();
             this.empperformance = new Bunifu.Framework.UI.BunifuImageButton();
+            this.reports_win1 = new WindowsFormsApplication1.reports_win();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -50,7 +51,6 @@
             this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.reports_win1 = new WindowsFormsApplication1.reports_win();
             this.attendance_win1 = new WindowsFormsApplication1.attendance_win();
             this.salary_win1 = new WindowsFormsApplication1.salary_win();
             this.employee_win1 = new WindowsFormsApplication1.employee_win();
@@ -149,6 +149,12 @@
             this.label2.Size = new System.Drawing.Size(0, 42);
             this.label2.TabIndex = 1;
             // 
+            // toolTipbutton
+            // 
+            this.toolTipbutton.AutoPopDelay = 5000;
+            this.toolTipbutton.InitialDelay = 50;
+            this.toolTipbutton.ReshowDelay = 100;
+            // 
             // employees
             // 
             this.employees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(179)))), ((int)(((byte)(209)))));
@@ -234,6 +240,18 @@
             this.empperformance.Zoom = 10;
             this.empperformance.Click += new System.EventHandler(this.empperformance_Click);
             // 
+            // reports_win1
+            // 
+            this.reports_win1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.reports_win1, BunifuAnimatorNS.DecorationType.None);
+            this.reports_win1.Location = new System.Drawing.Point(0, 108);
+            this.reports_win1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.reports_win1.Name = "reports_win1";
+            this.reports_win1.Size = new System.Drawing.Size(1296, 632);
+            this.reports_win1.TabIndex = 7;
+            this.toolTipbutton.SetToolTip(this.reports_win1, "Attendence");
+            this.reports_win1.Visible = false;
+            // 
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 25;
@@ -287,18 +305,6 @@
             this.bunifuTransition1.Interval = 5;
             this.bunifuTransition1.MaxAnimationTime = 1000;
             this.bunifuTransition1.TimeStep = 0.05F;
-            // 
-            // reports_win1
-            // 
-            this.reports_win1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition1.SetDecoration(this.reports_win1, BunifuAnimatorNS.DecorationType.None);
-            this.reports_win1.Location = new System.Drawing.Point(0, 108);
-            this.reports_win1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.reports_win1.Name = "reports_win1";
-            this.reports_win1.Size = new System.Drawing.Size(1296, 632);
-            this.reports_win1.TabIndex = 7;
-            this.toolTipbutton.SetToolTip(this.reports_win1, "Attendence");
-            this.reports_win1.Visible = false;
             // 
             // attendance_win1
             // 
