@@ -30,17 +30,20 @@ namespace WindowsFormsApplication1
             catch (Exception)
             { }
         }
+        [STAThread]
         public static void onclick1()
         {
             mmw = new mainmanagerwindow();
             mmw.ShowDialog();
         }
+        [STAThread]
         public static void switchacc()
         {
             li = new loginwindow();
             li.ShowDialog();
         }
 
+        [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();

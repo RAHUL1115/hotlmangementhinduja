@@ -64,8 +64,9 @@ namespace WindowsFormsApplication1
                 DataTable ds = new DataTable();
                 sd.Fill(ds);
 
-                findView.DataSource = ds;
-                findView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+                findView2.DataSource = ds;
+                findView2.ClearSelection();
+                //findView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             }
         }
     
@@ -77,7 +78,9 @@ namespace WindowsFormsApplication1
 
         private void findView_KeyDown(object sender, KeyEventArgs e)
         {
-            e.Handled = true;
+            //e.Handled = true;
+            //Clipboard.SetText(findView2.SelectedRows.ToString());
+            //findView2.ClearSelection();
         }
 
         private void findtextbox_KeyDown(object sender, KeyEventArgs e)
@@ -86,6 +89,12 @@ namespace WindowsFormsApplication1
             {
                 findsearchbutton_Click(null, null);
             }
+        }
+
+        private void findView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Clipboard.SetText(findView2.SelectedCells.ToString());
+            //findView2.ClearSelection();
         }
     }
 }

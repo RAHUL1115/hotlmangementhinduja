@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PublishUrl>E:\app\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{564C4437-3B0E-4BE0-8412-A11E25BD30D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>52ECC2E1368D586BB17F944F269A547D6C75A2E4</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WindowsFormsApplication1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="EASendMail, Version=7.6.0.2, Culture=neutral, PublicKeyToken=88adb80ecd66540b, processorArchitecture=MSIL">
+      <HintPath>..\packages\EASendMail.7.6.0.2\lib\net45\EASendMail.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Npgsql, Version=4.0.9.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.4.0.9\lib\net451\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard1.1\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="attendance_win.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="attendance_win.Designer.cs">
+      <DependentUpon>attendance_win.cs</DependentUpon>
+    </Compile>
+    <Compile Include="canclewin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="canclewin.Designer.cs">
+      <DependentUpon>canclewin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="checkout.Designer.cs">
+      <DependentUpon>checkout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_win.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="employee_win.Designer.cs">
+      <DependentUpon>employee_win.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emp_performance_win.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="emp_performance_win.Designer.cs">
+      <DependentUpon>emp_performance_win.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feedback_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>feedback_dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="feedback_dbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>feedback_dbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="feedback_dbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>feedback_dbDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="feedback_dbDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>feedback_dbDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="findwindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="findwindow.Designer.cs">
+      <DependentUpon>findwindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forget.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forget.Designer.cs">
+      <DependentUpon>forget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainmanagerwindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainmanagerwindow.Designer.cs">
+      <DependentUpon>mainmanagerwindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reports_win.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="reports_win.Designer.cs">
+      <DependentUpon>reports_win.cs</DependentUpon>
+    </Compile>
+    <Compile Include="current_book.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="current_book.Designer.cs">
+      <DependentUpon>current_book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="info.cs" />
+    <Compile Include="loadingcontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="loadingcontrol.Designer.cs">
+      <DependentUpon>loadingcontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainwindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainwindow.Designer.cs">
+      <DependentUpon>mainwindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hometab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hometab.Designer.cs">
+      <DependentUpon>hometab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="messageboxcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="messageboxcs.Designer.cs">
+      <DependentUpon>messageboxcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pre_book.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pre_book.Designer.cs">
+      <DependentUpon>pre_book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="roomfilmenuewindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roomfilmenuewindow.Designer.cs">
+      <DependentUpon>roomfilmenuewindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salary_win.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="salary_win.Designer.cs">
+      <DependentUpon>salary_win.cs</DependentUpon>
+    </Compile>
+    <Compile Include="services.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="services.Designer.cs">
+      <DependentUpon>services.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="attendance_win.resx">
+      <DependentUpon>attendance_win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="canclewin.resx">
+      <DependentUpon>canclewin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkout.resx">
+      <DependentUpon>checkout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_win.resx">
+      <DependentUpon>employee_win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emp_performance_win.resx">
+      <DependentUpon>emp_performance_win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="findwindow.resx">
+      <DependentUpon>findwindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forget.resx">
+      <DependentUpon>forget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainmanagerwindow.resx">
+      <DependentUpon>mainmanagerwindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports_win.resx">
+      <DependentUpon>reports_win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="current_book.resx">
+      <DependentUpon>current_book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loadingcontrol.resx">
+      <DependentUpon>loadingcontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainwindow.resx">
+      <DependentUpon>mainwindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hometab.resx">
+      <DependentUpon>hometab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messageboxcs.resx">
+      <DependentUpon>messageboxcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pre_book.resx">
+      <DependentUpon>pre_book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roomfilmenuewindow.resx">
+      <DependentUpon>roomfilmenuewindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salary_win.resx">
+      <DependentUpon>salary_win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="services.resx">
+      <DependentUpon>services.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="feedback_dbDataSet.xsc">
+      <DependentUpon>feedback_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="feedback_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>feedback_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="feedback_dbDataSet.xss">
+      <DependentUpon>feedback_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="feedback_dbDataSet1.xsc">
+      <DependentUpon>feedback_dbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="feedback_dbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>feedback_dbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="feedback_dbDataSet1.xss">
+      <DependentUpon>feedback_dbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="feedback_dbDataSet2.xsc">
+      <DependentUpon>feedback_dbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="feedback_dbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>feedback_dbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="feedback_dbDataSet2.xss">
+      <DependentUpon>feedback_dbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="feedback_dbDataSet3.xsc">
+      <DependentUpon>feedback_dbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="feedback_dbDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>feedback_dbDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="feedback_dbDataSet3.xss">
+      <DependentUpon>feedback_dbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="WindowsFormsApplication1_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switchaccount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\envelope.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payroll1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rback.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' == ''" />
+  <PropertyGroup>
+    <SsdtUnitTestVersion>2.0</SsdtUnitTestVersion>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
