@@ -158,6 +158,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>feedback_dbDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="filledroomwin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="filledroomwin.Designer.cs">
+      <DependentUpon>filledroomwin.cs</DependentUpon>
+    </Compile>
     <Compile Include="findwindow.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -259,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="emp_performance_win.resx">
       <DependentUpon>emp_performance_win.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filledroomwin.resx">
+      <DependentUpon>filledroomwin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="findwindow.resx">
       <DependentUpon>findwindow.cs</DependentUpon>

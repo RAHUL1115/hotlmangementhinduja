@@ -69,8 +69,7 @@ namespace WindowsFormsApplication1
             DataTable ds = new DataTable();
             sd.Fill(ds);
             serviceview.DataSource = ds;
-            serviceview.RowHeadersVisible = false;
-           
+            serviceview.ClearSelection();       
         }
 
         private void serviceview_CellContentClick(object sender, DataGridViewCellEventArgs e)

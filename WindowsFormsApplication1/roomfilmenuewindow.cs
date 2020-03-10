@@ -26,9 +26,9 @@ namespace WindowsFormsApplication1
 
         private void cancle_click(object sender, EventArgs e)
         {
-            canclewin1.room = room;
-            canclewin1.BringToFront();
-            canclewin1.Visible = true;
+            //canclewin1.room = room;
+            //canclewin1.BringToFront();
+            //canclewin1.Visible = true;
         }
 
         private void servicesbutton_Click(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace WindowsFormsApplication1
 
         private void roomfilmenuewindow_Load(object sender, EventArgs e)
         {
-            Program.inf.currentroom = room;
+            Program.inf.room = room;
             rooml.Text = room;
             if (Program.con.State == ConnectionState.Closed)
                 Program.con.Open();

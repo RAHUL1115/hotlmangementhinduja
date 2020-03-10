@@ -33,7 +33,7 @@ namespace WindowsFormsApplication1
             {
                 Program.li.databaseloading.Invoke((Action)delegate { Program.li.databaseloading.Dispose(); });
             }
-            catch (Exception e)
+            catch (Exception)
             { }
         }
 

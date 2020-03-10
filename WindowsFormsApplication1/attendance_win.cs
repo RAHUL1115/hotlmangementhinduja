@@ -84,6 +84,7 @@ namespace WindowsFormsApplication1
                 sd.Fill(ds);
 
                 todayattendView.DataSource = ds;
+                todayattendView.ClearSelection();
             }
             catch (Exception)
             {
@@ -101,6 +102,7 @@ namespace WindowsFormsApplication1
             sd.Fill(ds);
 
             historyattendView.DataSource = ds;
+            historyattendView.ClearSelection();
             attendance_win_Load(null, null);
 
         }

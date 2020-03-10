@@ -33,6 +33,7 @@ namespace WindowsFormsApplication1
             sd.Fill(ds);
 
             feedbackview.DataSource = ds;
+            feedbackview.ClearSelection();
         }
 
         private void emp_perform_Click(object sender, EventArgs e)
@@ -48,6 +49,7 @@ namespace WindowsFormsApplication1
                 sd.Fill(ds);
             }
             feedbackview.DataSource = ds;
+            feedbackview.ClearSelection();
 
         }
 

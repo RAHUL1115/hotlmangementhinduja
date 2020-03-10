@@ -13,7 +13,7 @@ namespace WindowsFormsApplication1
 {
     public partial class checkout : UserControl
     {
-        public string room1;
+        public string room1="0";
         public checkout()
         {
             InitializeComponent();
@@ -31,10 +31,10 @@ namespace WindowsFormsApplication1
             if (Program.con.State == ConnectionState.Closed)
                 Program.con.Open();
             room1 = new roomfilmenuewindow().room;
-            roomlabel.Text = Program.inf.currentroom;
+            roomlabel.Text = Program.inf.room;
             roomlabel.Visible = true;
             string date1 = DateTime.Now.ToString("yyyy-MM-dd");
-            string query = "select fname, lname, ((DATEDIFF(day, cindate, '" + date1 + "')+1)*500) from current_book where room = " + roomlabel.Text;
+            string query = "select fname, lname, ((DATEDIFF(day, cindate, '" + date1 + "')+1)*500) from current_book where room = " + room1;
             SqlCommand cmd1 = new SqlCommand(query, Program.con);
             SqlDataReader sdr1 = cmd1.ExecuteReader();
             if (sdr1.Read())

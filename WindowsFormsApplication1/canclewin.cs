@@ -13,7 +13,7 @@ namespace WindowsFormsApplication1
 {
     public partial class canclewin : UserControl
     {
-        public string room;
+        public string regid;
         public canclewin()
         {
             InitializeComponent();
@@ -25,31 +25,24 @@ namespace WindowsFormsApplication1
         }
         public void canclewin_Load(object sender, EventArgs e)
         {
-            listBox1.Items.Clear();
-            string query1 = "select  fname, lname from pre_book where room = "+room +" ";
-            string query = "select fname, lname from pre_book";
-            //query = query1;
+            string query = "select  regid, fname, lname,cindate,coutdate from pre_book where room = "+Program.inf.room ;
             if (Program.con.State == ConnectionState.Closed)
                 Program.con.Open();
-            SqlCommand cmd = new SqlCommand(query, Program.con);
-            SqlDataReader sdr = cmd.ExecuteReader();
-            while (sdr.Read())
-            {
-                listBox1.Items.Add(sdr[0] + " " + sdr[1]);
-            }
-            cmd.Dispose();
-            sdr.Close();
+            SqlDataAdapter sd = new SqlDataAdapter(query, Program.con);
+            DataTable ds = new DataTable();
+            sd.Fill(ds);
+            canclelist.DataSource = ds;
+            canclelist.ClearSelection();
         }
 
         public void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             string query3 = "";
-            string name = "" + listBox1.SelectedItem;
-            if (name != "")
+            if (regid != "")
             {
-                string query1 = "select *,CONVERT(varchar,cindate,23) from pre_book";
                 if (Program.con.State == ConnectionState.Closed)
                     Program.con.Open();
+                string query1 = "select *,CONVERT(varchar,cindate,23) from pre_book";
                 SqlCommand cmd1 = new SqlCommand(query1, Program.con);
                 SqlDataReader sdr1 = cmd1.ExecuteReader();
                 if(sdr1.Read())
@@ -60,15 +53,20 @@ namespace WindowsFormsApplication1
                 }
                 cmd1.Dispose();
                 sdr1.Close();
-                string[] names = name.Split(' ');
-                string query = "delete from pre_book where fname = '" + names[0] + "' and lname = '" + names[1] + "' and room =" + room +"; "+query3;
+                string query = "delete from pre_book where regid = '"+regid+"' and room =" + Program.inf.room +"; "+query3;
                 if (Program.con.State == ConnectionState.Closed)
                     Program.con.Open();
                 SqlCommand cmd = new SqlCommand(query, Program.con);
                 cmd.ExecuteNonQuery();
                 cmd.Dispose();
                 canclewin_Load(null, null);
+                canclelist.ClearSelection();
             }
+        }
+
+        private void canclelist_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            regid = ""+canclelist.Rows[e.RowIndex].Cells[0].Value;
         }
     }
 }

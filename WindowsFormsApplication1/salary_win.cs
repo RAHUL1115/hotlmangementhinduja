@@ -59,6 +59,7 @@ namespace WindowsFormsApplication1
             sd.Fill(ds);
 
             salaryhistoryView.DataSource = ds;
+            salaryhistoryView.ClearSelection();
 
         }
 
@@ -86,6 +87,7 @@ namespace WindowsFormsApplication1
             sd.Fill(ds);
 
             salaryhistoryView.DataSource = ds;
+            salaryhistoryView.ClearSelection();
         }
 
         private void monthDropdown1_onItemSelected(object sender, EventArgs e)

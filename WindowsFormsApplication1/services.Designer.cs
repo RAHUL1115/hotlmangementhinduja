@@ -77,7 +77,7 @@
         "Lunch",
         "Dinner"};
             this.fooddropdown.Location = new System.Drawing.Point(6, 58);
-            this.fooddropdown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fooddropdown.Margin = new System.Windows.Forms.Padding(4);
             this.fooddropdown.Name = "fooddropdown";
             this.fooddropdown.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(231)))), ((int)(((byte)(220)))));
             this.fooddropdown.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
@@ -104,7 +104,7 @@
             this.addbutton.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.addbutton.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.addbutton.Location = new System.Drawing.Point(187, 54);
-            this.addbutton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.addbutton.Margin = new System.Windows.Forms.Padding(5);
             this.addbutton.Name = "addbutton";
             this.addbutton.Size = new System.Drawing.Size(79, 35);
             this.addbutton.TabIndex = 8;
@@ -130,7 +130,7 @@
             this.servicecancle.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.servicecancle.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.servicecancle.Location = new System.Drawing.Point(82, 308);
-            this.servicecancle.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.servicecancle.Margin = new System.Windows.Forms.Padding(5);
             this.servicecancle.Name = "servicecancle";
             this.servicecancle.Size = new System.Drawing.Size(110, 35);
             this.servicecancle.TabIndex = 9;
@@ -141,7 +141,7 @@
             // 
             this.roomcleancheckBox.AutoSize = true;
             this.roomcleancheckBox.Location = new System.Drawing.Point(6, 279);
-            this.roomcleancheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roomcleancheckBox.Margin = new System.Windows.Forms.Padding(2);
             this.roomcleancheckBox.Name = "roomcleancheckBox";
             this.roomcleancheckBox.Size = new System.Drawing.Size(98, 17);
             this.roomcleancheckBox.TabIndex = 10;
@@ -160,7 +160,7 @@
         "4",
         "5"};
             this.quantitydropdown.Location = new System.Drawing.Point(123, 58);
-            this.quantitydropdown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.quantitydropdown.Margin = new System.Windows.Forms.Padding(4);
             this.quantitydropdown.Name = "quantitydropdown";
             this.quantitydropdown.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(231)))), ((int)(((byte)(220)))));
             this.quantitydropdown.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
@@ -181,7 +181,7 @@
             this.stateDataGridViewTextBoxColumn});
             this.serviceview.DataSource = this.servicesBindingSource;
             this.serviceview.Location = new System.Drawing.Point(6, 96);
-            this.serviceview.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.serviceview.Margin = new System.Windows.Forms.Padding(2);
             this.serviceview.Name = "serviceview";
             this.serviceview.ReadOnly = true;
             this.serviceview.RowHeadersWidth = 51;
@@ -265,7 +265,7 @@
             this.Controls.Add(this.fooddropdown);
             this.Controls.Add(this.bunifuImageButton1);
             this.Name = "services";
-            this.Size = new System.Drawing.Size(272, 348);
+            this.Size = new System.Drawing.Size(487, 327);
             this.Load += new System.EventHandler(this.services_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.serviceview)).EndInit();

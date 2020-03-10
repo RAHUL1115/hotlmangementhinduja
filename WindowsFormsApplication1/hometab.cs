@@ -76,24 +76,23 @@ namespace WindowsFormsApplication1
                 mb.bunifuCustomLabel1.Text = "room no "+room+" is bookd";
             }
             else {
+                Program.inf.room = ((BunifuThinButton2)sender).ButtonText;
                 if (istoday)
                 {
                     if (isbuttonred)
                     {
+                        filledroomwin rfw = new filledroomwin();
                         if (islabelred)
-                        {
-                            roomfilmenuewindow rfw = new roomfilmenuewindow();
+                        {   
                             rfw.room = ((BunifuThinButton2)sender).ButtonText;
                             rfw.servicesbutton.Dispose();
                             rfw.checkoutbutton.Dispose();
                             rfw.namel.Dispose();
                             rfw.namelab.Dispose();
-                            rfw.rooml.Text = ((BunifuThinButton2)sender).ButtonText;
                             rfw.Show();
                         }
                         else
                         {
-                            roomfilmenuewindow rfw = new roomfilmenuewindow();
                             rfw.room = ((BunifuThinButton2)sender).ButtonText;
                             rfw.canclebutton.Dispose();
                             rfw.Show();
@@ -112,20 +111,18 @@ namespace WindowsFormsApplication1
                 {
                     if (isbuttonred)
                     {
+                        filledroomwin rfw = new filledroomwin();
                         if (islabelred)
                         {
-                            roomfilmenuewindow rfw = new roomfilmenuewindow();
                             rfw.room = ((BunifuThinButton2)sender).ButtonText;
                             rfw.servicesbutton.Dispose();
                             rfw.checkoutbutton.Dispose();
                             rfw.namel.Dispose();
                             rfw.namelab.Dispose();
-                            rfw.rooml.Text = ((BunifuThinButton2)sender).ButtonText;
                             rfw.Show();
                         }
                         else
                         {
-                            roomfilmenuewindow rfw = new roomfilmenuewindow();
                             rfw.room = ((BunifuThinButton2)sender).ButtonText;
                             rfw.canclebutton.Dispose();
                             rfw.Show();
