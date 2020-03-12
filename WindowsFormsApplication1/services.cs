@@ -14,9 +14,7 @@ namespace WindowsFormsApplication1
     public partial class services : UserControl
     {
         public string room;
-        public string sname = "";
-        public string quantity = "";
-        public string time = "";
+        public string oid = "";
 
         public services()
         {
@@ -34,64 +32,85 @@ namespace WindowsFormsApplication1
             addbutton.Visible = false;
             string date1 = DateTime.Now.ToString("yyyy-MM-dd");
             string time1 = DateTime.Now.ToString("HH:mm");
-            if (fooddropdown.selectedIndex != -1 && quantitydropdown.selectedIndex != -1)
-            {
-                string query1 = "insert into services values((select regid from current_book where room=" + room + "),'" + fooddropdown.selectedValue + "','" + date1 + "','" + time1 + "'," + quantitydropdown.selectedValue + ",'Ongoing');";
-                SqlCommand cmd = new SqlCommand(query1, Program.con);
-                cmd.ExecuteNonQuery();
-                cmd.Dispose();
-            }
-            if (roomcleancheckBox.Checked)
-            {
-                string query2 = "insert into services values((select regid from current_book where room=" + room + "),'Room Cleaning','" + date1 + "','" + time1 + "',null,'Ongoing')";
-                SqlCommand cmd = new SqlCommand(query2, Program.con);
-                cmd.ExecuteNonQuery();
-                cmd.Dispose();
-            }
+            int ammount=0;
+           
+                if (fooddropdown.selectedIndex != -1 && quantitydropdown.selectedIndex != -1)
+                {
+                    if (fooddropdown.selectedIndex == 0)
+                    {
+                        ammount = 200 * Convert.ToInt32(quantitydropdown.selectedValue);
+                    }
+                    if (fooddropdown.selectedIndex == 1)
+                    {
+                        ammount = 400 * Convert.ToInt32(quantitydropdown.selectedValue);
+                    }
+                    if (fooddropdown.selectedIndex == 2)
+                    {
+                        ammount = 600 * Convert.ToInt32(quantitydropdown.selectedValue);
+                    }
+                    string query1 = "insert into services values((select regid from current_book where room=" + room + "),'" + fooddropdown.selectedValue + "','" + date1 + "','" + time1 + "'," + quantitydropdown.selectedValue + ",'Ongoing', " + ammount + ",concat((select regid  from current_book where room=" + room + "),replace(convert(varchar, getdate(), 8),':',''),'"+fooddropdown.selectedIndex+"'),"+room+");";
 
-
-            string query = "select sname,quantity,time,state from services";
-            SqlDataAdapter sd = new SqlDataAdapter(query, Program.con);
-            DataTable ds = new DataTable();
-            sd.Fill(ds);
-
-            serviceview.DataSource = ds;
+                    SqlCommand cmd = new SqlCommand(query1, Program.con);
+                    cmd.ExecuteNonQuery();
+                    cmd.Dispose();
+                }
+                if (roomcleancheckBox.Checked)
+                {
+                    string query2 = "insert into services values((select regid from current_book where room=" + room + "),'Room Cleaning','" + date1 + "','" + time1 + "',null,'Ongoing',0,concat((select regid  from current_book where room=" + room + "),replace(convert(varchar, getdate(), 8),':',''),'" + fooddropdown.selectedIndex + "'),"+room+")";
+                    SqlCommand cmd = new SqlCommand(query2, Program.con);
+                    cmd.ExecuteNonQuery();
+                    cmd.Dispose();
+                }
+            
+            datarefresh();
             addbutton.Visible = true;
-
-
         }
 
         private void services_Load(object sender, EventArgs e)
         {
-            
-            string query = "select sname,quantity,time,state from services";
+            room = Program.inf.room;
+            string query = "select oid,sname,quantity,time,state from services where room = "+room;
             SqlDataAdapter sd = new SqlDataAdapter(query, Program.con);
             DataTable ds = new DataTable();
             sd.Fill(ds);
             serviceview.DataSource = ds;
-            serviceview.ClearSelection();       
+            serviceview.ClearSelection();     
+            DataGridViewLinkColumn btn = new DataGridViewLinkColumn();
+            btn.HeaderText = "clickme";
+            btn.Name = "cbutton";
+            btn.Text = "cancle";
+            btn.UseColumnTextForLinkValue = true;
+            serviceview.Columns.Add(btn);
+            serviceview.ClearSelection();
         }
 
         private void serviceview_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            sname = ""+serviceview.Rows[e.RowIndex].Cells[0].Value;
-            quantity = "" + serviceview.Rows[e.RowIndex].Cells[1].Value;
-            time = "" + serviceview.Rows[e.RowIndex].Cells[2].Value;
-        }
-
-        private void servicecancle_Click(object sender, EventArgs e)
-        {
-            if (sname != "" && time != "")
+            
+            oid = ""+serviceview.Rows[e.RowIndex].Cells[1].Value;
+          
+            if (e.ColumnIndex == 0 && e.RowIndex >= 0)
             {
-                string query = "delete from services where sname = '" + sname + "' and time = '" + time + "'";
+                string query = "delete from services where oid = '" + oid + "'";
                 SqlCommand cmd = new SqlCommand(query, Program.con);
                 cmd.ExecuteNonQuery();
                 cmd.Dispose();
-                sname = "";
-                quantity = "";
-                time = "";
-                services_Load(null, null);
+                oid = "";
+                datarefresh();
+                Console.WriteLine(query);
             }
+
+        }
+
+        public void datarefresh()
+        {
+            room = Program.inf.room;
+            string query = "select oid,sname,quantity,time,state from services where room = "+room;
+            SqlDataAdapter sd = new SqlDataAdapter(query, Program.con);
+            DataTable ds = new DataTable();
+            sd.Fill(ds);
+            serviceview.DataSource = ds;
+            serviceview.ClearSelection();
         }
     }
     

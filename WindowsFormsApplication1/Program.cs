@@ -22,13 +22,8 @@ namespace WindowsFormsApplication1
 
         public static void onclick()
         {
-            try
-            {
-                ep = new mainwindow();
-                ep.ShowDialog();
-            }
-            catch (Exception)
-            { }
+            ep = new mainwindow();
+            ep.ShowDialog();
         }
         [STAThread]
         public static void onclick1()

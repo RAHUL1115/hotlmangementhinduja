@@ -41,6 +41,8 @@
             this.roomlab = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.canclewin1 = new WindowsFormsApplication1.canclewin();
+            this.services1 = new WindowsFormsApplication1.services();
+            this.checkout1 = new WindowsFormsApplication1.checkout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.bunifuCards1.SuspendLayout();
             this.SuspendLayout();
@@ -208,6 +210,22 @@
             this.canclewin1.TabIndex = 101;
             this.canclewin1.Visible = false;
             // 
+            // services1
+            // 
+            this.services1.Location = new System.Drawing.Point(0, 0);
+            this.services1.Name = "services1";
+            this.services1.Size = new System.Drawing.Size(487, 327);
+            this.services1.TabIndex = 102;
+            this.services1.Visible = false;
+            // 
+            // checkout1
+            // 
+            this.checkout1.Location = new System.Drawing.Point(0, 0);
+            this.checkout1.Name = "checkout1";
+            this.checkout1.Size = new System.Drawing.Size(487, 327);
+            this.checkout1.TabIndex = 103;
+            this.checkout1.Visible = false;
+            // 
             // filledroomwin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -219,6 +237,8 @@
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.bunifuCards1);
             this.Controls.Add(this.canclewin1);
+            this.Controls.Add(this.services1);
+            this.Controls.Add(this.checkout1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "filledroomwin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -245,5 +265,7 @@
         public Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         public Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         public canclewin canclewin1;
+        private services services1;
+        private checkout checkout1;
     }
 }

@@ -92,7 +92,6 @@ namespace WindowsFormsApplication1
             }
         }
 
-        //int cal=(sdr[1]*5)/sdr[0]
         private void SearchAttendButton_Click(object sender, EventArgs e)
         {
             if (Program.con.State == ConnectionState.Closed) { Program.con.Open(); }

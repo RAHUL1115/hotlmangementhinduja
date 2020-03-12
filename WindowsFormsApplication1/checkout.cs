@@ -14,6 +14,7 @@ namespace WindowsFormsApplication1
     public partial class checkout : UserControl
     {
         public string room1="0";
+        public string total;
         public checkout()
         {
             InitializeComponent();
@@ -30,11 +31,12 @@ namespace WindowsFormsApplication1
         {
             if (Program.con.State == ConnectionState.Closed)
                 Program.con.Open();
-            room1 = new roomfilmenuewindow().room;
+            room1 = Program.inf.room;
             roomlabel.Text = Program.inf.room;
             roomlabel.Visible = true;
             string date1 = DateTime.Now.ToString("yyyy-MM-dd");
-            string query = "select fname, lname, ((DATEDIFF(day, cindate, '" + date1 + "')+1)*500) from current_book where room = " + room1;
+            string query = "select fname, lname, ((DATEDIFF(day, cindate, '" + date1 + "')+1)*500), (select sum(price) from services where regid = cb.regid) from current_book as cb where room = " + Program.inf.room; ;
+            //query = "select * from login";
             SqlCommand cmd1 = new SqlCommand(query, Program.con);
             SqlDataReader sdr1 = cmd1.ExecuteReader();
             if (sdr1.Read())
@@ -43,7 +45,18 @@ namespace WindowsFormsApplication1
                 namelabel.Visible = true;
                 amountlabel.Text = "" + sdr1[2];
                 amountlabel.Visible = true;
-                totallabel.Text = "" + sdr1[2];
+                slabel.Text = "" + sdr1[2];
+                slabel.Visible = true;
+                try
+                {
+                    total = "" + (Convert.ToInt32(sdr1[2]) + Convert.ToInt32(sdr1[3]));
+                }
+                catch(Exception)
+                {
+                    slabel.Text = "0";
+                    total = "" + (Convert.ToInt32(sdr1[2]) + 0);
+                }
+                totallabel.Text = total;
                 totallabel.Visible = true;
             }
         }
@@ -75,7 +88,7 @@ namespace WindowsFormsApplication1
             mb.Show();
         }
 
-        private void discounttextbox_OnValueChanged(object sender, EventArgs e)
+        private void discounttextbox_OnValueChanged_1(object sender, EventArgs e)
         {
             try
             {
@@ -83,17 +96,12 @@ namespace WindowsFormsApplication1
                 {
                     discounttextbox.Text = "100";
                 }
-                totallabel.Text = "" + (Convert.ToInt32(amountlabel.Text) - ((Convert.ToInt32(amountlabel.Text) * Convert.ToInt32(discounttextbox.Text)) / 100));
+                totallabel.Text = "" + (Convert.ToInt32(total) - ((Convert.ToInt32(total) * Convert.ToInt32(discounttextbox.Text)) / 100));
             }
             catch (Exception)
             {
-                totallabel.Text = "" + (Convert.ToInt32(amountlabel.Text));
+                totallabel.Text = "" + (Convert.ToInt32(total));
             }
-        }
-
-        private void discounttextbox_Leave(object sender, EventArgs e)
-        {
-            
         }
     }
 }

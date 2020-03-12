@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,8 @@ namespace WindowsFormsApplication1
 
         private void servicebut_Click(object sender, EventArgs e)
         {
-
+            services1.BringToFront();
+            services1.Visible = true;
         }
 
         private void canbut_Click(object sender, EventArgs e)
@@ -31,13 +33,21 @@ namespace WindowsFormsApplication1
 
         private void coutbut_Click(object sender, EventArgs e)
         {
-
+            checkout1.BringToFront();
+            checkout1.Visible = true;
         }
 
         private void filledroomwin_Load(object sender, EventArgs e)
         {
             room = Program.inf.room;
             roomlab.Text = room;
+            SqlCommand cmd = new SqlCommand("select concat(fname,' ',lname) from current_book where room = " + room, Program.con);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            if (sdr.Read())
+            {
+                namel.Text = ""+sdr[0];
+            }
+
         }
 
         private void filledroomwin_Deactivate(object sender, EventArgs e)
