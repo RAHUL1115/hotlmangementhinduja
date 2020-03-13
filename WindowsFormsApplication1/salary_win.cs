@@ -13,6 +13,7 @@ namespace WindowsFormsApplication1
 {
     public partial class salary_win : UserControl
     {
+        String month = DateTime.Now.Month.ToString();
         public salary_win()
         {
             InitializeComponent();
@@ -26,16 +27,7 @@ namespace WindowsFormsApplication1
         }
 
        
-
-        private void post_onItemSelected(object sender, EventArgs e)
-        {
-
-        }
-
-       String month = DateTime.Now.Month.ToString();
-       
-
-        private void salary_win_Load(object sender, EventArgs e)
+        public void load()
         {
             monthDropdown1.selectedIndex = Convert.ToInt32(month) - 1;
             selecthistorymonthDropdown1.selectedIndex = Convert.ToInt32(month) - 1;
@@ -60,7 +52,18 @@ namespace WindowsFormsApplication1
 
             salaryhistoryView.DataSource = ds;
             salaryhistoryView.ClearSelection();
+        }
 
+        private void post_onItemSelected(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+        private void salary_win_Load(object sender, EventArgs e)
+        {
+           
         }
 
         private void PayButton_Click(object sender, EventArgs e)
@@ -71,7 +74,7 @@ namespace WindowsFormsApplication1
             string query = "insert  into salary values('" + empname.selectedValue + "','"+date1+ "','"+bonustextbox.Text+"','"+(Convert.ToInt32(salarytextbox.Text)+ Convert.ToInt32(bonustextbox.Text) )+ "',"+monthDropdown1.selectedValue+")";
             SqlCommand cmd = new SqlCommand(query, Program.con);
             cmd.ExecuteNonQuery();
-           salary_win_Load(null, null);
+            load();
         }
 
         private void label6_Click(object sender, EventArgs e)

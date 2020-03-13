@@ -16,6 +16,7 @@ namespace WindowsFormsApplication1
         public attendance_win()
         {
             InitializeComponent();
+            load();
         }
 
         
@@ -27,12 +28,11 @@ namespace WindowsFormsApplication1
             Visible = false;
         }
 
-       
-        private void attendance_win_Load(object sender, EventArgs e)
+        public void load()
         {
             AddAttendanceName.Clear();
             if (Program.con.State == ConnectionState.Closed) { Program.con.Open(); }
-            string query = "select id from login where id not in (select emp_name from attendance where date = convert(varchar, getdate(), 23) and at_state = '"+ attendencesate.selectedValue + "')  ";
+            string query = "select id from login where id not in (select emp_name from attendance where date = convert(varchar, getdate(), 23) and at_state = '" + attendencesate.selectedValue + "')  ";
             SqlCommand cmd = new SqlCommand(query, Program.con);
             SqlDataReader sdr = cmd.ExecuteReader();
             if (sdr.Read())
@@ -61,8 +61,11 @@ namespace WindowsFormsApplication1
             }
             sdr.Close();
             cmd.Dispose();
-
-            
+        }
+       
+        private void attendance_win_Load(object sender, EventArgs e)
+        {
+           
         }
 
         
@@ -76,7 +79,7 @@ namespace WindowsFormsApplication1
                 string query = "insert  into attendance values('" + AddAttendanceName.selectedValue + "','" + date1 + "','" + time1 + "','P')";
                 SqlCommand cmd = new SqlCommand(query, Program.con);
                 cmd.ExecuteNonQuery();
-                attendance_win_Load(null, null);
+                load();
 
                 string query2 = "Select * from attendance where date='"+date1+"'";
                 SqlDataAdapter sd = new SqlDataAdapter(query2, Program.con);
@@ -88,7 +91,7 @@ namespace WindowsFormsApplication1
             }
             catch (Exception)
             {
-                attendance_win_Load(null, null);
+                load();
             }
         }
 
@@ -102,8 +105,7 @@ namespace WindowsFormsApplication1
 
             historyattendView.DataSource = ds;
             historyattendView.ClearSelection();
-            attendance_win_Load(null, null);
-
+            load();
         }
     }
 }

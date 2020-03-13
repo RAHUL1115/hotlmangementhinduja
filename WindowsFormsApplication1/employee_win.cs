@@ -12,20 +12,13 @@ using System.Data.SqlClient;
 namespace WindowsFormsApplication1
 {
     public partial class employee_win : UserControl
-    {
+    { 
         public employee_win()
         {
             InitializeComponent();
         }
 
-        private void back_Click(object sender, EventArgs e)
-        {
-            bunifuTransition1.HideSync(this);
-            SendToBack();
-            Visible = false;
-        }
-
-        private void employee_win_Load(object sender, EventArgs e)
+        public void load()
         {
             EmpName.Clear();
             if (Program.con.State == ConnectionState.Closed) { Program.con.Open(); }
@@ -43,7 +36,18 @@ namespace WindowsFormsApplication1
 
             sdr.Close();
             cmd.Dispose();
+        }
 
+        private void back_Click(object sender, EventArgs e)
+        {
+            bunifuTransition1.HideSync(this);
+            SendToBack();
+            Visible = false;
+        }
+
+        private void employee_win_Load(object sender, EventArgs e)
+        {
+           
         }
         string date1 = DateTime.Now.ToString("yyyy-MM-dd");
         private void AddEmpButton_Click(object sender, EventArgs e)
@@ -55,7 +59,7 @@ namespace WindowsFormsApplication1
             messageboxcs mb = new messageboxcs();
             mb.bunifuCustomLabel1.Text = "Employee Added";
             mb.Show();
-            employee_win_Load(null, null);
+            load();
         }
 
         private void RemoveEmpButton_Click(object sender, EventArgs e)
@@ -67,7 +71,7 @@ namespace WindowsFormsApplication1
             messageboxcs mb = new messageboxcs();
             mb.bunifuCustomLabel1.Text = "Employee Removed";
             mb.Show();
-            employee_win_Load(null, null);
+            load();
         }
     }
 }
