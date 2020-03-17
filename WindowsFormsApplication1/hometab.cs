@@ -178,7 +178,7 @@ namespace WindowsFormsApplication1
             while (sdr.Read())
             {
                 roombutton[((Int32)sdr[0] - 1)].IdleLineColor = Color.Red;
-                roomlabel[((Int32)sdr[0] - 1)].Text = sdr[1].ToString();
+                roomlabel[((Int32)sdr[0] - 1)].Text = "C/O:"+sdr[1];
                 roomlabel[((Int32)sdr[0] - 1)].Visible = true;
             }
             cmd.Dispose();
@@ -189,7 +189,7 @@ namespace WindowsFormsApplication1
             {
                 roombutton[((Int32)sdr[0] - 1)].IdleLineColor = Color.Red;
                 roomlabel[((Int32)sdr[0] - 1)].ForeColor = Color.Red;
-                roomlabel[((Int32)sdr[0] - 1)].Text = sdr[1].ToString();
+                roomlabel[((Int32)sdr[0] - 1)].Text = "C/O:"+sdr[1];
                 roomlabel[((Int32)sdr[0] - 1)].Visible = true;
             }
             cmd.Dispose();

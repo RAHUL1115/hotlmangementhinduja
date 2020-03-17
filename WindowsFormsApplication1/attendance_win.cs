@@ -81,7 +81,7 @@ namespace WindowsFormsApplication1
                 cmd.ExecuteNonQuery();
                 load();
 
-                string query2 = "Select * from attendance where date='"+date1+"'";
+                string query2 = "Select emp_name as Name, date as Date, time as Time, at_state as Status from attendance where date='"+date1+"'";
                 SqlDataAdapter sd = new SqlDataAdapter(query2, Program.con);
                 DataTable ds = new DataTable();
                 sd.Fill(ds);
@@ -98,7 +98,7 @@ namespace WindowsFormsApplication1
         private void SearchAttendButton_Click(object sender, EventArgs e)
         {
             if (Program.con.State == ConnectionState.Closed) { Program.con.Open(); }
-            string query2 = "Select * from attendance where MONTH(date) ="+SearchMonth.selectedValue+" and emp_name='"+SearchName.selectedValue+"'";
+            string query2 = "Select emp_name as Name, date as Date, time as Time, at_state as Status from attendance where MONTH(date) =" + SearchMonth.selectedValue+" and emp_name='"+SearchName.selectedValue+"'";
             SqlDataAdapter sd = new SqlDataAdapter(query2,Program.con);
             DataTable ds = new DataTable();
             sd.Fill(ds);

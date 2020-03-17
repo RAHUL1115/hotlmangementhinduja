@@ -47,10 +47,10 @@
             this.findsearchbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.findsearchbutton.Image = global::WindowsFormsApplication1.Properties.Resources.search;
             this.findsearchbutton.ImageActive = null;
-            this.findsearchbutton.Location = new System.Drawing.Point(434, 25);
-            this.findsearchbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.findsearchbutton.Location = new System.Drawing.Point(574, 31);
+            this.findsearchbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.findsearchbutton.Name = "findsearchbutton";
-            this.findsearchbutton.Size = new System.Drawing.Size(32, 30);
+            this.findsearchbutton.Size = new System.Drawing.Size(43, 37);
             this.findsearchbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.findsearchbutton.TabIndex = 68;
             this.findsearchbutton.TabStop = false;
@@ -69,10 +69,10 @@
             this.findtextbox.LineIdleColor = System.Drawing.Color.Gray;
             this.findtextbox.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.findtextbox.LineThickness = 3;
-            this.findtextbox.Location = new System.Drawing.Point(50, 16);
-            this.findtextbox.Margin = new System.Windows.Forms.Padding(4);
+            this.findtextbox.Location = new System.Drawing.Point(57, 20);
+            this.findtextbox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.findtextbox.Name = "findtextbox";
-            this.findtextbox.Size = new System.Drawing.Size(420, 44);
+            this.findtextbox.Size = new System.Drawing.Size(560, 54);
             this.findtextbox.TabIndex = 67;
             this.findtextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.findtextbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.findtextbox_KeyDown);
@@ -86,13 +86,13 @@
         "Current Bookings",
         "Pre Bookings",
         "History"};
-            this.tableselect.Location = new System.Drawing.Point(568, 39);
-            this.tableselect.Margin = new System.Windows.Forms.Padding(5);
+            this.tableselect.Location = new System.Drawing.Point(658, 35);
+            this.tableselect.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.tableselect.Name = "tableselect";
             this.tableselect.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(231)))), ((int)(((byte)(220)))));
             this.tableselect.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
             this.tableselect.selectedIndex = 0;
-            this.tableselect.Size = new System.Drawing.Size(176, 30);
+            this.tableselect.Size = new System.Drawing.Size(235, 37);
             this.tableselect.TabIndex = 70;
             // 
             // findView2
@@ -129,15 +129,17 @@
             this.findView2.EnableHeadersVisualStyles = false;
             this.findView2.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(122)))), ((int)(((byte)(224)))));
             this.findView2.HeaderForeColor = System.Drawing.Color.White;
-            this.findView2.Location = new System.Drawing.Point(42, 80);
+            this.findView2.Location = new System.Drawing.Point(56, 98);
+            this.findView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.findView2.MultiSelect = false;
             this.findView2.Name = "findView2";
             this.findView2.ReadOnly = true;
             this.findView2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.findView2.RowHeadersVisible = false;
+            this.findView2.RowHeadersWidth = 51;
             this.findView2.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.findView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.findView2.Size = new System.Drawing.Size(908, 448);
+            this.findView2.Size = new System.Drawing.Size(1211, 551);
             this.findView2.TabIndex = 71;
             this.findView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.findView2_CellClick);
             this.findView2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.findView_KeyDown);
@@ -149,15 +151,15 @@
             // 
             // findwindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.findView2);
             this.Controls.Add(this.tableselect);
             this.Controls.Add(this.findsearchbutton);
             this.Controls.Add(this.findtextbox);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "findwindow";
-            this.Size = new System.Drawing.Size(998, 552);
+            this.Size = new System.Drawing.Size(1331, 679);
             this.Load += new System.EventHandler(this.findwindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.findsearchbutton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.findView2)).EndInit();

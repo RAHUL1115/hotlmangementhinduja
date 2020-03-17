@@ -69,16 +69,16 @@ namespace WindowsFormsApplication1
         private void services_Load(object sender, EventArgs e)
         {
             room = Program.inf.room;
-            string query = "select oid,sname,quantity,time,state from services where room = "+room;
+            string query = "select oid as 'Order id',sname as Service,quantity as Quantity,time as Time,state as State from services where room = "+room;
             SqlDataAdapter sd = new SqlDataAdapter(query, Program.con);
             DataTable ds = new DataTable();
             sd.Fill(ds);
             serviceview.DataSource = ds;
             serviceview.ClearSelection();     
             DataGridViewLinkColumn btn = new DataGridViewLinkColumn();
-            btn.HeaderText = "clickme";
+            btn.HeaderText = "Cancle";
             btn.Name = "cbutton";
-            btn.Text = "cancle";
+            btn.Text = "Cancle";
             btn.UseColumnTextForLinkValue = true;
             serviceview.Columns.Add(btn);
             serviceview.ClearSelection();
