@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
@@ -27,17 +22,18 @@ namespace WindowsFormsApplication1
 
         private Control GetbuttonByName(string name)
         {
-            return this.controlHashtable[name] as BunifuThinButton2;
+            return this.controlHashtable[name] as Bunifu.Framework.UI.BunifuThinButton2;
         }
 
-        private void resetlabbut(BunifuThinButton2[] roombutton, Label[] roomlabel)
+        private void resetlabbut()
         {
-            for (int i = 0; i < 25; i++)
+            for (int i = 1; i < 26; i++)
             {
-                roombutton[i].IdleLineColor = Color.SeaGreen;
-                roombutton[i].IdleForecolor = Color.SeaGreen;
-                roomlabel[i].ForeColor = Color.Black;
-                roomlabel[i].Text = "";
+                BunifuThinButton2 tempbut = (BunifuThinButton2)GetbuttonByName("room" + i); 
+                tempbut.IdleLineColor = Color.SeaGreen;
+                tempbut.IdleForecolor = Color.SeaGreen;
+                GetlabelByName("label"+i).ForeColor = Color.Black;
+                GetlabelByName("label" + i).Text = "";
             }
         }
 
@@ -218,12 +214,8 @@ namespace WindowsFormsApplication1
                 statement2 = "select room,CONVERT(varchar, coutdate, 101) as coutdate from pre_book where (cindate BETWEEN '" + date1 + "' and '" + date2 + "' ) or (coutdate BETWEEN '" + date1 + "' and '" + date2 + "' ) ORDER BY cintime";
             }
 
-            //array create of label and room
-            Bunifu.Framework.UI.BunifuThinButton2[] roombutton = { room1, room2, room3, room4, room5, room6, room7, room8, room9, room10, room11, room12, room13, room14, room15, room16, room17, room18, room19, room20, room21, room22, room23, room24, room25 };
-            Label[] roomlabel = { label1, label2, label3, label4, label5, label6, label7, label8, label9, label10, label11, label12, label13, label14, label15, label16, label17, label18, label19, label20, label21, label22, label23, label24, label25 };
-            
             //reset button and label
-            resetlabbut(roombutton, roomlabel);
+            resetlabbut();
 
             //connection check
             if (Program.con.State == ConnectionState.Closed)
@@ -234,9 +226,10 @@ namespace WindowsFormsApplication1
             //data read current book
             while (sdr.Read())
             {
-                roombutton[((Int32)sdr[0] - 1)].IdleLineColor = Color.Red;
-                roomlabel[((Int32)sdr[0] - 1)].Text = ""+sdr[1];
-                roomlabel[((Int32)sdr[0] - 1)].Visible = true;
+                BunifuThinButton2 tempbut = (BunifuThinButton2)GetbuttonByName("room"+sdr[0]);
+                tempbut.IdleLineColor = Color.Red;
+                GetlabelByName("label" + sdr[0]).Text="" + sdr[1];
+                GetlabelByName("label" + sdr[0]).Visible = true;
             }
             cmd.Dispose();
             sdr.Close();
@@ -246,10 +239,11 @@ namespace WindowsFormsApplication1
             sdr = cmd.ExecuteReader();
             while (sdr.Read())
             {
-                roombutton[((Int32)sdr[0] - 1)].IdleLineColor = Color.Red;
-                roomlabel[((Int32)sdr[0] - 1)].ForeColor = Color.Red;
-                roomlabel[((Int32)sdr[0] - 1)].Text = ""+sdr[1];
-                roomlabel[((Int32)sdr[0] - 1)].Visible = true;
+                BunifuThinButton2 tempbut = (BunifuThinButton2)GetbuttonByName("room" + sdr[0]);
+                tempbut.IdleLineColor = Color.Red;
+                GetlabelByName("label" + sdr[0]).ForeColor = Color.Red;
+                GetlabelByName("label" + sdr[0]).Text = ""+sdr[1];
+                GetlabelByName("label" + sdr[0]).Visible = true;
             }
             cmd.Dispose();
             sdr.Close();
@@ -262,11 +256,13 @@ namespace WindowsFormsApplication1
                 sdr = cmd.ExecuteReader();
                 while (sdr.Read())
                 {
-                    roombutton[((Int32)sdr[0] - 1)].IdleForecolor = Color.Red;
+                    BunifuThinButton2 tempbut = (BunifuThinButton2)GetbuttonByName("room" + sdr[0]);
+                    tempbut.IdleForecolor = Color.Red;
                 }
                 cmd.Dispose();
                 sdr.Close();
             }
+
 
             //refreshbutton visible
             refreshbutton.Visible = true;

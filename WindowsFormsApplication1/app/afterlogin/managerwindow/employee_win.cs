@@ -16,22 +16,20 @@ namespace WindowsFormsApplication1
         public employee_win()
         {
             InitializeComponent();
+            load();
         }
 
         public void load()
         {
             EmpName.Clear();
             if (Program.con.State == ConnectionState.Closed) { Program.con.Open(); }
-            string query = "select id from login";
+            string query = "select id from login where post = 'o'";
             SqlCommand cmd = new SqlCommand(query, Program.con);
             SqlDataReader sdr = cmd.ExecuteReader();
-            if (sdr.Read())
+
+            while (sdr.Read())
             {
                 EmpName.AddItem("" + sdr[0]);
-                while (sdr.Read())
-                {
-                    EmpName.AddItem("" + sdr[0]);
-                }
             }
 
             sdr.Close();
