@@ -20,7 +20,6 @@ namespace WindowsFormsApplication1
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            label1.Visible = false;
             SendToBack();
             Visible = false;
         }
@@ -29,13 +28,20 @@ namespace WindowsFormsApplication1
         {
             if (Program.con.State == ConnectionState.Closed)
                 Program.con.Open();
-            String query = "select id,pass,email from login where id='" + logintxt.Text + "' and email = '"+emailtext.Text+"'";
+            String query = "select pass from login where id='" + logintxt.Text + "' and email = '"+emailtext.Text+"'";
             SqlCommand cmd = new SqlCommand(query, Program.con);
             SqlDataReader sdr = cmd.ExecuteReader();
             if (sdr.Read())
             {
-                label1.Visible = true;
-                label1.Text = "your password is" + sdr[1];
+                messageboxcs mb = new messageboxcs();
+                mb.Show();
+                mb.bunifuCustomLabel1.Text = ""+sdr[0];
+            }
+            else 
+            {
+                messageboxcs mb = new messageboxcs();
+                mb.Show();
+                mb.bunifuCustomLabel1.Text = "invaliid details";
             }
         }
     }

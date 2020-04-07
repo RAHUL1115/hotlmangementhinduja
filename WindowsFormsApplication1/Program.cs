@@ -11,7 +11,8 @@ namespace WindowsFormsApplication1
     static class Program
     {
         public static string constring = "Server=sql.freeasphost.net;Database=feedback_db;uid=feedback;pwd=1234;MultipleActiveResultSets=True";
-        public static SqlConnection con = new SqlConnection(constring);
+        public static string constring1 = "Data Source=4NONYM0U5;Initial Catalog=hotel;Integrated Security=True;MultipleActiveResultSets=True";
+        public static SqlConnection con = new SqlConnection(constring1);
         public static info inf = new info();
         public static loginwindow li;
         public static mainwindow ep;

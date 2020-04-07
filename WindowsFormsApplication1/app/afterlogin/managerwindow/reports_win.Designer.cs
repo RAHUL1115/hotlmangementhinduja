@@ -60,10 +60,10 @@
             this.bunifuTransition1.SetDecoration(this.back, BunifuAnimatorNS.DecorationType.None);
             this.back.Image = global::WindowsFormsApplication1.Properties.Resources.back;
             this.back.ImageActive = null;
-            this.back.Location = new System.Drawing.Point(20, 25);
-            this.back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.back.Location = new System.Drawing.Point(15, 20);
+            this.back.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(45, 39);
+            this.back.Size = new System.Drawing.Size(34, 32);
             this.back.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.back.TabIndex = 67;
             this.back.TabStop = false;
@@ -89,10 +89,10 @@
             this.report.IdleFillColor = System.Drawing.Color.White;
             this.report.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.report.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.report.Location = new System.Drawing.Point(580, 540);
-            this.report.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.report.Location = new System.Drawing.Point(435, 439);
+            this.report.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.report.Name = "report";
-            this.report.Size = new System.Drawing.Size(174, 80);
+            this.report.Size = new System.Drawing.Size(130, 65);
             this.report.TabIndex = 1;
             this.report.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.report.Click += new System.EventHandler(this.report_Click);
@@ -103,9 +103,10 @@
             this.label1.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(175, 21);
+            this.label1.Location = new System.Drawing.Point(126, 17);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(241, 29);
+            this.label1.Size = new System.Drawing.Size(191, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Number of Check in\'s";
             // 
@@ -115,9 +116,10 @@
             this.label1_1.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label1_1, BunifuAnimatorNS.DecorationType.None);
             this.label1_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1_1.Location = new System.Drawing.Point(873, 21);
+            this.label1_1.Location = new System.Drawing.Point(654, 17);
+            this.label1_1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1_1.Name = "label1_1";
-            this.label1_1.Size = new System.Drawing.Size(26, 29);
+            this.label1_1.Size = new System.Drawing.Size(20, 24);
             this.label1_1.TabIndex = 1;
             this.label1_1.Text = "0";
             this.label1_1.Visible = false;
@@ -128,9 +130,10 @@
             this.label2.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(189, 93);
+            this.label2.Location = new System.Drawing.Point(137, 76);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(213, 29);
+            this.label2.Size = new System.Drawing.Size(168, 24);
             this.label2.TabIndex = 2;
             this.label2.Text = "Number of  Cancle";
             // 
@@ -140,9 +143,10 @@
             this.label2_1.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label2_1, BunifuAnimatorNS.DecorationType.None);
             this.label2_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2_1.Location = new System.Drawing.Point(873, 93);
+            this.label2_1.Location = new System.Drawing.Point(654, 76);
+            this.label2_1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2_1.Name = "label2_1";
-            this.label2_1.Size = new System.Drawing.Size(26, 29);
+            this.label2_1.Size = new System.Drawing.Size(20, 24);
             this.label2_1.TabIndex = 3;
             this.label2_1.Text = "0";
             this.label2_1.Visible = false;
@@ -153,9 +157,10 @@
             this.label3.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(176, 165);
+            this.label3.Location = new System.Drawing.Point(127, 135);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(239, 29);
+            this.label3.Size = new System.Drawing.Size(189, 24);
             this.label3.TabIndex = 4;
             this.label3.Text = "Number of Check out";
             // 
@@ -165,9 +170,10 @@
             this.label3_1.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label3_1, BunifuAnimatorNS.DecorationType.None);
             this.label3_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3_1.Location = new System.Drawing.Point(873, 165);
+            this.label3_1.Location = new System.Drawing.Point(654, 135);
+            this.label3_1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3_1.Name = "label3_1";
-            this.label3_1.Size = new System.Drawing.Size(26, 29);
+            this.label3_1.Size = new System.Drawing.Size(20, 24);
             this.label3_1.TabIndex = 5;
             this.label3_1.Text = "0";
             this.label3_1.Visible = false;
@@ -178,9 +184,10 @@
             this.label4.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(167, 237);
+            this.label4.Location = new System.Drawing.Point(122, 194);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(256, 29);
+            this.label4.Size = new System.Drawing.Size(198, 24);
             this.label4.TabIndex = 6;
             this.label4.Text = "Total Employee Salary";
             // 
@@ -190,9 +197,10 @@
             this.label4_1.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label4_1, BunifuAnimatorNS.DecorationType.None);
             this.label4_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4_1.Location = new System.Drawing.Point(873, 237);
+            this.label4_1.Location = new System.Drawing.Point(654, 194);
+            this.label4_1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4_1.Name = "label4_1";
-            this.label4_1.Size = new System.Drawing.Size(26, 29);
+            this.label4_1.Size = new System.Drawing.Size(20, 24);
             this.label4_1.TabIndex = 7;
             this.label4_1.Text = "0";
             this.label4_1.Visible = false;
@@ -203,9 +211,10 @@
             this.label5.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(210, 309);
+            this.label5.Location = new System.Drawing.Point(155, 253);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(170, 29);
+            this.label5.Size = new System.Drawing.Size(133, 24);
             this.label5.TabIndex = 8;
             this.label5.Text = "Total Revenue";
             // 
@@ -215,9 +224,10 @@
             this.label5_1.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label5_1, BunifuAnimatorNS.DecorationType.None);
             this.label5_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5_1.Location = new System.Drawing.Point(873, 309);
+            this.label5_1.Location = new System.Drawing.Point(654, 253);
+            this.label5_1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5_1.Name = "label5_1";
-            this.label5_1.Size = new System.Drawing.Size(26, 29);
+            this.label5_1.Size = new System.Drawing.Size(20, 24);
             this.label5_1.TabIndex = 9;
             this.label5_1.Text = "0";
             this.label5_1.Visible = false;
@@ -228,9 +238,10 @@
             this.label6.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(261, 381);
+            this.label6.Location = new System.Drawing.Point(196, 312);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 29);
+            this.label6.Size = new System.Drawing.Size(51, 24);
             this.label6.TabIndex = 11;
             this.label6.Text = "Profit";
             // 
@@ -240,9 +251,10 @@
             this.label6_1.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label6_1, BunifuAnimatorNS.DecorationType.None);
             this.label6_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6_1.Location = new System.Drawing.Point(873, 381);
+            this.label6_1.Location = new System.Drawing.Point(654, 312);
+            this.label6_1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6_1.Name = "label6_1";
-            this.label6_1.Size = new System.Drawing.Size(26, 29);
+            this.label6_1.Size = new System.Drawing.Size(20, 24);
             this.label6_1.TabIndex = 12;
             this.label6_1.Text = "0";
             this.label6_1.Visible = false;
@@ -267,7 +279,8 @@
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.selectmonth, 1, 6);
             this.bunifuTransition1.SetDecoration(this.tableLayoutPanel1, BunifuAnimatorNS.DecorationType.None);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(71, 25);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(53, 20);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.32664F));
@@ -277,8 +290,8 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.32665F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.32665F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.04012F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1182, 508);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(886, 413);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label7
@@ -287,9 +300,10 @@
             this.label7.AutoSize = true;
             this.bunifuTransition1.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(256, 455);
+            this.label7.Location = new System.Drawing.Point(190, 371);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(79, 29);
+            this.label7.Size = new System.Drawing.Size(63, 24);
             this.label7.TabIndex = 13;
             this.label7.Text = "Month";
             // 
@@ -303,14 +317,21 @@
             this.selectmonth.Items = new string[] {
         "1",
         "2",
-        "3"};
-            this.selectmonth.Location = new System.Drawing.Point(742, 448);
-            this.selectmonth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"};
+            this.selectmonth.Location = new System.Drawing.Point(556, 366);
             this.selectmonth.Name = "selectmonth";
             this.selectmonth.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(231)))), ((int)(((byte)(220)))));
             this.selectmonth.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
             this.selectmonth.selectedIndex = -1;
-            this.selectmonth.Size = new System.Drawing.Size(289, 43);
+            this.selectmonth.Size = new System.Drawing.Size(217, 35);
             this.selectmonth.TabIndex = 14;
             this.selectmonth.TabStop = false;
             // 
@@ -326,7 +347,7 @@
             animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
             animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
             animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.Padding = new System.Windows.Forms.Padding(0);
             animation1.RotateCoeff = 0F;
             animation1.RotateLimit = 0F;
             animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
@@ -340,14 +361,15 @@
             // 
             // reports_win
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.back);
             this.Controls.Add(this.report);
             this.Controls.Add(this.tableLayoutPanel1);
             this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "reports_win";
-            this.Size = new System.Drawing.Size(1296, 626);
+            this.Size = new System.Drawing.Size(972, 509);
             ((System.ComponentModel.ISupportInitialize)(this.back)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

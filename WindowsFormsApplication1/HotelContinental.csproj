@@ -108,34 +108,34 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="attendance_win.cs">
+    <Compile Include="app\afterlogin\managerwindow\attendance_win.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="attendance_win.Designer.cs">
+    <Compile Include="app\afterlogin\managerwindow\attendance_win.Designer.cs">
       <DependentUpon>attendance_win.cs</DependentUpon>
     </Compile>
-    <Compile Include="canclewin.cs">
+    <Compile Include="app\afterlogin\employeewindow\hometab\roomfill\canclewin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="canclewin.Designer.cs">
+    <Compile Include="app\afterlogin\employeewindow\hometab\roomfill\canclewin.Designer.cs">
       <DependentUpon>canclewin.cs</DependentUpon>
     </Compile>
-    <Compile Include="checkout.cs">
+    <Compile Include="app\afterlogin\employeewindow\hometab\roomfill\checkout.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="checkout.Designer.cs">
+    <Compile Include="app\afterlogin\employeewindow\hometab\roomfill\checkout.Designer.cs">
       <DependentUpon>checkout.cs</DependentUpon>
     </Compile>
-    <Compile Include="employee_win.cs">
+    <Compile Include="app\afterlogin\managerwindow\employee_win.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="employee_win.Designer.cs">
+    <Compile Include="app\afterlogin\managerwindow\employee_win.Designer.cs">
       <DependentUpon>employee_win.cs</DependentUpon>
     </Compile>
-    <Compile Include="emp_performance_win.cs">
+    <Compile Include="app\afterlogin\managerwindow\emp_performance_win.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="emp_performance_win.Designer.cs">
+    <Compile Include="app\afterlogin\managerwindow\emp_performance_win.Designer.cs">
       <DependentUpon>emp_performance_win.cs</DependentUpon>
     </Compile>
     <Compile Include="feedback_dbDataSet.Designer.cs">
@@ -158,148 +158,148 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>feedback_dbDataSet3.xsd</DependentUpon>
     </Compile>
-    <Compile Include="filledroomwin.cs">
+    <Compile Include="app\afterlogin\employeewindow\hometab\filledroomwin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="filledroomwin.Designer.cs">
+    <Compile Include="app\afterlogin\employeewindow\hometab\filledroomwin.Designer.cs">
       <DependentUpon>filledroomwin.cs</DependentUpon>
     </Compile>
-    <Compile Include="findwindow.cs">
+    <Compile Include="app\afterlogin\employeewindow\findwindow.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="findwindow.Designer.cs">
+    <Compile Include="app\afterlogin\employeewindow\findwindow.Designer.cs">
       <DependentUpon>findwindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="forget.cs">
+    <Compile Include="app\login\forget.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="forget.Designer.cs">
+    <Compile Include="app\login\forget.Designer.cs">
       <DependentUpon>forget.cs</DependentUpon>
     </Compile>
-    <Compile Include="mainmanagerwindow.cs">
+    <Compile Include="app\afterlogin\mainmanagerwindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mainmanagerwindow.Designer.cs">
+    <Compile Include="app\afterlogin\mainmanagerwindow.Designer.cs">
       <DependentUpon>mainmanagerwindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="reports_win.cs">
+    <Compile Include="app\afterlogin\managerwindow\reports_win.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="reports_win.Designer.cs">
+    <Compile Include="app\afterlogin\managerwindow\reports_win.Designer.cs">
       <DependentUpon>reports_win.cs</DependentUpon>
     </Compile>
-    <Compile Include="current_book.cs">
+    <Compile Include="app\afterlogin\employeewindow\hometab\current_book.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="current_book.Designer.cs">
+    <Compile Include="app\afterlogin\employeewindow\hometab\current_book.Designer.cs">
       <DependentUpon>current_book.cs</DependentUpon>
     </Compile>
-    <Compile Include="info.cs" />
-    <Compile Include="loadingcontrol.cs">
+    <Compile Include="extra\info.cs" />
+    <Compile Include="app\login\loadingcontrol.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="loadingcontrol.Designer.cs">
+    <Compile Include="app\login\loadingcontrol.Designer.cs">
       <DependentUpon>loadingcontrol.cs</DependentUpon>
     </Compile>
-    <Compile Include="mainwindow.cs">
+    <Compile Include="app\afterlogin\mainwindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mainwindow.Designer.cs">
+    <Compile Include="app\afterlogin\mainwindow.Designer.cs">
       <DependentUpon>mainwindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="hometab.cs">
+    <Compile Include="app\afterlogin\employeewindow\hometab.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="hometab.Designer.cs">
+    <Compile Include="app\afterlogin\employeewindow\hometab.Designer.cs">
       <DependentUpon>hometab.cs</DependentUpon>
     </Compile>
-    <Compile Include="login.cs">
+    <Compile Include="app\login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="login.Designer.cs">
+    <Compile Include="app\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
-    <Compile Include="messageboxcs.cs">
+    <Compile Include="extra\messageboxcs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="messageboxcs.Designer.cs">
+    <Compile Include="extra\messageboxcs.Designer.cs">
       <DependentUpon>messageboxcs.cs</DependentUpon>
     </Compile>
-    <Compile Include="pre_book.cs">
+    <Compile Include="app\afterlogin\employeewindow\hometab\pre_book.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="pre_book.Designer.cs">
+    <Compile Include="app\afterlogin\employeewindow\hometab\pre_book.Designer.cs">
       <DependentUpon>pre_book.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="roomfilmenuewindow.cs">
+    <Compile Include="app\afterlogin\employeewindow\hometab\roomfilmenuewindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="roomfilmenuewindow.Designer.cs">
+    <Compile Include="app\afterlogin\employeewindow\hometab\roomfilmenuewindow.Designer.cs">
       <DependentUpon>roomfilmenuewindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="salary_win.cs">
+    <Compile Include="app\afterlogin\managerwindow\salary_win.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="salary_win.Designer.cs">
+    <Compile Include="app\afterlogin\managerwindow\salary_win.Designer.cs">
       <DependentUpon>salary_win.cs</DependentUpon>
     </Compile>
-    <Compile Include="services.cs">
+    <Compile Include="app\afterlogin\employeewindow\hometab\roomfill\services.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="services.Designer.cs">
+    <Compile Include="app\afterlogin\employeewindow\hometab\roomfill\services.Designer.cs">
       <DependentUpon>services.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="attendance_win.resx">
+    <EmbeddedResource Include="app\afterlogin\managerwindow\attendance_win.resx">
       <DependentUpon>attendance_win.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="canclewin.resx">
+    <EmbeddedResource Include="app\afterlogin\employeewindow\hometab\roomfill\canclewin.resx">
       <DependentUpon>canclewin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="checkout.resx">
+    <EmbeddedResource Include="app\afterlogin\employeewindow\hometab\roomfill\checkout.resx">
       <DependentUpon>checkout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="employee_win.resx">
+    <EmbeddedResource Include="app\afterlogin\managerwindow\employee_win.resx">
       <DependentUpon>employee_win.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="emp_performance_win.resx">
+    <EmbeddedResource Include="app\afterlogin\managerwindow\emp_performance_win.resx">
       <DependentUpon>emp_performance_win.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="filledroomwin.resx">
+    <EmbeddedResource Include="app\afterlogin\employeewindow\hometab\filledroomwin.resx">
       <DependentUpon>filledroomwin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="findwindow.resx">
+    <EmbeddedResource Include="app\afterlogin\employeewindow\findwindow.resx">
       <DependentUpon>findwindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forget.resx">
+    <EmbeddedResource Include="app\login\forget.resx">
       <DependentUpon>forget.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mainmanagerwindow.resx">
+    <EmbeddedResource Include="app\afterlogin\mainmanagerwindow.resx">
       <DependentUpon>mainmanagerwindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="reports_win.resx">
+    <EmbeddedResource Include="app\afterlogin\managerwindow\reports_win.resx">
       <DependentUpon>reports_win.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="current_book.resx">
+    <EmbeddedResource Include="app\afterlogin\employeewindow\hometab\current_book.resx">
       <DependentUpon>current_book.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="loadingcontrol.resx">
+    <EmbeddedResource Include="app\login\loadingcontrol.resx">
       <DependentUpon>loadingcontrol.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mainwindow.resx">
+    <EmbeddedResource Include="app\afterlogin\mainwindow.resx">
       <DependentUpon>mainwindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="hometab.resx">
+    <EmbeddedResource Include="app\afterlogin\employeewindow\hometab.resx">
       <DependentUpon>hometab.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="login.resx">
+    <EmbeddedResource Include="app\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="messageboxcs.resx">
+    <EmbeddedResource Include="extra\messageboxcs.resx">
       <DependentUpon>messageboxcs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="pre_book.resx">
+    <EmbeddedResource Include="app\afterlogin\employeewindow\hometab\pre_book.resx">
       <DependentUpon>pre_book.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -307,13 +307,13 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="roomfilmenuewindow.resx">
+    <EmbeddedResource Include="app\afterlogin\employeewindow\hometab\roomfilmenuewindow.resx">
       <DependentUpon>roomfilmenuewindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="salary_win.resx">
+    <EmbeddedResource Include="app\afterlogin\managerwindow\salary_win.resx">
       <DependentUpon>salary_win.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="services.resx">
+    <EmbeddedResource Include="app\afterlogin\employeewindow\hometab\roomfill\services.resx">
       <DependentUpon>services.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="feedback_dbDataSet.xsc">
