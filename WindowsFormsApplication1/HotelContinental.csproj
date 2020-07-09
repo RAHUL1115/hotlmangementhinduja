@@ -138,26 +138,6 @@
     <Compile Include="app\afterlogin\managerwindow\emp_performance_win.Designer.cs">
       <DependentUpon>emp_performance_win.cs</DependentUpon>
     </Compile>
-    <Compile Include="feedback_dbDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>feedback_dbDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="feedback_dbDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>feedback_dbDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="feedback_dbDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>feedback_dbDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="feedback_dbDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>feedback_dbDataSet3.xsd</DependentUpon>
-    </Compile>
     <Compile Include="app\afterlogin\employeewindow\hometab\filledroomwin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -316,50 +296,6 @@
     <EmbeddedResource Include="app\afterlogin\employeewindow\hometab\roomfill\services.resx">
       <DependentUpon>services.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="feedback_dbDataSet.xsc">
-      <DependentUpon>feedback_dbDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="feedback_dbDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>feedback_dbDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="feedback_dbDataSet.xss">
-      <DependentUpon>feedback_dbDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="feedback_dbDataSet1.xsc">
-      <DependentUpon>feedback_dbDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="feedback_dbDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>feedback_dbDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="feedback_dbDataSet1.xss">
-      <DependentUpon>feedback_dbDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="feedback_dbDataSet2.xsc">
-      <DependentUpon>feedback_dbDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="feedback_dbDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>feedback_dbDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="feedback_dbDataSet2.xss">
-      <DependentUpon>feedback_dbDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="feedback_dbDataSet3.xsc">
-      <DependentUpon>feedback_dbDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="feedback_dbDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>feedback_dbDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="feedback_dbDataSet3.xss">
-      <DependentUpon>feedback_dbDataSet3.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

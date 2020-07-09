@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(services));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -38,18 +37,11 @@
             this.addbutton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.roomcleancheckBox = new System.Windows.Forms.CheckBox();
             this.quantitydropdown = new Bunifu.Framework.UI.BunifuDropdown();
-            this.servicesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.feedback_dbDataSet3 = new WindowsFormsApplication1.feedback_dbDataSet3();
-            this.feedback_dbDataSet2 = new WindowsFormsApplication1.feedback_dbDataSet2();
-            this.servicesTableAdapter = new WindowsFormsApplication1.feedback_dbDataSet2TableAdapters.servicesTableAdapter();
-            this.servicesTableAdapter1 = new WindowsFormsApplication1.feedback_dbDataSet3TableAdapters.servicesTableAdapter();
+           
             this.serviceview = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.servicesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.feedback_dbDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.feedback_dbDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.serviceview)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,10 +50,9 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton1.Image = global::WindowsFormsApplication1.Properties.Resources.back;
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(16, 15);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(12, 12);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(37, 34);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(28, 28);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton1.TabIndex = 4;
             this.bunifuImageButton1.TabStop = false;
@@ -77,13 +68,13 @@
         "Breakfast",
         "Lunch",
         "Dinner"};
-            this.fooddropdown.Location = new System.Drawing.Point(21, 77);
-            this.fooddropdown.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.fooddropdown.Location = new System.Drawing.Point(16, 63);
+            this.fooddropdown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fooddropdown.Name = "fooddropdown";
             this.fooddropdown.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(231)))), ((int)(((byte)(220)))));
             this.fooddropdown.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
             this.fooddropdown.selectedIndex = -1;
-            this.fooddropdown.Size = new System.Drawing.Size(147, 32);
+            this.fooddropdown.Size = new System.Drawing.Size(110, 26);
             this.fooddropdown.TabIndex = 7;
             // 
             // addbutton
@@ -104,10 +95,10 @@
             this.addbutton.IdleFillColor = System.Drawing.Color.White;
             this.addbutton.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.addbutton.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.addbutton.Location = new System.Drawing.Point(404, 66);
-            this.addbutton.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.addbutton.Location = new System.Drawing.Point(303, 54);
+            this.addbutton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.addbutton.Name = "addbutton";
-            this.addbutton.Size = new System.Drawing.Size(105, 43);
+            this.addbutton.Size = new System.Drawing.Size(79, 35);
             this.addbutton.TabIndex = 8;
             this.addbutton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.addbutton.Click += new System.EventHandler(this.bunifuThinButton21_Click);
@@ -115,10 +106,10 @@
             // roomcleancheckBox
             // 
             this.roomcleancheckBox.AutoSize = true;
-            this.roomcleancheckBox.Location = new System.Drawing.Point(264, 88);
-            this.roomcleancheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roomcleancheckBox.Location = new System.Drawing.Point(198, 72);
+            this.roomcleancheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roomcleancheckBox.Name = "roomcleancheckBox";
-            this.roomcleancheckBox.Size = new System.Drawing.Size(126, 21);
+            this.roomcleancheckBox.Size = new System.Drawing.Size(98, 17);
             this.roomcleancheckBox.TabIndex = 10;
             this.roomcleancheckBox.Text = "Room Cleaning";
             this.roomcleancheckBox.UseVisualStyleBackColor = true;
@@ -134,37 +125,15 @@
         "3",
         "4",
         "5"};
-            this.quantitydropdown.Location = new System.Drawing.Point(177, 77);
-            this.quantitydropdown.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.quantitydropdown.Location = new System.Drawing.Point(133, 63);
+            this.quantitydropdown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.quantitydropdown.Name = "quantitydropdown";
             this.quantitydropdown.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(231)))), ((int)(((byte)(220)))));
             this.quantitydropdown.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(214)))));
             this.quantitydropdown.selectedIndex = -1;
-            this.quantitydropdown.Size = new System.Drawing.Size(79, 32);
+            this.quantitydropdown.Size = new System.Drawing.Size(59, 26);
             this.quantitydropdown.TabIndex = 11;
-            // 
-            // servicesBindingSource
-            // 
-            this.servicesBindingSource.DataMember = "services";
-            this.servicesBindingSource.DataSource = this.feedback_dbDataSet3;
-            // 
-            // feedback_dbDataSet3
-            // 
-            this.feedback_dbDataSet3.DataSetName = "feedback_dbDataSet3";
-            this.feedback_dbDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // feedback_dbDataSet2
-            // 
-            this.feedback_dbDataSet2.DataSetName = "feedback_dbDataSet2";
-            this.feedback_dbDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // servicesTableAdapter
-            // 
-            this.servicesTableAdapter.ClearBeforeFill = true;
-            // 
-            // servicesTableAdapter1
-            // 
-            this.servicesTableAdapter1.ClearBeforeFill = true;
+            
             // 
             // serviceview
             // 
@@ -200,8 +169,7 @@
             this.serviceview.EnableHeadersVisualStyles = false;
             this.serviceview.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(122)))), ((int)(((byte)(224)))));
             this.serviceview.HeaderForeColor = System.Drawing.Color.White;
-            this.serviceview.Location = new System.Drawing.Point(21, 118);
-            this.serviceview.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.serviceview.Location = new System.Drawing.Point(16, 96);
             this.serviceview.MultiSelect = false;
             this.serviceview.Name = "serviceview";
             this.serviceview.ReadOnly = true;
@@ -210,7 +178,7 @@
             this.serviceview.RowHeadersWidth = 51;
             this.serviceview.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
             this.serviceview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.serviceview.Size = new System.Drawing.Size(601, 224);
+            this.serviceview.Size = new System.Drawing.Size(451, 182);
             this.serviceview.TabIndex = 73;
             this.serviceview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.serviceview_CellContentClick);
             // 
@@ -219,10 +187,9 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 54);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(15, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 19);
+            this.label1.Size = new System.Drawing.Size(89, 16);
             this.label1.TabIndex = 74;
             this.label1.Text = "Select Service :";
             // 
@@ -231,16 +198,15 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(177, 53);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(133, 43);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 19);
+            this.label2.Size = new System.Drawing.Size(59, 16);
             this.label2.TabIndex = 75;
             this.label2.Text = "Quantity:";
             // 
             // services
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -250,14 +216,10 @@
             this.Controls.Add(this.addbutton);
             this.Controls.Add(this.fooddropdown);
             this.Controls.Add(this.bunifuImageButton1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "services";
-            this.Size = new System.Drawing.Size(649, 402);
+            this.Size = new System.Drawing.Size(487, 327);
             this.Load += new System.EventHandler(this.services_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.servicesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.feedback_dbDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.feedback_dbDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.serviceview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -271,11 +233,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 addbutton;
         private System.Windows.Forms.CheckBox roomcleancheckBox;
         private Bunifu.Framework.UI.BunifuDropdown quantitydropdown;
-        private feedback_dbDataSet2 feedback_dbDataSet2;
-        private feedback_dbDataSet2TableAdapters.servicesTableAdapter servicesTableAdapter;
-        private System.Windows.Forms.BindingSource servicesBindingSource;
-        private feedback_dbDataSet3 feedback_dbDataSet3;
-        private feedback_dbDataSet3TableAdapters.servicesTableAdapter servicesTableAdapter1;
         private Bunifu.Framework.UI.BunifuCustomDataGrid serviceview;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label2;
