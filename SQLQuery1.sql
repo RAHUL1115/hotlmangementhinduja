@@ -1,0 +1,1 @@
+﻿insert into login values('yashd','1234','m','sahachsbc','yash','bdchjsdvchsvc','1999-11-09','2020-08-09')
